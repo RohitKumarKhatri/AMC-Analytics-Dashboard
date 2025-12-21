@@ -1016,10 +1016,25 @@ function setupTabs() {
     });
 }
 
+// Load Metadata Helper
+async function loadMetadata() {
+    const metadataResponse = await fetch('data/metadata.json');
+    if (!metadataResponse.ok) {
+        throw new Error(`Failed to load metadata: ${metadataResponse.status}`);
+    }
+    metadata = await metadataResponse.json();
+    return metadata;
+}
+
 // Initialize Customer Tab
 async function initCustomerTab() {
     if (!metadata) {
-        await loadMetadata();
+        try {
+            await loadMetadata();
+        } catch (error) {
+            console.error('Error loading metadata:', error);
+            return;
+        }
     }
     
     // Initialize filters
