@@ -792,10 +792,16 @@ function renderCharts(data) {
         // Remove any existing click handlers (cumulative chart is not clickable)
         cumulativeChart.off('click');
         
-        // Force resize to ensure full width
-        setTimeout(() => {
-            cumulativeChart.resize();
-        }, 150);
+        // Force resize to ensure full width - use requestAnimationFrame for proper timing
+        requestAnimationFrame(() => {
+            setTimeout(() => {
+                cumulativeChart.resize();
+                // Additional resize after a short delay
+                setTimeout(() => {
+                    cumulativeChart.resize();
+                }, 200);
+            }, 50);
+        });
     }
 }
 
