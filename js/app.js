@@ -1236,7 +1236,14 @@ async function aggregateCustomerData() {
         rangeKey = ranges[0];
     } else {
         // Multiple quarters selected - create combined key
-        rangeKey = ranges.sort().join('+');
+        const sortedRanges = ranges.sort();
+        // If all 4 quarters are selected, treat as Annual
+        if (sortedRanges.length === 4 && sortedRanges.includes('Q1') && sortedRanges.includes('Q2') && 
+            sortedRanges.includes('Q3') && sortedRanges.includes('Q4')) {
+            rangeKey = 'Annual';
+        } else {
+            rangeKey = sortedRanges.join('+');
+        }
     }
     
     // Load pre-aggregated customer distribution file
