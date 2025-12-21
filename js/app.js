@@ -604,7 +604,7 @@ function renderCharts(data) {
                     clickHandled = true;
                     
                     // Check if user wants to skip the login prompt
-                    const skipLoginPrompt = safeGetItem('amc-dashboard-skip-login-prompt') === 'true';
+                    const skipLoginPrompt = localStorage.getItem('amc-dashboard-skip-login-prompt') === 'true';
                     
                     if (skipLoginPrompt) {
                         // Open directly if user chose to skip
@@ -770,30 +770,11 @@ function showError() {
     document.getElementById('error').style.display = 'block';
 }
 
-// Safe localStorage helper functions
-function safeSetItem(key, value) {
-    try {
-        localStorage.setItem(key, value);
-    } catch (e) {
-        // localStorage may be disabled in incognito mode or throw errors
-        console.warn('Could not save to localStorage:', e);
-    }
-}
-
-function safeGetItem(key) {
-    try {
-        return localStorage.getItem(key);
-    } catch (e) {
-        console.warn('Could not read from localStorage:', e);
-        return null;
-    }
-}
-
 // Check if user is logged into Jira
 async function checkJiraLoginStatus(jiraLink) {
     // First check cached login status (if checked recently)
-    const cachedLoginStatus = safeGetItem('amc-dashboard-jira-logged-in');
-    const cacheTime = safeGetItem('amc-dashboard-jira-login-check-time');
+    const cachedLoginStatus = localStorage.getItem('amc-dashboard-jira-logged-in');
+    const cacheTime = localStorage.getItem('amc-dashboard-jira-login-check-time');
     const now = Date.now();
     
     // Use cached status if less than 5 minutes old
@@ -830,21 +811,21 @@ async function checkJiraLoginStatus(jiraLink) {
         
         if (response.ok && response.status === 200) {
             // User is logged in - cache the status and open link
-            safeSetItem('amc-dashboard-jira-logged-in', 'true');
-            safeSetItem('amc-dashboard-jira-login-check-time', Date.now().toString());
+            localStorage.setItem('amc-dashboard-jira-logged-in', 'true');
+            localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
             window.open(jiraLink, '_blank');
         } else {
             // Not logged in - cache status and show modal
-            safeSetItem('amc-dashboard-jira-logged-in', 'false');
-            safeSetItem('amc-dashboard-jira-login-check-time', Date.now().toString());
+            localStorage.setItem('amc-dashboard-jira-logged-in', 'false');
+            localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
             pendingJiraLink = jiraLink;
             showLoginModal();
         }
     } catch (error) {
         // Fetch failed - likely CORS error (user not logged in or cross-origin issue)
         // In this case, show modal to be safe
-        safeSetItem('amc-dashboard-jira-logged-in', 'false');
-        safeSetItem('amc-dashboard-jira-login-check-time', Date.now().toString());
+        localStorage.setItem('amc-dashboard-jira-logged-in', 'false');
+        localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
         pendingJiraLink = jiraLink;
         showLoginModal();
     }
@@ -871,8 +852,8 @@ function hideLoginModal() {
 function proceedToJira() {
     if (pendingJiraLink) {
         // Cache that user attempted to proceed (might be logged in)
-        safeSetItem('amc-dashboard-jira-logged-in', 'true');
-        safeSetItem('amc-dashboard-jira-login-check-time', Date.now().toString());
+        localStorage.setItem('amc-dashboard-jira-logged-in', 'true');
+        localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
         
         window.open(pendingJiraLink, '_blank');
         hideLoginModal();
@@ -898,13 +879,9 @@ function setupModalListeners() {
     if (dontShowCheckbox) {
         dontShowCheckbox.addEventListener('change', function(e) {
             if (e.target.checked) {
-                safeSetItem('amc-dashboard-skip-login-prompt', 'true');
+                localStorage.setItem('amc-dashboard-skip-login-prompt', 'true');
             } else {
-                try {
-                    localStorage.removeItem('amc-dashboard-skip-login-prompt');
-                } catch (e) {
-                    console.warn('Could not remove from localStorage:', e);
-                }
+                localStorage.removeItem('amc-dashboard-skip-login-prompt');
             }
         });
     }
