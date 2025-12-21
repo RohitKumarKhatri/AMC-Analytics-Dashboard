@@ -600,13 +600,20 @@ function renderCharts(data) {
             {
                 type: 'value',
                 name: 'Issues',
-                min: 0,
+                min: (() => {
+                    // Allow negative values if data goes below zero
+                    const minValue = Math.min(...cumulative);
+                    return minValue < 0 ? Math.floor(minValue / 10) * 10 : 0;
+                })(),
                 position: 'left'
             },
             {
                 type: 'value',
                 name: 'Issues',
-                min: 0,
+                min: (() => {
+                    const minValue = Math.min(...cumulative);
+                    return minValue < 0 ? Math.floor(minValue / 10) * 10 : 0;
+                })(),
                 position: 'right',
                 axisLabel: {
                     formatter: '{value}'
@@ -622,19 +629,19 @@ function renderCharts(data) {
                 itemStyle: { color: '#4169e1' },
                 areaStyle: {
                     color: (params) => {
-                        // Make area fill more subtle, especially near zero
+                        // Make area fill conditional based on value
                         const value = params.data;
                         if (value <= 0) {
-                            // Very subtle or no fill for zero/negative values
-                            return 'rgba(65, 105, 225, 0.05)';
-                        } else if (value < 10) {
-                            // Light fill for small positive values
+                            // No fill or very subtle for zero/negative values
+                            return 'transparent';
+                        } else if (value < 5) {
+                            // Very light fill for small positive values
                             return {
                                 type: 'linear',
                                 x: 0, y: 0, x2: 0, y2: 1,
                                 colorStops: [
-                                    { offset: 0, color: 'rgba(65, 105, 225, 0.15)' },
-                                    { offset: 1, color: 'rgba(65, 105, 225, 0.03)' }
+                                    { offset: 0, color: 'rgba(65, 105, 225, 0.1)' },
+                                    { offset: 1, color: 'rgba(65, 105, 225, 0.02)' }
                                 ]
                             };
                         } else {
