@@ -339,6 +339,7 @@ header h1 {
     font-size: 13px;
     white-space: nowrap;
     border-right: 1px solid rgba(255, 255, 255, 0.2);
+    color: white !important;
 }
 
 .team-performance-table th.assignee-header {
@@ -348,16 +349,19 @@ header h1 {
     left: 0;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     z-index: 11;
+    color: white !important;
 }
 
 .team-performance-table th.week-header {
     min-width: 120px;
+    color: white !important;
 }
 
 .team-performance-table th.grand-total-header {
     font-weight: 700;
     background: rgba(255, 255, 255, 0.15);
     min-width: 100px;
+    color: white !important;
 }
 
 .team-performance-table tbody tr {
@@ -433,6 +437,17 @@ header h1 {
 .team-performance-table tfoot td {
     border-right: 1px solid rgba(255, 255, 255, 0.2);
     font-weight: 600;
+    color: white !important;
+}
+
+.team-performance-table td.grand-total-label {
+    font-weight: 700;
+    text-align: left;
+    color: white !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: sticky;
+    left: 0;
+    z-index: 11;
 }
 
 .table-cell-link {
