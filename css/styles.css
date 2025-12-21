@@ -61,17 +61,18 @@ header h1 {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Tab Navigation */
-.tab-navigation {
+/* Section Navigation (within Home tab) */
+.section-navigation {
     display: flex;
     gap: 12px;
     background: #ffffff;
     border-bottom: 2px solid #e8e8e8;
     padding: 20px 30px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    margin-bottom: 0;
 }
 
-.tab-btn {
+.section-btn {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -88,7 +89,7 @@ header h1 {
     min-height: 56px;
 }
 
-.tab-btn:hover {
+.section-btn:hover {
     background: #f8f9fa;
     color: #667eea;
     border-color: #e0e0e0;
@@ -96,7 +97,7 @@ header h1 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.tab-btn.active {
+.section-btn.active {
     color: #667eea;
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.12) 0%, rgba(118, 75, 162, 0.12) 100%);
     border-color: rgba(102, 126, 234, 0.3);
@@ -106,7 +107,7 @@ header h1 {
     transform: translateY(-2px);
 }
 
-.tab-btn.active::before {
+.section-btn.active::after {
     content: '';
     position: absolute;
     bottom: -20px;
@@ -119,16 +120,16 @@ header h1 {
     box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
 }
 
-.tab-icon {
+.section-icon {
     font-size: 24px;
     transition: transform 0.2s ease;
 }
 
-.tab-btn.active .tab-icon {
+.section-btn.active .section-icon {
     transform: scale(1.15);
 }
 
-.tab-label {
+.section-label {
     font-weight: inherit;
     letter-spacing: 0.3px;
 }
@@ -136,12 +137,50 @@ header h1 {
 /* Tab Content */
 .tab-content {
     display: none;
-    padding: 30px;
+    padding: 0;
     animation: fadeIn 0.3s ease-in-out;
 }
 
 .tab-content.active {
     display: block;
+}
+
+/* Section Content (within Home tab) */
+.section-content {
+    display: none;
+    padding: 30px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.section-content.active {
+    display: block;
+}
+
+/* Placeholder Content */
+.placeholder-content {
+    text-align: center;
+    padding: 80px 20px;
+    color: #999;
+}
+
+.placeholder-icon {
+    font-size: 64px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.placeholder-content h3 {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.placeholder-content p {
+    font-size: 16px;
+    color: #888;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .page-header {

@@ -989,29 +989,39 @@ function setupModalListeners() {
 
 // Tab Navigation
 function setupTabs() {
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.tab-content');
+    // Only Home tab exists now, so just ensure it's active
+    const homeTab = document.getElementById('home-tab');
+    if (homeTab) {
+        homeTab.classList.add('active');
+    }
     
-    tabButtons.forEach(btn => {
+    // Setup section navigation within Home tab
+    setupSections();
+}
+
+function setupSections() {
+    const sectionButtons = document.querySelectorAll('.section-btn');
+    const sectionContents = document.querySelectorAll('.section-content');
+    
+    sectionButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            const targetTab = btn.dataset.tab;
+            const targetSection = btn.dataset.section;
             
-            // Update active tab button
-            tabButtons.forEach(b => b.classList.remove('active'));
+            // Remove active class from all buttons and contents
+            sectionButtons.forEach(b => b.classList.remove('active'));
+            sectionContents.forEach(c => c.classList.remove('active'));
+            
+            // Add active class to clicked button and corresponding content
             btn.classList.add('active');
-            
-            // Update active tab content
-            tabContents.forEach(content => {
-                content.classList.remove('active');
-                if (content.id === `${targetTab}-tab`) {
-                    content.classList.add('active');
-                    
-                    // Initialize customer tab if needed
-                    if (targetTab === 'customers' && !customerPieChart) {
-                        initCustomerTab();
-                    }
+            const targetContent = document.getElementById(`${targetSection}-section`);
+            if (targetContent) {
+                targetContent.classList.add('active');
+                
+                // Initialize section-specific content
+                if (targetSection === 'customer-distribution' && !customerPieChart) {
+                    initCustomerTab();
                 }
-            });
+            }
         });
     });
 }

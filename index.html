@@ -14,22 +14,27 @@
             <p class="subtitle">Comprehensive Ticket Analytics & Insights</p>
         </header>
 
-        <!-- Tab Navigation -->
-        <nav class="tab-navigation">
-            <button class="tab-btn active" data-tab="home">
-                <span class="tab-icon">📊</span>
-                <span class="tab-label">Home</span>
-            </button>
-            <button class="tab-btn" data-tab="customers">
-                <span class="tab-icon">👥</span>
-                <span class="tab-label">Customer Distribution</span>
-            </button>
-        </nav>
-
         <!-- Home Tab Content -->
         <div id="home-tab" class="tab-content active">
+            <!-- Section Navigation -->
+            <nav class="section-navigation">
+                <button class="section-btn active" data-section="created-resolved">
+                    <span class="section-icon">📈</span>
+                    <span class="section-label">Created vs Resolved</span>
+                </button>
+                <button class="section-btn" data-section="customer-distribution">
+                    <span class="section-icon">👥</span>
+                    <span class="section-label">Customer Distribution</span>
+                </button>
+                <button class="section-btn" data-section="assignee">
+                    <span class="section-icon">👤</span>
+                    <span class="section-label">Team Performance</span>
+                </button>
+            </nav>
 
-        <div class="filters">
+            <!-- Created vs Resolved Section -->
+            <div id="created-resolved-section" class="section-content active">
+            <div class="filters">
             <div class="filter-group">
                 <label>Period:</label>
                 <div class="button-group single-select" id="period-buttons">
@@ -82,48 +87,63 @@
         <div class="error" id="error" style="display: none;">
             <p>Error loading data. Please check the console for details.</p>
         </div>
-        </div>
-
-        <!-- Customer Distribution Tab Content -->
-        <div id="customers-tab" class="tab-content">
-            <div class="page-header">
-                <h2>Customer Distribution Analysis</h2>
-                <p class="page-subtitle">Ticket distribution across customers</p>
             </div>
 
-            <div class="filters">
-                <div class="filter-group">
-                    <label>Year:</label>
-                    <div class="button-group single-select" id="customer-year-buttons">
-                        <!-- Dynamically generated -->
+            <!-- Customer Distribution Section -->
+            <div id="customer-distribution-section" class="section-content">
+                <div class="page-header">
+                    <h2>Customer Distribution Analysis</h2>
+                    <p class="page-subtitle">Ticket distribution across customers</p>
+                </div>
+
+                <div class="filters">
+                    <div class="filter-group">
+                        <label>Year:</label>
+                        <div class="button-group single-select" id="customer-year-buttons">
+                            <!-- Dynamically generated -->
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Range:</label>
+                        <div class="button-group multi-select" id="customer-range-buttons">
+                            <button class="btn-toggle" data-range="Q1">Q1</button>
+                            <button class="btn-toggle" data-range="Q2">Q2</button>
+                            <button class="btn-toggle" data-range="Q3">Q3</button>
+                            <button class="btn-toggle active" data-range="Q4">Q4</button>
+                            <button class="btn-toggle" data-range="Annual">Annual</button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="filter-group">
-                    <label>Range:</label>
-                    <div class="button-group multi-select" id="customer-range-buttons">
-                        <button class="btn-toggle" data-range="Q1">Q1</button>
-                        <button class="btn-toggle" data-range="Q2">Q2</button>
-                        <button class="btn-toggle" data-range="Q3">Q3</button>
-                        <button class="btn-toggle active" data-range="Q4">Q4</button>
-                        <button class="btn-toggle" data-range="Annual">Annual</button>
+                <div class="loading" id="customer-loading">
+                    <div class="spinner"></div>
+                    <p>Loading customer data...</p>
+                </div>
+
+                <div class="charts-container" id="customer-charts-container" style="display: none;">
+                    <div class="chart-wrapper">
+                        <div id="customer-pie-chart" class="chart"></div>
                     </div>
                 </div>
-            </div>
 
-            <div class="loading" id="customer-loading">
-                <div class="spinner"></div>
-                <p>Loading customer data...</p>
-            </div>
-
-            <div class="charts-container" id="customer-charts-container" style="display: none;">
-                <div class="chart-wrapper">
-                    <div id="customer-pie-chart" class="chart"></div>
+                <div class="error" id="customer-error" style="display: none;">
+                    <p>Error loading customer data. Please check the console for details.</p>
                 </div>
             </div>
 
-            <div class="error" id="customer-error" style="display: none;">
-                <p>Error loading customer data. Please check the console for details.</p>
+            <!-- Team Performance (Assignee) Section -->
+            <div id="assignee-section" class="section-content">
+                <div class="page-header">
+                    <h2>Team Performance</h2>
+                    <p class="page-subtitle">Ticket assignment and workload analysis</p>
+                </div>
+
+                <div class="placeholder-content">
+                    <div class="placeholder-icon">👤</div>
+                    <h3>Coming Soon</h3>
+                    <p>Team performance metrics and assignee analytics will be available here.</p>
+                </div>
             </div>
         </div>
     </div>
