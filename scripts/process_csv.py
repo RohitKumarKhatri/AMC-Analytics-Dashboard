@@ -565,7 +565,7 @@ def generate_all_aggregations(data, output_dir):
     return file_count
 
 def main():
-    """Main function"""
+    """Main function - can be called directly or imported as module"""
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
     csv_path = project_root / 'ticket-list-export.csv'
