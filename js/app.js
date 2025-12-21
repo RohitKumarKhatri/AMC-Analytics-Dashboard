@@ -621,13 +621,33 @@ function renderCharts(data) {
                 lineStyle: { color: '#4169e1', width: 2 },
                 itemStyle: { color: '#4169e1' },
                 areaStyle: {
-                    color: {
-                        type: 'linear',
-                        x: 0, y: 0, x2: 0, y2: 1,
-                        colorStops: [
-                            { offset: 0, color: 'rgba(65, 105, 225, 0.3)' },
-                            { offset: 1, color: 'rgba(65, 105, 225, 0.05)' }
-                        ]
+                    color: (params) => {
+                        // Make area fill more subtle, especially near zero
+                        const value = params.data;
+                        if (value <= 0) {
+                            // Very subtle or no fill for zero/negative values
+                            return 'rgba(65, 105, 225, 0.05)';
+                        } else if (value < 10) {
+                            // Light fill for small positive values
+                            return {
+                                type: 'linear',
+                                x: 0, y: 0, x2: 0, y2: 1,
+                                colorStops: [
+                                    { offset: 0, color: 'rgba(65, 105, 225, 0.15)' },
+                                    { offset: 1, color: 'rgba(65, 105, 225, 0.03)' }
+                                ]
+                            };
+                        } else {
+                            // Normal fill for larger values
+                            return {
+                                type: 'linear',
+                                x: 0, y: 0, x2: 0, y2: 1,
+                                colorStops: [
+                                    { offset: 0, color: 'rgba(65, 105, 225, 0.3)' },
+                                    { offset: 1, color: 'rgba(65, 105, 225, 0.05)' }
+                                ]
+                            };
+                        }
                     }
                 },
                 symbol: 'circle',
