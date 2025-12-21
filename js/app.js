@@ -770,7 +770,7 @@ function showError() {
     document.getElementById('error').style.display = 'block';
 }
 
-// Check if user is logged into Jira
+// Check if user is logged into Jira using multiple detection methods
 async function checkJiraLoginStatus(jiraLink) {
     // First check cached login status (if checked recently)
     const cachedLoginStatus = localStorage.getItem('amc-dashboard-jira-logged-in');
@@ -791,39 +791,103 @@ async function checkJiraLoginStatus(jiraLink) {
         }
     }
     
-    // No cache or expired - try to check login status
+    // No cache or expired - try multiple methods to detect login status
+    let isLoggedIn = false;
+    
+    // Method 1: Try REST API v3 (newer API)
     try {
-        // Try to fetch user info from Jira API
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 2000);
+        const controller1 = new AbortController();
+        const timeoutId1 = setTimeout(() => controller1.abort(), 2000);
         
-        const response = await fetch('https://psskyvera.atlassian.net/rest/api/2/myself', {
+        const response1 = await fetch('https://psskyvera.atlassian.net/rest/api/3/myself', {
             method: 'GET',
             credentials: 'include',
-            signal: controller.signal,
+            signal: controller1.signal,
             headers: {
                 'Accept': 'application/json'
             },
             mode: 'cors'
         });
         
-        clearTimeout(timeoutId);
+        clearTimeout(timeoutId1);
         
-        if (response.ok && response.status === 200) {
-            // User is logged in - cache the status and open link
-            localStorage.setItem('amc-dashboard-jira-logged-in', 'true');
-            localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
-            window.open(jiraLink, '_blank');
-        } else {
-            // Not logged in - cache status and show modal
-            localStorage.setItem('amc-dashboard-jira-logged-in', 'false');
-            localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
-            pendingJiraLink = jiraLink;
-            showLoginModal();
+        if (response1.ok && response1.status === 200) {
+            // Successfully got user info - definitely logged in
+            isLoggedIn = true;
+        } else if (response1.status === 401) {
+            // 401 Unauthorized - definitely not logged in
+            isLoggedIn = false;
         }
-    } catch (error) {
-        // Fetch failed - likely CORS error (user not logged in or cross-origin issue)
-        // In this case, show modal to be safe
+    } catch (error1) {
+        // CORS error or network error - try method 2
+        console.log('Method 1 failed, trying method 2...');
+    }
+    
+    // Method 2: Try REST API v2 (fallback)
+    if (isLoggedIn === false) {
+        try {
+            const controller2 = new AbortController();
+            const timeoutId2 = setTimeout(() => controller2.abort(), 2000);
+            
+            const response2 = await fetch('https://psskyvera.atlassian.net/rest/api/2/myself', {
+                method: 'GET',
+                credentials: 'include',
+                signal: controller2.signal,
+                headers: {
+                    'Accept': 'application/json'
+                },
+                mode: 'cors'
+            });
+            
+            clearTimeout(timeoutId2);
+            
+            if (response2.ok && response2.status === 200) {
+                // Successfully got user info - definitely logged in
+                isLoggedIn = true;
+            } else if (response2.status === 401) {
+                // 401 Unauthorized - definitely not logged in
+                isLoggedIn = false;
+            }
+        } catch (error2) {
+            // CORS error - ambiguous, but likely not logged in
+            console.log('Method 2 also failed - CORS error, likely not logged in');
+            isLoggedIn = false;
+        }
+    }
+    
+    // Method 3: Try to fetch a protected resource (favicon or dashboard)
+    // This helps detect login even when API endpoints fail due to CORS
+    if (isLoggedIn === false) {
+        try {
+            const controller3 = new AbortController();
+            const timeoutId3 = setTimeout(() => controller3.abort(), 1500);
+            
+            // Try fetching dashboard page - if logged in, it will load; if not, redirects to login
+            const response3 = await fetch('https://psskyvera.atlassian.net/secure/Dashboard.jspa', {
+                method: 'HEAD', // HEAD request is lighter
+                credentials: 'include',
+                signal: controller3.signal,
+                mode: 'no-cors' // Use no-cors to avoid CORS errors
+            });
+            
+            clearTimeout(timeoutId3);
+            
+            // With no-cors, we can't read status, but if request completes, user might be logged in
+            // This is a weak signal, so we'll still show modal if other methods failed
+        } catch (error3) {
+            // Request failed completely
+            console.log('Method 3 failed');
+        }
+    }
+    
+    // Determine final action based on detection results
+    if (isLoggedIn === true) {
+        // User is logged in - cache the status and open link
+        localStorage.setItem('amc-dashboard-jira-logged-in', 'true');
+        localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
+        window.open(jiraLink, '_blank');
+    } else {
+        // User is not logged in or status is ambiguous - show modal to be safe
         localStorage.setItem('amc-dashboard-jira-logged-in', 'false');
         localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
         pendingJiraLink = jiraLink;
@@ -910,8 +974,8 @@ function setupModalListeners() {
             // After clicking login, assume user might be logged in after a delay
             // Give them time to login, then cache the status
             setTimeout(() => {
-                safeSetItem('amc-dashboard-jira-logged-in', 'true');
-                safeSetItem('amc-dashboard-jira-login-check-time', Date.now().toString());
+                localStorage.setItem('amc-dashboard-jira-logged-in', 'true');
+                localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
             }, 3000); // 3 second delay to allow login
         });
     }
