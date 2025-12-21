@@ -915,6 +915,19 @@ function setupModalListeners() {
             }, 3000); // 3 second delay to allow login
         });
     }
+    
+    // Login link button - when clicked, mark as potentially logged in after delay
+    const loginBtn = document.querySelector('.btn-login');
+    if (loginBtn) {
+        loginBtn.addEventListener('click', function() {
+            // After clicking login, assume user might be logged in after a delay
+            // Give them time to login, then cache the status
+            setTimeout(() => {
+                localStorage.setItem('amc-dashboard-jira-logged-in', 'true');
+                localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
+            }, 3000); // 3 second delay to allow login
+        });
+    }
 }
 
 // Initialize when DOM is ready
