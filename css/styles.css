@@ -64,65 +64,73 @@ header h1 {
 /* Tab Navigation */
 .tab-navigation {
     display: flex;
-    gap: 8px;
+    gap: 12px;
     background: #ffffff;
-    border-bottom: 1px solid #e8e8e8;
-    padding: 12px 30px;
+    border-bottom: 2px solid #e8e8e8;
+    padding: 20px 30px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .tab-btn {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 12px 24px;
+    gap: 12px;
+    padding: 18px 32px;
     background: transparent;
-    border: none;
-    border-radius: 8px;
+    border: 2px solid transparent;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     color: #666;
     transition: all 0.2s ease;
     position: relative;
+    min-height: 56px;
 }
 
 .tab-btn:hover {
     background: #f8f9fa;
     color: #667eea;
-    transform: translateY(-1px);
+    border-color: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .tab-btn.active {
     color: #667eea;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-    font-weight: 600;
-    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.15);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.12) 0%, rgba(118, 75, 162, 0.12) 100%);
+    border-color: rgba(102, 126, 234, 0.3);
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
+    transform: translateY(-2px);
 }
 
 .tab-btn.active::before {
     content: '';
     position: absolute;
-    bottom: -12px;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 40px;
-    height: 3px;
+    width: 60px;
+    height: 4px;
     background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
     border-radius: 2px 2px 0 0;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
 }
 
 .tab-icon {
-    font-size: 18px;
+    font-size: 24px;
     transition: transform 0.2s ease;
 }
 
 .tab-btn.active .tab-icon {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 .tab-label {
     font-weight: inherit;
+    letter-spacing: 0.3px;
 }
 
 /* Tab Content */
