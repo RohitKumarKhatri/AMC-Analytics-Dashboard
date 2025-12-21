@@ -16,13 +16,14 @@ Usage:
 Requirements:
     - Python 3.8 or higher
     - CSV file: ticket-list-export.csv (in project root)
-    - All dependencies from scripts/process_csv.py
 """
 
 import sys
-import subprocess
 from pathlib import Path
 from datetime import datetime
+
+# Import the processing module
+from scripts import process_csv
 
 # Color codes for terminal output
 class Colors:
@@ -109,38 +110,35 @@ def check_output_directory():
     
     return output_dir
 
-def run_aggregation_script():
-    """Run the main aggregation script"""
-    print_step(4, "Running aggregation script...")
+def run_aggregation():
+    """Run the aggregation process"""
+    print_step(4, "Processing CSV and generating aggregations...")
     script_dir = Path(__file__).parent
-    process_script = script_dir / 'scripts' / 'process_csv.py'
+    csv_path = script_dir / 'ticket-list-export.csv'
+    output_dir = script_dir / 'data'
     
-    if not process_script.exists():
-        print_error(f"Aggregation script not found: {process_script}")
-        return False
-    
-    print(f"  Executing: {process_script}")
     print(f"{Colors.BLUE}{'-'*70}{Colors.END}\n")
     
     try:
-        # Run the script and capture output
-        result = subprocess.run(
-            [sys.executable, str(process_script)],
-            cwd=str(script_dir),
-            check=True,
-            capture_output=False,  # Show output in real-time
-            text=True
-        )
+        # Process CSV file
+        print("Reading and processing CSV file...")
+        data = process_csv.process_csv_file(csv_path)
+        
+        # Generate all aggregations
+        print("\nGenerating aggregated JSON files...")
+        file_count = process_csv.generate_all_aggregations(data, output_dir)
         
         print(f"\n{Colors.BLUE}{'-'*70}{Colors.END}")
-        print_success("Aggregation script completed successfully")
+        print_success(f"Aggregation completed successfully - Generated {file_count} files")
         return True
         
-    except subprocess.CalledProcessError as e:
-        print_error(f"Aggregation script failed with exit code {e.returncode}")
+    except FileNotFoundError as e:
+        print_error(f"File not found: {e}")
         return False
     except Exception as e:
-        print_error(f"Error running aggregation script: {e}")
+        print_error(f"Error during aggregation: {e}")
+        import traceback
+        traceback.print_exc()
         return False
 
 def verify_output():
@@ -214,8 +212,8 @@ def main():
     # Step 3: Check output directory
     output_dir = check_output_directory()
     
-    # Step 4: Run aggregation script
-    if not run_aggregation_script():
+    # Step 4: Run aggregation process
+    if not run_aggregation():
         print_error("Failed to generate aggregations")
         sys.exit(1)
     
