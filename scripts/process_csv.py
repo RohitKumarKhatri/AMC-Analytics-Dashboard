@@ -333,6 +333,67 @@ def calculate_customer_ticket_counts(tickets, year, quarters):
     
     return customer_counts
 
+def aggregate_customer_distribution(tickets, year, ranges):
+    """Aggregate customer distribution for a specific year and quarter ranges"""
+    customer_counts = defaultdict(int)
+    
+    # Define quarter month ranges
+    quarter_months = {
+        'Q1': [1, 2, 3],
+        'Q2': [4, 5, 6],
+        'Q3': [7, 8, 9],
+        'Q4': [10, 11, 12]
+    }
+    
+    # Determine which months to include
+    if 'Annual' in ranges:
+        included_months = list(range(1, 13))
+    else:
+        included_months = []
+        for range_name in ranges:
+            if range_name in quarter_months:
+                included_months.extend(quarter_months[range_name])
+        included_months = sorted(set(included_months))
+    
+    # Count tickets per customer
+    for ticket in tickets:
+        created_date = ticket['created']
+        if created_date.year != year:
+            continue
+        
+        if created_date.month not in included_months:
+            continue
+        
+        customer = ticket['customer']
+        if customer:
+            # Skip One Albania variants (they're grouped separately)
+            if not is_one_albania(customer):
+                customer_counts[customer] += 1
+    
+    # Also count ONE Albania separately
+    one_albania_count = 0
+    for ticket in tickets:
+        created_date = ticket['created']
+        if created_date.year != year:
+            continue
+        
+        if created_date.month not in included_months:
+            continue
+        
+        if is_one_albania(ticket['original_customer']):
+            one_albania_count += 1
+    
+    # Convert to dictionary format
+    result = {}
+    for customer, count in customer_counts.items():
+        if count > 0:
+            result[customer] = count
+    
+    if one_albania_count > 0:
+        result['ONE Albania'] = one_albania_count
+    
+    return result
+
 def generate_all_aggregations(data, output_dir):
     """Generate all possible aggregation combinations"""
     output_dir = Path(output_dir)
@@ -452,6 +513,53 @@ def generate_all_aggregations(data, output_dir):
                             'data': aggregated
                         }, f, indent=2, ensure_ascii=False)
                     file_count += 1
+    
+    # Generate customer distribution aggregations (for pie chart)
+    print(f"\nGenerating customer distribution aggregations...")
+    for year in years:
+        # Generate for each quarter
+        for quarter in ['Q1', 'Q2', 'Q3', 'Q4']:
+            distribution = aggregate_customer_distribution(tickets, year, [quarter])
+            filename = f'customer-distribution-{year}-{quarter}.json'
+            filepath = output_dir / filename
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'year': year,
+                    'range': quarter,
+                    'distribution': distribution
+                }, f, indent=2, ensure_ascii=False)
+            file_count += 1
+        
+        # Generate for Annual
+        distribution = aggregate_customer_distribution(tickets, year, ['Annual'])
+        filename = f'customer-distribution-{year}-Annual.json'
+        filepath = output_dir / filename
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump({
+                'year': year,
+                'range': 'Annual',
+                'distribution': distribution
+            }, f, indent=2, ensure_ascii=False)
+        file_count += 1
+        
+        # Generate for combined quarters (Q1+Q2, Q1+Q3, Q1+Q4, Q2+Q3, Q2+Q4, Q3+Q4, Q1+Q2+Q3, Q1+Q2+Q4, Q1+Q3+Q4, Q2+Q3+Q4)
+        combined_ranges = [
+            ['Q1', 'Q2'], ['Q1', 'Q3'], ['Q1', 'Q4'],
+            ['Q2', 'Q3'], ['Q2', 'Q4'], ['Q3', 'Q4'],
+            ['Q1', 'Q2', 'Q3'], ['Q1', 'Q2', 'Q4'], ['Q1', 'Q3', 'Q4'], ['Q2', 'Q3', 'Q4']
+        ]
+        for ranges in combined_ranges:
+            distribution = aggregate_customer_distribution(tickets, year, ranges)
+            range_key = '+'.join(sorted(ranges))
+            filename = f'customer-distribution-{year}-{range_key}.json'
+            filepath = output_dir / filename
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'year': year,
+                    'range': range_key,
+                    'distribution': distribution
+                }, f, indent=2, ensure_ascii=False)
+            file_count += 1
     
     print(f"\nGenerated {file_count} JSON files in {output_dir}")
     return file_count

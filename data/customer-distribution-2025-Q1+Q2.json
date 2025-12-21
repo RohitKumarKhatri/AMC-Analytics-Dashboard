@@ -1,0 +1,33 @@
+{
+  "year": 2025,
+  "range": "Q1+Q2",
+  "distribution": {
+    "STL - Airtel Fixedline": 74,
+    "STL - BSNL Wifi": 35,
+    "Kandy - MMC": 2,
+    "STL - DTAC Team": 1,
+    "STL - Tata Teleservices Limited": 4,
+    "STL - Synaptic Technologies": 17,
+    "STL - EGI Bharti OSS": 7,
+    "STL - Atom Myanmar Ltd": 9,
+    "GFI - Wipro Enterprises (P) Ltd": 6,
+    "STL - Asianet Satellite Communications Ltd": 4,
+    "Trilogy": 9,
+    "STL - SMART AAA Support": 6,
+    "Crossover - Skyvera": 5,
+    "NewNet - Telenet Group": 1,
+    "STL - VodaAAA User": 2,
+    "STL - Airtel CGF MS Team": 3,
+    "Aml": 1,
+    "STL - Mavenir CGF Team": 3,
+    "Incredible  -  Actcorp": 2,
+    "Crossover - Crossover": 1,
+    "Gfi - Kerio  -  Ddnsfree": 1,
+    "STL - Atria Convergence Technologies Pvt Ltd": 6,
+    "STL - Hathway Cable & Datacom Ltd": 5,
+    "STL - PT Aplikanusa Lintasarta": 1,
+    "STL - Globe Telecom Inc.": 2,
+    "STL - Commverge Solutions Philippines Inc.": 3,
+    "ONE Albania": 273
+  }
+}

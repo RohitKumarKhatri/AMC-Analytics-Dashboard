@@ -1180,100 +1180,46 @@ async function loadCustomerData() {
     }
 }
 
-// Aggregate Customer Data
+// Aggregate Customer Data (now loads pre-aggregated server-side data)
 async function aggregateCustomerData() {
-    const customerCounts = {};
     const year = customerFilters.year;
     const ranges = customerFilters.ranges;
     
     if (!year || !ranges || ranges.length === 0) {
-        return customerCounts;
+        return {};
     }
     
-    // Calculate date range for filtering
-    const dateRange = getDateRangeForJQL();
-    if (!dateRange) {
-        return customerCounts;
+    // Build filename based on selected ranges
+    let rangeKey;
+    if (ranges.includes('Annual')) {
+        rangeKey = 'Annual';
+    } else if (ranges.length === 1) {
+        rangeKey = ranges[0];
+    } else {
+        // Multiple quarters selected - create combined key
+        rangeKey = ranges.sort().join('+');
     }
     
-    const startDate = new Date(dateRange.startDate);
-    const endDate = new Date(dateRange.endDate);
+    // Load pre-aggregated customer distribution file
+    const filename = `data/customer-distribution-${year}-${rangeKey}.json`;
     
-    // Get all customers from metadata
-    const customers = metadata.customers || [];
-    
-    // Load data for each customer (use weekly data for more granular filtering)
-    for (const customer of customers) {
-        try {
-            // Skip One Albania variants (they're grouped separately)
-            const isOneAlbania = /one\s+albania/i.test(customer);
-            if (isOneAlbania) continue;
-            
-            // Sanitize customer name for filename
-            const safeCustomer = customer.replace(/[^a-zA-Z0-9_-]/g, '_').substring(0, 50);
-            const filename = `data/weekly-${year}-${safeCustomer}.json`;
-            
-            const response = await fetch(filename);
-            if (response.ok) {
-                const data = await response.json();
-                
-                // Filter by date range and sum up tickets
-                let totalTickets = 0;
-                if (data.data && Array.isArray(data.data)) {
-                    data.data.forEach(item => {
-                        if (item.week_start) {
-                            const itemDate = new Date(item.week_start);
-                            // Check if item date falls within selected range
-                            if (itemDate >= startDate && itemDate < endDate) {
-                                totalTickets += (item.created || 0);
-                            }
-                        }
-                    });
-                }
-                
-                if (totalTickets > 0) {
-                    customerCounts[customer] = totalTickets;
-                }
-            }
-        } catch (error) {
-            // Skip if file doesn't exist
-            console.log(`Skipping customer ${customer}:`, error);
-        }
-    }
-    
-    // Also load "One Albania" aggregated data (but not "Rest of World" as it's an aggregate)
     try {
-        // One Albania
-        const oneAlbaniaFilename = `data/weekly-${year}-one-albania.json`;
-        const oneAlbaniaResponse = await fetch(oneAlbaniaFilename);
-        if (oneAlbaniaResponse.ok) {
-            const oneAlbaniaData = await oneAlbaniaResponse.json();
-            let oneAlbaniaTotal = 0;
-            if (oneAlbaniaData.data && Array.isArray(oneAlbaniaData.data)) {
-                oneAlbaniaData.data.forEach(item => {
-                    if (item.week_start) {
-                        const itemDate = new Date(item.week_start);
-                        // Check if item date falls within selected range
-                        if (itemDate >= startDate && itemDate < endDate) {
-                            oneAlbaniaTotal += (item.created || 0);
-                        }
-                    }
-                });
-            }
-            if (oneAlbaniaTotal > 0) {
-                customerCounts['ONE Albania'] = oneAlbaniaTotal;
-            }
+        const response = await fetch(filename);
+        if (!response.ok) {
+            throw new Error(`Failed to load ${filename}: ${response.status}`);
         }
+        
+        const data = await response.json();
+        return data.distribution || {};
     } catch (error) {
-        console.log('Error loading ONE Albania data:', error);
+        console.error('Error loading customer distribution:', error);
+        return {};
     }
-    
-    return customerCounts;
 }
 
-// Filter Customer Data by Range (now handled in aggregateCustomerData)
+// Filter Customer Data by Range (now handled server-side)
 function filterCustomerDataByRange(customerCounts) {
-    // Filtering is now done during aggregation, so just return as-is
+    // Data is already filtered server-side, so just return as-is
     return customerCounts;
 }
 
