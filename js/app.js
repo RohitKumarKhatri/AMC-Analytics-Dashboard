@@ -1051,13 +1051,35 @@ async function initCustomerTab() {
 function initCustomerFilters() {
     // Set default filters (no period filter for customer tab)
     customerFilters.year = currentFilters.year || (metadata.years && metadata.years.length > 0 ? metadata.years[metadata.years.length - 1] : null);
-    customerFilters.ranges = currentFilters.ranges;
+    
+    // Initialize ranges - ensure it's an array and defaults to Q4 if not set
+    if (!currentFilters.ranges || !Array.isArray(currentFilters.ranges) || currentFilters.ranges.length === 0) {
+        customerFilters.ranges = ['Q4'];
+    } else {
+        customerFilters.ranges = [...currentFilters.ranges]; // Copy array
+    }
     
     // Update year buttons
     updateCustomerYearButtons();
     
+    // Update range buttons to match filter state
+    updateCustomerRangeButtons();
+    
     // Setup event listeners
     setupCustomerEventListeners();
+}
+
+// Update Customer Range Buttons
+function updateCustomerRangeButtons() {
+    const rangeButtons = document.querySelectorAll('#customer-range-buttons .btn-toggle');
+    rangeButtons.forEach(btn => {
+        const range = btn.dataset.range;
+        if (customerFilters.ranges && customerFilters.ranges.includes(range)) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
 }
 
 // Update Customer Year Buttons
