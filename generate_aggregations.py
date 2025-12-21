@@ -164,6 +164,11 @@ def verify_output():
     if customer_dist_files:
         print_success(f"Customer distribution files: {len(customer_dist_files)}")
     
+    # Check for team performance files
+    team_perf_files = list(output_dir.glob('team-performance-*.json'))
+    if team_perf_files:
+        print_success(f"Team performance files: {len(team_perf_files)}")
+    
     # Check for period files
     weekly_files = list(output_dir.glob('weekly-*.json'))
     monthly_files = list(output_dir.glob('monthly-*.json'))
