@@ -1265,9 +1265,35 @@ function filterCustomerDataByRange(customerCounts) {
     return customerCounts;
 }
 
+// Generate Jira JQL for customer
+function generateCustomerJQL(customerName) {
+    const baseJQL = 'project in (SBZT, OAM) AND issuetype NOT IN (Sub-task, RAG) AND "Link to Central Zendesk[URL Field]" IS NOT EMPTY';
+    
+    // Handle ONE Albania specially
+    if (customerName === 'ONE Albania' || /one\s+albania/i.test(customerName)) {
+        const oneAlbaniaJQL = `${baseJQL} AND (text ~ "One Albania" OR text ~ "STL - One Albania") order by created desc`;
+        return encodeURIComponent(oneAlbaniaJQL);
+    }
+    
+    // Handle "Others" - don't create link
+    if (customerName.startsWith('Others')) {
+        return null;
+    }
+    
+    // For individual customers, search by customer name
+    const customerJQL = `${baseJQL} AND text ~ "${customerName}" order by created desc`;
+    return encodeURIComponent(customerJQL);
+}
+
 // Render Customer Pie Chart
 function renderCustomerPieChart(customerData) {
     if (!customerPieChart) return;
+    
+    // Store original customer names for JQL generation
+    const customerNameMap = {};
+    Object.entries(customerData).forEach(([name, value]) => {
+        customerNameMap[name] = name;
+    });
     
     // Convert to ECharts format
     const pieData = Object.entries(customerData)
@@ -1275,7 +1301,8 @@ function renderCustomerPieChart(customerData) {
         .slice(0, 20) // Top 20 customers
         .map(([name, value]) => ({
             name: name.length > 30 ? name.substring(0, 30) + '...' : name,
-            value: value
+            value: value,
+            originalName: name // Store original name for JQL
         }));
     
     // Calculate total for "Others" if more than 20 customers
@@ -1285,7 +1312,8 @@ function renderCustomerPieChart(customerData) {
         if (othersTotal > 0) {
             pieData.push({
                 name: `Others (${allEntries.length - 20} customers)`,
-                value: othersTotal
+                value: othersTotal,
+                originalName: 'Others' // Mark as Others
             });
         }
     }
@@ -1307,7 +1335,10 @@ function renderCustomerPieChart(customerData) {
         },
         tooltip: {
             trigger: 'item',
-            formatter: '{b}: {c} tickets ({d}%)',
+            formatter: function(params) {
+                const name = params.data.originalName || params.name;
+                return `${name}: ${params.value} tickets (${params.percent}%)<br/><span style="color: #667eea; font-size: 11px;">Click to view in Jira</span>`;
+            },
             backgroundColor: 'rgba(0, 0, 0, 0.8)',
             borderColor: '#667eea',
             borderWidth: 1,
@@ -1371,6 +1402,28 @@ function renderCustomerPieChart(customerData) {
     };
     
     customerPieChart.setOption(option);
+    
+    // Add click handler for pie chart segments
+    customerPieChart.off('click');
+    customerPieChart.on('click', function(params) {
+        if (params.componentType === 'series' && params.data) {
+            const customerName = params.data.originalName || params.name;
+            
+            // Skip "Others" - no link
+            if (customerName.startsWith('Others')) {
+                return;
+            }
+            
+            // Generate JQL for customer
+            const jql = generateCustomerJQL(customerName);
+            if (jql) {
+                const jiraUrl = `https://psskyvera.atlassian.net/issues/?jql=${jql}`;
+                
+                // Check login status before opening
+                checkJiraLoginStatus(jiraUrl);
+            }
+        }
+    });
 }
 
 // Initialize when DOM is ready
