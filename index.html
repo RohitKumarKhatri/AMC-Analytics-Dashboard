@@ -14,26 +14,76 @@
             <p class="subtitle">Comprehensive Ticket Analytics & Insights</p>
         </header>
 
+        <!-- Tab Navigation -->
+        <nav class="tab-navigation">
+            <button class="tab-btn active" data-tab="home">
+                <span class="tab-icon">🏠</span>
+                <span class="tab-label">Home</span>
+            </button>
+            <button class="tab-btn" data-tab="created-resolved">
+                <span class="tab-icon">📈</span>
+                <span class="tab-label">Created vs Resolved</span>
+            </button>
+            <button class="tab-btn" data-tab="customer-distribution">
+                <span class="tab-icon">👥</span>
+                <span class="tab-label">Customer Distribution</span>
+            </button>
+            <button class="tab-btn" data-tab="team-performance">
+                <span class="tab-icon">👤</span>
+                <span class="tab-label">Team Performance</span>
+            </button>
+        </nav>
+
         <!-- Home Tab Content -->
         <div id="home-tab" class="tab-content active">
-            <!-- Section Navigation -->
-            <nav class="section-navigation">
-                <button class="section-btn active" data-section="created-resolved">
-                    <span class="section-icon">📈</span>
-                    <span class="section-label">Created vs Resolved</span>
-                </button>
-                <button class="section-btn" data-section="customer-distribution">
-                    <span class="section-icon">👥</span>
-                    <span class="section-label">Customer Distribution</span>
-                </button>
-                <button class="section-btn" data-section="assignee">
-                    <span class="section-icon">👤</span>
-                    <span class="section-label">Team Performance</span>
-                </button>
-            </nav>
+            <div class="home-content">
+                <div class="home-header">
+                    <h2>Welcome to AMC Analytics Dashboard</h2>
+                    <p class="home-subtitle">Select an analysis view to explore ticket data and insights</p>
+                </div>
 
-            <!-- Created vs Resolved Section -->
-            <div id="created-resolved-section" class="section-content active">
+                <div class="dashboard-cards">
+                    <div class="dashboard-card" data-section="created-resolved">
+                        <div class="card-icon">📈</div>
+                        <h3>Created vs Resolved</h3>
+                        <p>Track ticket creation and resolution trends over time. Analyze cumulative backlog and identify patterns in ticket flow.</p>
+                        <div class="card-features">
+                            <span class="feature-tag">Weekly/Monthly Views</span>
+                            <span class="feature-tag">Quarterly Analysis</span>
+                            <span class="feature-tag">Customer Filtering</span>
+                        </div>
+                        <button class="card-button">View Analysis →</button>
+                    </div>
+
+                    <div class="dashboard-card" data-section="customer-distribution">
+                        <div class="card-icon">👥</div>
+                        <h3>Customer Distribution</h3>
+                        <p>Visualize ticket distribution across customers. Identify key accounts and understand customer workload patterns.</p>
+                        <div class="card-features">
+                            <span class="feature-tag">Pie Chart View</span>
+                            <span class="feature-tag">Customer Breakdown</span>
+                            <span class="feature-tag">Jira Integration</span>
+                        </div>
+                        <button class="card-button">View Analysis →</button>
+                    </div>
+
+                    <div class="dashboard-card" data-section="team-performance">
+                        <div class="card-icon">👤</div>
+                        <h3>Team Performance</h3>
+                        <p>Analyze team workload and assignee metrics. Track individual and team performance indicators.</p>
+                        <div class="card-features">
+                            <span class="feature-tag">Coming Soon</span>
+                            <span class="feature-tag">Workload Analysis</span>
+                            <span class="feature-tag">Performance Metrics</span>
+                        </div>
+                        <button class="card-button">View Analysis →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Created vs Resolved Tab Content -->
+        <div id="created-resolved-tab" class="tab-content">
             <div class="filters">
             <div class="filter-group">
                 <label>Period:</label>
@@ -87,14 +137,14 @@
         <div class="error" id="error" style="display: none;">
             <p>Error loading data. Please check the console for details.</p>
         </div>
-            </div>
+        </div>
 
-            <!-- Customer Distribution Section -->
-            <div id="customer-distribution-section" class="section-content">
-                <div class="page-header">
-                    <h2>Customer Distribution Analysis</h2>
-                    <p class="page-subtitle">Ticket distribution across customers</p>
-                </div>
+        <!-- Customer Distribution Tab Content -->
+        <div id="customer-distribution-tab" class="tab-content">
+            <div class="page-header">
+                <h2>Customer Distribution Analysis</h2>
+                <p class="page-subtitle">Ticket distribution across customers</p>
+            </div>
 
                 <div class="filters">
                     <div class="filter-group">
@@ -130,20 +180,19 @@
                 <div class="error" id="customer-error" style="display: none;">
                     <p>Error loading customer data. Please check the console for details.</p>
                 </div>
+        </div>
+
+        <!-- Team Performance Tab Content -->
+        <div id="team-performance-tab" class="tab-content">
+            <div class="page-header">
+                <h2>Team Performance</h2>
+                <p class="page-subtitle">Ticket assignment and workload analysis</p>
             </div>
 
-            <!-- Team Performance (Assignee) Section -->
-            <div id="assignee-section" class="section-content">
-                <div class="page-header">
-                    <h2>Team Performance</h2>
-                    <p class="page-subtitle">Ticket assignment and workload analysis</p>
-                </div>
-
-                <div class="placeholder-content">
-                    <div class="placeholder-icon">👤</div>
-                    <h3>Coming Soon</h3>
-                    <p>Team performance metrics and assignee analytics will be available here.</p>
-                </div>
+            <div class="placeholder-content">
+                <div class="placeholder-icon">👤</div>
+                <h3>Coming Soon</h3>
+                <p>Team performance metrics and assignee analytics will be available here.</p>
             </div>
         </div>
     </div>

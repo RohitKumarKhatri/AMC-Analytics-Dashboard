@@ -61,18 +61,17 @@ header h1 {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Navigation (within Home tab) */
-.section-navigation {
+/* Tab Navigation */
+.tab-navigation {
     display: flex;
     gap: 12px;
     background: #ffffff;
     border-bottom: 2px solid #e8e8e8;
     padding: 20px 30px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-    margin-bottom: 0;
 }
 
-.section-btn {
+.tab-btn {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -89,7 +88,7 @@ header h1 {
     min-height: 56px;
 }
 
-.section-btn:hover {
+.tab-btn:hover {
     background: #f8f9fa;
     color: #667eea;
     border-color: #e0e0e0;
@@ -97,7 +96,7 @@ header h1 {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.section-btn.active {
+.tab-btn.active {
     color: #667eea;
     background: linear-gradient(135deg, rgba(102, 126, 234, 0.12) 0%, rgba(118, 75, 162, 0.12) 100%);
     border-color: rgba(102, 126, 234, 0.3);
@@ -107,7 +106,7 @@ header h1 {
     transform: translateY(-2px);
 }
 
-.section-btn.active::after {
+.tab-btn.active::after {
     content: '';
     position: absolute;
     bottom: -20px;
@@ -120,16 +119,16 @@ header h1 {
     box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
 }
 
-.section-icon {
+.tab-icon {
     font-size: 24px;
     transition: transform 0.2s ease;
 }
 
-.section-btn.active .section-icon {
+.tab-btn.active .tab-icon {
     transform: scale(1.15);
 }
 
-.section-label {
+.tab-label {
     font-weight: inherit;
     letter-spacing: 0.3px;
 }
@@ -145,15 +144,136 @@ header h1 {
     display: block;
 }
 
-/* Section Content (within Home tab) */
-.section-content {
-    display: none;
-    padding: 30px;
-    animation: fadeIn 0.3s ease-in-out;
+/* Home Tab Content */
+.home-content {
+    padding: 50px 30px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.section-content.active {
+.home-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.home-header h2 {
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.home-subtitle {
+    font-size: 18px;
+    color: #666;
+    font-weight: 400;
+}
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.dashboard-card {
+    background: white;
+    border: 2px solid #e8e8e8;
+    border-radius: 16px;
+    padding: 40px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.dashboard-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(102, 126, 234, 0.15);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.dashboard-card:hover::before {
+    transform: scaleX(1);
+}
+
+.card-icon {
+    font-size: 56px;
+    margin-bottom: 20px;
     display: block;
+    transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover .card-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.dashboard-card h3 {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.dashboard-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    min-height: 48px;
+}
+
+.card-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.feature-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    color: #667eea;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+.card-button {
+    width: 100%;
+    padding: 14px 24px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+}
+
+.card-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.card-button:active {
+    transform: translateY(0);
 }
 
 /* Placeholder Content */

@@ -989,38 +989,46 @@ function setupModalListeners() {
 
 // Tab Navigation
 function setupTabs() {
-    // Only Home tab exists now, so just ensure it's active
-    const homeTab = document.getElementById('home-tab');
-    if (homeTab) {
-        homeTab.classList.add('active');
-    }
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
     
-    // Setup section navigation within Home tab
-    setupSections();
-}
-
-function setupSections() {
-    const sectionButtons = document.querySelectorAll('.section-btn');
-    const sectionContents = document.querySelectorAll('.section-content');
-    
-    sectionButtons.forEach(btn => {
+    tabButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            const targetSection = btn.dataset.section;
+            const targetTab = btn.dataset.tab;
             
             // Remove active class from all buttons and contents
-            sectionButtons.forEach(b => b.classList.remove('active'));
-            sectionContents.forEach(c => c.classList.remove('active'));
+            tabButtons.forEach(b => b.classList.remove('active'));
+            tabContents.forEach(c => c.classList.remove('active'));
             
             // Add active class to clicked button and corresponding content
             btn.classList.add('active');
-            const targetContent = document.getElementById(`${targetSection}-section`);
+            const targetContent = document.getElementById(`${targetTab}-tab`);
             if (targetContent) {
                 targetContent.classList.add('active');
                 
-                // Initialize section-specific content
-                if (targetSection === 'customer-distribution' && !customerPieChart) {
+                // Initialize tab-specific content
+                if (targetTab === 'customer-distribution' && !customerPieChart) {
                     initCustomerTab();
                 }
+            }
+        });
+    });
+    
+    // Setup dashboard card clicks on Home tab
+    setupDashboardCards();
+}
+
+function setupDashboardCards() {
+    const dashboardCards = document.querySelectorAll('.dashboard-card');
+    
+    dashboardCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const targetSection = card.dataset.section;
+            
+            // Find the corresponding tab button and click it
+            const tabButton = document.querySelector(`.tab-btn[data-tab="${targetSection}"]`);
+            if (tabButton) {
+                tabButton.click();
             }
         });
     });
