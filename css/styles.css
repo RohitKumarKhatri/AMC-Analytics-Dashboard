@@ -406,17 +406,43 @@ header h1 {
     background: rgba(102, 126, 234, 0.05);
 }
 
+.team-performance-table td.assignee-total-cell .table-cell-link {
+    color: #667eea;
+}
+
+.team-performance-table td.assignee-total-cell .table-cell-link:hover {
+    color: #764ba2;
+}
+
 .team-performance-table td.week-total-cell {
     font-weight: 600;
-    color: #667eea;
-    background: rgba(102, 126, 234, 0.05);
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.team-performance-table td.week-total-cell .table-cell-link {
+    color: white;
+}
+
+.team-performance-table td.week-total-cell .table-cell-link:hover {
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .team-performance-table td.overall-total-cell {
     font-weight: 700;
     font-size: 16px;
-    color: #764ba2;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.team-performance-table td.overall-total-cell .table-cell-link {
+    color: white;
+}
+
+.team-performance-table td.overall-total-cell .table-cell-link:hover {
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.25);
 }
 
 .team-performance-table td.grand-total-label {

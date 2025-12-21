@@ -1818,10 +1818,42 @@ function renderTeamPerformanceTable(data) {
             row.appendChild(cell);
         });
         
-        // Grand Total cell for this assignee
+        // Grand Total cell for this assignee (clickable if has tickets)
         const assigneeTotalCell = document.createElement('td');
         const assigneeTotal = tableData[assignee]?.total || 0;
-        assigneeTotalCell.textContent = assigneeTotal.toString();
+        
+        // Collect all keys for this assignee across all weeks
+        const assigneeAllKeys = [];
+        weeks.forEach(week => {
+            const cellData = tableData[assignee]?.[week] || { keys: [] };
+            if (cellData.keys && cellData.keys.length > 0) {
+                assigneeAllKeys.push(...cellData.keys);
+            }
+        });
+        const uniqueAssigneeKeys = [...new Set(assigneeAllKeys)];
+        
+        if (assigneeTotal > 0 && uniqueAssigneeKeys.length > 0) {
+            // Make it clickable
+            const link = document.createElement('a');
+            link.href = '#';
+            link.textContent = assigneeTotal.toString();
+            link.className = 'table-cell-link';
+            link.dataset.keys = JSON.stringify(uniqueAssigneeKeys);
+            
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const cellKeys = JSON.parse(e.target.dataset.keys);
+                if (cellKeys && cellKeys.length > 0) {
+                    const jiraUrl = generateJiraLinkFromKeys(cellKeys);
+                    checkJiraLoginStatus(jiraUrl);
+                }
+            });
+            
+            assigneeTotalCell.appendChild(link);
+        } else {
+            assigneeTotalCell.textContent = assigneeTotal.toString();
+        }
+        
         assigneeTotalCell.className = 'assignee-total-cell';
         row.appendChild(assigneeTotalCell);
         
@@ -1840,20 +1872,86 @@ function renderTeamPerformanceTable(data) {
     grandTotalLabel.className = 'grand-total-label';
     footerRow.appendChild(grandTotalLabel);
     
-    // Week totals
-    weeks.forEach(week => {
-        const cell = document.createElement('td');
-        const total = weekTotals[week] || 0;
-        cell.textContent = total.toString();
-        cell.className = 'week-total-cell';
-        footerRow.appendChild(cell);
-    });
+        // Week totals (clickable if has tickets)
+        weeks.forEach(week => {
+            const cell = document.createElement('td');
+            const total = weekTotals[week] || 0;
+            
+            // Collect all keys for this week across all assignees
+            const weekAllKeys = [];
+            assignees.forEach(assignee => {
+                const cellData = tableData[assignee]?.[week] || { keys: [] };
+                if (cellData.keys && cellData.keys.length > 0) {
+                    weekAllKeys.push(...cellData.keys);
+                }
+            });
+            const uniqueWeekKeys = [...new Set(weekAllKeys)];
+            
+            if (total > 0 && uniqueWeekKeys.length > 0) {
+                // Make it clickable
+                const link = document.createElement('a');
+                link.href = '#';
+                link.textContent = total.toString();
+                link.className = 'table-cell-link';
+                link.dataset.keys = JSON.stringify(uniqueWeekKeys);
+                
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const cellKeys = JSON.parse(e.target.dataset.keys);
+                    if (cellKeys && cellKeys.length > 0) {
+                        const jiraUrl = generateJiraLinkFromKeys(cellKeys);
+                        checkJiraLoginStatus(jiraUrl);
+                    }
+                });
+                
+                cell.appendChild(link);
+            } else {
+                cell.textContent = total.toString();
+            }
+            
+            cell.className = 'week-total-cell';
+            footerRow.appendChild(cell);
+        });
     
-    // Overall grand total
-    const overallTotalCell = document.createElement('td');
-    overallTotalCell.textContent = grandTotal.toString();
-    overallTotalCell.className = 'overall-total-cell';
-    footerRow.appendChild(overallTotalCell);
+        // Overall grand total (clickable - all tickets)
+        const overallTotalCell = document.createElement('td');
+        
+        // Collect all keys from entire dataset
+        const allKeys = [];
+        assignees.forEach(assignee => {
+            weeks.forEach(week => {
+                const cellData = tableData[assignee]?.[week] || { keys: [] };
+                if (cellData.keys && cellData.keys.length > 0) {
+                    allKeys.push(...cellData.keys);
+                }
+            });
+        });
+        const uniqueAllKeys = [...new Set(allKeys)];
+        
+        if (grandTotal > 0 && uniqueAllKeys.length > 0) {
+            // Make it clickable
+            const link = document.createElement('a');
+            link.href = '#';
+            link.textContent = grandTotal.toString();
+            link.className = 'table-cell-link';
+            link.dataset.keys = JSON.stringify(uniqueAllKeys);
+            
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const cellKeys = JSON.parse(e.target.dataset.keys);
+                if (cellKeys && cellKeys.length > 0) {
+                    const jiraUrl = generateJiraLinkFromKeys(cellKeys);
+                    checkJiraLoginStatus(jiraUrl);
+                }
+            });
+            
+            overallTotalCell.appendChild(link);
+        } else {
+            overallTotalCell.textContent = grandTotal.toString();
+        }
+        
+        overallTotalCell.className = 'overall-total-cell';
+        footerRow.appendChild(overallTotalCell);
     
     tfoot.appendChild(footerRow);
     table.appendChild(tfoot);
