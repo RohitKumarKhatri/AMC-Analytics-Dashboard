@@ -42,14 +42,23 @@ A static web application for visualizing Jira ticket data with interactive chart
 pip install -r requirements.txt
 ```
 
-2. Process CSV file to generate JSON data:
+2. Generate all aggregations (single entry point):
 ```bash
-python3 scripts/process_csv.py
+python3 generate_aggregations.py
 ```
+
+Or make it executable and run directly:
+```bash
+chmod +x generate_aggregations.py
+./generate_aggregations.py
+```
+
+**Note**: Simply replace `ticket-list-export.csv` with new data and run `generate_aggregations.py` again to regenerate all aggregations.
 
 This will generate:
 - `data/metadata.json` - Contains list of customers and years
-- `data/{period}-{year}-{customer}.json` - Aggregated data files (221 files total)
+- `data/{period}-{year}-{customer}.json` - Aggregated data files (~251 files total)
+- `data/customer-distribution-{year}-{range}.json` - Customer distribution aggregations (~30 files)
 
 ## Usage
 
