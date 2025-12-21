@@ -1233,27 +1233,7 @@ async function aggregateCustomerData() {
         }
     }
     
-    // Also load "Rest of World" and "One Albania" aggregated data
-    try {
-        // Rest of World
-        const rotwFilename = `data/${period}-${year}-rest-of-world.json`;
-        const rotwResponse = await fetch(rotwFilename);
-        if (rotwResponse.ok) {
-            const rotwData = await rotwResponse.json();
-            let rotwTotal = 0;
-            if (rotwData.data && Array.isArray(rotwData.data)) {
-                rotwData.data.forEach(item => {
-                    rotwTotal += (item.created || 0);
-                });
-            }
-            if (rotwTotal > 0) {
-                customerCounts['Rest of the World'] = rotwTotal;
-            }
-        }
-    } catch (error) {
-        console.log('Error loading Rest of World data:', error);
-    }
-    
+    // Also load "One Albania" aggregated data (but not "Rest of World" as it's an aggregate)
     try {
         // One Albania
         const oneAlbaniaFilename = `data/${period}-${year}-one-albania.json`;
