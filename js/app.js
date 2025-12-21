@@ -9,6 +9,29 @@ let currentFilters = {
     customer: 'one-albania'
 };
 
+// Get URL parameters
+function getUrlParams() {
+    const params = new URLSearchParams(window.location.search);
+    return {
+        period: params.get('period') || 'weekly',
+        year: params.get('year') ? parseInt(params.get('year')) : null,
+        ranges: params.get('ranges') ? params.get('ranges').split(',') : ['Q4'],
+        customer: params.get('customer') || 'one-albania'
+    };
+}
+
+// Build URL with current filters
+function buildUrl() {
+    const params = new URLSearchParams();
+    params.set('period', currentFilters.period);
+    if (currentFilters.year) {
+        params.set('year', currentFilters.year.toString());
+    }
+    params.set('ranges', currentFilters.ranges.join(','));
+    params.set('customer', currentFilters.customer);
+    return window.location.pathname + '?' + params.toString();
+}
+
 let createdResolvedChart = null;
 let cumulativeChart = null;
 
@@ -24,20 +47,28 @@ async function init() {
         }
         metadata = await metadataResponse.json();
         
+        // Load filters from URL or use defaults
+        const urlParams = getUrlParams();
+        currentFilters.period = urlParams.period;
+        currentFilters.year = urlParams.year || (metadata.years && metadata.years.length > 0 ? metadata.years[metadata.years.length - 1] : null);
+        currentFilters.ranges = urlParams.ranges;
+        currentFilters.customer = urlParams.customer;
+        
         // Initialize UI
         initFilters();
         initCharts();
         
         // Set default filters
-        if (metadata.years && metadata.years.length > 0) {
+        if (metadata.years && metadata.years.length > 0 && !currentFilters.year) {
             currentFilters.year = metadata.years[metadata.years.length - 1]; // Last year
-            updateYearButtons();
         }
+        updateYearButtons();
+        updateRangeButtons();
         
         // Set default customer dropdown selection
         const customerSelect = document.getElementById('customer-filter');
         if (customerSelect) {
-            customerSelect.value = 'one-albania';
+            customerSelect.value = currentFilters.customer;
         }
         
         // Load initial data
