@@ -303,6 +303,171 @@ header h1 {
     margin: 0 auto;
 }
 
+/* Team Performance Table Styles */
+.team-performance-container {
+    padding: 30px;
+    overflow-x: auto;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e8e8e8;
+}
+
+.team-performance-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 14px;
+    min-width: 800px;
+}
+
+.team-performance-table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.team-performance-table th {
+    padding: 14px 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    white-space: nowrap;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.team-performance-table th.assignee-header {
+    text-align: left;
+    min-width: 180px;
+    position: sticky;
+    left: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: 11;
+}
+
+.team-performance-table th.week-header {
+    min-width: 120px;
+}
+
+.team-performance-table th.grand-total-header {
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.15);
+    min-width: 100px;
+}
+
+.team-performance-table tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color 0.2s ease;
+}
+
+.team-performance-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.team-performance-table td {
+    padding: 12px;
+    text-align: center;
+    border-right: 1px solid #f0f0f0;
+    vertical-align: middle;
+}
+
+.team-performance-table td.assignee-cell {
+    text-align: left;
+    font-weight: 500;
+    color: #333;
+    position: sticky;
+    left: 0;
+    background: white;
+    z-index: 5;
+    min-width: 180px;
+}
+
+.team-performance-table tbody tr:hover td.assignee-cell {
+    background: #f8f9fa;
+}
+
+.team-performance-table td.week-cell {
+    color: #555;
+    font-size: 14px;
+}
+
+.team-performance-table td.assignee-total-cell {
+    font-weight: 600;
+    color: #667eea;
+    background: rgba(102, 126, 234, 0.05);
+}
+
+.team-performance-table td.week-total-cell {
+    font-weight: 600;
+    color: #667eea;
+    background: rgba(102, 126, 234, 0.05);
+}
+
+.team-performance-table td.overall-total-cell {
+    font-weight: 700;
+    font-size: 16px;
+    color: #764ba2;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+}
+
+.team-performance-table td.grand-total-label {
+    font-weight: 700;
+    text-align: left;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    position: sticky;
+    left: 0;
+    z-index: 11;
+}
+
+.team-performance-table tfoot {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.team-performance-table tfoot td {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 600;
+}
+
+.table-cell-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.table-cell-link:hover {
+    background: rgba(102, 126, 234, 0.1);
+    color: #764ba2;
+    transform: scale(1.1);
+}
+
+.table-cell-link:active {
+    transform: scale(0.95);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .team-performance-table {
+        font-size: 13px;
+    }
+    
+    .team-performance-table th,
+    .team-performance-table td {
+        padding: 10px 8px;
+    }
+}
+
 .page-header {
     margin-bottom: 30px;
     padding-bottom: 20px;
