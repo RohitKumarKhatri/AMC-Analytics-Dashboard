@@ -1103,6 +1103,7 @@ function setupCustomerEventListeners() {
                         b.classList.remove('active');
                     }
                 });
+                btn.classList.add('active'); // Ensure Annual is active
                 customerFilters.ranges = ['Annual'];
             } else {
                 // Toggle individual quarter
@@ -1114,12 +1115,27 @@ function setupCustomerEventListeners() {
                     annualBtn.classList.remove('active');
                 }
                 
-                // Update ranges array
+                // Update ranges array - get active buttons AFTER toggle
                 const activeRanges = Array.from(document.querySelectorAll('#customer-range-buttons .btn-toggle.active'))
-                    .map(b => b.dataset.range);
-                customerFilters.ranges = activeRanges.length > 0 ? activeRanges : ['Q4'];
+                    .map(b => b.dataset.range)
+                    .filter(r => r !== 'Annual'); // Exclude Annual from quarter list
+                
+                // Ensure at least one range is selected (default to Q4 if none)
+                if (activeRanges.length === 0) {
+                    // If no quarters are active, activate Q4
+                    const q4Btn = document.querySelector('#customer-range-buttons .btn-toggle[data-range="Q4"]');
+                    if (q4Btn) {
+                        q4Btn.classList.add('active');
+                        customerFilters.ranges = ['Q4'];
+                    } else {
+                        customerFilters.ranges = ['Q4'];
+                    }
+                } else {
+                    customerFilters.ranges = activeRanges;
+                }
             }
             
+            console.log('Customer filters updated:', customerFilters);
             loadCustomerData();
         });
     });
@@ -1186,6 +1202,7 @@ async function aggregateCustomerData() {
     const ranges = customerFilters.ranges;
     
     if (!year || !ranges || ranges.length === 0) {
+        console.warn('No year or ranges selected:', { year, ranges });
         return {};
     }
     
@@ -1202,17 +1219,26 @@ async function aggregateCustomerData() {
     
     // Load pre-aggregated customer distribution file
     const filename = `data/customer-distribution-${year}-${rangeKey}.json`;
+    console.log('Loading customer distribution file:', filename);
     
     try {
         const response = await fetch(filename);
         if (!response.ok) {
-            throw new Error(`Failed to load ${filename}: ${response.status}`);
+            throw new Error(`Failed to load ${filename}: ${response.status} ${response.statusText}`);
         }
         
         const data = await response.json();
+        console.log('Loaded customer distribution data:', data);
+        
+        if (!data.distribution || Object.keys(data.distribution).length === 0) {
+            console.warn('Distribution data is empty for:', filename);
+            return {};
+        }
+        
         return data.distribution || {};
     } catch (error) {
         console.error('Error loading customer distribution:', error);
+        console.error('Attempted filename:', filename);
         return {};
     }
 }
