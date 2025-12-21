@@ -1,0 +1,1327 @@
+{
+  "year": 2025,
+  "range": "Q2",
+  "weeks": [
+    "07 Apr 2025",
+    "14 Apr 2025",
+    "21 Apr 2025",
+    "28 Apr 2025",
+    "05 May 2025",
+    "12 May 2025",
+    "19 May 2025",
+    "26 May 2025",
+    "02 Jun 2025",
+    "09 Jun 2025",
+    "16 Jun 2025",
+    "23 Jun 2025",
+    "30 Jun 2025"
+  ],
+  "assignees": [
+    "Ajay.Noru",
+    "AnuragSingh Parihar",
+    "Bharat Kalra",
+    "Debango Dey",
+    "Deepesh Gidwani",
+    "Jayesh Shah",
+    "Madhuri.Jadhav",
+    "Natnael Legesse",
+    "Nephat Muchiri",
+    "Nirav Shah",
+    "Omkar Pataskar",
+    "Preet Patel",
+    "Rohit Kumar",
+    "Sandeep.Kumar",
+    "Sandhya Kumar",
+    "Saulo Rocha",
+    "Shailesh Savla",
+    "Tushar Nawale",
+    "VN Singh",
+    "Unassigned"
+  ],
+  "data": {
+    "Ajay.Noru": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1273"
+        ]
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 2,
+        "keys": [
+          "SBZT-1357",
+          "SBZT-1474"
+        ]
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 3
+    },
+    "AnuragSingh Parihar": {
+      "07 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1308"
+        ]
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
+    "Bharat Kalra": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1478"
+        ]
+      },
+      "09 Jun 2025": {
+        "count": 6,
+        "keys": [
+          "SBZT-1463",
+          "SBZT-1479",
+          "SBZT-1492",
+          "SBZT-1494",
+          "SBZT-1495",
+          "SBZT-1503"
+        ]
+      },
+      "16 Jun 2025": {
+        "count": 3,
+        "keys": [
+          "SBZT-1482",
+          "SBZT-1499",
+          "SBZT-1504"
+        ]
+      },
+      "23 Jun 2025": {
+        "count": 2,
+        "keys": [
+          "SBZT-1510",
+          "SBZT-1515"
+        ]
+      },
+      "30 Jun 2025": {
+        "count": 2,
+        "keys": [
+          "SBZT-1514",
+          "SBZT-1519"
+        ]
+      },
+      "total": 14
+    },
+    "Debango Dey": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1347"
+        ]
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
+    "Deepesh Gidwani": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1344"
+        ]
+      },
+      "19 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1266"
+        ]
+      },
+      "26 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-768"
+        ]
+      },
+      "02 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1437"
+        ]
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1216"
+        ]
+      },
+      "30 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1330"
+        ]
+      },
+      "total": 6
+    },
+    "Jayesh Shah": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1346"
+        ]
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
+    "Madhuri.Jadhav": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1397"
+        ]
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
+    "Natnael Legesse": {
+      "07 Apr 2025": {
+        "count": 3,
+        "keys": [
+          "SBZT-1290",
+          "SBZT-1302",
+          "SBZT-1315"
+        ]
+      },
+      "14 Apr 2025": {
+        "count": 2,
+        "keys": [
+          "SBZT-1340",
+          "SBZT-1345"
+        ]
+      },
+      "21 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1351"
+        ]
+      },
+      "28 Apr 2025": {
+        "count": 3,
+        "keys": [
+          "SBZT-1353",
+          "SBZT-1367",
+          "SBZT-1373"
+        ]
+      },
+      "05 May 2025": {
+        "count": 2,
+        "keys": [
+          "SBZT-1356",
+          "SBZT-1382"
+        ]
+      },
+      "12 May 2025": {
+        "count": 3,
+        "keys": [
+          "SBZT-1392",
+          "SBZT-1396",
+          "SBZT-1399"
+        ]
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1457"
+        ]
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 3,
+        "keys": [
+          "SBZT-1476",
+          "SBZT-1486",
+          "SBZT-1511"
+        ]
+      },
+      "23 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1507"
+        ]
+      },
+      "30 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1520"
+        ]
+      },
+      "total": 20
+    },
+    "Nephat Muchiri": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1252"
+        ]
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
+    "Nirav Shah": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1365"
+        ]
+      },
+      "05 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1371"
+        ]
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1446"
+        ]
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 3
+    },
+    "Omkar Pataskar": {
+      "07 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1307"
+        ]
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1244"
+        ]
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 2,
+        "keys": [
+          "SBZT-1413",
+          "SBZT-1435"
+        ]
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 4
+    },
+    "Preet Patel": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1369"
+        ]
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
+    "Rohit Kumar": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1342"
+        ]
+      },
+      "21 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1317"
+        ]
+      },
+      "28 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-694"
+        ]
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 3,
+        "keys": [
+          "SBZT-1293",
+          "SBZT-1350",
+          "SBZT-1360"
+        ]
+      },
+      "19 May 2025": {
+        "count": 4,
+        "keys": [
+          "SBZT-1324",
+          "SBZT-1361",
+          "SBZT-1364",
+          "SBZT-1384"
+        ]
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 6,
+        "keys": [
+          "SBZT-1343",
+          "SBZT-1456",
+          "SBZT-1459",
+          "SBZT-1460",
+          "SBZT-1461",
+          "SBZT-1462"
+        ]
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1526"
+        ]
+      },
+      "total": 17
+    },
+    "Sandeep.Kumar": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1473"
+        ]
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
+    "Sandhya Kumar": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-754"
+        ]
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
+    "Saulo Rocha": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1239"
+        ]
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
+    "Shailesh Savla": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1311"
+        ]
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 2,
+        "keys": [
+          "SBZT-1291",
+          "SBZT-1380"
+        ]
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1376"
+        ]
+      },
+      "26 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1458"
+        ]
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1485"
+        ]
+      },
+      "total": 6
+    },
+    "Tushar Nawale": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-702"
+        ]
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
+    "VN Singh": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1348"
+        ]
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1326"
+        ]
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 2
+    },
+    "Unassigned": {
+      "07 Apr 2025": {
+        "count": 2,
+        "keys": [
+          "SBZT-1292",
+          "SBZT-1300"
+        ]
+      },
+      "14 Apr 2025": {
+        "count": 2,
+        "keys": [
+          "SBZT-1297",
+          "SBZT-1333"
+        ]
+      },
+      "21 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1294"
+        ]
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 4,
+        "keys": [
+          "SBZT-1368",
+          "SBZT-1374",
+          "SBZT-1379",
+          "SBZT-1402"
+        ]
+      },
+      "12 May 2025": {
+        "count": 3,
+        "keys": [
+          "SBZT-1225",
+          "SBZT-1408",
+          "SBZT-1432"
+        ]
+      },
+      "19 May 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1387"
+        ]
+      },
+      "26 May 2025": {
+        "count": 4,
+        "keys": [
+          "SBZT-1407",
+          "SBZT-1440",
+          "SBZT-1447",
+          "SBZT-1448"
+        ]
+      },
+      "02 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1441"
+        ]
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1412"
+        ]
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1298"
+        ]
+      },
+      "total": 20
+    }
+  },
+  "week_totals": {
+    "07 Apr 2025": 7,
+    "14 Apr 2025": 8,
+    "21 Apr 2025": 3,
+    "28 Apr 2025": 7,
+    "05 May 2025": 11,
+    "12 May 2025": 13,
+    "19 May 2025": 8,
+    "26 May 2025": 8,
+    "02 Jun 2025": 5,
+    "09 Jun 2025": 8,
+    "16 Jun 2025": 15,
+    "23 Jun 2025": 5,
+    "30 Jun 2025": 7
+  },
+  "grand_total": 105
+}
