@@ -15,6 +15,11 @@ let customerFilters = {
     year: null,
     ranges: ['Q4']
 };
+let teamPerformanceData = null;
+let teamFilters = {
+    year: null,
+    range: 'Q4'
+};
 
 // Save filters to localStorage
 function saveFiltersToStorage() {
@@ -1065,6 +1070,10 @@ function setupTabs() {
                     initCustomerTab();
                 }
                 
+                if (targetTab === 'team-performance') {
+                    initTeamPerformanceTab();
+                }
+                
                 // Resize charts when switching to Created vs Resolved tab
                 if (targetTab === 'created-resolved') {
                     requestAnimationFrame(() => {
@@ -1564,6 +1573,331 @@ function renderCustomerPieChart(customerData) {
             }
         }
     });
+}
+
+// Team Performance Tab Functions
+function initTeamPerformanceTab() {
+    if (!metadata || !metadata.years) {
+        console.error('Metadata not loaded');
+        return;
+    }
+    
+    // Initialize filters if not already set
+    if (!teamFilters.year) {
+        teamFilters.year = metadata.years[metadata.years.length - 1]; // Most recent year
+    }
+    if (!teamFilters.range) {
+        teamFilters.range = 'Q4';
+    }
+    
+    // Load saved filters from localStorage
+    try {
+        const saved = localStorage.getItem('amc-dashboard-team-filters');
+        if (saved) {
+            const parsed = JSON.parse(saved);
+            if (parsed.year && metadata.years.includes(parsed.year)) {
+                teamFilters.year = parsed.year;
+            }
+            if (parsed.range && ['Q1', 'Q2', 'Q3', 'Q4'].includes(parsed.range)) {
+                teamFilters.range = parsed.range;
+            }
+        }
+    } catch (e) {
+        console.warn('Could not load team filters from localStorage:', e);
+    }
+    
+    initTeamFilters();
+    loadTeamPerformanceData();
+}
+
+function initTeamFilters() {
+    // Initialize year buttons
+    updateTeamYearButtons();
+    
+    // Initialize range buttons
+    updateTeamRangeButtons();
+    
+    // Setup event listeners
+    setupTeamEventListeners();
+}
+
+function updateTeamYearButtons() {
+    const container = document.getElementById('team-year-buttons');
+    if (!container || !metadata || !metadata.years) return;
+    
+    container.innerHTML = '';
+    metadata.years.forEach(year => {
+        const btn = document.createElement('button');
+        btn.className = `btn-toggle ${teamFilters.year === year ? 'active' : ''}`;
+        btn.textContent = year.toString();
+        btn.dataset.year = year.toString();
+        container.appendChild(btn);
+    });
+}
+
+function updateTeamRangeButtons() {
+    const container = document.getElementById('team-range-buttons');
+    if (!container) return;
+    
+    const buttons = container.querySelectorAll('.btn-toggle');
+    buttons.forEach(btn => {
+        const range = btn.dataset.range;
+        if (range === teamFilters.range) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+}
+
+function setupTeamEventListeners() {
+    // Year button listeners
+    const yearButtons = document.getElementById('team-year-buttons');
+    if (yearButtons) {
+        yearButtons.addEventListener('click', (e) => {
+            if (e.target.classList.contains('btn-toggle')) {
+                const year = parseInt(e.target.dataset.year);
+                teamFilters.year = year;
+                
+                // Update UI
+                yearButtons.querySelectorAll('.btn-toggle').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                e.target.classList.add('active');
+                
+                // Save and reload
+                saveTeamFiltersToStorage();
+                loadTeamPerformanceData();
+            }
+        });
+    }
+    
+    // Range button listeners (radio button behavior)
+    const rangeButtons = document.getElementById('team-range-buttons');
+    if (rangeButtons) {
+        rangeButtons.addEventListener('click', (e) => {
+            if (e.target.classList.contains('btn-toggle')) {
+                const range = e.target.dataset.range;
+                teamFilters.range = range;
+                
+                // Update UI (radio button behavior - only one active)
+                rangeButtons.querySelectorAll('.btn-toggle').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                e.target.classList.add('active');
+                
+                // Save and reload
+                saveTeamFiltersToStorage();
+                loadTeamPerformanceData();
+            }
+        });
+    }
+}
+
+function saveTeamFiltersToStorage() {
+    try {
+        localStorage.setItem('amc-dashboard-team-filters', JSON.stringify(teamFilters));
+    } catch (e) {
+        console.warn('Could not save team filters to localStorage:', e);
+    }
+}
+
+async function loadTeamPerformanceData() {
+    if (!teamFilters.year || !teamFilters.range) {
+        console.error('Year or range not set');
+        return;
+    }
+    
+    showTeamLoading();
+    
+    try {
+        const filename = `team-performance-${teamFilters.year}-${teamFilters.range}.json`;
+        const response = await fetch(`data/${filename}`);
+        
+        if (!response.ok) {
+            throw new Error(`Failed to load ${filename}: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        teamPerformanceData = data;
+        
+        renderTeamPerformanceTable(data);
+        hideTeamLoading();
+    } catch (error) {
+        console.error('Error loading team performance data:', error);
+        showTeamError();
+    }
+}
+
+function renderTeamPerformanceTable(data) {
+    const container = document.getElementById('team-performance-container');
+    const table = document.getElementById('team-performance-table');
+    
+    if (!container || !table || !data) {
+        return;
+    }
+    
+    // Clear existing table
+    table.innerHTML = '';
+    
+    const weeks = data.weeks || [];
+    const assignees = data.assignees || [];
+    const tableData = data.data || {};
+    const weekTotals = data.week_totals || {};
+    const grandTotal = data.grand_total || 0;
+    
+    // Create header row
+    const thead = document.createElement('thead');
+    const headerRow = document.createElement('tr');
+    
+    // Assignee column header
+    const assigneeHeader = document.createElement('th');
+    assigneeHeader.textContent = 'Assignee';
+    assigneeHeader.className = 'assignee-header';
+    headerRow.appendChild(assigneeHeader);
+    
+    // Week headers
+    weeks.forEach(week => {
+        const th = document.createElement('th');
+        th.textContent = week;
+        th.className = 'week-header';
+        headerRow.appendChild(th);
+    });
+    
+    // Grand Total header
+    const grandTotalHeader = document.createElement('th');
+    grandTotalHeader.textContent = 'Grand Total';
+    grandTotalHeader.className = 'grand-total-header';
+    headerRow.appendChild(grandTotalHeader);
+    
+    thead.appendChild(headerRow);
+    table.appendChild(thead);
+    
+    // Create body
+    const tbody = document.createElement('tbody');
+    
+    assignees.forEach(assignee => {
+        const row = document.createElement('tr');
+        
+        // Assignee name cell
+        const assigneeCell = document.createElement('td');
+        assigneeCell.textContent = assignee;
+        assigneeCell.className = 'assignee-cell';
+        row.appendChild(assigneeCell);
+        
+        // Week cells
+        weeks.forEach(week => {
+            const cell = document.createElement('td');
+            const cellData = tableData[assignee]?.[week] || { count: 0, keys: [] };
+            const count = cellData.count || 0;
+            const keys = cellData.keys || [];
+            
+            if (count > 0 && keys.length > 0) {
+                // Create clickable link
+                const link = document.createElement('a');
+                link.href = '#';
+                link.textContent = count.toString();
+                link.className = 'table-cell-link';
+                link.dataset.keys = JSON.stringify(keys);
+                
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const cellKeys = JSON.parse(e.target.dataset.keys);
+                    if (cellKeys && cellKeys.length > 0) {
+                        const jiraUrl = generateJiraLinkFromKeys(cellKeys);
+                        checkJiraLoginStatus(jiraUrl);
+                    }
+                });
+                
+                cell.appendChild(link);
+            } else {
+                cell.textContent = count > 0 ? count.toString() : '';
+            }
+            
+            cell.className = 'week-cell';
+            row.appendChild(cell);
+        });
+        
+        // Grand Total cell for this assignee
+        const assigneeTotalCell = document.createElement('td');
+        const assigneeTotal = tableData[assignee]?.total || 0;
+        assigneeTotalCell.textContent = assigneeTotal.toString();
+        assigneeTotalCell.className = 'assignee-total-cell';
+        row.appendChild(assigneeTotalCell);
+        
+        tbody.appendChild(row);
+    });
+    
+    table.appendChild(tbody);
+    
+    // Create footer row with week totals
+    const tfoot = document.createElement('tfoot');
+    const footerRow = document.createElement('tr');
+    
+    // Grand Total label
+    const grandTotalLabel = document.createElement('td');
+    grandTotalLabel.textContent = 'Grand Total';
+    grandTotalLabel.className = 'grand-total-label';
+    footerRow.appendChild(grandTotalLabel);
+    
+    // Week totals
+    weeks.forEach(week => {
+        const cell = document.createElement('td');
+        const total = weekTotals[week] || 0;
+        cell.textContent = total.toString();
+        cell.className = 'week-total-cell';
+        footerRow.appendChild(cell);
+    });
+    
+    // Overall grand total
+    const overallTotalCell = document.createElement('td');
+    overallTotalCell.textContent = grandTotal.toString();
+    overallTotalCell.className = 'overall-total-cell';
+    footerRow.appendChild(overallTotalCell);
+    
+    tfoot.appendChild(footerRow);
+    table.appendChild(tfoot);
+    
+    // Show container
+    container.style.display = 'block';
+}
+
+function generateJiraLinkFromKeys(keys) {
+    const baseUrl = 'https://psskyvera.atlassian.net/issues/?jql=';
+    
+    if (!keys || keys.length === 0) {
+        return `${baseUrl}key = "NONE"`;
+    }
+    
+    // Format keys for JQL: key in ('KEY1', 'KEY2', ...)
+    const keysStr = keys.map(key => `'${key}'`).join(', ');
+    const jql = `key in (${keysStr}) ORDER BY key DESC`;
+    return `${baseUrl}${encodeURIComponent(jql)}`;
+}
+
+function showTeamLoading() {
+    const loadingEl = document.getElementById('team-loading');
+    const containerEl = document.getElementById('team-performance-container');
+    const errorEl = document.getElementById('team-error');
+    
+    if (loadingEl) loadingEl.style.display = 'block';
+    if (containerEl) containerEl.style.display = 'none';
+    if (errorEl) errorEl.style.display = 'none';
+}
+
+function hideTeamLoading() {
+    const loadingEl = document.getElementById('team-loading');
+    if (loadingEl) loadingEl.style.display = 'none';
+}
+
+function showTeamError() {
+    const loadingEl = document.getElementById('team-loading');
+    const containerEl = document.getElementById('team-performance-container');
+    const errorEl = document.getElementById('team-error');
+    
+    if (loadingEl) loadingEl.style.display = 'none';
+    if (containerEl) containerEl.style.display = 'none';
+    if (errorEl) errorEl.style.display = 'block';
 }
 
 // Initialize when DOM is ready

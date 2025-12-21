@@ -186,13 +186,43 @@
         <div id="team-performance-tab" class="tab-content">
             <div class="page-header">
                 <h2>Team Performance</h2>
-                <p class="page-subtitle">Ticket assignment and workload analysis</p>
+                <p class="page-subtitle">Ticket completion by assignee and week</p>
             </div>
 
-            <div class="placeholder-content">
-                <div class="placeholder-icon">👤</div>
-                <h3>Coming Soon</h3>
-                <p>Team performance metrics and assignee analytics will be available here.</p>
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Year:</label>
+                    <div class="button-group single-select" id="team-year-buttons">
+                        <!-- Dynamically generated -->
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label>Range:</label>
+                    <div class="button-group single-select" id="team-range-buttons">
+                        <button class="btn-toggle" data-range="Q1">Q1</button>
+                        <button class="btn-toggle" data-range="Q2">Q2</button>
+                        <button class="btn-toggle" data-range="Q3">Q3</button>
+                        <button class="btn-toggle active" data-range="Q4">Q4</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loading" id="team-loading">
+                <div class="spinner"></div>
+                <p>Loading team performance data...</p>
+            </div>
+
+            <div class="team-performance-container" id="team-performance-container" style="display: none;">
+                <div class="table-wrapper">
+                    <table class="team-performance-table" id="team-performance-table">
+                        <!-- Dynamically generated -->
+                    </table>
+                </div>
+            </div>
+
+            <div class="error" id="team-error" style="display: none;">
+                <p>Error loading team performance data. Please check the console for details.</p>
             </div>
         </div>
     </div>
