@@ -69,6 +69,30 @@
         </div>
     </div>
 
+    <!-- Jira Login Modal -->
+    <div id="jira-login-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Login Required</h2>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>To view Jira tickets, you need to be logged into your Atlassian account.</p>
+                <p class="modal-subtitle">Please make sure you're logged in before proceeding.</p>
+                <div class="modal-actions">
+                    <a href="https://psskyvera.atlassian.net/login" target="_blank" class="btn-login">Login to Jira</a>
+                    <button class="btn-proceed" id="btn-proceed">Proceed to Jira Query</button>
+                </div>
+                <div class="modal-checkbox">
+                    <label>
+                        <input type="checkbox" id="dont-show-again">
+                        Don't show this message again
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="js/app.js"></script>
 </body>
 </html>

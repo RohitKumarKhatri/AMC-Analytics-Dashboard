@@ -601,7 +601,19 @@ function renderCharts(data) {
                     : item.jira_links.resolved;
                 if (link && link.indexOf('key = "NONE"') === -1) {
                     clickHandled = true;
-                    window.open(link, '_blank');
+                    
+                    // Check if user wants to skip the login prompt
+                    const skipLoginPrompt = localStorage.getItem('amc-dashboard-skip-login-prompt') === 'true';
+                    
+                    if (skipLoginPrompt) {
+                        // Open directly if user chose to skip
+                        window.open(link, '_blank');
+                    } else {
+                        // Show login modal
+                        pendingJiraLink = link;
+                        showLoginModal();
+                    }
+                    
                     // Reset after delay to allow next click
                     setTimeout(() => {
                         clickHandled = false;
@@ -758,10 +770,83 @@ function showError() {
     document.getElementById('error').style.display = 'block';
 }
 
+// Modal functions
+function showLoginModal() {
+    const modal = document.getElementById('jira-login-modal');
+    if (modal) {
+        modal.style.display = 'flex';
+        modal.classList.add('show');
+    }
+}
+
+function hideLoginModal() {
+    const modal = document.getElementById('jira-login-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        modal.classList.remove('show');
+    }
+    pendingJiraLink = null;
+}
+
+function proceedToJira() {
+    if (pendingJiraLink) {
+        window.open(pendingJiraLink, '_blank');
+        hideLoginModal();
+    }
+}
+
+// Setup modal event listeners
+function setupModalListeners() {
+    // Close button
+    const closeBtn = document.getElementById('modal-close');
+    if (closeBtn) {
+        closeBtn.addEventListener('click', hideLoginModal);
+    }
+    
+    // Proceed button
+    const proceedBtn = document.getElementById('btn-proceed');
+    if (proceedBtn) {
+        proceedBtn.addEventListener('click', proceedToJira);
+    }
+    
+    // Don't show again checkbox
+    const dontShowCheckbox = document.getElementById('dont-show-again');
+    if (dontShowCheckbox) {
+        dontShowCheckbox.addEventListener('change', function(e) {
+            if (e.target.checked) {
+                localStorage.setItem('amc-dashboard-skip-login-prompt', 'true');
+            } else {
+                localStorage.removeItem('amc-dashboard-skip-login-prompt');
+            }
+        });
+    }
+    
+    // Close modal when clicking outside
+    const modal = document.getElementById('jira-login-modal');
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                hideLoginModal();
+            }
+        });
+    }
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            hideLoginModal();
+        }
+    });
+}
+
 // Initialize when DOM is ready
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', function() {
+        setupModalListeners();
+        init();
+    });
 } else {
+    setupModalListeners();
     init();
 }
 
