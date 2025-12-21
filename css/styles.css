@@ -130,6 +130,7 @@ header h1 {
 
 /* Charts Container */
 .charts-container {
+    transition: opacity 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     gap: 30px;

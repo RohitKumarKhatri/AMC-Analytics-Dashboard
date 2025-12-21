@@ -149,15 +149,17 @@ function setupEventListeners() {
     // Period buttons
     document.querySelectorAll('#period-buttons .btn-toggle').forEach(btn => {
         btn.addEventListener('click', () => {
+            document.querySelectorAll('#period-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
             currentFilters.period = btn.dataset.period;
-            window.location.href = buildUrl();
+            loadData();
         });
     });
     
     // Customer dropdown
     document.getElementById('customer-filter').addEventListener('change', (e) => {
         currentFilters.customer = e.target.value;
-        window.location.href = buildUrl();
+        loadData();
     });
     
     // Range buttons
@@ -168,8 +170,10 @@ function setupEventListeners() {
 function setupYearButtonListeners() {
     document.querySelectorAll('#year-buttons .btn-toggle').forEach(btn => {
         btn.addEventListener('click', () => {
+            document.querySelectorAll('#year-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
             currentFilters.year = parseInt(btn.dataset.year);
-            window.location.href = buildUrl();
+            loadData();
         });
     });
 }
@@ -183,8 +187,10 @@ function setupRangeButtonListeners() {
             
             if (index > -1) {
                 currentFilters.ranges.splice(index, 1);
+                btn.classList.remove('active');
             } else {
                 currentFilters.ranges.push(range);
+                btn.classList.add('active');
             }
             
             // Handle Annual special case
@@ -196,20 +202,26 @@ function setupRangeButtonListeners() {
                             currentFilters.ranges.splice(idx, 1);
                         }
                     });
+                    updateRangeButtons();
                 }
             } else {
                 const annualIdx = currentFilters.ranges.indexOf('Annual');
                 if (annualIdx > -1) {
                     currentFilters.ranges.splice(annualIdx, 1);
+                    const annualBtn = document.querySelector('#range-buttons .btn-toggle[data-range="Annual"]');
+                    if (annualBtn) {
+                        annualBtn.classList.remove('active');
+                    }
                 }
             }
             
             if (currentFilters.ranges.length === 0) {
                 currentFilters.ranges = ['Q4'];
+                updateRangeButtons();
             }
             
-            // Reload page with new filters
-            window.location.href = buildUrl();
+            // Recalculate and render with smooth transition
+            filterAndRenderData();
         });
     });
 }
@@ -317,6 +329,13 @@ function filterAndRenderData() {
         }
     }
     
+    // Sort filtered data by date to ensure correct order
+    filtered.sort((a, b) => {
+        const dateA = a.week_start || a.month_start || a.month || '';
+        const dateB = b.week_start || b.month_start || b.month || '';
+        return dateA.localeCompare(dateB);
+    });
+    
     // Calculate cumulative dynamically (browser-side)
     // Cumulative = running sum of (created - resolved), starting from 0
     let cumulative = 0;
@@ -329,7 +348,25 @@ function filterAndRenderData() {
         };
     });
     
-    renderCharts(dataWithCumulative);
+    // Smooth transition: fade out, update, fade in
+    if (createdResolvedChart && cumulativeChart) {
+        // Fade out charts
+        const chartsContainer = document.getElementById('charts-container');
+        chartsContainer.style.opacity = '0';
+        chartsContainer.style.transition = 'opacity 0.2s ease-out';
+        
+        setTimeout(() => {
+            renderCharts(dataWithCumulative);
+            
+            // Fade in charts
+            setTimeout(() => {
+                chartsContainer.style.opacity = '1';
+                chartsContainer.style.transition = 'opacity 0.3s ease-in';
+            }, 50);
+        }, 200);
+    } else {
+        renderCharts(dataWithCumulative);
+    }
 }
 
 // Initialize charts
