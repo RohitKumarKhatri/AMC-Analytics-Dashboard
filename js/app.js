@@ -128,10 +128,26 @@ async function init() {
         hideLoading();
         
         // Force resize charts after everything is loaded and visible
-        setTimeout(() => {
-            if (createdResolvedChart) createdResolvedChart.resize();
-            if (cumulativeChart) cumulativeChart.resize();
-        }, 400);
+        // Use requestAnimationFrame to ensure DOM is fully rendered
+        requestAnimationFrame(() => {
+            setTimeout(() => {
+                if (createdResolvedChart) {
+                    createdResolvedChart.resize();
+                }
+                if (cumulativeChart) {
+                    cumulativeChart.resize();
+                }
+                // Additional resize calls to ensure full width rendering
+                setTimeout(() => {
+                    if (createdResolvedChart) createdResolvedChart.resize();
+                    if (cumulativeChart) cumulativeChart.resize();
+                }, 200);
+                setTimeout(() => {
+                    if (createdResolvedChart) createdResolvedChart.resize();
+                    if (cumulativeChart) cumulativeChart.resize();
+                }, 500);
+            }, 100);
+        });
     } catch (error) {
         console.error('Error initializing application:', error);
         showError();
@@ -318,10 +334,22 @@ async function loadData() {
         hideLoading();
         
         // Force resize charts after data loads and container is visible
-        setTimeout(() => {
-            if (createdResolvedChart) createdResolvedChart.resize();
-            if (cumulativeChart) cumulativeChart.resize();
-        }, 300);
+        // Use multiple resize calls to ensure charts render at full width
+        requestAnimationFrame(() => {
+            setTimeout(() => {
+                if (createdResolvedChart) {
+                    createdResolvedChart.resize();
+                }
+                if (cumulativeChart) {
+                    cumulativeChart.resize();
+                }
+                // Additional resize after a longer delay to catch any layout shifts
+                setTimeout(() => {
+                    if (createdResolvedChart) createdResolvedChart.resize();
+                    if (cumulativeChart) cumulativeChart.resize();
+                }, 200);
+            }, 100);
+        });
     } catch (error) {
         console.error('Error loading data:', error);
         showError();
@@ -454,10 +482,17 @@ function initCharts() {
     };
     window.addEventListener('resize', resizeHandler);
     
-    // Force initial resize after a short delay to ensure container is ready
-    setTimeout(() => {
-        resizeHandler();
-    }, 200);
+    // Force initial resize after container is ready and visible
+    // Use requestAnimationFrame to ensure DOM is painted
+    requestAnimationFrame(() => {
+        setTimeout(() => {
+            resizeHandler();
+            // Additional resize after a longer delay to catch layout shifts
+            setTimeout(() => {
+                resizeHandler();
+            }, 300);
+        }, 100);
+    });
 }
 
 // Render charts
@@ -631,10 +666,16 @@ function renderCharts(data) {
     
     if (createdResolvedChart) {
         createdResolvedChart.setOption(createdResolvedOption);
-        // Force resize to ensure full width
-        setTimeout(() => {
-            createdResolvedChart.resize();
-        }, 150);
+        // Force resize to ensure full width - use requestAnimationFrame for proper timing
+        requestAnimationFrame(() => {
+            setTimeout(() => {
+                createdResolvedChart.resize();
+                // Additional resize after a short delay
+                setTimeout(() => {
+                    createdResolvedChart.resize();
+                }, 200);
+            }, 50);
+        });
     }
     
     // Cumulative Chart
@@ -766,8 +807,15 @@ function showLoading() {
 }
 
 function hideLoading() {
-    document.getElementById('loading').style.display = 'none';
-    document.getElementById('charts-container').style.display = 'block';
+    const loadingEl = document.getElementById('loading');
+    const chartsContainer = document.getElementById('charts-container');
+    
+    if (loadingEl) loadingEl.style.display = 'none';
+    if (chartsContainer) {
+        chartsContainer.style.display = 'block';
+        // Force a reflow to ensure container is visible before resizing charts
+        chartsContainer.offsetHeight;
+    }
 }
 
 function showError() {
@@ -1009,6 +1057,16 @@ function setupTabs() {
                 // Initialize tab-specific content
                 if (targetTab === 'customer-distribution' && !customerPieChart) {
                     initCustomerTab();
+                }
+                
+                // Resize charts when switching to Created vs Resolved tab
+                if (targetTab === 'created-resolved') {
+                    requestAnimationFrame(() => {
+                        setTimeout(() => {
+                            if (createdResolvedChart) createdResolvedChart.resize();
+                            if (cumulativeChart) cumulativeChart.resize();
+                        }, 100);
+                    });
                 }
             }
         });
