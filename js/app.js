@@ -1265,11 +1265,58 @@ function filterCustomerDataByRange(customerCounts) {
     return customerCounts;
 }
 
+// Get date range for JQL based on filters
+function getDateRangeForJQL() {
+    const year = customerFilters.year;
+    const ranges = customerFilters.ranges;
+    
+    if (!year || !ranges || ranges.length === 0) {
+        return null;
+    }
+    
+    const quarterMonths = {
+        'Q1': { start: 1, end: 3 },
+        'Q2': { start: 4, end: 6 },
+        'Q3': { start: 7, end: 9 },
+        'Q4': { start: 10, end: 12 }
+    };
+    
+    let startMonth = 1;
+    let endMonth = 12;
+    
+    if (ranges.includes('Annual')) {
+        // Annual: entire year
+        startMonth = 1;
+        endMonth = 12;
+    } else {
+        // Get min start month and max end month from selected quarters
+        const selectedQuarters = ranges.filter(r => quarterMonths[r]);
+        if (selectedQuarters.length > 0) {
+            startMonth = Math.min(...selectedQuarters.map(q => quarterMonths[q].start));
+            endMonth = Math.max(...selectedQuarters.map(q => quarterMonths[q].end));
+        }
+    }
+    
+    // Calculate start and end dates
+    const startDate = `${year}-${String(startMonth).padStart(2, '0')}-01`;
+    const endYear = endMonth === 12 ? year + 1 : year;
+    const endMonthNext = endMonth === 12 ? 1 : endMonth + 1;
+    const endDate = `${endYear}-${String(endMonthNext).padStart(2, '0')}-01`;
+    
+    return { startDate, endDate };
+}
+
 // Generate Jira JQL for customer
 function generateCustomerJQL(customerName) {
+    // Get date range from filters
+    const dateRange = getDateRangeForJQL();
+    const dateFilter = dateRange 
+        ? ` AND created >= "${dateRange.startDate}" AND created < "${dateRange.endDate}"`
+        : '';
+    
     // Handle ONE Albania specially
     if (customerName === 'ONE Albania' || /one\s+albania/i.test(customerName)) {
-        const oneAlbaniaJQL = 'project in (SBZT, OAM) AND issuetype NOT IN (Sub-task, RAG) AND "Link to Central Zendesk[URL Field]" IS NOT EMPTY AND (text ~ "One Albania" OR text ~ "STL - One Albania") order by created desc';
+        const oneAlbaniaJQL = `project in (SBZT, OAM) AND issuetype NOT IN (Sub-task, RAG) AND "Link to Central Zendesk[URL Field]" IS NOT EMPTY AND (text ~ "One Albania" OR text ~ "STL - One Albania")${dateFilter} order by created desc`;
         return encodeURIComponent(oneAlbaniaJQL);
     }
     
@@ -1279,7 +1326,7 @@ function generateCustomerJQL(customerName) {
     }
     
     // For individual customers, use PS Customer Name field
-    const customerJQL = `project = SBZT AND type not in (Sub-task, RAG) AND "PS Customer Name[Short text]" ~ "${customerName}" ORDER BY key desc`;
+    const customerJQL = `project = SBZT AND type not in (Sub-task, RAG) AND "PS Customer Name[Short text]" ~ "${customerName}"${dateFilter} ORDER BY key desc`;
     return encodeURIComponent(customerJQL);
 }
 
