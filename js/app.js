@@ -32,9 +32,6 @@ function buildUrl() {
     return window.location.pathname + '?' + params.toString();
 }
 
-let createdResolvedChart = null;
-let cumulativeChart = null;
-
 // Initialize application
 async function init() {
     try {
