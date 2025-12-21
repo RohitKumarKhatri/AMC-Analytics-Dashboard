@@ -610,9 +610,8 @@ function renderCharts(data) {
                         // Open directly if user chose to skip
                         window.open(link, '_blank');
                     } else {
-                        // Show login modal
-                        pendingJiraLink = link;
-                        showLoginModal();
+                        // Check if user is logged in to Jira
+                        checkJiraLoginStatus(link);
                     }
                     
                     // Reset after delay to allow next click
@@ -771,6 +770,147 @@ function showError() {
     document.getElementById('error').style.display = 'block';
 }
 
+// Check if user is logged into Jira
+async function checkJiraLoginStatus(jiraLink) {
+    try {
+        // Try to fetch a Jira resource that requires authentication
+        // Using the Jira base URL to check login status
+        const jiraBaseUrl = 'https://psskyvera.atlassian.net';
+        
+        // Try to fetch the user's profile or a protected resource
+        // This will fail if not logged in due to CORS, but we can catch it
+        const response = await fetch(`${jiraBaseUrl}/rest/api/2/myself`, {
+            method: 'GET',
+            credentials: 'include',
+            mode: 'no-cors' // Use no-cors to avoid CORS errors, but we can't read response
+        });
+        
+        // If we get here with no-cors, we can't determine status
+        // So we'll use an alternative method: try opening in hidden iframe
+        checkLoginViaIframe(jiraLink);
+    } catch (error) {
+        // If fetch fails, user is likely not logged in
+        // Show login modal
+        pendingJiraLink = jiraLink;
+        showLoginModal();
+    }
+}
+
+// Alternative method: Check login status via hidden iframe
+function checkLoginViaIframe(jiraLink) {
+    // Create a hidden iframe to test login status
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.style.width = '1px';
+    iframe.style.height = '1px';
+    iframe.style.position = 'absolute';
+    iframe.style.left = '-9999px';
+    
+    let loginChecked = false;
+    const checkTimeout = setTimeout(() => {
+        if (!loginChecked) {
+            loginChecked = true;
+            // Timeout - assume not logged in, show modal
+            document.body.removeChild(iframe);
+            pendingJiraLink = jiraLink;
+            showLoginModal();
+        }
+    }, 2000); // 2 second timeout
+    
+    // Try to load a Jira page that redirects to login if not authenticated
+    iframe.src = 'https://psskyvera.atlassian.net/secure/Dashboard.jspa';
+    
+    iframe.onload = function() {
+        if (!loginChecked) {
+            loginChecked = true;
+            clearTimeout(checkTimeout);
+            
+            try {
+                // Try to access iframe content (will fail if cross-origin, which is expected)
+                const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                const iframeUrl = iframe.contentWindow.location.href;
+                
+                // If URL contains 'login' or 'unauthorized', user is not logged in
+                if (iframeUrl.includes('login') || iframeUrl.includes('unauthorized')) {
+                    pendingJiraLink = jiraLink;
+                    showLoginModal();
+                } else {
+                    // User appears to be logged in, open link directly
+                    window.open(jiraLink, '_blank');
+                }
+            } catch (e) {
+                // Cross-origin error - can't read iframe content
+                // Try a different approach: check localStorage for Jira session
+                // Or use a more reliable method: try to fetch with credentials
+                checkLoginViaFetch(jiraLink);
+            }
+            
+            document.body.removeChild(iframe);
+        }
+    };
+    
+    iframe.onerror = function() {
+        if (!loginChecked) {
+            loginChecked = true;
+            clearTimeout(checkTimeout);
+            document.body.removeChild(iframe);
+            // Error loading - assume not logged in
+            pendingJiraLink = jiraLink;
+            showLoginModal();
+        }
+    };
+    
+    document.body.appendChild(iframe);
+}
+
+// More reliable method: Try fetching a Jira API endpoint
+async function checkLoginViaFetch(jiraLink) {
+    try {
+        // Try to fetch user info from Jira API
+        // Note: This will fail due to CORS if not logged in, but we can try
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 1500);
+        
+        const response = await fetch('https://psskyvera.atlassian.net/rest/api/2/myself', {
+            method: 'GET',
+            credentials: 'include',
+            signal: controller.signal,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        
+        clearTimeout(timeoutId);
+        
+        if (response.ok || response.status === 200) {
+            // User appears to be logged in
+            window.open(jiraLink, '_blank');
+        } else {
+            // Not logged in
+            pendingJiraLink = jiraLink;
+            showLoginModal();
+        }
+    } catch (error) {
+        // Fetch failed - likely CORS error or not logged in
+        // Check if we have a cached login status
+        const cachedLoginStatus = localStorage.getItem('amc-dashboard-jira-logged-in');
+        const cacheTime = localStorage.getItem('amc-dashboard-jira-login-check-time');
+        const now = Date.now();
+        
+        // Use cached status if less than 5 minutes old
+        if (cachedLoginStatus && cacheTime && (now - parseInt(cacheTime)) < 5 * 60 * 1000) {
+            if (cachedLoginStatus === 'true') {
+                window.open(jiraLink, '_blank');
+                return;
+            }
+        }
+        
+        // No cache or expired - show modal to be safe
+        pendingJiraLink = jiraLink;
+        showLoginModal();
+    }
+}
+
 // Modal functions
 function showLoginModal() {
     const modal = document.getElementById('jira-login-modal');
@@ -791,6 +931,10 @@ function hideLoginModal() {
 
 function proceedToJira() {
     if (pendingJiraLink) {
+        // Cache that user attempted to proceed (might be logged in)
+        localStorage.setItem('amc-dashboard-jira-logged-in', 'true');
+        localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
+        
         window.open(pendingJiraLink, '_blank');
         hideLoginModal();
     }
@@ -838,6 +982,19 @@ function setupModalListeners() {
             hideLoginModal();
         }
     });
+    
+    // Login link button - when clicked, mark as potentially logged in after delay
+    const loginBtn = document.querySelector('.btn-login');
+    if (loginBtn) {
+        loginBtn.addEventListener('click', function() {
+            // After clicking login, assume user might be logged in after a delay
+            // Give them time to login, then cache the status
+            setTimeout(() => {
+                localStorage.setItem('amc-dashboard-jira-logged-in', 'true');
+                localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
+            }, 3000); // 3 second delay to allow login
+        });
+    }
 }
 
 // Initialize when DOM is ready
