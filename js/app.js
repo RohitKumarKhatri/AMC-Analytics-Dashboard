@@ -459,11 +459,23 @@ function renderCharts(data) {
                 interval: 'auto'
             }
         },
-        yAxis: {
-            type: 'value',
-            name: 'Tickets',
-            min: 0
-        },
+        yAxis: [
+            {
+                type: 'value',
+                name: 'Tickets',
+                min: 0,
+                position: 'left'
+            },
+            {
+                type: 'value',
+                name: 'Tickets',
+                min: 0,
+                position: 'right',
+                axisLabel: {
+                    formatter: '{value}'
+                }
+            }
+        ],
         series: [
             {
                 name: 'Created',
@@ -584,11 +596,23 @@ function renderCharts(data) {
                 interval: 'auto'
             }
         },
-        yAxis: {
-            type: 'value',
-            name: 'Issues',
-            min: 0
-        },
+        yAxis: [
+            {
+                type: 'value',
+                name: 'Issues',
+                min: 0,
+                position: 'left'
+            },
+            {
+                type: 'value',
+                name: 'Issues',
+                min: 0,
+                position: 'right',
+                axisLabel: {
+                    formatter: '{value}'
+                }
+            }
+        ],
         series: [
             {
                 name: 'Cumulative Issues',
