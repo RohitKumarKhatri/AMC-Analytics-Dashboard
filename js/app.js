@@ -9,14 +9,61 @@ let currentFilters = {
     customer: 'one-albania'
 };
 
-// Get URL parameters
+// Save filters to localStorage
+function saveFiltersToStorage() {
+    try {
+        localStorage.setItem('amc-dashboard-filters', JSON.stringify(currentFilters));
+    } catch (e) {
+        console.warn('Could not save filters to localStorage:', e);
+    }
+}
+
+// Load filters from localStorage
+function loadFiltersFromStorage() {
+    try {
+        const saved = localStorage.getItem('amc-dashboard-filters');
+        if (saved) {
+            const parsed = JSON.parse(saved);
+            // Validate and merge with defaults
+            return {
+                period: parsed.period || 'weekly',
+                year: parsed.year || null,
+                ranges: Array.isArray(parsed.ranges) && parsed.ranges.length > 0 ? parsed.ranges : ['Q4'],
+                customer: parsed.customer || 'one-albania'
+            };
+        }
+    } catch (e) {
+        console.warn('Could not load filters from localStorage:', e);
+    }
+    return null;
+}
+
+// Get URL parameters or saved filters
 function getUrlParams() {
     const params = new URLSearchParams(window.location.search);
+    
+    // Check if URL has parameters (takes precedence)
+    if (params.toString()) {
+        return {
+            period: params.get('period') || 'weekly',
+            year: params.get('year') ? parseInt(params.get('year')) : null,
+            ranges: params.get('ranges') ? params.get('ranges').split(',') : ['Q4'],
+            customer: params.get('customer') || 'one-albania'
+        };
+    }
+    
+    // Otherwise, try to load from localStorage
+    const saved = loadFiltersFromStorage();
+    if (saved) {
+        return saved;
+    }
+    
+    // Default values
     return {
-        period: params.get('period') || 'weekly',
-        year: params.get('year') ? parseInt(params.get('year')) : null,
-        ranges: params.get('ranges') ? params.get('ranges').split(',') : ['Q4'],
-        customer: params.get('customer') || 'one-albania'
+        period: 'weekly',
+        year: null,
+        ranges: ['Q4'],
+        customer: 'one-albania'
     };
 }
 
@@ -152,6 +199,7 @@ function setupEventListeners() {
             document.querySelectorAll('#period-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             currentFilters.period = btn.dataset.period;
+            saveFiltersToStorage();
             loadData();
         });
     });
@@ -159,6 +207,7 @@ function setupEventListeners() {
     // Customer dropdown
     document.getElementById('customer-filter').addEventListener('change', (e) => {
         currentFilters.customer = e.target.value;
+        saveFiltersToStorage();
         loadData();
     });
     
@@ -173,6 +222,7 @@ function setupYearButtonListeners() {
             document.querySelectorAll('#year-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             currentFilters.year = parseInt(btn.dataset.year);
+            saveFiltersToStorage();
             loadData();
         });
     });
@@ -219,6 +269,9 @@ function setupRangeButtonListeners() {
                 currentFilters.ranges = ['Q4'];
                 updateRangeButtons();
             }
+            
+            // Save filters to localStorage
+            saveFiltersToStorage();
             
             // Recalculate and render with smooth transition
             filterAndRenderData();
