@@ -1267,11 +1267,9 @@ function filterCustomerDataByRange(customerCounts) {
 
 // Generate Jira JQL for customer
 function generateCustomerJQL(customerName) {
-    const baseJQL = 'project in (SBZT, OAM) AND issuetype NOT IN (Sub-task, RAG) AND "Link to Central Zendesk[URL Field]" IS NOT EMPTY';
-    
     // Handle ONE Albania specially
     if (customerName === 'ONE Albania' || /one\s+albania/i.test(customerName)) {
-        const oneAlbaniaJQL = `${baseJQL} AND (text ~ "One Albania" OR text ~ "STL - One Albania") order by created desc`;
+        const oneAlbaniaJQL = 'project in (SBZT, OAM) AND issuetype NOT IN (Sub-task, RAG) AND "Link to Central Zendesk[URL Field]" IS NOT EMPTY AND (text ~ "One Albania" OR text ~ "STL - One Albania") order by created desc';
         return encodeURIComponent(oneAlbaniaJQL);
     }
     
@@ -1280,8 +1278,8 @@ function generateCustomerJQL(customerName) {
         return null;
     }
     
-    // For individual customers, search by customer name
-    const customerJQL = `${baseJQL} AND text ~ "${customerName}" order by created desc`;
+    // For individual customers, use PS Customer Name field
+    const customerJQL = `project = SBZT AND type not in (Sub-task, RAG) AND "PS Customer Name[Short text]" ~ "${customerName}" ORDER BY key desc`;
     return encodeURIComponent(customerJQL);
 }
 
