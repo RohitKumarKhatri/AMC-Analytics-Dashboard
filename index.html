@@ -11,8 +11,23 @@
     <div class="container">
         <header>
             <h1>AMC Analytics Dashboard</h1>
-            <p class="subtitle">Created vs Resolved Tickets Analysis</p>
+            <p class="subtitle">Comprehensive Ticket Analytics & Insights</p>
         </header>
+
+        <!-- Tab Navigation -->
+        <nav class="tab-navigation">
+            <button class="tab-btn active" data-tab="home">
+                <span class="tab-icon">📊</span>
+                <span class="tab-label">Home</span>
+            </button>
+            <button class="tab-btn" data-tab="customers">
+                <span class="tab-icon">👥</span>
+                <span class="tab-label">Customer Distribution</span>
+            </button>
+        </nav>
+
+        <!-- Home Tab Content -->
+        <div id="home-tab" class="tab-content active">
 
         <div class="filters">
             <div class="filter-group">
@@ -66,6 +81,58 @@
 
         <div class="error" id="error" style="display: none;">
             <p>Error loading data. Please check the console for details.</p>
+        </div>
+        </div>
+
+        <!-- Customer Distribution Tab Content -->
+        <div id="customers-tab" class="tab-content">
+            <div class="page-header">
+                <h2>Customer Distribution Analysis</h2>
+                <p class="page-subtitle">Ticket distribution across customers</p>
+            </div>
+
+            <div class="filters">
+                <div class="filter-group">
+                    <label>Period:</label>
+                    <div class="button-group single-select" id="customer-period-buttons">
+                        <button class="btn-toggle active" data-period="weekly">Weekly</button>
+                        <button class="btn-toggle" data-period="monthly">Monthly</button>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label>Year:</label>
+                    <div class="button-group single-select" id="customer-year-buttons">
+                        <!-- Dynamically generated -->
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label>Range:</label>
+                    <div class="button-group multi-select" id="customer-range-buttons">
+                        <button class="btn-toggle" data-range="Q1">Q1</button>
+                        <button class="btn-toggle" data-range="Q2">Q2</button>
+                        <button class="btn-toggle" data-range="Q3">Q3</button>
+                        <button class="btn-toggle active" data-range="Q4">Q4</button>
+                        <button class="btn-toggle" data-range="Annual">Annual</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="loading" id="customer-loading">
+                <div class="spinner"></div>
+                <p>Loading customer data...</p>
+            </div>
+
+            <div class="charts-container" id="customer-charts-container" style="display: none;">
+                <div class="chart-wrapper">
+                    <div id="customer-pie-chart" class="chart"></div>
+                </div>
+            </div>
+
+            <div class="error" id="customer-error" style="display: none;">
+                <p>Error loading customer data. Please check the console for details.</p>
+            </div>
         </div>
     </div>
 

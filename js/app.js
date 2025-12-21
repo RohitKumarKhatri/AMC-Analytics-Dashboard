@@ -9,6 +9,12 @@ let currentFilters = {
     customer: 'one-albania'
 };
 let pendingJiraLink = null; // Store link to open after modal
+let customerPieChart = null;
+let customerFilters = {
+    period: 'weekly',
+    year: null,
+    ranges: ['Q4']
+};
 
 // Save filters to localStorage
 function saveFiltersToStorage() {
@@ -981,14 +987,407 @@ function setupModalListeners() {
     }
 }
 
+// Tab Navigation
+function setupTabs() {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetTab = btn.dataset.tab;
+            
+            // Update active tab button
+            tabButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            // Update active tab content
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+                if (content.id === `${targetTab}-tab`) {
+                    content.classList.add('active');
+                    
+                    // Initialize customer tab if needed
+                    if (targetTab === 'customers' && !customerPieChart) {
+                        initCustomerTab();
+                    }
+                }
+            });
+        });
+    });
+}
+
+// Initialize Customer Tab
+async function initCustomerTab() {
+    if (!metadata) {
+        await loadMetadata();
+    }
+    
+    // Initialize filters
+    initCustomerFilters();
+    
+    // Initialize chart
+    initCustomerPieChart();
+    
+    // Load initial data
+    await loadCustomerData();
+}
+
+// Initialize Customer Filters
+function initCustomerFilters() {
+    // Set default filters
+    customerFilters.period = currentFilters.period;
+    customerFilters.year = currentFilters.year || (metadata.years && metadata.years.length > 0 ? metadata.years[metadata.years.length - 1] : null);
+    customerFilters.ranges = currentFilters.ranges;
+    
+    // Update year buttons
+    updateCustomerYearButtons();
+    
+    // Setup event listeners
+    setupCustomerEventListeners();
+}
+
+// Update Customer Year Buttons
+function updateCustomerYearButtons() {
+    const yearButtonsContainer = document.getElementById('customer-year-buttons');
+    if (!yearButtonsContainer || !metadata || !metadata.years) return;
+    
+    yearButtonsContainer.innerHTML = '';
+    
+    metadata.years.forEach(year => {
+        const btn = document.createElement('button');
+        btn.className = 'btn-toggle';
+        if (year === customerFilters.year) {
+            btn.classList.add('active');
+        }
+        btn.dataset.year = year;
+        btn.textContent = year;
+        yearButtonsContainer.appendChild(btn);
+    });
+}
+
+// Setup Customer Event Listeners
+function setupCustomerEventListeners() {
+    // Period buttons
+    document.querySelectorAll('#customer-period-buttons .btn-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('#customer-period-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            customerFilters.period = btn.dataset.period;
+            loadCustomerData();
+        });
+    });
+    
+    // Year buttons
+    document.querySelectorAll('#customer-year-buttons .btn-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('#customer-year-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            customerFilters.year = parseInt(btn.dataset.year);
+            loadCustomerData();
+        });
+    });
+    
+    // Range buttons
+    document.querySelectorAll('#customer-range-buttons .btn-toggle').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const range = btn.dataset.range;
+            
+            if (range === 'Annual') {
+                // If Annual clicked, clear all others
+                document.querySelectorAll('#customer-range-buttons .btn-toggle').forEach(b => {
+                    if (b.dataset.range !== 'Annual') {
+                        b.classList.remove('active');
+                    }
+                });
+                customerFilters.ranges = ['Annual'];
+            } else {
+                // Toggle individual quarter
+                btn.classList.toggle('active');
+                
+                // Remove Annual if a quarter is clicked
+                const annualBtn = document.querySelector('#customer-range-buttons .btn-toggle[data-range="Annual"]');
+                if (annualBtn) {
+                    annualBtn.classList.remove('active');
+                }
+                
+                // Update ranges array
+                const activeRanges = Array.from(document.querySelectorAll('#customer-range-buttons .btn-toggle.active'))
+                    .map(b => b.dataset.range);
+                customerFilters.ranges = activeRanges.length > 0 ? activeRanges : ['Q4'];
+            }
+            
+            loadCustomerData();
+        });
+    });
+}
+
+// Initialize Customer Pie Chart
+function initCustomerPieChart() {
+    const chartDom = document.getElementById('customer-pie-chart');
+    if (!chartDom) return;
+    
+    customerPieChart = echarts.init(chartDom);
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        if (customerPieChart) {
+            customerPieChart.resize();
+        }
+    });
+}
+
+// Load Customer Data for Pie Chart
+async function loadCustomerData() {
+    const loadingEl = document.getElementById('customer-loading');
+    const chartsEl = document.getElementById('customer-charts-container');
+    const errorEl = document.getElementById('customer-error');
+    
+    try {
+        loadingEl.style.display = 'block';
+        chartsEl.style.display = 'none';
+        errorEl.style.display = 'none';
+        
+        if (!customerFilters.year) {
+            throw new Error('Year not selected');
+        }
+        
+        // Aggregate data from all customers
+        const customerData = await aggregateCustomerData();
+        
+        // Filter by range
+        const filteredData = filterCustomerDataByRange(customerData);
+        
+        // Render pie chart
+        renderCustomerPieChart(filteredData);
+        
+        loadingEl.style.display = 'none';
+        chartsEl.style.display = 'block';
+        
+        setTimeout(() => {
+            if (customerPieChart) {
+                customerPieChart.resize();
+            }
+        }, 200);
+    } catch (error) {
+        console.error('Error loading customer data:', error);
+        loadingEl.style.display = 'none';
+        chartsEl.style.display = 'none';
+        errorEl.style.display = 'block';
+    }
+}
+
+// Aggregate Customer Data
+async function aggregateCustomerData() {
+    const customerCounts = {};
+    const period = customerFilters.period;
+    const year = customerFilters.year;
+    
+    // Get all customers from metadata
+    const customers = metadata.customers || [];
+    
+    // Load data for each customer
+    for (const customer of customers) {
+        try {
+            // Skip One Albania variants (they're grouped separately)
+            const isOneAlbania = /one\s+albania/i.test(customer);
+            if (isOneAlbania) continue;
+            
+            // Sanitize customer name for filename
+            const safeCustomer = customer.replace(/[^a-zA-Z0-9_-]/g, '_').substring(0, 50);
+            const filename = `data/${period}-${year}-${safeCustomer}.json`;
+            
+            const response = await fetch(filename);
+            if (response.ok) {
+                const data = await response.json();
+                
+                // Sum up all tickets for this customer
+                let totalTickets = 0;
+                if (data.data && Array.isArray(data.data)) {
+                    data.data.forEach(item => {
+                        totalTickets += (item.created || 0);
+                    });
+                }
+                
+                if (totalTickets > 0) {
+                    customerCounts[customer] = totalTickets;
+                }
+            }
+        } catch (error) {
+            // Skip if file doesn't exist
+            console.log(`Skipping customer ${customer}:`, error);
+        }
+    }
+    
+    // Also load "Rest of World" and "One Albania" aggregated data
+    try {
+        // Rest of World
+        const rotwFilename = `data/${period}-${year}-rest-of-world.json`;
+        const rotwResponse = await fetch(rotwFilename);
+        if (rotwResponse.ok) {
+            const rotwData = await rotwResponse.json();
+            let rotwTotal = 0;
+            if (rotwData.data && Array.isArray(rotwData.data)) {
+                rotwData.data.forEach(item => {
+                    rotwTotal += (item.created || 0);
+                });
+            }
+            if (rotwTotal > 0) {
+                customerCounts['Rest of the World'] = rotwTotal;
+            }
+        }
+    } catch (error) {
+        console.log('Error loading Rest of World data:', error);
+    }
+    
+    try {
+        // One Albania
+        const oneAlbaniaFilename = `data/${period}-${year}-one-albania.json`;
+        const oneAlbaniaResponse = await fetch(oneAlbaniaFilename);
+        if (oneAlbaniaResponse.ok) {
+            const oneAlbaniaData = await oneAlbaniaResponse.json();
+            let oneAlbaniaTotal = 0;
+            if (oneAlbaniaData.data && Array.isArray(oneAlbaniaData.data)) {
+                oneAlbaniaData.data.forEach(item => {
+                    oneAlbaniaTotal += (item.created || 0);
+                });
+            }
+            if (oneAlbaniaTotal > 0) {
+                customerCounts['ONE Albania'] = oneAlbaniaTotal;
+            }
+        }
+    } catch (error) {
+        console.log('Error loading ONE Albania data:', error);
+    }
+    
+    return customerCounts;
+}
+
+// Filter Customer Data by Range
+function filterCustomerDataByRange(customerCounts) {
+    // For pie chart, we show all customers regardless of range
+    // Range filtering would require loading individual period data
+    // For simplicity, we'll show all data for the selected year
+    return customerCounts;
+}
+
+// Render Customer Pie Chart
+function renderCustomerPieChart(customerData) {
+    if (!customerPieChart) return;
+    
+    // Convert to ECharts format
+    const pieData = Object.entries(customerData)
+        .sort((a, b) => b[1] - a[1]) // Sort by count descending
+        .slice(0, 20) // Top 20 customers
+        .map(([name, value]) => ({
+            name: name.length > 30 ? name.substring(0, 30) + '...' : name,
+            value: value
+        }));
+    
+    // Calculate total for "Others" if more than 20 customers
+    const allEntries = Object.entries(customerData).sort((a, b) => b[1] - a[1]);
+    if (allEntries.length > 20) {
+        const othersTotal = allEntries.slice(20).reduce((sum, [, value]) => sum + value, 0);
+        if (othersTotal > 0) {
+            pieData.push({
+                name: `Others (${allEntries.length - 20} customers)`,
+                value: othersTotal
+            });
+        }
+    }
+    
+    const option = {
+        title: {
+            text: 'Customer Distribution',
+            left: 'center',
+            textStyle: {
+                fontSize: 20,
+                fontWeight: 600,
+                color: '#1a1a1a'
+            },
+            subtext: `Total Tickets: ${Object.values(customerData).reduce((a, b) => a + b, 0)}`,
+            subtextStyle: {
+                fontSize: 14,
+                color: '#666'
+            }
+        },
+        tooltip: {
+            trigger: 'item',
+            formatter: '{b}: {c} tickets ({d}%)',
+            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            borderColor: '#667eea',
+            borderWidth: 1,
+            textStyle: {
+                color: '#fff'
+            }
+        },
+        legend: {
+            type: 'scroll',
+            orient: 'vertical',
+            right: 30,
+            top: 'middle',
+            itemWidth: 12,
+            itemHeight: 12,
+            textStyle: {
+                fontSize: 12
+            },
+            formatter: function(name) {
+                const item = pieData.find(d => d.name === name);
+                return item ? `${name}: ${item.value}` : name;
+            }
+        },
+        series: [
+            {
+                name: 'Tickets',
+                type: 'pie',
+                radius: ['40%', '70%'],
+                center: ['35%', '55%'],
+                avoidLabelOverlap: false,
+                itemStyle: {
+                    borderRadius: 8,
+                    borderColor: '#fff',
+                    borderWidth: 2
+                },
+                label: {
+                    show: true,
+                    formatter: '{b}\n{d}%',
+                    fontSize: 11
+                },
+                emphasis: {
+                    label: {
+                        show: true,
+                        fontSize: 14,
+                        fontWeight: 'bold'
+                    },
+                    itemStyle: {
+                        shadowBlur: 10,
+                        shadowOffsetX: 0,
+                        shadowColor: 'rgba(0, 0, 0, 0.5)'
+                    }
+                },
+                data: pieData
+            }
+        ],
+        color: [
+            '#667eea', '#764ba2', '#f093fb', '#4facfe', '#43e97b',
+            '#fa709a', '#fee140', '#30cfd0', '#a8edea', '#fed6e3',
+            '#ffecd2', '#fcb69f', '#ff9a9e', '#fecfef', '#fad0c4',
+            '#ffd1ff', '#a1c4fd', '#c2e9fb', '#fbc2eb', '#a8edea'
+        ]
+    };
+    
+    customerPieChart.setOption(option);
+}
+
 // Initialize when DOM is ready
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function() {
         setupModalListeners();
+        setupTabs();
         init();
     });
 } else {
     setupModalListeners();
+    setupTabs();
     init();
 }
 
