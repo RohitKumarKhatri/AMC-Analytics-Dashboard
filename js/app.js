@@ -1049,8 +1049,7 @@ async function initCustomerTab() {
 
 // Initialize Customer Filters
 function initCustomerFilters() {
-    // Set default filters
-    customerFilters.period = currentFilters.period;
+    // Set default filters (no period filter for customer tab)
     customerFilters.year = currentFilters.year || (metadata.years && metadata.years.length > 0 ? metadata.years[metadata.years.length - 1] : null);
     customerFilters.ranges = currentFilters.ranges;
     
@@ -1082,16 +1081,6 @@ function updateCustomerYearButtons() {
 
 // Setup Customer Event Listeners
 function setupCustomerEventListeners() {
-    // Period buttons
-    document.querySelectorAll('#customer-period-buttons .btn-toggle').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('#customer-period-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            customerFilters.period = btn.dataset.period;
-            loadCustomerData();
-        });
-    });
-    
     // Year buttons
     document.querySelectorAll('#customer-year-buttons .btn-toggle').forEach(btn => {
         btn.addEventListener('click', () => {
@@ -1194,13 +1183,26 @@ async function loadCustomerData() {
 // Aggregate Customer Data
 async function aggregateCustomerData() {
     const customerCounts = {};
-    const period = customerFilters.period;
     const year = customerFilters.year;
+    const ranges = customerFilters.ranges;
+    
+    if (!year || !ranges || ranges.length === 0) {
+        return customerCounts;
+    }
+    
+    // Calculate date range for filtering
+    const dateRange = getDateRangeForJQL();
+    if (!dateRange) {
+        return customerCounts;
+    }
+    
+    const startDate = new Date(dateRange.startDate);
+    const endDate = new Date(dateRange.endDate);
     
     // Get all customers from metadata
     const customers = metadata.customers || [];
     
-    // Load data for each customer
+    // Load data for each customer (use weekly data for more granular filtering)
     for (const customer of customers) {
         try {
             // Skip One Albania variants (they're grouped separately)
@@ -1209,17 +1211,23 @@ async function aggregateCustomerData() {
             
             // Sanitize customer name for filename
             const safeCustomer = customer.replace(/[^a-zA-Z0-9_-]/g, '_').substring(0, 50);
-            const filename = `data/${period}-${year}-${safeCustomer}.json`;
+            const filename = `data/weekly-${year}-${safeCustomer}.json`;
             
             const response = await fetch(filename);
             if (response.ok) {
                 const data = await response.json();
                 
-                // Sum up all tickets for this customer
+                // Filter by date range and sum up tickets
                 let totalTickets = 0;
                 if (data.data && Array.isArray(data.data)) {
                     data.data.forEach(item => {
-                        totalTickets += (item.created || 0);
+                        if (item.week_start) {
+                            const itemDate = new Date(item.week_start);
+                            // Check if item date falls within selected range
+                            if (itemDate >= startDate && itemDate < endDate) {
+                                totalTickets += (item.created || 0);
+                            }
+                        }
                     });
                 }
                 
@@ -1236,14 +1244,20 @@ async function aggregateCustomerData() {
     // Also load "One Albania" aggregated data (but not "Rest of World" as it's an aggregate)
     try {
         // One Albania
-        const oneAlbaniaFilename = `data/${period}-${year}-one-albania.json`;
+        const oneAlbaniaFilename = `data/weekly-${year}-one-albania.json`;
         const oneAlbaniaResponse = await fetch(oneAlbaniaFilename);
         if (oneAlbaniaResponse.ok) {
             const oneAlbaniaData = await oneAlbaniaResponse.json();
             let oneAlbaniaTotal = 0;
             if (oneAlbaniaData.data && Array.isArray(oneAlbaniaData.data)) {
                 oneAlbaniaData.data.forEach(item => {
-                    oneAlbaniaTotal += (item.created || 0);
+                    if (item.week_start) {
+                        const itemDate = new Date(item.week_start);
+                        // Check if item date falls within selected range
+                        if (itemDate >= startDate && itemDate < endDate) {
+                            oneAlbaniaTotal += (item.created || 0);
+                        }
+                    }
                 });
             }
             if (oneAlbaniaTotal > 0) {
@@ -1257,11 +1271,9 @@ async function aggregateCustomerData() {
     return customerCounts;
 }
 
-// Filter Customer Data by Range
+// Filter Customer Data by Range (now handled in aggregateCustomerData)
 function filterCustomerDataByRange(customerCounts) {
-    // For pie chart, we show all customers regardless of range
-    // Range filtering would require loading individual period data
-    // For simplicity, we'll show all data for the selected year
+    // Filtering is now done during aggregation, so just return as-is
     return customerCounts;
 }
 
