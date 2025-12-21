@@ -1,0 +1,31 @@
+{
+  "period": "weekly",
+  "year": 2025,
+  "customer": "Aml",
+  "data": [
+    {
+      "week_start": "2025-03-31",
+      "week_end": "2025-04-06",
+      "label": "31 Mar 2025 - 06 Apr 2025",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1315') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-04-07",
+      "week_end": "2025-04-13",
+      "label": "07 Apr 2025 - 13 Apr 2025",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1315') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

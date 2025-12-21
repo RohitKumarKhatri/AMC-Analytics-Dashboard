@@ -1,0 +1,19 @@
+{
+  "period": "weekly",
+  "year": 2024,
+  "customer": "Avolin - Internal Organization (Management)",
+  "data": [
+    {
+      "week_start": "2024-03-25",
+      "week_end": "2024-03-31",
+      "label": "25 Mar 2024 - 31 Mar 2024",
+      "created": 2,
+      "resolved": 2,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1', 'SBZT-2') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1', 'SBZT-2') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

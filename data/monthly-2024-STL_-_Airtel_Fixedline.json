@@ -1,0 +1,85 @@
+{
+  "period": "monthly",
+  "year": 2024,
+  "customer": "STL - Airtel Fixedline",
+  "data": [
+    {
+      "month": "2024-09",
+      "month_start": "2024-09-01",
+      "month_end": "2024-09-30",
+      "label": "Sep 2024",
+      "created": 8,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-641', 'SBZT-645', 'SBZT-650', 'SBZT-670', 'SBZT-671', 'SBZT-675', 'SBZT-680', 'SBZT-681') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 8
+    },
+    {
+      "month": "2024-10",
+      "month_start": "2024-10-01",
+      "month_end": "2024-10-31",
+      "label": "Oct 2024",
+      "created": 11,
+      "resolved": 13,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-688', 'SBZT-707', 'SBZT-708', 'SBZT-715', 'SBZT-724', 'SBZT-730', 'SBZT-735', 'SBZT-747', 'SBZT-748', 'SBZT-779', 'SBZT-786') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-641', 'SBZT-645', 'SBZT-650', 'SBZT-670', 'SBZT-671', 'SBZT-680', 'SBZT-681', 'SBZT-688', 'SBZT-707', 'SBZT-708', 'SBZT-730', 'SBZT-748', 'SBZT-786') ORDER BY key DESC"
+      },
+      "cumulative": 6
+    },
+    {
+      "month": "2024-11",
+      "month_start": "2024-11-01",
+      "month_end": "2024-11-30",
+      "label": "Nov 2024",
+      "created": 15,
+      "resolved": 11,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-800', 'SBZT-816', 'SBZT-817', 'SBZT-825', 'SBZT-829', 'SBZT-833', 'SBZT-841', 'SBZT-850', 'SBZT-854', 'SBZT-861', 'SBZT-862', 'SBZT-871', 'SBZT-873', 'SBZT-886', 'SBZT-904') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-675', 'SBZT-715', 'SBZT-724', 'SBZT-735', 'SBZT-800', 'SBZT-817', 'SBZT-825', 'SBZT-833', 'SBZT-850', 'SBZT-862', 'SBZT-873') ORDER BY key DESC"
+      },
+      "cumulative": 10
+    },
+    {
+      "month": "2024-12",
+      "month_start": "2024-12-01",
+      "month_end": "2024-12-31",
+      "label": "Dec 2024",
+      "created": 19,
+      "resolved": 9,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-925', 'SBZT-927', 'SBZT-940', 'SBZT-947', 'SBZT-953', 'SBZT-956', 'SBZT-958', 'SBZT-960', 'SBZT-961', 'SBZT-965', 'SBZT-966', 'SBZT-967', 'SBZT-971', 'SBZT-973', 'SBZT-975', 'SBZT-980', 'SBZT-988', 'SBZT-989', 'SBZT-994') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-861', 'SBZT-886', 'SBZT-904', 'SBZT-925', 'SBZT-940', 'SBZT-953', 'SBZT-956', 'SBZT-958', 'SBZT-975') ORDER BY key DESC"
+      },
+      "cumulative": 20
+    },
+    {
+      "month": "2025-01",
+      "month_start": "2025-01-01",
+      "month_end": "2025-01-31",
+      "label": "Jan 2025",
+      "created": 0,
+      "resolved": 13,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-747', 'SBZT-816', 'SBZT-854', 'SBZT-927', 'SBZT-947', 'SBZT-961', 'SBZT-965', 'SBZT-966', 'SBZT-967', 'SBZT-971', 'SBZT-973', 'SBZT-988', 'SBZT-994') ORDER BY key DESC"
+      },
+      "cumulative": 7
+    },
+    {
+      "month": "2025-02",
+      "month_start": "2025-02-01",
+      "month_end": "2025-02-28",
+      "label": "Feb 2025",
+      "created": 0,
+      "resolved": 4,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-779', 'SBZT-841', 'SBZT-871', 'SBZT-980') ORDER BY key DESC"
+      },
+      "cumulative": 3
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "period": "weekly",
+  "year": 2024,
+  "customer": "STL - Vodafone Ericsson team",
+  "data": [
+    {
+      "week_start": "2024-08-05",
+      "week_end": "2024-08-11",
+      "label": "05 Aug 2024 - 11 Aug 2024",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-570') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    }
+  ]
+}

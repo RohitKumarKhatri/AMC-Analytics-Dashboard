@@ -1,0 +1,43 @@
+{
+  "period": "weekly",
+  "year": 2024,
+  "customer": "STL - Asianet Satellite Communications Ltd",
+  "data": [
+    {
+      "week_start": "2024-10-14",
+      "week_end": "2024-10-20",
+      "label": "14 Oct 2024 - 20 Oct 2024",
+      "created": 2,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-733', 'SBZT-736') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 2
+    },
+    {
+      "week_start": "2024-11-18",
+      "week_end": "2024-11-24",
+      "label": "18 Nov 2024 - 24 Nov 2024",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-736') ORDER BY key DESC"
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2024-12-02",
+      "week_end": "2024-12-08",
+      "label": "02 Dec 2024 - 08 Dec 2024",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-733') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

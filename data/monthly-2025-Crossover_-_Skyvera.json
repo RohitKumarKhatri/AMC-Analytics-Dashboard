@@ -1,0 +1,33 @@
+{
+  "period": "monthly",
+  "year": 2025,
+  "customer": "Crossover - Skyvera",
+  "data": [
+    {
+      "month": "2025-03",
+      "month_start": "2025-03-01",
+      "month_end": "2025-03-31",
+      "label": "Mar 2025",
+      "created": 4,
+      "resolved": 4,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1251', 'SBZT-1255', 'SBZT-1256', 'SBZT-1285') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1251', 'SBZT-1255', 'SBZT-1256', 'SBZT-1285') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2025-05",
+      "month_start": "2025-05-01",
+      "month_end": "2025-05-31",
+      "label": "May 2025",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1383') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    }
+  ]
+}

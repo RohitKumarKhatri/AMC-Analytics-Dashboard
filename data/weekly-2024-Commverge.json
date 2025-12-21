@@ -1,0 +1,31 @@
+{
+  "period": "weekly",
+  "year": 2024,
+  "customer": "Commverge",
+  "data": [
+    {
+      "week_start": "2024-12-09",
+      "week_end": "2024-12-15",
+      "label": "09 Dec 2024 - 15 Dec 2024",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-941') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-02-24",
+      "week_end": "2025-03-02",
+      "label": "24 Feb 2025 - 02 Mar 2025",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-941') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

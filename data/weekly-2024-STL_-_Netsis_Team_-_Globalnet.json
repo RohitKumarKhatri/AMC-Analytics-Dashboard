@@ -1,0 +1,307 @@
+{
+  "period": "weekly",
+  "year": 2024,
+  "customer": "STL - Netsis Team - Globalnet",
+  "data": [
+    {
+      "week_start": "2024-04-01",
+      "week_end": "2024-04-07",
+      "label": "01 Apr 2024 - 07 Apr 2024",
+      "created": 2,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-102', 'SBZT-35') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 2
+    },
+    {
+      "week_start": "2024-04-08",
+      "week_end": "2024-04-14",
+      "label": "08 Apr 2024 - 14 Apr 2024",
+      "created": 2,
+      "resolved": 2,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-281', 'SBZT-285') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-281', 'SBZT-35') ORDER BY key DESC"
+      },
+      "cumulative": 2
+    },
+    {
+      "week_start": "2024-04-15",
+      "week_end": "2024-04-21",
+      "label": "15 Apr 2024 - 21 Apr 2024",
+      "created": 1,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-320') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-285') ORDER BY key DESC"
+      },
+      "cumulative": 2
+    },
+    {
+      "week_start": "2024-04-22",
+      "week_end": "2024-04-28",
+      "label": "22 Apr 2024 - 28 Apr 2024",
+      "created": 2,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-323', 'SBZT-341') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-323') ORDER BY key DESC"
+      },
+      "cumulative": 3
+    },
+    {
+      "week_start": "2024-04-29",
+      "week_end": "2024-05-05",
+      "label": "29 Apr 2024 - 05 May 2024",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-102') ORDER BY key DESC"
+      },
+      "cumulative": 2
+    },
+    {
+      "week_start": "2024-05-06",
+      "week_end": "2024-05-12",
+      "label": "06 May 2024 - 12 May 2024",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-320') ORDER BY key DESC"
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2024-05-13",
+      "week_end": "2024-05-19",
+      "label": "13 May 2024 - 19 May 2024",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-391') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 2
+    },
+    {
+      "week_start": "2024-05-20",
+      "week_end": "2024-05-26",
+      "label": "20 May 2024 - 26 May 2024",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-391') ORDER BY key DESC"
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2024-06-03",
+      "week_end": "2024-06-09",
+      "label": "03 Jun 2024 - 09 Jun 2024",
+      "created": 2,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-431', 'SBZT-432') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 3
+    },
+    {
+      "week_start": "2024-06-17",
+      "week_end": "2024-06-23",
+      "label": "17 Jun 2024 - 23 Jun 2024",
+      "created": 2,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-458', 'SBZT-459') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-458') ORDER BY key DESC"
+      },
+      "cumulative": 4
+    },
+    {
+      "week_start": "2024-07-01",
+      "week_end": "2024-07-07",
+      "label": "01 Jul 2024 - 07 Jul 2024",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-432') ORDER BY key DESC"
+      },
+      "cumulative": 3
+    },
+    {
+      "week_start": "2024-07-15",
+      "week_end": "2024-07-21",
+      "label": "15 Jul 2024 - 21 Jul 2024",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-341') ORDER BY key DESC"
+      },
+      "cumulative": 2
+    },
+    {
+      "week_start": "2024-07-22",
+      "week_end": "2024-07-28",
+      "label": "22 Jul 2024 - 28 Jul 2024",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-536') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 3
+    },
+    {
+      "week_start": "2024-08-05",
+      "week_end": "2024-08-11",
+      "label": "05 Aug 2024 - 11 Aug 2024",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-536') ORDER BY key DESC"
+      },
+      "cumulative": 2
+    },
+    {
+      "week_start": "2024-08-12",
+      "week_end": "2024-08-18",
+      "label": "12 Aug 2024 - 18 Aug 2024",
+      "created": 3,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-588', 'SBZT-593', 'SBZT-595') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 5
+    },
+    {
+      "week_start": "2024-08-19",
+      "week_end": "2024-08-25",
+      "label": "19 Aug 2024 - 25 Aug 2024",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-595') ORDER BY key DESC"
+      },
+      "cumulative": 4
+    },
+    {
+      "week_start": "2024-09-02",
+      "week_end": "2024-09-08",
+      "label": "02 Sep 2024 - 08 Sep 2024",
+      "created": 1,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-636') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-636') ORDER BY key DESC"
+      },
+      "cumulative": 4
+    },
+    {
+      "week_start": "2024-09-16",
+      "week_end": "2024-09-22",
+      "label": "16 Sep 2024 - 22 Sep 2024",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-658') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 5
+    },
+    {
+      "week_start": "2024-09-30",
+      "week_end": "2024-10-06",
+      "label": "30 Sep 2024 - 06 Oct 2024",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-700') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 6
+    },
+    {
+      "week_start": "2024-10-07",
+      "week_end": "2024-10-13",
+      "label": "07 Oct 2024 - 13 Oct 2024",
+      "created": 1,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-713') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-588') ORDER BY key DESC"
+      },
+      "cumulative": 6
+    },
+    {
+      "week_start": "2024-10-14",
+      "week_end": "2024-10-20",
+      "label": "14 Oct 2024 - 20 Oct 2024",
+      "created": 2,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-725', 'SBZT-726') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 8
+    },
+    {
+      "week_start": "2024-10-21",
+      "week_end": "2024-10-27",
+      "label": "21 Oct 2024 - 27 Oct 2024",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-740') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 9
+    },
+    {
+      "week_start": "2024-10-28",
+      "week_end": "2024-11-03",
+      "label": "28 Oct 2024 - 03 Nov 2024",
+      "created": 0,
+      "resolved": 4,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-700', 'SBZT-725', 'SBZT-726', 'SBZT-740') ORDER BY key DESC"
+      },
+      "cumulative": 5
+    },
+    {
+      "week_start": "2024-12-16",
+      "week_end": "2024-12-22",
+      "label": "16 Dec 2024 - 22 Dec 2024",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-713') ORDER BY key DESC"
+      },
+      "cumulative": 4
+    },
+    {
+      "week_start": "2025-01-27",
+      "week_end": "2025-02-02",
+      "label": "27 Jan 2025 - 02 Feb 2025",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-658') ORDER BY key DESC"
+      },
+      "cumulative": 3
+    }
+  ]
+}

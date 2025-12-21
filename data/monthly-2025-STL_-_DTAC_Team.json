@@ -1,0 +1,20 @@
+{
+  "period": "monthly",
+  "year": 2025,
+  "customer": "STL - DTAC Team",
+  "data": [
+    {
+      "month": "2025-06",
+      "month_start": "2025-06-01",
+      "month_end": "2025-06-30",
+      "label": "Jun 2025",
+      "created": 1,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1511') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1511') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

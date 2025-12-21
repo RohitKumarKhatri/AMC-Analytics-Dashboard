@@ -1,0 +1,98 @@
+{
+  "period": "monthly",
+  "year": 2025,
+  "customer": "STL - Commverge Solutions Philippines Inc.",
+  "data": [
+    {
+      "month": "2025-01",
+      "month_start": "2025-01-01",
+      "month_end": "2025-01-31",
+      "label": "Jan 2025",
+      "created": 3,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-139', 'OAM-141', 'SBZT-1016') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 3
+    },
+    {
+      "month": "2025-02",
+      "month_start": "2025-02-01",
+      "month_end": "2025-02-28",
+      "label": "Feb 2025",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1016') ORDER BY key DESC"
+      },
+      "cumulative": 2
+    },
+    {
+      "month": "2025-08",
+      "month_start": "2025-08-01",
+      "month_end": "2025-08-31",
+      "label": "Aug 2025",
+      "created": 2,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1571', 'SBZT-1610') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 4
+    },
+    {
+      "month": "2025-09",
+      "month_start": "2025-09-01",
+      "month_end": "2025-09-30",
+      "label": "Sep 2025",
+      "created": 2,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1630', 'SBZT-1645') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1610') ORDER BY key DESC"
+      },
+      "cumulative": 5
+    },
+    {
+      "month": "2025-10",
+      "month_start": "2025-10-01",
+      "month_end": "2025-10-31",
+      "label": "Oct 2025",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1689') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 6
+    },
+    {
+      "month": "2025-11",
+      "month_start": "2025-11-01",
+      "month_end": "2025-11-30",
+      "label": "Nov 2025",
+      "created": 2,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1729', 'SBZT-1750') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1630') ORDER BY key DESC"
+      },
+      "cumulative": 7
+    },
+    {
+      "month": "2025-12",
+      "month_start": "2025-12-01",
+      "month_end": "2025-12-31",
+      "label": "Dec 2025",
+      "created": 1,
+      "resolved": 3,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1768') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1571', 'SBZT-1750', 'SBZT-1768') ORDER BY key DESC"
+      },
+      "cumulative": 5
+    }
+  ]
+}

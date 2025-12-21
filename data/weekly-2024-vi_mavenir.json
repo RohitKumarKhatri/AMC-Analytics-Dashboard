@@ -1,0 +1,19 @@
+{
+  "period": "weekly",
+  "year": 2024,
+  "customer": "vi.mavenir",
+  "data": [
+    {
+      "week_start": "2024-04-08",
+      "week_end": "2024-04-14",
+      "label": "08 Apr 2024 - 14 Apr 2024",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-288') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    }
+  ]
+}

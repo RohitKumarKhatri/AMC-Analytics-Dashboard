@@ -1,0 +1,19 @@
+{
+  "period": "weekly",
+  "year": 2024,
+  "customer": "STL - Atom Myanmar",
+  "data": [
+    {
+      "week_start": "2024-04-01",
+      "week_end": "2024-04-07",
+      "label": "01 Apr 2024 - 07 Apr 2024",
+      "created": 1,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-98') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-98') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

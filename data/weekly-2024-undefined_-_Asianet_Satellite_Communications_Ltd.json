@@ -1,0 +1,31 @@
+{
+  "period": "weekly",
+  "year": 2024,
+  "customer": "undefined - Asianet Satellite Communications Ltd",
+  "data": [
+    {
+      "week_start": "2024-11-04",
+      "week_end": "2024-11-10",
+      "label": "04 Nov 2024 - 10 Nov 2024",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-795') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2024-11-11",
+      "week_end": "2024-11-17",
+      "label": "11 Nov 2024 - 17 Nov 2024",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-795') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

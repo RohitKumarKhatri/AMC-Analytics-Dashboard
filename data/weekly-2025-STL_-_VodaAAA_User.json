@@ -1,0 +1,55 @@
+{
+  "period": "weekly",
+  "year": 2025,
+  "customer": "STL - VodaAAA User",
+  "data": [
+    {
+      "week_start": "2025-01-06",
+      "week_end": "2025-01-12",
+      "label": "06 Jan 2025 - 12 Jan 2025",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1023') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-02-24",
+      "week_end": "2025-03-02",
+      "label": "24 Feb 2025 - 02 Mar 2025",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1023') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-04-14",
+      "week_end": "2025-04-20",
+      "label": "14 Apr 2025 - 20 Apr 2025",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1356') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-05-05",
+      "week_end": "2025-05-11",
+      "label": "05 May 2025 - 11 May 2025",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1356') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}
