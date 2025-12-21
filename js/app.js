@@ -8,6 +8,7 @@ let currentFilters = {
     ranges: ['Q4'],
     customer: 'one-albania'
 };
+let pendingJiraLink = null; // Store link to open after modal
 
 // Save filters to localStorage
 function saveFiltersToStorage() {
