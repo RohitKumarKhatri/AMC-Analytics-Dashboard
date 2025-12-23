@@ -106,13 +106,21 @@ def process_csv_file(csv_path):
             if cleaned_customer:
                 customers.add(cleaned_customer)
             
+            # Get Status and Assignee for team performance
+            status = row.get('Status', '').strip()
+            assignee = row.get('Assignee', '').strip()
+            development_completed = parse_date(row.get('Custom field (Development Completed)', ''))
+            
             tickets.append({
                 'created': created_date,
                 'closure': closure_date,
                 'customer': cleaned_customer,
                 'original_customer': customer_name,
                 'issue_key': row.get('Issue key', ''),
-                'summary': row.get('Summary', '')
+                'summary': row.get('Summary', ''),
+                'status': status,
+                'assignee': assignee,
+                'development_completed': development_completed
             })
     
     print(f"Processed {len(tickets)} tickets from {row_count} rows")
@@ -394,6 +402,123 @@ def aggregate_customer_distribution(tickets, year, ranges):
     
     return result
 
+def aggregate_team_performance(tickets, year, quarter):
+    """
+    Aggregate team performance data for a specific year and quarter.
+    Only includes tickets with Closure Date (matches Created vs Resolved chart logic).
+    
+    Returns:
+        dict with structure:
+        {
+            'year': int,
+            'range': str (e.g., 'Q4'),
+            'weeks': [str],  # Week start dates formatted as "DD MMM YYYY"
+            'assignees': [str],  # Sorted list of assignees
+            'data': {
+                'Assignee Name': {
+                    'Week Start': {'count': int, 'keys': [str]},
+                    'total': int
+                }
+            },
+            'week_totals': {'Week Start': int},
+            'grand_total': int
+        }
+    """
+    # Filter by year and quarter
+    quarter_months = {
+        1: [1, 2, 3],
+        2: [4, 5, 6],
+        3: [7, 8, 9],
+        4: [10, 11, 12]
+    }[quarter]
+    
+    # Group by assignee and week
+    assignee_week_data = defaultdict(lambda: defaultdict(lambda: {'count': 0, 'keys': []}))
+    assignee_totals = defaultdict(int)
+    week_totals = defaultdict(int)
+    all_weeks = set()
+    all_assignees = set()
+    
+    for ticket in tickets:
+        # Filter: must have Closure Date (matches Created vs Resolved chart logic)
+        closure_date = ticket.get('closure')
+        if not closure_date:
+            continue
+        
+        # Use Closure Date (matches Created vs Resolved chart logic)
+        # This is the date we'll use for grouping
+        completion_date = closure_date
+        
+        # Get week start (Monday) from closure date
+        week_start = get_week_start(completion_date)
+        
+        # Check year (based on week start date, since that's what we display)
+        if week_start.year != year:
+            continue
+        
+        # Check quarter (based on week start date's month, since that's what we display)
+        if week_start.month not in quarter_months:
+            continue
+        
+        # Get assignee (or "Unassigned")
+        assignee = ticket.get('assignee', '').strip() or 'Unassigned'
+        
+        # Format week as "DD MMM YYYY" (e.g., "06 Oct 2024")
+        # Note: %b gives abbreviated month name (Jan, Feb, etc.)
+        week_str = week_start.strftime('%d %b %Y')
+        
+        # Get issue key
+        issue_key = ticket.get('issue_key', '')
+        
+        # Aggregate
+        assignee_week_data[assignee][week_str]['count'] += 1
+        issue_key = ticket.get('issue_key', '')
+        if issue_key:
+            assignee_week_data[assignee][week_str]['keys'].append(issue_key)
+        assignee_totals[assignee] += 1
+        week_totals[week_str] += 1
+        all_weeks.add(week_str)
+        all_assignees.add(assignee)
+    
+    # Sort weeks chronologically
+    sorted_weeks = sorted(all_weeks, key=lambda w: datetime.strptime(w, '%d %b %Y'))
+    
+    # Sort assignees: "Unassigned" last, then alphabetically
+    sorted_assignees = sorted(
+        [a for a in all_assignees if a != 'Unassigned'],
+        key=lambda x: x.lower()
+    )
+    if 'Unassigned' in all_assignees:
+        sorted_assignees.append('Unassigned')
+    
+    # Build data structure
+    result_data = {}
+    for assignee in sorted_assignees:
+        assignee_data = {}
+        for week in sorted_weeks:
+            if week in assignee_week_data[assignee]:
+                assignee_data[week] = {
+                    'count': assignee_week_data[assignee][week]['count'],
+                    'keys': sorted(set(assignee_week_data[assignee][week]['keys']))
+                }
+            else:
+                assignee_data[week] = {'count': 0, 'keys': []}
+        assignee_data['total'] = assignee_totals[assignee]
+        result_data[assignee] = assignee_data
+    
+    # Calculate grand total
+    grand_total = sum(week_totals.values())
+    
+    return {
+        'year': year,
+        'range': f'Q{quarter}',
+        'weeks': sorted_weeks,
+        'assignees': sorted_assignees,
+        'data': result_data,
+        'week_totals': {week: week_totals.get(week, 0) for week in sorted_weeks},
+        'grand_total': grand_total
+    }
+
 def generate_all_aggregations(data, output_dir):
     """Generate all possible aggregation combinations"""
     output_dir = Path(output_dir)
@@ -560,6 +685,18 @@ def generate_all_aggregations(data, output_dir):
                     'distribution': distribution
                 }, f, indent=2, ensure_ascii=False)
             file_count += 1
+    
+    # Generate team performance data for each (year, quarter) combination
+    print("\nGenerating team performance data...")
+    for year in years:
+        for quarter in [1, 2, 3, 4]:
+            team_data = aggregate_team_performance(tickets, year, quarter)
+            filename = f'team-performance-{year}-Q{quarter}.json'
+            filepath = output_dir / filename
+            with open(filepath, 'w', encoding='utf-8') as f:
+                json.dump(team_data, f, indent=2, ensure_ascii=False)
+            file_count += 1
+            print(f"Generated: {filename}")
     
     print(f"\nGenerated {file_count} JSON files in {output_dir}")
     return file_count
