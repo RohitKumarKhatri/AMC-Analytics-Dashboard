@@ -289,47 +289,16 @@ function setupRangeButtonListeners() {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-            e.stopImmediatePropagation();
             btn.blur(); // Remove focus to prevent scroll
+            e.stopImmediatePropagation();
             const savedScroll = window.pageYOffset || document.documentElement.scrollTop;
             const range = btn.dataset.range;
-            const index = currentFilters.ranges.indexOf(range);
-            
-            if (index > -1) {
-                currentFilters.ranges.splice(index, 1);
-                btn.classList.remove('active');
-            } else {
-                currentFilters.ranges.push(range);
-                btn.classList.add('active');
-            }
-            
-            // Handle Annual special case
-            if (range === 'Annual') {
-                if (currentFilters.ranges.includes('Annual')) {
-                    ['Q1', 'Q2', 'Q3', 'Q4'].forEach(q => {
-                        const idx = currentFilters.ranges.indexOf(q);
-                        if (idx > -1) {
-                            currentFilters.ranges.splice(idx, 1);
-                        }
-                    });
-                    updateRangeButtons();
-                }
-            } else {
-                const annualIdx = currentFilters.ranges.indexOf('Annual');
-                if (annualIdx > -1) {
-                    currentFilters.ranges.splice(annualIdx, 1);
-                    const annualBtn = document.querySelector('#range-buttons .btn-toggle[data-range="Annual"]');
-                    if (annualBtn) {
-                        annualBtn.classList.remove('active');
-                    }
-                }
-            }
-            
-            if (currentFilters.ranges.length === 0) {
-                currentFilters.ranges = ['Q4'];
-                updateRangeButtons();
-            }
-            
+
+            // RADIO behavior: only one active at a time
+            document.querySelectorAll('#range-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentFilters.ranges = [range];
+
             // Save filters to localStorage
             saveFiltersToStorage();
             
@@ -1043,10 +1012,12 @@ function initCustomerFilters() {
     customerFilters.year = currentFilters.year || (metadata.years && metadata.years.length > 0 ? metadata.years[metadata.years.length - 1] : null);
     
     // Initialize ranges - ensure it's an array and defaults to Q4 if not set
-    if (!currentFilters.ranges || !Array.isArray(currentFilters.ranges) || currentFilters.ranges.length === 0) {
+    if (!currentFilters.ranges || (Array.isArray(currentFilters.ranges) && currentFilters.ranges.length === 0)) {
         customerFilters.ranges = ['Q4'];
     } else {
-        customerFilters.ranges = [...currentFilters.ranges]; // Copy array
+        // Ensure single-select behavior
+        const first = Array.isArray(currentFilters.ranges) ? currentFilters.ranges[0] : currentFilters.ranges;
+        customerFilters.ranges = [first];
     }
     
     // Update year buttons
@@ -1128,46 +1099,12 @@ function setupCustomerEventListeners() {
             btn.blur(); // Remove focus to prevent scroll
             const savedScroll = window.pageYOffset || document.documentElement.scrollTop;
             const range = btn.dataset.range;
-            
-            if (range === 'Annual') {
-                // If Annual clicked, clear all others
-                document.querySelectorAll('#customer-range-buttons .btn-toggle').forEach(b => {
-                    if (b.dataset.range !== 'Annual') {
-                        b.classList.remove('active');
-                    }
-                });
-                btn.classList.add('active'); // Ensure Annual is active
-                customerFilters.ranges = ['Annual'];
-            } else {
-                // Toggle individual quarter
-                btn.classList.toggle('active');
-                
-                // Remove Annual if a quarter is clicked
-                const annualBtn = document.querySelector('#customer-range-buttons .btn-toggle[data-range="Annual"]');
-                if (annualBtn) {
-                    annualBtn.classList.remove('active');
-                }
-                
-                // Update ranges array - get active buttons AFTER toggle
-                const activeRanges = Array.from(document.querySelectorAll('#customer-range-buttons .btn-toggle.active'))
-                    .map(b => b.dataset.range)
-                    .filter(r => r !== 'Annual'); // Exclude Annual from quarter list
-                
-                // Ensure at least one range is selected (default to Q4 if none)
-                if (activeRanges.length === 0) {
-                    // If no quarters are active, activate Q4
-                    const q4Btn = document.querySelector('#customer-range-buttons .btn-toggle[data-range="Q4"]');
-                    if (q4Btn) {
-                        q4Btn.classList.add('active');
-                        customerFilters.ranges = ['Q4'];
-                    } else {
-                        customerFilters.ranges = ['Q4'];
-                    }
-                } else {
-                    customerFilters.ranges = activeRanges;
-                }
-            }
-            
+
+            // RADIO behavior: only one active at a time
+            document.querySelectorAll('#customer-range-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            customerFilters.ranges = [range];
+
             console.log('Customer filters updated:', customerFilters);
             await loadCustomerData();
             // Restore scroll position multiple times to handle async DOM updates
