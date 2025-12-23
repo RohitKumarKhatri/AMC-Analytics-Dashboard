@@ -8,7 +8,7 @@ let currentFilters = {
     ranges: ['Q4'],
     customer: 'one-albania'
 };
-let pendingJiraLink = null; // Store link to open after modal
+// Removed: pendingJiraLink - no longer needed
 let customerPieChart = null;
 let customerFilters = {
     period: 'weekly',
@@ -649,16 +649,9 @@ function renderCharts(data) {
                 if (link && link.indexOf('key = "NONE"') === -1) {
                     clickHandled = true;
                     
-                    // Check if user wants to skip the login prompt
-                    const skipLoginPrompt = localStorage.getItem('amc-dashboard-skip-login-prompt') === 'true';
-                    
-                    if (skipLoginPrompt) {
-                        // Open directly if user chose to skip
-                        window.open(link, '_blank');
-                    } else {
-                        // Check if user is logged in to Jira
-                        checkJiraLoginStatus(link);
-                    }
+                    // Show notification and open link
+                    showJiraNotification();
+                    window.open(link, '_blank');
                     
                     // Reset after delay to allow next click
                     setTimeout(() => {
@@ -835,8 +828,45 @@ function showError() {
     document.getElementById('error').style.display = 'block';
 }
 
-// Check if user is logged into Jira using multiple detection methods
-async function checkJiraLoginStatus(jiraLink) {
+// Show Jira login notification toast
+function showJiraNotification() {
+    const toast = document.getElementById('jira-toast');
+    if (!toast) return;
+    
+    // Show toast
+    toast.style.display = 'block';
+    setTimeout(() => {
+        toast.classList.add('show');
+    }, 10);
+    
+    // Hide toast after 4 seconds
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => {
+            toast.style.display = 'none';
+        }, 300);
+    }, 4000);
+}
+
+// Show Jira login notification toast
+function showJiraNotification() {
+    const toast = document.getElementById('jira-toast');
+    if (!toast) return;
+    
+    // Show toast
+    toast.style.display = 'block';
+    setTimeout(() => {
+        toast.classList.add('show');
+    }, 10);
+    
+    // Hide toast after 4 seconds
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => {
+            toast.style.display = 'none';
+        }, 300);
+    }, 4000);
+}
     // First check cached login status (if checked recently)
     const cachedLoginStatus = localStorage.getItem('amc-dashboard-jira-logged-in');
     const cacheTime = localStorage.getItem('amc-dashboard-jira-login-check-time');
@@ -960,91 +990,7 @@ async function checkJiraLoginStatus(jiraLink) {
     }
 }
 
-// Modal functions
-function showLoginModal() {
-    const modal = document.getElementById('jira-login-modal');
-    if (modal) {
-        modal.style.display = 'flex';
-        modal.classList.add('show');
-    }
-}
-
-function hideLoginModal() {
-    const modal = document.getElementById('jira-login-modal');
-    if (modal) {
-        modal.style.display = 'none';
-        modal.classList.remove('show');
-    }
-    pendingJiraLink = null;
-}
-
-function proceedToJira() {
-    if (pendingJiraLink) {
-        // Cache that user attempted to proceed (might be logged in)
-        localStorage.setItem('amc-dashboard-jira-logged-in', 'true');
-        localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
-        
-        window.open(pendingJiraLink, '_blank');
-        hideLoginModal();
-    }
-}
-
-// Setup modal event listeners
-function setupModalListeners() {
-    // Close button
-    const closeBtn = document.getElementById('modal-close');
-    if (closeBtn) {
-        closeBtn.addEventListener('click', hideLoginModal);
-    }
-    
-    // Proceed button
-    const proceedBtn = document.getElementById('btn-proceed');
-    if (proceedBtn) {
-        proceedBtn.addEventListener('click', proceedToJira);
-    }
-    
-    // Don't show again checkbox
-    const dontShowCheckbox = document.getElementById('dont-show-again');
-    if (dontShowCheckbox) {
-        dontShowCheckbox.addEventListener('change', function(e) {
-            if (e.target.checked) {
-                localStorage.setItem('amc-dashboard-skip-login-prompt', 'true');
-            } else {
-                localStorage.removeItem('amc-dashboard-skip-login-prompt');
-            }
-        });
-    }
-    
-    // Close modal when clicking outside
-    const modal = document.getElementById('jira-login-modal');
-    if (modal) {
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-                hideLoginModal();
-            }
-        });
-    }
-    
-    // Close modal with Escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            hideLoginModal();
-        }
-    });
-    
-    // Login link button - when clicked, mark as potentially logged in after delay
-    const loginBtn = document.querySelector('.btn-login');
-    if (loginBtn) {
-        loginBtn.addEventListener('click', function() {
-            // After clicking login, assume user might be logged in after a delay
-            // Give them time to login, then cache the status
-            setTimeout(() => {
-                localStorage.setItem('amc-dashboard-jira-logged-in', 'true');
-                localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
-            }, 3000); // 3 second delay to allow login
-        });
-    }
-}
+// REMOVED: All modal functions - replaced with toast notification
 
 // Tab Navigation
 function setupTabs() {
@@ -1568,8 +1514,9 @@ function renderCustomerPieChart(customerData) {
             if (jql) {
                 const jiraUrl = `https://psskyvera.atlassian.net/issues/?jql=${jql}`;
                 
-                // Check login status before opening
-                checkJiraLoginStatus(jiraUrl);
+                // Show notification and open link
+                showJiraNotification();
+                window.open(jiraUrl, '_blank');
             }
         }
     });
@@ -1805,7 +1752,8 @@ function renderTeamPerformanceTable(data) {
                     const cellKeys = JSON.parse(e.target.dataset.keys);
                     if (cellKeys && cellKeys.length > 0) {
                         const jiraUrl = generateJiraLinkFromKeys(cellKeys);
-                        checkJiraLoginStatus(jiraUrl);
+                        showJiraNotification();
+                        window.open(jiraUrl, '_blank');
                     }
                 });
                 
@@ -1900,7 +1848,8 @@ function renderTeamPerformanceTable(data) {
                     const cellKeys = JSON.parse(e.target.dataset.keys);
                     if (cellKeys && cellKeys.length > 0) {
                         const jiraUrl = generateJiraLinkFromKeys(cellKeys);
-                        checkJiraLoginStatus(jiraUrl);
+                        showJiraNotification();
+                        window.open(jiraUrl, '_blank');
                     }
                 });
                 
@@ -2001,12 +1950,10 @@ function showTeamError() {
 // Initialize when DOM is ready
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function() {
-        setupModalListeners();
         setupTabs();
         init();
     });
 } else {
-    setupModalListeners();
     setupTabs();
     init();
 }
