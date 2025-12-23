@@ -1096,7 +1096,7 @@ function updateCustomerYearButtons() {
 function setupCustomerEventListeners() {
     // Year buttons
     document.querySelectorAll('#customer-year-buttons .btn-toggle').forEach(btn => {
-        btn.addEventListener('click', (e) => {
+        btn.addEventListener('click', async (e) => {
             e.preventDefault();
             e.stopPropagation();
             e.stopImmediatePropagation();
@@ -1105,17 +1105,23 @@ function setupCustomerEventListeners() {
             document.querySelectorAll('#customer-year-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             customerFilters.year = parseInt(btn.dataset.year);
-            loadCustomerData();
-            // Restore scroll position after a brief delay
+            await loadCustomerData();
+            // Restore scroll position multiple times to handle async DOM updates
             requestAnimationFrame(() => {
                 window.scrollTo(0, savedScroll);
+                setTimeout(() => {
+                    window.scrollTo(0, savedScroll);
+                }, 100);
+                setTimeout(() => {
+                    window.scrollTo(0, savedScroll);
+                }, 300);
             });
         });
     });
     
     // Range buttons
     document.querySelectorAll('#customer-range-buttons .btn-toggle').forEach(btn => {
-        btn.addEventListener('click', (e) => {
+        btn.addEventListener('click', async (e) => {
             e.preventDefault();
             e.stopPropagation();
             e.stopImmediatePropagation();
@@ -1163,10 +1169,16 @@ function setupCustomerEventListeners() {
             }
             
             console.log('Customer filters updated:', customerFilters);
-            loadCustomerData();
-            // Restore scroll position after a brief delay
+            await loadCustomerData();
+            // Restore scroll position multiple times to handle async DOM updates
             requestAnimationFrame(() => {
                 window.scrollTo(0, savedScroll);
+                setTimeout(() => {
+                    window.scrollTo(0, savedScroll);
+                }, 100);
+                setTimeout(() => {
+                    window.scrollTo(0, savedScroll);
+                }, 300);
             });
         });
     });
@@ -1576,7 +1588,7 @@ function setupTeamEventListeners() {
     // Year button listeners
     const yearButtons = document.getElementById('team-year-buttons');
     if (yearButtons) {
-        yearButtons.addEventListener('click', (e) => {
+        yearButtons.addEventListener('click', async (e) => {
             if (e.target.classList.contains('btn-toggle')) {
                 e.preventDefault();
                 e.stopPropagation();
@@ -1594,10 +1606,16 @@ function setupTeamEventListeners() {
                 
                 // Save and reload
                 saveTeamFiltersToStorage();
-                loadTeamPerformanceData();
-                // Restore scroll position after a brief delay
+                await loadTeamPerformanceData();
+                // Restore scroll position multiple times to handle async DOM updates
                 requestAnimationFrame(() => {
                     window.scrollTo(0, savedScroll);
+                    setTimeout(() => {
+                        window.scrollTo(0, savedScroll);
+                    }, 100);
+                    setTimeout(() => {
+                        window.scrollTo(0, savedScroll);
+                    }, 300);
                 });
             }
         });
@@ -1606,7 +1624,7 @@ function setupTeamEventListeners() {
     // Range button listeners (radio button behavior)
     const rangeButtons = document.getElementById('team-range-buttons');
     if (rangeButtons) {
-        rangeButtons.addEventListener('click', (e) => {
+        rangeButtons.addEventListener('click', async (e) => {
             if (e.target.classList.contains('btn-toggle')) {
                 e.preventDefault();
                 e.stopPropagation();
@@ -1624,10 +1642,16 @@ function setupTeamEventListeners() {
                 
                 // Save and reload
                 saveTeamFiltersToStorage();
-                loadTeamPerformanceData();
-                // Restore scroll position after a brief delay
+                await loadTeamPerformanceData();
+                // Restore scroll position multiple times to handle async DOM updates
                 requestAnimationFrame(() => {
                     window.scrollTo(0, savedScroll);
+                    setTimeout(() => {
+                        window.scrollTo(0, savedScroll);
+                    }, 100);
+                    setTimeout(() => {
+                        window.scrollTo(0, savedScroll);
+                    }, 300);
                 });
             }
         });
