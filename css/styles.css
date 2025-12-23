@@ -72,6 +72,7 @@ header h1 {
     justify-content: center;
     max-width: 1600px;
     margin: 0 auto;
+    margin-bottom: 30px; /* Add spacing below tabs */
 }
 
 .tab-btn {
@@ -138,9 +139,10 @@ header h1 {
 /* Tab Content */
 .tab-content {
     display: none;
-    padding: 0;
+    padding: 40px 0 0 0; /* Add top padding to separate from tabs */
     animation: fadeIn 0.3s ease-in-out;
     width: 100%;
+    background: #f5f7fa; /* Light background to separate from white tabs */
 }
 
 .tab-content.active {
@@ -152,6 +154,7 @@ header h1 {
     padding: 50px 30px;
     max-width: 1400px;
     margin: 0 auto;
+    background: #f5f7fa; /* Match other tab content background */
 }
 
 .home-header {
@@ -545,15 +548,29 @@ header h1 {
     flex-wrap: wrap;
     gap: 24px;
     margin-bottom: 30px;
+    margin-top: 0; /* Remove top margin since tab-content has padding */
     padding: 24px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     border-radius: 12px;
     border: none;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+.filters::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+    border-radius: 2px;
 }
 
 .filter-group {
