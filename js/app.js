@@ -2267,12 +2267,12 @@ function renderDetailedTicketsTable() {
     
     if (!filteredTickets || filteredTickets.length === 0) {
         const row = document.createElement('tr');
-        row.innerHTML = '<td colspan="5" style="text-align: center; padding: 20px;">No tickets found</td>';
+        row.innerHTML = '<td colspan="6" style="text-align: center; padding: 20px;">No tickets found</td>';
         tbody.appendChild(row);
         return;
     }
     
-    filteredTickets.forEach(ticket => {
+    filteredTickets.forEach((ticket, index) => {
         const row = document.createElement('tr');
         
         // Color code age
@@ -2285,8 +2285,10 @@ function renderDetailedTicketsTable() {
         
         const jiraUrl = `https://psskyvera.atlassian.net/browse/${ticket.key}`;
         const kayakoUrl = ticket.kayako_number ? `https://central-supportdesk.kayako.com/agent/conversations/${ticket.kayako_number}` : '#';
+        const serialNumber = index + 1;
         
         row.innerHTML = `
+            <td style="text-align: center; font-weight: 500; color: #666;">${serialNumber}</td>
             <td><a href="${jiraUrl}" target="_blank" class="ticket-link">${ticket.key}</a></td>
             <td><a href="${jiraUrl}" target="_blank" class="ticket-link">${ticket.title}</a></td>
             <td>${ticket.kayako_number ? `<a href="${kayakoUrl}" target="_blank" class="kayako-link">${ticket.kayako_number}</a>` : 'N/A'}</td>

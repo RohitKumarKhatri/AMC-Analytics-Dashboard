@@ -1266,9 +1266,21 @@ header h1 {
     color: white !important;
 }
 
+.detailed-tickets-table th:first-child {
+    text-align: center;
+    width: 60px;
+}
+
 .detailed-tickets-table td {
     padding: 12px 16px;
     border-bottom: 1px solid #e8e8e8;
+}
+
+.detailed-tickets-table td:first-child {
+    text-align: center;
+    font-weight: 500;
+    color: #666;
+    width: 60px;
 }
 
 .detailed-tickets-table tbody tr:hover {
