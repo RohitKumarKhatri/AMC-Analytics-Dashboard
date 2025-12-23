@@ -314,6 +314,8 @@ header h1 {
 .team-performance-container {
     padding: 30px;
     overflow-x: auto;
+    max-width: 1280px; /* 80% of 1600px to reduce width by 20% */
+    margin: 0 auto; /* Center the container */
 }
 
 .table-wrapper {
