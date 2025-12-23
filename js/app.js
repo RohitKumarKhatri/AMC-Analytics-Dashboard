@@ -951,6 +951,10 @@ function setupTabs() {
                     initTeamPerformanceTab();
                 }
                 
+                if (targetTab === 'open-items') {
+                    initOpenItemsTab();
+                }
+                
                 // Resize charts when switching to Created vs Resolved tab
                 if (targetTab === 'created-resolved') {
                     requestAnimationFrame(() => {
@@ -2046,6 +2050,323 @@ function showTeamError() {
     const loadingEl = document.getElementById('team-loading');
     const containerEl = document.getElementById('team-performance-container');
     const errorEl = document.getElementById('team-error');
+    
+    if (loadingEl) loadingEl.style.display = 'none';
+    if (containerEl) containerEl.style.display = 'none';
+    if (errorEl) errorEl.style.display = 'block';
+}
+
+// Open Items Tab Functions
+let openItemsData = null;
+let openItemsBarChart = null;
+let filteredTickets = null;
+
+async function initOpenItemsTab() {
+    if (openItemsData) {
+        // Data already loaded, just render
+        renderOpenItemsData();
+        return;
+    }
+    
+    try {
+        showOpenItemsLoading();
+        const response = await fetch(getCacheBustingUrl('data/open-items.json'));
+        
+        if (!response.ok) {
+            throw new Error(`Failed to load open items: ${response.status}`);
+        }
+        
+        openItemsData = await response.json();
+        filteredTickets = openItemsData.tickets; // Start with all tickets
+        
+        renderOpenItemsData();
+        hideOpenItemsLoading();
+    } catch (error) {
+        console.error('Error loading open items:', error);
+        showOpenItemsError();
+    }
+}
+
+function renderOpenItemsData() {
+    if (!openItemsData) return;
+    
+    renderCustomerDistributionChart();
+    renderCustomerSummaryTable();
+    renderDetailedTicketsTable();
+}
+
+function renderCustomerDistributionChart() {
+    const chartEl = document.getElementById('open-items-pie-chart');
+    if (!chartEl) return;
+    
+    if (openItemsBarChart) {
+        openItemsBarChart.dispose();
+    }
+    
+    openItemsBarChart = echarts.init(chartEl);
+    
+    const distribution = openItemsData.customer_distribution;
+    const totalCount = openItemsData.total_count;
+    
+    // Prepare data sorted by count (descending)
+    const data = Object.entries(distribution)
+        .map(([customer, info]) => ({
+            name: customer,
+            value: info.count,
+            percentage: totalCount > 0 ? ((info.count / totalCount) * 100).toFixed(2) : 0,
+            keys: info.keys
+        }))
+        .sort((a, b) => b.value - a.value);
+    
+    const customerNames = data.map(item => item.name);
+    const counts = data.map(item => item.value);
+    
+    const option = {
+        title: {
+            text: `Open Items by Customer (${totalCount} tickets)`,
+            left: 'center',
+            top: 10,
+            textStyle: {
+                fontSize: 18,
+                fontWeight: 'bold',
+                color: '#333'
+            }
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'shadow'
+            },
+            formatter: function(params) {
+                const param = params[0];
+                const item = data[param.dataIndex];
+                return `${param.name}<br/>Open Items: ${param.value} (${item.percentage}%)`;
+            }
+        },
+        grid: {
+            left: '10%',
+            right: '10%',
+            top: '20%',
+            bottom: '25%',
+            containLabel: false
+        },
+        xAxis: {
+            type: 'category',
+            data: customerNames,
+            axisLabel: {
+                interval: 0,
+                rotate: 45,
+                formatter: function(value) {
+                    // Truncate long names if needed
+                    return value.length > 20 ? value.substring(0, 17) + '...' : value;
+                }
+            }
+        },
+        yAxis: {
+            type: 'value',
+            name: 'Open Items',
+            nameLocation: 'middle',
+            nameGap: 50,
+            axisLabel: {
+                formatter: '{value}'
+            }
+        },
+        series: [{
+            name: 'Open Items',
+            type: 'bar',
+            data: counts.map((count, index) => ({
+                value: count,
+                itemStyle: {
+                    color: new echarts.graphic.LinearGradient(0, 1, 0, 0, [
+                        { offset: 0, color: '#667eea' },
+                        { offset: 1, color: '#764ba2' }
+                    ]),
+                    borderRadius: [4, 4, 0, 0]
+                }
+            })),
+            label: {
+                show: true,
+                position: 'top',
+                formatter: function(params) {
+                    const item = data[params.dataIndex];
+                    return `${params.value} (${item.percentage}%)`;
+                },
+                color: '#333',
+                fontWeight: '500'
+            },
+            emphasis: {
+                itemStyle: {
+                    shadowBlur: 10,
+                    shadowColor: 'rgba(102, 126, 234, 0.5)'
+                }
+            },
+            barWidth: '60%'
+        }]
+    };
+    
+    openItemsBarChart.setOption(option);
+    
+    // Add click handler
+    openItemsBarChart.on('click', (params) => {
+        const customerIndex = params.dataIndex;
+        const item = data[customerIndex];
+        if (item && item.keys && item.keys.length > 0) {
+            const jiraUrl = generateJiraLinkFromKeys(item.keys);
+            showJiraNotification();
+            setTimeout(() => {
+                window.open(jiraUrl, '_blank');
+            }, 500);
+        }
+    });
+    
+    // Resize chart
+    setTimeout(() => {
+        if (openItemsBarChart) openItemsBarChart.resize();
+    }, 100);
+}
+
+function renderCustomerSummaryTable() {
+    const tbody = document.getElementById('customer-summary-tbody');
+    if (!tbody) return;
+    
+    tbody.innerHTML = '';
+    
+    openItemsData.customer_summary.forEach(customer => {
+        const row = document.createElement('tr');
+        
+        // Color code average age
+        let ageClass = '';
+        const avgAge = customer.average_age_days;
+        if (avgAge <= 30) ageClass = 'age-green';
+        else if (avgAge <= 60) ageClass = 'age-yellow';
+        else if (avgAge <= 90) ageClass = 'age-orange';
+        else ageClass = 'age-red';
+        
+        row.innerHTML = `
+            <td><a href="#" class="customer-link" data-customer="${customer.customer}">${customer.customer}</a></td>
+            <td>${customer.total_open_items}</td>
+            <td class="${ageClass}">${customer.average_age_label}</td>
+        `;
+        
+        // Add click handler for customer link
+        const link = row.querySelector('.customer-link');
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            filterTicketsByCustomer(customer.customer);
+        });
+        
+        tbody.appendChild(row);
+    });
+}
+
+function renderDetailedTicketsTable() {
+    const tbody = document.getElementById('detailed-tickets-tbody');
+    if (!tbody) return;
+    
+    tbody.innerHTML = '';
+    
+    if (!filteredTickets || filteredTickets.length === 0) {
+        const row = document.createElement('tr');
+        row.innerHTML = '<td colspan="5" style="text-align: center; padding: 20px;">No tickets found</td>';
+        tbody.appendChild(row);
+        return;
+    }
+    
+    filteredTickets.forEach(ticket => {
+        const row = document.createElement('tr');
+        
+        // Color code age
+        let ageClass = '';
+        const ageDays = ticket.age_days;
+        if (ageDays <= 30) ageClass = 'age-green';
+        else if (ageDays <= 60) ageClass = 'age-yellow';
+        else if (ageDays <= 90) ageClass = 'age-orange';
+        else ageClass = 'age-red';
+        
+        const jiraUrl = `https://psskyvera.atlassian.net/browse/${ticket.key}`;
+        const kayakoUrl = ticket.kayako_number ? `https://central-supportdesk.kayako.com/agent/conversations/${ticket.kayako_number}` : '#';
+        
+        row.innerHTML = `
+            <td><a href="${jiraUrl}" target="_blank" class="ticket-link">${ticket.key}</a></td>
+            <td><a href="${jiraUrl}" target="_blank" class="ticket-link">${ticket.title}</a></td>
+            <td>${ticket.kayako_number ? `<a href="${kayakoUrl}" target="_blank" class="kayako-link">${ticket.kayako_number}</a>` : 'N/A'}</td>
+            <td>${ticket.created_formatted}</td>
+            <td class="${ageClass}">${ticket.age_label}</td>
+        `;
+        
+        // Add click handlers for Jira links
+        row.querySelectorAll('.ticket-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                showJiraNotification();
+                setTimeout(() => {
+                    window.open(jiraUrl, '_blank');
+                }, 500);
+            });
+        });
+        
+        tbody.appendChild(row);
+    });
+}
+
+function filterTicketsByCustomer(customer) {
+    if (!openItemsData) return;
+    
+    if (customer === 'All') {
+        filteredTickets = openItemsData.tickets;
+    } else {
+        filteredTickets = openItemsData.tickets.filter(t => t.customer === customer);
+    }
+    
+    renderDetailedTicketsTable();
+    
+    // Scroll to detailed table
+    const wrapper = document.getElementById('detailed-tickets-wrapper');
+    if (wrapper) {
+        wrapper.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+function generateJiraLinkFromKeys(keys) {
+    if (!keys || keys.length === 0) {
+        return 'https://psskyvera.atlassian.net/issues/?jql=key = "NONE"';
+    }
+    
+    const baseUrl = 'https://psskyvera.atlassian.net/issues/?jql=';
+    const keysStr = keys.map(k => `'${k}'`).join(', ');
+    const jql = `key in (${keysStr}) ORDER BY key DESC`;
+    return `${baseUrl}${encodeURIComponent(jql)}`;
+}
+
+function showOpenItemsLoading() {
+    const loadingEl = document.getElementById('open-items-loading');
+    const containerEl = document.getElementById('open-items-container');
+    const errorEl = document.getElementById('open-items-error');
+    
+    if (loadingEl) loadingEl.style.display = 'block';
+    if (containerEl) containerEl.style.display = 'none';
+    if (errorEl) errorEl.style.display = 'none';
+}
+
+function hideOpenItemsLoading() {
+    const loadingEl = document.getElementById('open-items-loading');
+    const containerEl = document.getElementById('open-items-container');
+    
+    if (loadingEl) {
+        setTimeout(() => {
+            loadingEl.style.display = 'none';
+        }, 200);
+    }
+    if (containerEl) {
+        containerEl.style.opacity = '1';
+        containerEl.style.display = 'block';
+    }
+}
+
+function showOpenItemsError() {
+    const loadingEl = document.getElementById('open-items-loading');
+    const containerEl = document.getElementById('open-items-container');
+    const errorEl = document.getElementById('open-items-error');
     
     if (loadingEl) loadingEl.style.display = 'none';
     if (containerEl) containerEl.style.display = 'none';

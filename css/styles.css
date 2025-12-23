@@ -1178,6 +1178,154 @@ header h1 {
 }
 
 /* Print Styles */
+/* Open Items Tab Styles */
+.open-items-container {
+    padding: 30px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.open-items-section {
+    margin-bottom: 40px;
+}
+
+.open-items-section h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.customer-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-summary-table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.customer-summary-table th {
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+    color: white !important;
+}
+
+.customer-summary-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.customer-summary-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.customer-summary-table .customer-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.customer-summary-table .customer-link:hover {
+    text-decoration: underline;
+}
+
+.detailed-tickets-wrapper {
+    max-height: 600px;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.detailed-tickets-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.detailed-tickets-table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.detailed-tickets-table th {
+    padding: 16px;
+    text-align: left;
+    font-weight: 600;
+    color: white !important;
+}
+
+.detailed-tickets-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.detailed-tickets-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.detailed-tickets-table .ticket-link {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.detailed-tickets-table .ticket-link:hover {
+    text-decoration: underline;
+}
+
+.detailed-tickets-table .kayako-link {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.detailed-tickets-table .kayako-link:hover {
+    text-decoration: underline;
+}
+
+/* Age color coding */
+.age-green {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.age-yellow {
+    color: #ffc107;
+    font-weight: 600;
+}
+
+.age-orange {
+    color: #fd7e14;
+    font-weight: 600;
+}
+
+.age-red {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+#open-items-loading {
+    text-align: center;
+    padding: 40px;
+}
+
+#open-items-error {
+    text-align: center;
+    padding: 40px;
+    color: #dc3545;
+}
+
 @media print {
     body {
         background: white;
