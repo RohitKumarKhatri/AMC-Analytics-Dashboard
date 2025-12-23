@@ -867,130 +867,6 @@ function showJiraNotification() {
         }, 300);
     }, 4000);
 }
-    // First check cached login status (if checked recently)
-    const cachedLoginStatus = localStorage.getItem('amc-dashboard-jira-logged-in');
-    const cacheTime = localStorage.getItem('amc-dashboard-jira-login-check-time');
-    const now = Date.now();
-    
-    // Use cached status if less than 5 minutes old
-    if (cachedLoginStatus && cacheTime && (now - parseInt(cacheTime)) < 5 * 60 * 1000) {
-        if (cachedLoginStatus === 'true') {
-            // User was logged in recently, open directly
-            window.open(jiraLink, '_blank');
-            return;
-        } else {
-            // User was not logged in recently, show modal
-            pendingJiraLink = jiraLink;
-            showLoginModal();
-            return;
-        }
-    }
-    
-    // No cache or expired - try multiple methods to detect login status
-    let isLoggedIn = false;
-    
-    // Method 1: Try REST API v3 (newer API)
-    try {
-        const controller1 = new AbortController();
-        const timeoutId1 = setTimeout(() => controller1.abort(), 2000);
-        
-        const response1 = await fetch('https://psskyvera.atlassian.net/rest/api/3/myself', {
-            method: 'GET',
-            credentials: 'include',
-            signal: controller1.signal,
-            headers: {
-                'Accept': 'application/json'
-            },
-            mode: 'cors'
-        });
-        
-        clearTimeout(timeoutId1);
-        
-        if (response1.ok && response1.status === 200) {
-            // Successfully got user info - definitely logged in
-            isLoggedIn = true;
-        } else if (response1.status === 401) {
-            // 401 Unauthorized - definitely not logged in
-            isLoggedIn = false;
-        }
-    } catch (error1) {
-        // CORS error or network error - try method 2
-        console.log('Method 1 failed, trying method 2...');
-    }
-    
-    // Method 2: Try REST API v2 (fallback)
-    if (isLoggedIn === false) {
-        try {
-            const controller2 = new AbortController();
-            const timeoutId2 = setTimeout(() => controller2.abort(), 2000);
-            
-            const response2 = await fetch('https://psskyvera.atlassian.net/rest/api/2/myself', {
-                method: 'GET',
-                credentials: 'include',
-                signal: controller2.signal,
-                headers: {
-                    'Accept': 'application/json'
-                },
-                mode: 'cors'
-            });
-            
-            clearTimeout(timeoutId2);
-            
-            if (response2.ok && response2.status === 200) {
-                // Successfully got user info - definitely logged in
-                isLoggedIn = true;
-            } else if (response2.status === 401) {
-                // 401 Unauthorized - definitely not logged in
-                isLoggedIn = false;
-            }
-        } catch (error2) {
-            // CORS error - ambiguous, but likely not logged in
-            console.log('Method 2 also failed - CORS error, likely not logged in');
-            isLoggedIn = false;
-        }
-    }
-    
-    // Method 3: Try to fetch a protected resource (favicon or dashboard)
-    // This helps detect login even when API endpoints fail due to CORS
-    if (isLoggedIn === false) {
-        try {
-            const controller3 = new AbortController();
-            const timeoutId3 = setTimeout(() => controller3.abort(), 1500);
-            
-            // Try fetching dashboard page - if logged in, it will load; if not, redirects to login
-            const response3 = await fetch('https://psskyvera.atlassian.net/secure/Dashboard.jspa', {
-                method: 'HEAD', // HEAD request is lighter
-                credentials: 'include',
-                signal: controller3.signal,
-                mode: 'no-cors' // Use no-cors to avoid CORS errors
-            });
-            
-            clearTimeout(timeoutId3);
-            
-            // With no-cors, we can't read status, but if request completes, user might be logged in
-            // This is a weak signal, so we'll still show modal if other methods failed
-        } catch (error3) {
-            // Request failed completely
-            console.log('Method 3 failed');
-        }
-    }
-    
-    // Determine final action based on detection results
-    if (isLoggedIn === true) {
-        // User is logged in - cache the status and open link
-        localStorage.setItem('amc-dashboard-jira-logged-in', 'true');
-        localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
-        window.open(jiraLink, '_blank');
-    } else {
-        // User is not logged in or status is ambiguous - show modal to be safe
-        localStorage.setItem('amc-dashboard-jira-logged-in', 'false');
-        localStorage.setItem('amc-dashboard-jira-login-check-time', Date.now().toString());
-        pendingJiraLink = jiraLink;
-        showLoginModal();
-    }
-}
-
-// REMOVED: All modal functions - replaced with toast notification
 
 // Tab Navigation
 function setupTabs() {
@@ -1793,7 +1669,8 @@ function renderTeamPerformanceTable(data) {
                 const cellKeys = JSON.parse(e.target.dataset.keys);
                 if (cellKeys && cellKeys.length > 0) {
                     const jiraUrl = generateJiraLinkFromKeys(cellKeys);
-                    checkJiraLoginStatus(jiraUrl);
+                    showJiraNotification();
+                    window.open(jiraUrl, '_blank');
                 }
             });
             
@@ -1890,7 +1767,8 @@ function renderTeamPerformanceTable(data) {
                 const cellKeys = JSON.parse(e.target.dataset.keys);
                 if (cellKeys && cellKeys.length > 0) {
                     const jiraUrl = generateJiraLinkFromKeys(cellKeys);
-                    checkJiraLoginStatus(jiraUrl);
+                    showJiraNotification();
+                    window.open(jiraUrl, '_blank');
                 }
             });
             
