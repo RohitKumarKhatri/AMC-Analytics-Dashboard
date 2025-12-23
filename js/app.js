@@ -223,7 +223,10 @@ function updateYearButtons() {
 function setupEventListeners() {
     // Period buttons
     document.querySelectorAll('#period-buttons .btn-toggle').forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            btn.blur(); // Remove focus to prevent scroll
             document.querySelectorAll('#period-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             currentFilters.period = btn.dataset.period;
@@ -246,7 +249,10 @@ function setupEventListeners() {
 // Setup year button listeners
 function setupYearButtonListeners() {
     document.querySelectorAll('#year-buttons .btn-toggle').forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            btn.blur(); // Remove focus to prevent scroll
             document.querySelectorAll('#year-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             currentFilters.year = parseInt(btn.dataset.year);
@@ -259,7 +265,10 @@ function setupYearButtonListeners() {
 // Setup range button listeners
 function setupRangeButtonListeners() {
     document.querySelectorAll('#range-buttons .btn-toggle').forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            btn.blur(); // Remove focus to prevent scroll
             const range = btn.dataset.range;
             const index = currentFilters.ranges.indexOf(range);
             
@@ -1059,7 +1068,10 @@ function updateCustomerYearButtons() {
 function setupCustomerEventListeners() {
     // Year buttons
     document.querySelectorAll('#customer-year-buttons .btn-toggle').forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            btn.blur(); // Remove focus to prevent scroll
             document.querySelectorAll('#customer-year-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             customerFilters.year = parseInt(btn.dataset.year);
@@ -1069,7 +1081,10 @@ function setupCustomerEventListeners() {
     
     // Range buttons
     document.querySelectorAll('#customer-range-buttons .btn-toggle').forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            btn.blur(); // Remove focus to prevent scroll
             const range = btn.dataset.range;
             
             if (range === 'Annual') {
@@ -1522,6 +1537,9 @@ function setupTeamEventListeners() {
     if (yearButtons) {
         yearButtons.addEventListener('click', (e) => {
             if (e.target.classList.contains('btn-toggle')) {
+                e.preventDefault();
+                e.stopPropagation();
+                e.target.blur(); // Remove focus to prevent scroll
                 const year = parseInt(e.target.dataset.year);
                 teamFilters.year = year;
                 
@@ -1543,6 +1561,9 @@ function setupTeamEventListeners() {
     if (rangeButtons) {
         rangeButtons.addEventListener('click', (e) => {
             if (e.target.classList.contains('btn-toggle')) {
+                e.preventDefault();
+                e.stopPropagation();
+                e.target.blur(); // Remove focus to prevent scroll
                 const range = e.target.dataset.range;
                 teamFilters.range = range;
                 
