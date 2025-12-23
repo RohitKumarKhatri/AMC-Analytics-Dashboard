@@ -1,5 +1,14 @@
 // Main application logic - loads pre-aggregated JSON files
 
+// Cache-busting helper function (5-minute cache)
+function getCacheBustingUrl(url) {
+    const cacheDuration = 5 * 60 * 1000; // 5 minutes
+    const now = Date.now();
+    const cacheKey = Math.floor(now / cacheDuration);
+    const separator = url.includes('?') ? '&' : '?';
+    return `${url}${separator}_cb=${cacheKey}`;
+}
+
 // Store scroll position to prevent jumping
 let scrollPosition = 0;
 
@@ -104,8 +113,8 @@ async function init() {
     try {
         showLoading();
         
-        // Load metadata
-        const metadataResponse = await fetch('data/metadata.json');
+        // Load metadata with cache-busting
+        const metadataResponse = await fetch(getCacheBustingUrl('data/metadata.json'));
         if (!metadataResponse.ok) {
             throw new Error(`Failed to load metadata: ${metadataResponse.status}`);
         }
@@ -331,7 +340,7 @@ async function loadData() {
         showLoading();
         
         const filename = getDataFilename();
-        const response = await fetch(`data/${filename}`);
+        const response = await fetch(getCacheBustingUrl(`data/${filename}`));
         
         if (!response.ok) {
             throw new Error(`Failed to load ${filename}: ${response.status}`);
@@ -977,7 +986,7 @@ function setupDashboardCards() {
 
 // Load Metadata Helper
 async function loadMetadata() {
-    const metadataResponse = await fetch('data/metadata.json');
+    const metadataResponse = await fetch(getCacheBustingUrl('data/metadata.json'));
     if (!metadataResponse.ok) {
         throw new Error(`Failed to load metadata: ${metadataResponse.status}`);
     }
@@ -1275,7 +1284,7 @@ async function aggregateCustomerData() {
     console.log('Loading customer distribution file:', filename);
     
     try {
-        const response = await fetch(filename);
+        const response = await fetch(getCacheBustingUrl(filename));
         if (!response.ok) {
             throw new Error(`Failed to load ${filename}: ${response.status} ${response.statusText}`);
         }
@@ -1723,7 +1732,7 @@ async function loadTeamPerformanceData() {
     
     try {
         const filename = `team-performance-${teamFilters.year}-${teamFilters.range}.json`;
-        const response = await fetch(`data/${filename}`);
+        const response = await fetch(getCacheBustingUrl(`data/${filename}`));
         
         if (!response.ok) {
             throw new Error(`Failed to load ${filename}: ${response.status}`);
