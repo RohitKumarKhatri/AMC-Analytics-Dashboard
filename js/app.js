@@ -1335,6 +1335,9 @@ function renderCustomerPieChart(customerData) {
     }
     
     const option = {
+        animation: true,
+        animationDuration: 500,
+        animationEasing: 'cubicOut',
         title: {
             text: 'Customer Distribution',
             left: 'center',
@@ -1417,7 +1420,8 @@ function renderCustomerPieChart(customerData) {
         ]
     };
     
-    customerPieChart.setOption(option);
+    // Use notMerge: false to enable smooth transitions
+    customerPieChart.setOption(option, { notMerge: false, lazyUpdate: false });
     
     // Add click handler for pie chart segments
     customerPieChart.off('click');
