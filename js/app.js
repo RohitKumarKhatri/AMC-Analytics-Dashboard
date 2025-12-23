@@ -1378,7 +1378,7 @@ function renderCustomerPieChart(customerData) {
                 name: 'Tickets',
                 type: 'pie',
                 radius: ['40%', '70%'],
-                center: ['35%', '55%'],
+                center: ['50%', '55%'],
                 avoidLabelOverlap: false,
                 itemStyle: {
                     borderRadius: 8,

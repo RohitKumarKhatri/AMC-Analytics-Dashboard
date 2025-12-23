@@ -664,8 +664,28 @@ header h1 {
     width: 100%;
     overflow: visible;
     position: relative;
-    border: 1px solid #e8e8e8;
+    border: none;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Customer Distribution Chart Wrapper - Centered and No Border */
+#customer-charts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+#customer-charts-container .chart-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    padding: 20px;
 }
 
 .chart-wrapper:hover {
