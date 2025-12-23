@@ -446,11 +446,8 @@ def aggregate_team_performance(tickets, year, quarter):
             continue
         
         # Use Closure Date (matches Created vs Resolved chart logic)
-        # This is the date we'll use for grouping
-        completion_date = closure_date
-        
         # Get week start (Monday) from closure date
-        week_start = get_week_start(completion_date)
+        week_start = get_week_start(closure_date)
         
         # Check year (based on week start date, since that's what we display)
         if week_start.year != year:
