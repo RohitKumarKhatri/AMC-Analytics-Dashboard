@@ -545,6 +545,10 @@ header h1 {
     gap: 24px;
     margin-bottom: 30px;
     padding: 24px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     border-radius: 12px;
     border: 1px solid #e8e8e8;
