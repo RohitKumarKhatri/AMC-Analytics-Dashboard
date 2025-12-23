@@ -1672,7 +1672,28 @@ async function loadTeamPerformanceData() {
         return;
     }
     
-    showTeamLoading();
+    const containerEl = document.getElementById('team-performance-container');
+    const loadingEl = document.getElementById('team-loading');
+    const errorEl = document.getElementById('team-error');
+    
+    // Hide error if visible
+    if (errorEl) errorEl.style.display = 'none';
+    
+    // Show loading overlay without hiding container (smooth transition)
+    if (loadingEl) {
+        loadingEl.style.display = 'block';
+        loadingEl.style.opacity = '0';
+        requestAnimationFrame(() => {
+            loadingEl.style.transition = 'opacity 0.2s ease';
+            loadingEl.style.opacity = '1';
+        });
+    }
+    
+    // Fade out table slightly while loading
+    if (containerEl) {
+        containerEl.style.opacity = '0.5';
+        containerEl.style.transition = 'opacity 0.2s ease';
+    }
     
     try {
         const filename = `team-performance-${teamFilters.year}-${teamFilters.range}.json`;
@@ -1685,8 +1706,21 @@ async function loadTeamPerformanceData() {
         const data = await response.json();
         teamPerformanceData = data;
         
+        // Render table (this happens while container is still visible but faded)
         renderTeamPerformanceTable(data);
-        hideTeamLoading();
+        
+        // Hide loading and restore table opacity smoothly
+        if (loadingEl) {
+            loadingEl.style.opacity = '0';
+            setTimeout(() => {
+                loadingEl.style.display = 'none';
+            }, 200);
+        }
+        
+        if (containerEl) {
+            containerEl.style.opacity = '1';
+            containerEl.style.display = 'block';
+        }
     } catch (error) {
         console.error('Error loading team performance data:', error);
         showTeamError();
@@ -1946,14 +1980,31 @@ function showTeamLoading() {
     const containerEl = document.getElementById('team-performance-container');
     const errorEl = document.getElementById('team-error');
     
-    if (loadingEl) loadingEl.style.display = 'block';
-    if (containerEl) containerEl.style.display = 'none';
     if (errorEl) errorEl.style.display = 'none';
+    // Don't hide container - just show loading overlay
+    if (loadingEl) {
+        loadingEl.style.display = 'block';
+        loadingEl.style.opacity = '1';
+    }
+    if (containerEl) {
+        containerEl.style.opacity = '0.5';
+    }
 }
 
 function hideTeamLoading() {
     const loadingEl = document.getElementById('team-loading');
-    if (loadingEl) loadingEl.style.display = 'none';
+    const containerEl = document.getElementById('team-performance-container');
+    
+    if (loadingEl) {
+        loadingEl.style.opacity = '0';
+        setTimeout(() => {
+            loadingEl.style.display = 'none';
+        }, 200);
+    }
+    if (containerEl) {
+        containerEl.style.opacity = '1';
+        containerEl.style.display = 'block';
+    }
 }
 
 function showTeamError() {
