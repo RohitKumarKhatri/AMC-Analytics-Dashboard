@@ -76,6 +76,66 @@
       "cumulative": 3
     },
     {
+      "week_start": "2025-09-01",
+      "week_end": "2025-09-07",
+      "label": "01 Sep 2025 - 07 Sep 2025",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-4') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 4
+    },
+    {
+      "week_start": "2025-09-22",
+      "week_end": "2025-09-28",
+      "label": "22 Sep 2025 - 28 Sep 2025",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-5') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 5
+    },
+    {
+      "week_start": "2025-09-29",
+      "week_end": "2025-10-05",
+      "label": "29 Sep 2025 - 05 Oct 2025",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-3') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 6
+    },
+    {
+      "week_start": "2025-10-06",
+      "week_end": "2025-10-12",
+      "label": "06 Oct 2025 - 12 Oct 2025",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-3') ORDER BY key DESC"
+      },
+      "cumulative": 5
+    },
+    {
+      "week_start": "2025-10-13",
+      "week_end": "2025-10-19",
+      "label": "13 Oct 2025 - 19 Oct 2025",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-5') ORDER BY key DESC"
+      },
+      "cumulative": 4
+    },
+    {
       "week_start": "2025-12-01",
       "week_end": "2025-12-07",
       "label": "01 Dec 2025 - 07 Dec 2025",
@@ -85,7 +145,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1527', 'SBZT-1567') ORDER BY key DESC"
       },
-      "cumulative": 1
+      "cumulative": 2
     }
   ]
 }

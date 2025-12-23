@@ -74,12 +74,12 @@
       "month_end": "2024-09-30",
       "label": "Sep 2024",
       "created": 1,
-      "resolved": 0,
+      "resolved": 1,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-652') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-474') ORDER BY key DESC"
       },
-      "cumulative": 3
+      "cumulative": 2
     },
     {
       "month": "2024-10",
@@ -87,12 +87,12 @@
       "month_end": "2024-10-31",
       "label": "Oct 2024",
       "created": 0,
-      "resolved": 1,
+      "resolved": 2,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-652') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-26', 'SBZT-652') ORDER BY key DESC"
       },
-      "cumulative": 2
+      "cumulative": 0
     },
     {
       "month": "2024-11",
@@ -105,7 +105,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-796') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 3
+      "cumulative": 1
     },
     {
       "month": "2024-12",
@@ -118,7 +118,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-935') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-935') ORDER BY key DESC"
       },
-      "cumulative": 3
+      "cumulative": 1
     },
     {
       "month": "2025-01",
@@ -131,7 +131,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-796') ORDER BY key DESC"
       },
-      "cumulative": 2
+      "cumulative": 0
     }
   ]
 }

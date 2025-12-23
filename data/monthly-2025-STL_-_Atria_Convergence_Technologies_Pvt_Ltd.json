@@ -22,12 +22,12 @@
       "month_end": "2025-02-28",
       "label": "Feb 2025",
       "created": 5,
-      "resolved": 5,
+      "resolved": 6,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1162', 'SBZT-1168', 'SBZT-1175', 'SBZT-1191', 'SBZT-1207') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1162', 'SBZT-1168', 'SBZT-1175', 'SBZT-1191', 'SBZT-1207') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1020', 'SBZT-1162', 'SBZT-1168', 'SBZT-1175', 'SBZT-1191', 'SBZT-1207') ORDER BY key DESC"
       },
-      "cumulative": 1
+      "cumulative": 0
     }
   ]
 }

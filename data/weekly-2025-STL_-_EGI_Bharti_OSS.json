@@ -116,12 +116,12 @@
       "week_end": "2025-05-11",
       "label": "05 May 2025 - 11 May 2025",
       "created": 0,
-      "resolved": 1,
+      "resolved": 2,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1380') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1261', 'SBZT-1380') ORDER BY key DESC"
       },
-      "cumulative": 1
+      "cumulative": 0
     },
     {
       "week_start": "2025-06-02",
@@ -133,7 +133,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1485') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 2
+      "cumulative": 1
     },
     {
       "week_start": "2025-06-30",
@@ -145,7 +145,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1485') ORDER BY key DESC"
       },
-      "cumulative": 1
+      "cumulative": 0
     }
   ]
 }

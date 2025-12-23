@@ -87,12 +87,12 @@
       "month_end": "2024-10-31",
       "label": "Oct 2024",
       "created": 4,
-      "resolved": 4,
+      "resolved": 6,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-716', 'SBZT-734', 'SBZT-744', 'SBZT-781') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-579', 'SBZT-716', 'SBZT-734', 'SBZT-744') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-554', 'SBZT-579', 'SBZT-618', 'SBZT-716', 'SBZT-734', 'SBZT-744') ORDER BY key DESC"
       },
-      "cumulative": 4
+      "cumulative": 2
     },
     {
       "month": "2024-11",
@@ -105,7 +105,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-805', 'SBZT-818', 'SBZT-822', 'SBZT-845') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-667', 'SBZT-781', 'SBZT-805', 'SBZT-822') ORDER BY key DESC"
       },
-      "cumulative": 4
+      "cumulative": 2
     },
     {
       "month": "2024-12",
@@ -118,7 +118,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-909', 'SBZT-933', 'SBZT-936', 'SBZT-948', 'SBZT-974', 'SBZT-986', 'SBZT-990') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-845', 'SBZT-909', 'SBZT-936', 'SBZT-948', 'SBZT-974') ORDER BY key DESC"
       },
-      "cumulative": 6
+      "cumulative": 4
     },
     {
       "month": "2025-01",
@@ -131,7 +131,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-986') ORDER BY key DESC"
       },
-      "cumulative": 5
+      "cumulative": 3
     },
     {
       "month": "2025-02",
@@ -144,7 +144,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-818', 'SBZT-933', 'SBZT-990') ORDER BY key DESC"
       },
-      "cumulative": 2
+      "cumulative": 0
     }
   ]
 }

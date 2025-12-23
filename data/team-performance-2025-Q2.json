@@ -23,6 +23,7 @@
     "Debango Dey",
     "Deepesh Gidwani",
     "Jayesh Shah",
+    "JohnErnest Ramos",
     "Madhuri.Jadhav",
     "Natnael Legesse",
     "Nephat Muchiri",
@@ -141,8 +142,10 @@
         "keys": []
       },
       "16 Jun 2025": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-1391"
+        ]
       },
       "23 Jun 2025": {
         "count": 0,
@@ -152,7 +155,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 1
+      "total": 2
     },
     "Bharat Kalra": {
       "07 Apr 2025": {
@@ -258,8 +261,10 @@
         "keys": []
       },
       "19 May 2025": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-1314"
+        ]
       },
       "26 May 2025": {
         "count": 0,
@@ -285,7 +290,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 1
+      "total": 2
     },
     "Deepesh Gidwani": {
       "07 Apr 2025": {
@@ -386,6 +391,63 @@
         "keys": [
           "SBZT-1346"
         ]
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
+    "JohnErnest Ramos": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 1,
+        "keys": [
+          "SBZT-1120"
+        ]
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
       },
       "02 Jun 2025": {
         "count": 0,
@@ -607,10 +669,12 @@
         "keys": []
       },
       "30 Jun 2025": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-1339"
+        ]
       },
-      "total": 1
+      "total": 2
     },
     "Nirav Shah": {
       "07 Apr 2025": {
@@ -632,8 +696,9 @@
         ]
       },
       "05 May 2025": {
-        "count": 1,
+        "count": 2,
         "keys": [
+          "SBZT-1261",
           "SBZT-1371"
         ]
       },
@@ -671,7 +736,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 3
+      "total": 4
     },
     "Omkar Pataskar": {
       "07 Apr 2025": {
@@ -1201,16 +1266,16 @@
     "07 Apr 2025": 7,
     "14 Apr 2025": 8,
     "21 Apr 2025": 3,
-    "28 Apr 2025": 4,
-    "05 May 2025": 11,
+    "28 Apr 2025": 5,
+    "05 May 2025": 12,
     "12 May 2025": 15,
-    "19 May 2025": 10,
+    "19 May 2025": 11,
     "26 May 2025": 10,
     "02 Jun 2025": 4,
     "09 Jun 2025": 11,
-    "16 Jun 2025": 12,
+    "16 Jun 2025": 13,
     "23 Jun 2025": 5,
-    "30 Jun 2025": 6
+    "30 Jun 2025": 7
   },
-  "grand_total": 106
+  "grand_total": 111
 }

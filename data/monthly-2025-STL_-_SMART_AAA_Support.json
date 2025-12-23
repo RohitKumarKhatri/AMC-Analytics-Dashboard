@@ -67,6 +67,19 @@
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1411') ORDER BY key DESC"
       },
       "cumulative": 1
+    },
+    {
+      "month": "2025-12",
+      "month_start": "2025-12-01",
+      "month_end": "2025-12-31",
+      "label": "Dec 2025",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1398') ORDER BY key DESC"
+      },
+      "cumulative": 0
     }
   ]
 }

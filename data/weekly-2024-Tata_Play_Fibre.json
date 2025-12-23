@@ -50,6 +50,18 @@
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-392') ORDER BY key DESC"
       },
       "cumulative": 2
+    },
+    {
+      "week_start": "2024-10-21",
+      "week_end": "2024-10-27",
+      "label": "21 Oct 2024 - 27 Oct 2024",
+      "created": 0,
+      "resolved": 2,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-299', 'SBZT-359') ORDER BY key DESC"
+      },
+      "cumulative": 0
     }
   ]
 }

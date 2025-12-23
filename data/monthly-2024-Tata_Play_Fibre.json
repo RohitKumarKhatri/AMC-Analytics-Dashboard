@@ -35,12 +35,12 @@
       "month_end": "2024-10-31",
       "label": "Oct 2024",
       "created": 0,
-      "resolved": 1,
+      "resolved": 3,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-392') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-299', 'SBZT-359', 'SBZT-392') ORDER BY key DESC"
       },
-      "cumulative": 2
+      "cumulative": 0
     }
   ]
 }

@@ -4,13 +4,13 @@
     "STL - Airtel Fixedline",
     "STL - BSNL Wifi",
     "STL - Commverge Solutions Philippines Inc.",
-    "STL - Atom Myanmar Ltd",
     "STL - Globe Telecom Inc.",
+    "STL - Atom Myanmar Ltd",
+    "STL - Synaptic Technologies",
     "Tatatel  -  Co",
     "Trilogy",
     "GFI - Wipro Enterprises (P) Ltd",
     "ONE Albania",
-    "STL - Synaptic Technologies",
     "STL - Tata Teleservices Limited",
     "Aml",
     "Atom",
@@ -67,7 +67,7 @@
     "STL - ONE ALBANIA",
     "STL - One Albania Internal"
   ],
-  "total_tickets": 1709,
+  "total_tickets": 1713,
   "customer_ticket_counts_q3_q4_2025": {
     "STL - Airtel Fixedline": 62,
     "STL - BSNL Wifi": 49,
@@ -76,10 +76,10 @@
     "Tatatel  -  Co": 2,
     "STL - Commverge Solutions Philippines Inc.": 8,
     "Trilogy": 2,
+    "STL - Globe Telecom Inc.": 6,
+    "STL - Synaptic Technologies": 2,
     "STL - Tata Teleservices Limited": 1,
-    "STL - Globe Telecom Inc.": 3,
     "STL - Atom Myanmar Ltd": 3,
-    "STL - Synaptic Technologies": 1,
     "GFI - Wipro Enterprises (P) Ltd": 1
   }
 }

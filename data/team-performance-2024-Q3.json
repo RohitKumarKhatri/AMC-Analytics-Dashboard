@@ -1565,8 +1565,10 @@
         "keys": []
       },
       "22 Jul 2024": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-352"
+        ]
       },
       "29 Jul 2024": {
         "count": 0,
@@ -1579,8 +1581,10 @@
         ]
       },
       "12 Aug 2024": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-346"
+        ]
       },
       "19 Aug 2024": {
         "count": 0,
@@ -1597,8 +1601,10 @@
         ]
       },
       "09 Sep 2024": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-508"
+        ]
       },
       "16 Sep 2024": {
         "count": 1,
@@ -1607,14 +1613,16 @@
         ]
       },
       "23 Sep 2024": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-551"
+        ]
       },
       "30 Sep 2024": {
         "count": 0,
         "keys": []
       },
-      "total": 7
+      "total": 11
     },
     "Noman Tahir": {
       "01 Jul 2024": {
@@ -1758,8 +1766,9 @@
         ]
       },
       "08 Jul 2024": {
-        "count": 1,
+        "count": 2,
         "keys": [
+          "SBZT-342",
           "SBZT-445"
         ]
       },
@@ -1815,7 +1824,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 4
+      "total": 5
     },
     "Priyansh Singh": {
       "01 Jul 2024": {
@@ -2006,8 +2015,10 @@
         "keys": []
       },
       "19 Aug 2024": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-431"
+        ]
       },
       "26 Aug 2024": {
         "count": 0,
@@ -2033,7 +2044,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 8
+      "total": 9
     },
     "Rushabh Sheth": {
       "01 Jul 2024": {
@@ -2160,8 +2171,9 @@
         ]
       },
       "16 Sep 2024": {
-        "count": 1,
+        "count": 2,
         "keys": [
+          "SBZT-100",
           "SBZT-195"
         ]
       },
@@ -2173,7 +2185,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 8
+      "total": 9
     },
     "Shailesh Savla": {
       "01 Jul 2024": {
@@ -2212,16 +2224,18 @@
         "keys": []
       },
       "12 Aug 2024": {
-        "count": 3,
+        "count": 4,
         "keys": [
           "SBZT-250",
           "SBZT-379",
+          "SBZT-420",
           "SBZT-525"
         ]
       },
       "19 Aug 2024": {
-        "count": 2,
+        "count": 3,
         "keys": [
+          "SBZT-459",
           "SBZT-530",
           "SBZT-595"
         ]
@@ -2251,8 +2265,9 @@
         "keys": []
       },
       "23 Sep 2024": {
-        "count": 1,
+        "count": 2,
         "keys": [
+          "SBZT-474",
           "SBZT-674"
         ]
       },
@@ -2260,7 +2275,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 18
+      "total": 21
     },
     "Tushar Nawale": {
       "01 Jul 2024": {
@@ -2305,8 +2320,10 @@
         "keys": []
       },
       "02 Sep 2024": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-231"
+        ]
       },
       "09 Sep 2024": {
         "count": 0,
@@ -2327,7 +2344,7 @@
           "SBZT-645"
         ]
       },
-      "total": 5
+      "total": 6
     },
     "Urvish.Dholakia": {
       "01 Jul 2024": {
@@ -2644,8 +2661,10 @@
         "keys": []
       },
       "19 Aug 2024": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-593"
+        ]
       },
       "26 Aug 2024": {
         "count": 0,
@@ -2678,24 +2697,24 @@
           "SBZT-691"
         ]
       },
-      "total": 6
+      "total": 7
     }
   },
   "week_totals": {
     "01 Jul 2024": 26,
-    "08 Jul 2024": 42,
+    "08 Jul 2024": 43,
     "15 Jul 2024": 8,
-    "22 Jul 2024": 13,
+    "22 Jul 2024": 14,
     "29 Jul 2024": 17,
     "05 Aug 2024": 13,
-    "12 Aug 2024": 11,
-    "19 Aug 2024": 21,
+    "12 Aug 2024": 13,
+    "19 Aug 2024": 24,
     "26 Aug 2024": 17,
-    "02 Sep 2024": 13,
-    "09 Sep 2024": 21,
-    "16 Sep 2024": 17,
-    "23 Sep 2024": 6,
+    "02 Sep 2024": 14,
+    "09 Sep 2024": 22,
+    "16 Sep 2024": 18,
+    "23 Sep 2024": 8,
     "30 Sep 2024": 8
   },
-  "grand_total": 233
+  "grand_total": 245
 }

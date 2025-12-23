@@ -74,12 +74,25 @@
       "month_end": "2025-02-28",
       "label": "Feb 2025",
       "created": 0,
-      "resolved": 4,
+      "resolved": 6,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-779', 'SBZT-841', 'SBZT-871', 'SBZT-980') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-779', 'SBZT-841', 'SBZT-871', 'SBZT-960', 'SBZT-980', 'SBZT-989') ORDER BY key DESC"
       },
-      "cumulative": 3
+      "cumulative": 1
+    },
+    {
+      "month": "2025-04",
+      "month_start": "2025-04-01",
+      "month_end": "2025-04-30",
+      "label": "Apr 2025",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-829') ORDER BY key DESC"
+      },
+      "cumulative": 0
     }
   ]
 }

@@ -28,6 +28,7 @@
     "Jaimeet Pathak",
     "Jayesh Shah",
     "Jinesh Mistry",
+    "JohnErnest Ramos",
     "Marlene Fernandes",
     "Mochammad Mustofa Maricar",
     "Muhammad Nadeem",
@@ -40,6 +41,7 @@
     "Priyansh Singh",
     "Ramesh.Gavara",
     "Rohit Kumar",
+    "Rushabh Sheth",
     "Saad Anwar Khan",
     "Sahil Goyal",
     "Sandhya Kumar",
@@ -542,8 +544,9 @@
         ]
       },
       "21 Oct 2024": {
-        "count": 1,
+        "count": 2,
         "keys": [
+          "SBZT-297",
           "SBZT-681"
         ]
       },
@@ -585,8 +588,9 @@
         "keys": []
       },
       "16 Dec 2024": {
-        "count": 4,
+        "count": 5,
         "keys": [
+          "SBZT-418",
           "SBZT-753",
           "SBZT-925",
           "SBZT-953",
@@ -604,7 +608,7 @@
           "SBZT-994"
         ]
       },
-      "total": 14
+      "total": 16
     },
     "Jayesh Shah": {
       "07 Oct 2024": {
@@ -618,12 +622,15 @@
         ]
       },
       "21 Oct 2024": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-574"
+        ]
       },
       "28 Oct 2024": {
-        "count": 3,
+        "count": 4,
         "keys": [
+          "SBZT-26",
           "SBZT-591",
           "SBZT-728",
           "SBZT-93"
@@ -683,7 +690,7 @@
           "SBZT-985"
         ]
       },
-      "total": 15
+      "total": 17
     },
     "Jinesh Mistry": {
       "07 Oct 2024": {
@@ -745,6 +752,65 @@
         ]
       },
       "total": 3
+    },
+    "JohnErnest Ramos": {
+      "07 Oct 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Oct 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Oct 2024": {
+        "count": 1,
+        "keys": [
+          "SBZT-121"
+        ]
+      },
+      "28 Oct 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "04 Nov 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "11 Nov 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "18 Nov 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "25 Nov 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Dec 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Dec 2024": {
+        "count": 1,
+        "keys": [
+          "SBZT-53"
+        ]
+      },
+      "16 Dec 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Dec 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Dec 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 2
     },
     "Marlene Fernandes": {
       "07 Oct 2024": {
@@ -921,8 +987,12 @@
     },
     "Natnael Legesse": {
       "07 Oct 2024": {
-        "count": 0,
-        "keys": []
+        "count": 3,
+        "keys": [
+          "SBZT-547",
+          "SBZT-597",
+          "SBZT-618"
+        ]
       },
       "14 Oct 2024": {
         "count": 1,
@@ -957,8 +1027,9 @@
         ]
       },
       "18 Nov 2024": {
-        "count": 2,
+        "count": 3,
         "keys": [
+          "SBZT-710",
           "SBZT-743",
           "SBZT-781"
         ]
@@ -1008,7 +1079,7 @@
           "SBZT-986"
         ]
       },
-      "total": 25
+      "total": 29
     },
     "Nephat Muchiri": {
       "07 Oct 2024": {
@@ -1211,9 +1282,10 @@
         "keys": []
       },
       "21 Oct 2024": {
-        "count": 11,
+        "count": 12,
         "keys": [
           "SBZT-103",
+          "SBZT-366",
           "SBZT-372",
           "SBZT-535",
           "SBZT-538",
@@ -1227,8 +1299,9 @@
         ]
       },
       "28 Oct 2024": {
-        "count": 1,
+        "count": 2,
         "keys": [
+          "SBZT-115",
           "SBZT-62"
         ]
       },
@@ -1273,7 +1346,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 15
+      "total": 17
     },
     "Preet Patel": {
       "07 Oct 2024": {
@@ -1285,8 +1358,10 @@
         "keys": []
       },
       "21 Oct 2024": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-684"
+        ]
       },
       "28 Oct 2024": {
         "count": 2,
@@ -1333,7 +1408,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 3
+      "total": 4
     },
     "Priyansh Singh": {
       "07 Oct 2024": {
@@ -1415,8 +1490,9 @@
         "keys": []
       },
       "21 Oct 2024": {
-        "count": 1,
+        "count": 2,
         "keys": [
+          "SBZT-554",
           "SBZT-579"
         ]
       },
@@ -1462,7 +1538,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 3
+      "total": 4
     },
     "Rohit Kumar": {
       "07 Oct 2024": {
@@ -1516,6 +1592,64 @@
         "keys": [
           "SBZT-972"
         ]
+      },
+      "30 Dec 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 2
+    },
+    "Rushabh Sheth": {
+      "07 Oct 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Oct 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Oct 2024": {
+        "count": 2,
+        "keys": [
+          "SBZT-299",
+          "SBZT-359"
+        ]
+      },
+      "28 Oct 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "04 Nov 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "11 Nov 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "18 Nov 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "25 Nov 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Dec 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Dec 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Dec 2024": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Dec 2024": {
+        "count": 0,
+        "keys": []
       },
       "30 Dec 2024": {
         "count": 0,
@@ -1818,8 +1952,9 @@
         ]
       },
       "11 Nov 2024": {
-        "count": 1,
+        "count": 2,
         "keys": [
+          "SBZT-613",
           "SBZT-800"
         ]
       },
@@ -1859,7 +1994,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 19
+      "total": 20
     },
     "Tushar Nawale": {
       "07 Oct 2024": {
@@ -1942,10 +2077,11 @@
         "keys": []
       },
       "28 Oct 2024": {
-        "count": 2,
+        "count": 3,
         "keys": [
           "SBZT-429",
-          "SBZT-480"
+          "SBZT-480",
+          "SBZT-570"
         ]
       },
       "04 Nov 2024": {
@@ -1989,7 +2125,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 5
+      "total": 6
     },
     "Unassigned": {
       "07 Oct 2024": {
@@ -2069,19 +2205,19 @@
     }
   },
   "week_totals": {
-    "07 Oct 2024": 7,
+    "07 Oct 2024": 10,
     "14 Oct 2024": 8,
-    "21 Oct 2024": 44,
-    "28 Oct 2024": 36,
+    "21 Oct 2024": 52,
+    "28 Oct 2024": 39,
     "04 Nov 2024": 6,
-    "11 Nov 2024": 12,
-    "18 Nov 2024": 7,
+    "11 Nov 2024": 13,
+    "18 Nov 2024": 8,
     "25 Nov 2024": 17,
     "02 Dec 2024": 11,
-    "09 Dec 2024": 11,
-    "16 Dec 2024": 14,
+    "09 Dec 2024": 12,
+    "16 Dec 2024": 15,
     "23 Dec 2024": 9,
     "30 Dec 2024": 15
   },
-  "grand_total": 197
+  "grand_total": 215
 }
