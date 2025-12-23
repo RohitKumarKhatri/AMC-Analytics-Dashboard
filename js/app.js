@@ -1142,11 +1142,29 @@ async function loadCustomerData() {
     const chartsEl = document.getElementById('customer-charts-container');
     const errorEl = document.getElementById('customer-error');
     
-    try {
-        loadingEl.style.display = 'block';
-        chartsEl.style.display = 'none';
+    // Hide error if visible
+    if (errorEl) {
         errorEl.style.display = 'none';
-        
+    }
+    
+    // Show loading overlay smoothly
+    if (loadingEl) {
+        loadingEl.style.display = 'block';
+        loadingEl.style.opacity = '0';
+        requestAnimationFrame(() => {
+            loadingEl.style.transition = 'opacity 0.2s ease';
+            loadingEl.style.opacity = '1';
+        });
+    }
+    
+    // Fade out chart slightly while loading
+    if (chartsEl) {
+        chartsEl.style.opacity = '0.5';
+        chartsEl.style.transition = 'opacity 0.3s ease';
+        chartsEl.style.display = 'block'; // Keep visible
+    }
+    
+    try {
         if (!customerFilters.year) {
             throw new Error('Year not selected');
         }
@@ -1157,22 +1175,38 @@ async function loadCustomerData() {
         // Filter by range
         const filteredData = filterCustomerDataByRange(customerData);
         
-        // Render pie chart
+        // Render pie chart with smooth animation
         renderCustomerPieChart(filteredData);
         
-        loadingEl.style.display = 'none';
-        chartsEl.style.display = 'block';
+        // Hide loading and restore chart opacity smoothly
+        if (loadingEl) {
+            loadingEl.style.opacity = '0';
+            setTimeout(() => {
+                loadingEl.style.display = 'none';
+            }, 200);
+        }
         
+        if (chartsEl) {
+            chartsEl.style.opacity = '1';
+        }
+        
+        // Resize chart after transition
         setTimeout(() => {
             if (customerPieChart) {
                 customerPieChart.resize();
             }
-        }, 200);
+        }, 300);
     } catch (error) {
         console.error('Error loading customer data:', error);
-        loadingEl.style.display = 'none';
-        chartsEl.style.display = 'none';
-        errorEl.style.display = 'block';
+        if (errorEl) {
+            errorEl.style.display = 'block';
+        }
+        if (loadingEl) {
+            loadingEl.style.display = 'none';
+        }
+        if (chartsEl) {
+            chartsEl.style.display = 'none';
+        }
     }
 }
 
