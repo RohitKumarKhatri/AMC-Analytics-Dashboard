@@ -445,6 +445,12 @@ def aggregate_team_performance(tickets, year, quarter):
         if not closure_date:
             continue
         
+        # Filter by creation year (matches Created vs Resolved chart logic)
+        # Created vs Resolved filters tickets by created.year before aggregating
+        created_date = ticket.get('created')
+        if not created_date or created_date.year != year:
+            continue
+        
         # Use Closure Date (matches Created vs Resolved chart logic)
         # Get week start (Monday) from closure date
         week_start = get_week_start(closure_date)

@@ -16,7 +16,6 @@
   ],
   "assignees": [
     "Amisha Patel",
-    "Ankit.Goel",
     "Bharat Kalra",
     "Deepesh Gidwani",
     "Leewel Mwangi",
@@ -97,55 +96,6 @@
         ]
       },
       "total": 10
-    },
-    "Ankit.Goel": {
-      "06 Oct 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "13 Oct 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "20 Oct 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "27 Oct 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "03 Nov 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "10 Nov 2025": {
-        "count": 1,
-        "keys": [
-          "SBZT-615"
-        ]
-      },
-      "17 Nov 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "24 Nov 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "01 Dec 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "08 Dec 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "15 Dec 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "total": 1
     },
     "Bharat Kalra": {
       "06 Oct 2025": {
@@ -265,10 +215,9 @@
         "keys": []
       },
       "01 Dec 2025": {
-        "count": 2,
+        "count": 1,
         "keys": [
-          "SBZT-1366",
-          "SBZT-185"
+          "SBZT-1366"
         ]
       },
       "08 Dec 2025": {
@@ -281,7 +230,7 @@
           "SBZT-1395"
         ]
       },
-      "total": 6
+      "total": 5
     },
     "Leewel Mwangi": {
       "06 Oct 2025": {
@@ -498,13 +447,12 @@
         ]
       },
       "10 Nov 2025": {
-        "count": 5,
+        "count": 4,
         "keys": [
           "SBZT-1538",
           "SBZT-1653",
           "SBZT-1657",
-          "SBZT-1673",
-          "SBZT-864"
+          "SBZT-1673"
         ]
       },
       "17 Nov 2025": {
@@ -532,18 +480,17 @@
         ]
       },
       "15 Dec 2025": {
-        "count": 7,
+        "count": 6,
         "keys": [
           "SBZT-1002",
           "SBZT-1530",
           "SBZT-1749",
           "SBZT-1767",
           "SBZT-1768",
-          "SBZT-1771",
-          "SBZT-558"
+          "SBZT-1771"
         ]
       },
-      "total": 20
+      "total": 18
     },
     "Nephat Muchiri": {
       "06 Oct 2025": {
@@ -778,13 +725,10 @@
         "keys": []
       },
       "15 Dec 2025": {
-        "count": 2,
-        "keys": [
-          "SBZT-42",
-          "SBZT-778"
-        ]
+        "count": 0,
+        "keys": []
       },
-      "total": 6
+      "total": 4
     },
     "Preet Patel": {
       "06 Oct 2025": {
@@ -956,15 +900,14 @@
         "keys": []
       },
       "15 Dec 2025": {
-        "count": 4,
+        "count": 3,
         "keys": [
           "SBZT-1075",
           "SBZT-1236",
-          "SBZT-175",
           "SBZT-1773"
         ]
       },
-      "total": 19
+      "total": 18
     },
     "Shailesh Savla": {
       "06 Oct 2025": {
@@ -1155,12 +1098,12 @@
     "20 Oct 2025": 1,
     "27 Oct 2025": 29,
     "03 Nov 2025": 17,
-    "10 Nov 2025": 31,
+    "10 Nov 2025": 29,
     "17 Nov 2025": 9,
     "24 Nov 2025": 16,
-    "01 Dec 2025": 19,
+    "01 Dec 2025": 18,
     "08 Dec 2025": 7,
-    "15 Dec 2025": 29
+    "15 Dec 2025": 25
   },
-  "grand_total": 183
+  "grand_total": 176
 }
