@@ -1,5 +1,13 @@
 // Main application logic - loads pre-aggregated JSON files
 
+// Store scroll position to prevent jumping
+let scrollPosition = 0;
+
+// Prevent scroll to top on filter clicks
+window.addEventListener('scroll', () => {
+    scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+});
+
 let metadata = null;
 let currentData = null;
 let currentFilters = {
@@ -206,6 +214,7 @@ function updateYearButtons() {
     
     metadata.years.forEach(year => {
         const button = document.createElement('button');
+        button.type = 'button'; // Prevent form submission
         button.className = 'btn-toggle';
         button.textContent = year;
         button.dataset.year = year;
@@ -226,12 +235,18 @@ function setupEventListeners() {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
+            e.stopImmediatePropagation();
             btn.blur(); // Remove focus to prevent scroll
+            const savedScroll = window.pageYOffset || document.documentElement.scrollTop;
             document.querySelectorAll('#period-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             currentFilters.period = btn.dataset.period;
             saveFiltersToStorage();
             loadData();
+            // Restore scroll position after a brief delay
+            requestAnimationFrame(() => {
+                window.scrollTo(0, savedScroll);
+            });
         });
     });
     
@@ -252,12 +267,18 @@ function setupYearButtonListeners() {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
+            e.stopImmediatePropagation();
             btn.blur(); // Remove focus to prevent scroll
+            const savedScroll = window.pageYOffset || document.documentElement.scrollTop;
             document.querySelectorAll('#year-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             currentFilters.year = parseInt(btn.dataset.year);
             saveFiltersToStorage();
             loadData();
+            // Restore scroll position after a brief delay
+            requestAnimationFrame(() => {
+                window.scrollTo(0, savedScroll);
+            });
         });
     });
 }
@@ -268,7 +289,9 @@ function setupRangeButtonListeners() {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
+            e.stopImmediatePropagation();
             btn.blur(); // Remove focus to prevent scroll
+            const savedScroll = window.pageYOffset || document.documentElement.scrollTop;
             const range = btn.dataset.range;
             const index = currentFilters.ranges.indexOf(range);
             
@@ -1071,11 +1094,17 @@ function setupCustomerEventListeners() {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
+            e.stopImmediatePropagation();
             btn.blur(); // Remove focus to prevent scroll
+            const savedScroll = window.pageYOffset || document.documentElement.scrollTop;
             document.querySelectorAll('#customer-year-buttons .btn-toggle').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
             customerFilters.year = parseInt(btn.dataset.year);
             loadCustomerData();
+            // Restore scroll position after a brief delay
+            requestAnimationFrame(() => {
+                window.scrollTo(0, savedScroll);
+            });
         });
     });
     
@@ -1084,7 +1113,9 @@ function setupCustomerEventListeners() {
         btn.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
+            e.stopImmediatePropagation();
             btn.blur(); // Remove focus to prevent scroll
+            const savedScroll = window.pageYOffset || document.documentElement.scrollTop;
             const range = btn.dataset.range;
             
             if (range === 'Annual') {
@@ -1128,6 +1159,10 @@ function setupCustomerEventListeners() {
             
             console.log('Customer filters updated:', customerFilters);
             loadCustomerData();
+            // Restore scroll position after a brief delay
+            requestAnimationFrame(() => {
+                window.scrollTo(0, savedScroll);
+            });
         });
     });
 }
@@ -1539,7 +1574,9 @@ function setupTeamEventListeners() {
             if (e.target.classList.contains('btn-toggle')) {
                 e.preventDefault();
                 e.stopPropagation();
+                e.stopImmediatePropagation();
                 e.target.blur(); // Remove focus to prevent scroll
+                const savedScroll = window.pageYOffset || document.documentElement.scrollTop;
                 const year = parseInt(e.target.dataset.year);
                 teamFilters.year = year;
                 
@@ -1552,6 +1589,10 @@ function setupTeamEventListeners() {
                 // Save and reload
                 saveTeamFiltersToStorage();
                 loadTeamPerformanceData();
+                // Restore scroll position after a brief delay
+                requestAnimationFrame(() => {
+                    window.scrollTo(0, savedScroll);
+                });
             }
         });
     }
@@ -1563,7 +1604,9 @@ function setupTeamEventListeners() {
             if (e.target.classList.contains('btn-toggle')) {
                 e.preventDefault();
                 e.stopPropagation();
+                e.stopImmediatePropagation();
                 e.target.blur(); // Remove focus to prevent scroll
+                const savedScroll = window.pageYOffset || document.documentElement.scrollTop;
                 const range = e.target.dataset.range;
                 teamFilters.range = range;
                 
@@ -1576,6 +1619,10 @@ function setupTeamEventListeners() {
                 // Save and reload
                 saveTeamFiltersToStorage();
                 loadTeamPerformanceData();
+                // Restore scroll position after a brief delay
+                requestAnimationFrame(() => {
+                    window.scrollTo(0, savedScroll);
+                });
             }
         });
     }
