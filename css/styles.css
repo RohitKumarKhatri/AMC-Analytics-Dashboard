@@ -713,11 +713,13 @@ header h1 {
 #customer-charts-container .chart-wrapper {
     max-width: 1200px;
     width: 100%;
+    min-width: 100%;
     margin: 0 auto;
     background: transparent;
     box-shadow: none;
     border: none;
     padding: 20px;
+    display: block;
 }
 
 #customer-loading {
@@ -841,6 +843,8 @@ header h1 {
 #customer-pie-chart {
     height: 600px;
     min-height: 600px;
+    width: 100%;
+    min-width: 100%;
 }
 
 /* Loading Spinner */

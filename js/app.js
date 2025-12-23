@@ -1126,6 +1126,13 @@ function initCustomerPieChart() {
     const chartDom = document.getElementById('customer-pie-chart');
     if (!chartDom) return;
     
+    // Ensure container has proper dimensions before initialization
+    const container = chartDom.parentElement;
+    if (container) {
+        container.style.display = 'block';
+        container.style.width = '100%';
+    }
+    
     customerPieChart = echarts.init(chartDom);
     
     // Handle window resize
@@ -1169,6 +1176,19 @@ async function loadCustomerData() {
             throw new Error('Year not selected');
         }
         
+        // Ensure container is visible and has proper dimensions before rendering
+        if (chartsEl) {
+            chartsEl.style.display = 'block';
+            chartsEl.style.width = '100%';
+        }
+        
+        // Ensure chart wrapper has proper dimensions
+        const chartWrapper = document.querySelector('#customer-charts-container .chart-wrapper');
+        if (chartWrapper) {
+            chartWrapper.style.width = '100%';
+            chartWrapper.style.display = 'block';
+        }
+        
         // Aggregate data from all customers
         const customerData = await aggregateCustomerData();
         
@@ -1190,12 +1210,24 @@ async function loadCustomerData() {
             chartsEl.style.opacity = '1';
         }
         
-        // Resize chart after transition
+        // Resize chart after transition - multiple calls to ensure proper sizing
+        setTimeout(() => {
+            if (customerPieChart) {
+                customerPieChart.resize();
+            }
+        }, 100);
+        
         setTimeout(() => {
             if (customerPieChart) {
                 customerPieChart.resize();
             }
         }, 300);
+        
+        setTimeout(() => {
+            if (customerPieChart) {
+                customerPieChart.resize();
+            }
+        }, 500);
     } catch (error) {
         console.error('Error loading customer data:', error);
         if (errorEl) {
@@ -1456,6 +1488,25 @@ function renderCustomerPieChart(customerData) {
     
     // Use notMerge: false to enable smooth transitions
     customerPieChart.setOption(option, { notMerge: false, lazyUpdate: false });
+    
+    // Ensure chart renders at full width - call resize multiple times to handle layout timing
+    setTimeout(() => {
+        if (customerPieChart) {
+            customerPieChart.resize();
+        }
+    }, 0);
+    
+    setTimeout(() => {
+        if (customerPieChart) {
+            customerPieChart.resize();
+        }
+    }, 100);
+    
+    setTimeout(() => {
+        if (customerPieChart) {
+            customerPieChart.resize();
+        }
+    }, 300);
     
     // Add click handler for pie chart segments
     customerPieChart.off('click');
