@@ -649,9 +649,11 @@ function renderCharts(data) {
                 if (link && link.indexOf('key = "NONE"') === -1) {
                     clickHandled = true;
                     
-                    // Show notification and open link
+                    // Show notification first, then open link after delay
                     showJiraNotification();
-                    window.open(link, '_blank');
+                    setTimeout(() => {
+                        window.open(link, '_blank');
+                    }, 500);
                     
                     // Reset after delay to allow next click
                     setTimeout(() => {
@@ -1390,9 +1392,11 @@ function renderCustomerPieChart(customerData) {
             if (jql) {
                 const jiraUrl = `https://psskyvera.atlassian.net/issues/?jql=${jql}`;
                 
-                // Show notification and open link
-                showJiraNotification();
-                window.open(jiraUrl, '_blank');
+                    // Show notification first, then open link after delay
+                    showJiraNotification();
+                    setTimeout(() => {
+                        window.open(jiraUrl, '_blank');
+                    }, 500);
             }
         }
     });
