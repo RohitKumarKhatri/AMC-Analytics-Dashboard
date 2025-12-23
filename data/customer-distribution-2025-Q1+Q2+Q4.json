@@ -2,8 +2,8 @@
   "year": 2025,
   "range": "Q1+Q2+Q4",
   "distribution": {
+    "STL - Airtel Fixedline": 96,
     "STL - BSNL Wifi": 55,
-    "STL - Airtel Fixedline": 93,
     "Tatatel  -  Co": 2,
     "STL - Commverge Solutions Philippines Inc.": 7,
     "Trilogy": 10,

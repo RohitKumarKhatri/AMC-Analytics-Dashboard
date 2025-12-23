@@ -126,12 +126,12 @@
       "month_end": "2025-10-31",
       "label": "Oct 2025",
       "created": 11,
-      "resolved": 11,
+      "resolved": 10,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1670', 'SBZT-1671', 'SBZT-1672', 'SBZT-1674', 'SBZT-1675', 'SBZT-1676', 'SBZT-1677', 'SBZT-1681', 'SBZT-1685', 'SBZT-1688', 'SBZT-1695') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1648', 'SBZT-1659', 'SBZT-1660', 'SBZT-1668', 'SBZT-1670', 'SBZT-1671', 'SBZT-1672', 'SBZT-1674', 'SBZT-1675', 'SBZT-1676', 'SBZT-1677') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1648', 'SBZT-1659', 'SBZT-1660', 'SBZT-1668', 'SBZT-1670', 'SBZT-1671', 'SBZT-1672', 'SBZT-1674', 'SBZT-1675', 'SBZT-1677') ORDER BY key DESC"
       },
-      "cumulative": 19
+      "cumulative": 20
     },
     {
       "month": "2025-11",
@@ -144,20 +144,20 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1706', 'SBZT-1707', 'SBZT-1711', 'SBZT-1712', 'SBZT-1716', 'SBZT-1727', 'SBZT-1730') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1663', 'SBZT-1706', 'SBZT-1707', 'SBZT-1711', 'SBZT-1712', 'SBZT-1716', 'SBZT-1727', 'SBZT-1730') ORDER BY key DESC"
       },
-      "cumulative": 18
+      "cumulative": 19
     },
     {
       "month": "2025-12",
       "month_start": "2025-12-01",
       "month_end": "2025-12-31",
       "label": "Dec 2025",
-      "created": 1,
+      "created": 4,
       "resolved": 1,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1776') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1776', 'SBZT-1778', 'SBZT-1779', 'SBZT-1780') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1776') ORDER BY key DESC"
       },
-      "cumulative": 18
+      "cumulative": 22
     }
   ]
 }

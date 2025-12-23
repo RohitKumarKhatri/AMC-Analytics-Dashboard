@@ -31,10 +31,8 @@
     "Preet Patel",
     "Rohit Kumar",
     "Sandeep.Kumar",
-    "Sandhya Kumar",
     "Saulo Rocha",
     "Shailesh Savla",
-    "Tushar Nawale",
     "VN Singh",
     "Unassigned"
   ],
@@ -323,10 +321,8 @@
         ]
       },
       "26 May 2025": {
-        "count": 1,
-        "keys": [
-          "SBZT-768"
-        ]
+        "count": 0,
+        "keys": []
       },
       "02 Jun 2025": {
         "count": 1,
@@ -354,7 +350,7 @@
           "SBZT-1330"
         ]
       },
-      "total": 6
+      "total": 5
     },
     "Jayesh Shah": {
       "07 Apr 2025": {
@@ -815,10 +811,8 @@
         ]
       },
       "28 Apr 2025": {
-        "count": 1,
-        "keys": [
-          "SBZT-694"
-        ]
+        "count": 0,
+        "keys": []
       },
       "05 May 2025": {
         "count": 0,
@@ -876,7 +870,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 18
+      "total": 17
     },
     "Sandeep.Kumar": {
       "07 Apr 2025": {
@@ -924,63 +918,6 @@
         "keys": [
           "SBZT-1473"
         ]
-      },
-      "23 Jun 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "30 Jun 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "total": 1
-    },
-    "Sandhya Kumar": {
-      "07 Apr 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "14 Apr 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "21 Apr 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "28 Apr 2025": {
-        "count": 1,
-        "keys": [
-          "SBZT-754"
-        ]
-      },
-      "05 May 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "12 May 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "19 May 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "26 May 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "02 Jun 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "09 Jun 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "16 Jun 2025": {
-        "count": 0,
-        "keys": []
       },
       "23 Jun 2025": {
         "count": 0,
@@ -1114,63 +1051,6 @@
         ]
       },
       "total": 6
-    },
-    "Tushar Nawale": {
-      "07 Apr 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "14 Apr 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "21 Apr 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "28 Apr 2025": {
-        "count": 1,
-        "keys": [
-          "SBZT-702"
-        ]
-      },
-      "05 May 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "12 May 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "19 May 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "26 May 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "02 Jun 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "09 Jun 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "16 Jun 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "23 Jun 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "30 Jun 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "total": 1
     },
     "VN Singh": {
       "07 Apr 2025": {
@@ -1321,16 +1201,16 @@
     "07 Apr 2025": 7,
     "14 Apr 2025": 8,
     "21 Apr 2025": 3,
-    "28 Apr 2025": 7,
+    "28 Apr 2025": 4,
     "05 May 2025": 11,
     "12 May 2025": 15,
     "19 May 2025": 10,
-    "26 May 2025": 11,
+    "26 May 2025": 10,
     "02 Jun 2025": 4,
     "09 Jun 2025": 11,
     "16 Jun 2025": 12,
     "23 Jun 2025": 5,
     "30 Jun 2025": 6
   },
-  "grand_total": 110
+  "grand_total": 106
 }

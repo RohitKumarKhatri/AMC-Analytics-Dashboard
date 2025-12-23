@@ -500,12 +500,12 @@
       "week_end": "2025-10-26",
       "label": "20 Oct 2025 - 26 Oct 2025",
       "created": 1,
-      "resolved": 1,
+      "resolved": 0,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1695') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1676') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 19
+      "cumulative": 20
     },
     {
       "week_start": "2025-11-03",
@@ -517,7 +517,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1706', 'SBZT-1707', 'SBZT-1711', 'SBZT-1712') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1663', 'SBZT-1706', 'SBZT-1707', 'SBZT-1711', 'SBZT-1712') ORDER BY key DESC"
       },
-      "cumulative": 18
+      "cumulative": 19
     },
     {
       "week_start": "2025-11-10",
@@ -529,7 +529,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1716', 'SBZT-1727', 'SBZT-1730') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1716') ORDER BY key DESC"
       },
-      "cumulative": 20
+      "cumulative": 21
     },
     {
       "week_start": "2025-11-17",
@@ -541,7 +541,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1727', 'SBZT-1730') ORDER BY key DESC"
       },
-      "cumulative": 18
+      "cumulative": 19
     },
     {
       "week_start": "2025-12-15",
@@ -553,7 +553,19 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1776') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1776') ORDER BY key DESC"
       },
-      "cumulative": 18
+      "cumulative": 19
+    },
+    {
+      "week_start": "2025-12-22",
+      "week_end": "2025-12-28",
+      "label": "22 Dec 2025 - 28 Dec 2025",
+      "created": 3,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1778', 'SBZT-1779', 'SBZT-1780') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 22
     }
   ]
 }

@@ -21,7 +21,6 @@
     "Amisha Patel",
     "AnuragSingh Parihar",
     "Bharat Kalra",
-    "Deepesh Gidwani",
     "Madhuri.Jadhav",
     "Natnael Legesse",
     "Nephat Muchiri",
@@ -312,65 +311,6 @@
       },
       "total": 39
     },
-    "Deepesh Gidwani": {
-      "07 Jul 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "14 Jul 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "21 Jul 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "28 Jul 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "04 Aug 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "11 Aug 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "18 Aug 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "25 Aug 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "01 Sep 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "08 Sep 2025": {
-        "count": 1,
-        "keys": [
-          "SBZT-774"
-        ]
-      },
-      "15 Sep 2025": {
-        "count": 1,
-        "keys": [
-          "SBZT-721"
-        ]
-      },
-      "22 Sep 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "29 Sep 2025": {
-        "count": 0,
-        "keys": []
-      },
-      "total": 2
-    },
     "Madhuri.Jadhav": {
       "07 Jul 2025": {
         "count": 0,
@@ -426,12 +366,10 @@
         "keys": []
       },
       "29 Sep 2025": {
-        "count": 1,
-        "keys": [
-          "SBZT-798"
-        ]
+        "count": 0,
+        "keys": []
       },
-      "total": 4
+      "total": 3
     },
     "Natnael Legesse": {
       "07 Jul 2025": {
@@ -741,10 +679,9 @@
         ]
       },
       "15 Sep 2025": {
-        "count": 2,
+        "count": 1,
         "keys": [
-          "SBZT-1546",
-          "SBZT-791"
+          "SBZT-1546"
         ]
       },
       "22 Sep 2025": {
@@ -757,7 +694,7 @@
           "SBZT-1469"
         ]
       },
-      "total": 8
+      "total": 7
     },
     "Sandeep.Kumar": {
       "07 Jul 2025": {
@@ -1015,10 +952,10 @@
     "18 Aug 2025": 10,
     "25 Aug 2025": 9,
     "01 Sep 2025": 11,
-    "08 Sep 2025": 9,
-    "15 Sep 2025": 13,
+    "08 Sep 2025": 8,
+    "15 Sep 2025": 11,
     "22 Sep 2025": 4,
-    "29 Sep 2025": 13
+    "29 Sep 2025": 12
   },
-  "grand_total": 95
+  "grand_total": 91
 }
