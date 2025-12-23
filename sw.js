@@ -1,5 +1,5 @@
 // Service Worker for Cache Control (5 minutes max)
-const CACHE_NAME = 'amc-dashboard-v1';
+const CACHE_NAME = 'amc-dashboard-v3';
 const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes in milliseconds
 
 // Install event
@@ -94,5 +94,4 @@ self.addEventListener('fetch', (event) => {
         })
     );
 });
-
 
