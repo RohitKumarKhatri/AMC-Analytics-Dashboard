@@ -335,6 +335,10 @@ function setupRangeButtonListeners() {
             
             // Recalculate and render with smooth transition
             filterAndRenderData();
+            // Restore scroll position after a brief delay
+            requestAnimationFrame(() => {
+                window.scrollTo(0, savedScroll);
+            });
         });
     });
 }
@@ -1077,6 +1081,7 @@ function updateCustomerYearButtons() {
     
     metadata.years.forEach(year => {
         const btn = document.createElement('button');
+        btn.type = 'button'; // Prevent form submission
         btn.className = 'btn-toggle';
         if (year === customerFilters.year) {
             btn.classList.add('active');
@@ -1544,6 +1549,7 @@ function updateTeamYearButtons() {
     container.innerHTML = '';
     metadata.years.forEach(year => {
         const btn = document.createElement('button');
+        btn.type = 'button'; // Prevent form submission
         btn.className = `btn-toggle ${teamFilters.year === year ? 'active' : ''}`;
         btn.textContent = year.toString();
         btn.dataset.year = year.toString();
