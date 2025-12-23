@@ -13,7 +13,7 @@ let currentData = null;
 let currentFilters = {
     period: 'weekly',
     year: null,
-    ranges: ['Q4'],
+    ranges: ['Annual'],
     customer: 'one-albania'
 };
 // Removed: pendingJiraLink - no longer needed
@@ -21,7 +21,7 @@ let customerPieChart = null;
 let customerFilters = {
     period: 'weekly',
     year: null,
-    ranges: ['Q4']
+    ranges: ['Annual']
 };
 let teamPerformanceData = null;
 let teamFilters = {
@@ -48,7 +48,7 @@ function loadFiltersFromStorage() {
             return {
                 period: parsed.period || 'weekly',
                 year: parsed.year || null,
-                ranges: Array.isArray(parsed.ranges) && parsed.ranges.length > 0 ? parsed.ranges : ['Q4'],
+                ranges: Array.isArray(parsed.ranges) && parsed.ranges.length > 0 ? parsed.ranges : ['Annual'],
                 customer: parsed.customer || 'one-albania'
             };
         }
@@ -67,7 +67,7 @@ function getUrlParams() {
         return {
             period: params.get('period') || 'weekly',
             year: params.get('year') ? parseInt(params.get('year')) : null,
-            ranges: params.get('ranges') ? params.get('ranges').split(',') : ['Q4'],
+            ranges: params.get('ranges') ? params.get('ranges').split(',') : ['Annual'],
             customer: params.get('customer') || 'one-albania'
         };
     }
@@ -82,7 +82,7 @@ function getUrlParams() {
     return {
         period: 'weekly',
         year: null,
-        ranges: ['Q4'],
+        ranges: ['Annual'],
         customer: 'one-albania'
     };
 }
@@ -1011,9 +1011,9 @@ function initCustomerFilters() {
     // Set default filters (no period filter for customer tab)
     customerFilters.year = currentFilters.year || (metadata.years && metadata.years.length > 0 ? metadata.years[metadata.years.length - 1] : null);
     
-    // Initialize ranges - ensure it's an array and defaults to Q4 if not set
+    // Initialize ranges - ensure it's an array and defaults to Annual if not set
     if (!currentFilters.ranges || (Array.isArray(currentFilters.ranges) && currentFilters.ranges.length === 0)) {
-        customerFilters.ranges = ['Q4'];
+        customerFilters.ranges = ['Annual'];
     } else {
         // Ensure single-select behavior
         const first = Array.isArray(currentFilters.ranges) ? currentFilters.ranges[0] : currentFilters.ranges;
