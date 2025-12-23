@@ -10,19 +10,19 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     background: #f5f7fa;
     min-height: 100vh;
-    padding: 20px;
+    padding: 0;
     color: #333;
 }
 
 .container {
-    max-width: 1600px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
     background: white;
-    border-radius: 16px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+    box-shadow: none;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #e8e8e8;
+    border: none;
 }
 
 header {
@@ -69,6 +69,9 @@ header h1 {
     border-bottom: 2px solid #e8e8e8;
     padding: 20px 30px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .tab-btn {
@@ -138,6 +141,7 @@ header h1 {
     display: none;
     padding: 0;
     animation: fadeIn 0.3s ease-in-out;
+    width: 100%;
 }
 
 .tab-content.active {
@@ -515,8 +519,11 @@ header h1 {
 
 .page-header {
     margin-bottom: 30px;
-    padding-bottom: 20px;
+    padding: 30px 30px 20px;
     border-bottom: 2px solid #e0e0e0;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page-header h2 {
@@ -622,10 +629,24 @@ header h1 {
 /* Charts Container */
 .charts-container {
     transition: opacity 0.3s ease-in-out;
+    width: 100%;
+    padding: 30px 20px;
+}
+
+.charts-layout {
+    display: flex;
+    gap: 30px;
+    max-width: 1600px;
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+.charts-main {
+    flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 100%;
 }
 
 .chart-wrapper {

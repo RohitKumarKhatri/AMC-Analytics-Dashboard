@@ -126,11 +126,35 @@
         </div>
 
         <div class="charts-container" id="charts-container" style="display: none;">
-            <div class="chart-wrapper">
-                <div id="created-resolved-chart" class="chart"></div>
-            </div>
-            <div class="chart-wrapper">
-                <div id="cumulative-chart" class="chart"></div>
+            <div class="charts-layout">
+                <div class="charts-main">
+                    <div class="chart-wrapper">
+                        <div id="created-resolved-chart" class="chart"></div>
+                    </div>
+                    <div class="chart-wrapper">
+                        <div id="cumulative-chart" class="chart"></div>
+                    </div>
+                </div>
+                <div class="stats-sidebar">
+                    <div class="stat-card stat-card-created">
+                        <div class="stat-circle">
+                            <div class="stat-value" id="stat-created-value">0</div>
+                        </div>
+                        <div class="stat-label">Created</div>
+                    </div>
+                    <div class="stat-card stat-card-resolved">
+                        <div class="stat-circle">
+                            <div class="stat-value" id="stat-resolved-value">0</div>
+                        </div>
+                        <div class="stat-label">Resolved</div>
+                    </div>
+                    <div class="stat-card stat-card-net">
+                        <div class="stat-circle">
+                            <div class="stat-value" id="stat-net-value">0</div>
+                        </div>
+                        <div class="stat-label">Net Change</div>
+                    </div>
+                </div>
             </div>
         </div>
 

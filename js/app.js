@@ -500,6 +500,37 @@ function initCharts() {
     });
 }
 
+// Update stat cards with totals
+function updateStatsCards(created, resolved) {
+    const createdEl = document.getElementById('stat-created-value');
+    const resolvedEl = document.getElementById('stat-resolved-value');
+    const netEl = document.getElementById('stat-net-value');
+    
+    if (createdEl) {
+        createdEl.textContent = created || 0;
+    }
+    if (resolvedEl) {
+        resolvedEl.textContent = resolved || 0;
+    }
+    if (netEl) {
+        const net = (created || 0) - (resolved || 0);
+        netEl.textContent = net;
+        // Update color based on positive/negative
+        if (netEl.parentElement) {
+            if (net > 0) {
+                netEl.parentElement.style.borderColor = '#ff6347';
+                netEl.style.color = '#ff6347';
+            } else if (net < 0) {
+                netEl.parentElement.style.borderColor = '#32cd32';
+                netEl.style.color = '#32cd32';
+            } else {
+                netEl.parentElement.style.borderColor = '#667eea';
+                netEl.style.color = '#667eea';
+            }
+        }
+    }
+}
+
 // Render charts
 function renderCharts(data) {
     if (!data || data.length === 0) {
