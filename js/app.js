@@ -432,14 +432,22 @@ function filterAndRenderData() {
     // Calculate cumulative dynamically (browser-side)
     // Cumulative = running sum of (created - resolved), starting from 0
     let cumulative = 0;
+    let totalCreated = 0;
+    let totalResolved = 0;
+    
     const dataWithCumulative = filtered.map(item => {
         const netChange = item.created - item.resolved;
         cumulative += netChange;
+        totalCreated += item.created || 0;
+        totalResolved += item.resolved || 0;
         return {
             ...item,
             cumulative: cumulative
         };
     });
+    
+    // Update stat cards with totals
+    updateStatsCards(totalCreated, totalResolved);
     
     // Smooth transition: fade out, update, fade in
     if (createdResolvedChart && cumulativeChart) {

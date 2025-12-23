@@ -674,6 +674,96 @@ header h1 {
     position: relative;
 }
 
+/* Stats Sidebar */
+.stats-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0;
+    width: 200px;
+    position: sticky;
+    top: 20px;
+}
+
+.stat-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 2px solid #e8e8e8;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card-created {
+    border-top: 4px solid #ff6347;
+}
+
+.stat-card-resolved {
+    border-top: 4px solid #32cd32;
+}
+
+.stat-card-net {
+    border-top: 4px solid #667eea;
+}
+
+.stat-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.stat-card-created .stat-circle {
+    background: linear-gradient(135deg, rgba(255, 99, 71, 0.1) 0%, rgba(255, 99, 71, 0.05) 100%);
+    border: 3px solid #ff6347;
+}
+
+.stat-card-resolved .stat-circle {
+    background: linear-gradient(135deg, rgba(50, 205, 50, 0.1) 0%, rgba(50, 205, 50, 0.05) 100%);
+    border: 3px solid #32cd32;
+}
+
+.stat-card-net .stat-circle {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(102, 126, 234, 0.05) 100%);
+    border: 3px solid #667eea;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.stat-card-created .stat-value {
+    color: #ff6347;
+}
+
+.stat-card-resolved .stat-value {
+    color: #32cd32;
+}
+
+.stat-card-net .stat-value {
+    color: #667eea;
+}
+
+.stat-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 /* Customer pie chart specific styling */
 #customer-pie-chart {
     height: 600px;
@@ -718,6 +808,26 @@ header h1 {
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .charts-layout {
+        flex-direction: column;
+    }
+    
+    .stats-sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        position: static;
+        flex-wrap: wrap;
+    }
+    
+    .stat-card {
+        flex: 1;
+        min-width: 180px;
+        max-width: 220px;
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 20px;
