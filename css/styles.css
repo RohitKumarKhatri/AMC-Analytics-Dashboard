@@ -66,9 +66,9 @@ header h1 {
     display: flex;
     gap: 12px;
     background: #ffffff;
-    border-bottom: 2px solid #e8e8e8;
+    border-bottom: none;
     padding: 20px 30px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     justify-content: center;
     max-width: 1600px;
     margin: 0 auto;
@@ -80,7 +80,7 @@ header h1 {
     gap: 12px;
     padding: 18px 32px;
     background: transparent;
-    border: 2px solid transparent;
+    border: none;
     border-radius: 10px;
     cursor: pointer;
     font-size: 17px;
@@ -92,20 +92,19 @@ header h1 {
 }
 
 .tab-btn:hover {
-    background: #f8f9fa;
+    background: rgba(102, 126, 234, 0.08);
     color: #667eea;
-    border-color: #e0e0e0;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
 }
 
 .tab-btn.active {
     color: #667eea;
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.12) 0%, rgba(118, 75, 162, 0.12) 100%);
-    border-color: rgba(102, 126, 234, 0.3);
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+    border: none;
     font-weight: 700;
     font-size: 18px;
-    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.2);
+    box-shadow: 0 4px 16px rgba(102, 126, 234, 0.25);
     transform: translateY(-2px);
 }
 
@@ -551,8 +550,8 @@ header h1 {
     justify-content: center;
     background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
     border-radius: 12px;
-    border: 1px solid #e8e8e8;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border: none;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .filter-group {
@@ -579,55 +578,59 @@ header h1 {
 
 .btn-toggle {
     padding: 10px 20px;
-    border: 2px solid #ddd;
+    border: none;
     background: white;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
     color: #555;
     transition: all 0.2s ease;
     min-width: 80px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .btn-toggle:hover {
-    background: #f0f0f0;
-    border-color: #bbb;
+    background: #f5f7fa;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
 }
 
 .btn-toggle.active {
-    background: #0052cc;
+    background: linear-gradient(135deg, #0052cc 0%, #0065ff 100%);
     color: white;
-    border-color: #0052cc;
-    box-shadow: 0 2px 8px rgba(0, 82, 204, 0.3);
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 82, 204, 0.4);
+    transform: translateY(-1px);
 }
 
 .btn-toggle.active:hover {
-    background: #0065ff;
-    border-color: #0065ff;
+    background: linear-gradient(135deg, #0065ff 0%, #0078ff 100%);
+    box-shadow: 0 5px 15px rgba(0, 82, 204, 0.5);
 }
 
 /* Dropdown */
 .dropdown {
     padding: 10px 15px;
-    border: 2px solid #ddd;
-    border-radius: 6px;
+    border: none;
+    border-radius: 8px;
     font-size: 14px;
     background: white;
     color: #555;
     cursor: pointer;
     transition: all 0.2s ease;
     min-width: 250px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .dropdown:hover {
-    border-color: #bbb;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    transform: translateY(-1px);
 }
 
 .dropdown:focus {
     outline: none;
-    border-color: #0052cc;
-    box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.1);
+    box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.15), 0 3px 10px rgba(0, 0, 0, 0.12);
 }
 
 /* Charts Container */
