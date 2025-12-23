@@ -17,19 +17,41 @@
         <!-- Tab Navigation -->
         <nav class="tab-navigation">
             <button class="tab-btn active" data-tab="home">
-                <span class="tab-icon">🏠</span>
+                <span class="tab-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                </span>
                 <span class="tab-label">Home</span>
             </button>
             <button class="tab-btn" data-tab="created-resolved">
-                <span class="tab-icon">📈</span>
+                <span class="tab-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="22 6 13.5 14.5 8.5 9.5 2 18"></polyline>
+                        <polyline points="16 6 22 6 22 12"></polyline>
+                    </svg>
+                </span>
                 <span class="tab-label">Created vs Resolved</span>
             </button>
             <button class="tab-btn" data-tab="customer-distribution">
-                <span class="tab-icon">👥</span>
+                <span class="tab-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </span>
                 <span class="tab-label">Customer Distribution</span>
             </button>
             <button class="tab-btn" data-tab="team-performance">
-                <span class="tab-icon">👤</span>
+                <span class="tab-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </span>
                 <span class="tab-label">Team Performance</span>
             </button>
         </nav>
@@ -44,7 +66,12 @@
 
                 <div class="dashboard-cards">
                     <div class="dashboard-card" data-section="created-resolved">
-                        <div class="card-icon">📈</div>
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="22 6 13.5 14.5 8.5 9.5 2 18"></polyline>
+                                <polyline points="16 6 22 6 22 12"></polyline>
+                            </svg>
+                        </div>
                         <h3>Created vs Resolved</h3>
                         <p>Track ticket creation and resolution trends over time. Analyze cumulative backlog and identify patterns in ticket flow.</p>
                         <div class="card-features">
@@ -56,7 +83,14 @@
                     </div>
 
                     <div class="dashboard-card" data-section="customer-distribution">
-                        <div class="card-icon">👥</div>
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
                         <h3>Customer Distribution</h3>
                         <p>Visualize ticket distribution across customers. Identify key accounts and understand customer workload patterns.</p>
                         <div class="card-features">
@@ -68,7 +102,12 @@
                     </div>
 
                     <div class="dashboard-card" data-section="team-performance">
-                        <div class="card-icon">👤</div>
+                        <div class="card-icon">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
                         <h3>Team Performance</h3>
                         <p>Analyze team workload and assignee metrics. Track individual and team performance indicators.</p>
                         <div class="card-features">

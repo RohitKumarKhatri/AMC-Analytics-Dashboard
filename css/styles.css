@@ -122,8 +122,19 @@ header h1 {
 }
 
 .tab-icon {
-    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
     transition: transform 0.2s ease;
+    color: inherit;
+}
+
+.tab-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke: currentColor;
 }
 
 .tab-btn.active .tab-icon {
@@ -216,14 +227,25 @@ header h1 {
 }
 
 .card-icon {
-    font-size: 56px;
+    width: 56px;
+    height: 56px;
     margin-bottom: 20px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: transform 0.3s ease;
+    color: #667eea;
+}
+
+.card-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke: currentColor;
 }
 
 .dashboard-card:hover .card-icon {
     transform: scale(1.1) rotate(5deg);
+    color: #764ba2;
 }
 
 .dashboard-card h3 {
