@@ -1,0 +1,46 @@
+{
+  "period": "monthly",
+  "year": 2025,
+  "customer": "Kandy - MMC",
+  "data": [
+    {
+      "month": "2025-05",
+      "month_start": "2025-05-01",
+      "month_end": "2025-05-31",
+      "label": "May 2025",
+      "created": 1,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1402') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1402') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2025-06",
+      "month_start": "2025-06-01",
+      "month_end": "2025-06-30",
+      "label": "Jun 2025",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1518') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "month": "2025-08",
+      "month_start": "2025-08-01",
+      "month_end": "2025-08-31",
+      "label": "Aug 2025",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1518') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

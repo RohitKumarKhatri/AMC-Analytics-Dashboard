@@ -1,0 +1,20 @@
+{
+  "period": "monthly",
+  "year": 2025,
+  "customer": "Gfi - Kerio  -  Ddnsfree",
+  "data": [
+    {
+      "month": "2025-02",
+      "month_start": "2025-02-01",
+      "month_end": "2025-02-28",
+      "label": "Feb 2025",
+      "created": 1,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1208') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1208') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

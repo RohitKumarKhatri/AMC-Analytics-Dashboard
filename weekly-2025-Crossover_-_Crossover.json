@@ -1,0 +1,19 @@
+{
+  "period": "weekly",
+  "year": 2025,
+  "customer": "Crossover - Crossover",
+  "data": [
+    {
+      "week_start": "2025-02-24",
+      "week_end": "2025-03-02",
+      "label": "24 Feb 2025 - 02 Mar 2025",
+      "created": 1,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1211') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1211') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "period": "weekly",
+  "year": 2025,
+  "customer": "NewNet - Telenet Group",
+  "data": [
+    {
+      "week_start": "2025-04-28",
+      "week_end": "2025-05-04",
+      "label": "28 Apr 2025 - 04 May 2025",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1381') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-12-08",
+      "week_end": "2025-12-14",
+      "label": "08 Dec 2025 - 14 Dec 2025",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1381') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

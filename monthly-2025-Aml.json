@@ -1,0 +1,20 @@
+{
+  "period": "monthly",
+  "year": 2025,
+  "customer": "Aml",
+  "data": [
+    {
+      "month": "2025-04",
+      "month_start": "2025-04-01",
+      "month_end": "2025-04-30",
+      "label": "Apr 2025",
+      "created": 1,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1315') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1315') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

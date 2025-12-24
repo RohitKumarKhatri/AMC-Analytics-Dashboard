@@ -1,0 +1,111 @@
+{
+  "period": "monthly",
+  "year": 2024,
+  "customer": "STL - Tata Play Broadband Private Limited",
+  "data": [
+    {
+      "month": "2024-03",
+      "month_start": "2024-03-01",
+      "month_end": "2024-03-31",
+      "label": "Mar 2024",
+      "created": 2,
+      "resolved": 2,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-12', 'SBZT-8') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-12', 'SBZT-8') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-04",
+      "month_start": "2024-04-01",
+      "month_end": "2024-04-30",
+      "label": "Apr 2024",
+      "created": 15,
+      "resolved": 10,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-20', 'SBZT-253', 'SBZT-273', 'SBZT-274', 'SBZT-286', 'SBZT-290', 'SBZT-293', 'SBZT-308', 'SBZT-345', 'SBZT-58', 'SBZT-59', 'SBZT-60', 'SBZT-65', 'SBZT-67', 'SBZT-72') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-20', 'SBZT-253', 'SBZT-273', 'SBZT-274', 'SBZT-286', 'SBZT-290', 'SBZT-293', 'SBZT-60', 'SBZT-65', 'SBZT-72') ORDER BY key DESC"
+      },
+      "cumulative": 5
+    },
+    {
+      "month": "2024-05",
+      "month_start": "2024-05-01",
+      "month_end": "2024-05-31",
+      "label": "May 2024",
+      "created": 7,
+      "resolved": 4,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-374', 'SBZT-379', 'SBZT-385', 'SBZT-393', 'SBZT-412', 'SBZT-419', 'SBZT-430') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-374', 'SBZT-393', 'SBZT-58', 'SBZT-67') ORDER BY key DESC"
+      },
+      "cumulative": 8
+    },
+    {
+      "month": "2024-06",
+      "month_start": "2024-06-01",
+      "month_end": "2024-06-30",
+      "label": "Jun 2024",
+      "created": 2,
+      "resolved": 4,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-464', 'SBZT-471') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-385', 'SBZT-419', 'SBZT-464', 'SBZT-59') ORDER BY key DESC"
+      },
+      "cumulative": 6
+    },
+    {
+      "month": "2024-07",
+      "month_start": "2024-07-01",
+      "month_end": "2024-07-31",
+      "label": "Jul 2024",
+      "created": 5,
+      "resolved": 8,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-491', 'SBZT-493', 'SBZT-523', 'SBZT-528', 'SBZT-547') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-308', 'SBZT-345', 'SBZT-412', 'SBZT-430', 'SBZT-471', 'SBZT-493', 'SBZT-523', 'SBZT-528') ORDER BY key DESC"
+      },
+      "cumulative": 3
+    },
+    {
+      "month": "2024-08",
+      "month_start": "2024-08-01",
+      "month_end": "2024-08-31",
+      "label": "Aug 2024",
+      "created": 6,
+      "resolved": 5,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-555', 'SBZT-556', 'SBZT-563', 'SBZT-564', 'SBZT-589', 'SBZT-597') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-379', 'SBZT-491', 'SBZT-555', 'SBZT-556', 'SBZT-563') ORDER BY key DESC"
+      },
+      "cumulative": 4
+    },
+    {
+      "month": "2024-09",
+      "month_start": "2024-09-01",
+      "month_end": "2024-09-30",
+      "label": "Sep 2024",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-589') ORDER BY key DESC"
+      },
+      "cumulative": 3
+    },
+    {
+      "month": "2024-10",
+      "month_start": "2024-10-01",
+      "month_end": "2024-10-31",
+      "label": "Oct 2024",
+      "created": 0,
+      "resolved": 3,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-547', 'SBZT-564', 'SBZT-597') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

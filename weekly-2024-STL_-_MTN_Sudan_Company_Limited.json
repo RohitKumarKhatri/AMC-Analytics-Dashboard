@@ -1,0 +1,31 @@
+{
+  "period": "weekly",
+  "year": 2024,
+  "customer": "STL - MTN Sudan Company Limited",
+  "data": [
+    {
+      "week_start": "2024-04-01",
+      "week_end": "2024-04-07",
+      "label": "01 Apr 2024 - 07 Apr 2024",
+      "created": 33,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-122', 'SBZT-123', 'SBZT-125', 'SBZT-126', 'SBZT-128', 'SBZT-130', 'SBZT-131', 'SBZT-135', 'SBZT-136', 'SBZT-137', 'SBZT-140', 'SBZT-141', 'SBZT-144', 'SBZT-146', 'SBZT-150', 'SBZT-152', 'SBZT-153', 'SBZT-157', 'SBZT-158', 'SBZT-159', 'SBZT-160', 'SBZT-167', 'SBZT-168', 'SBZT-170', 'SBZT-171', 'SBZT-172', 'SBZT-173', 'SBZT-178', 'SBZT-180', 'SBZT-181', 'SBZT-186', 'SBZT-194', 'SBZT-201') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 33
+    },
+    {
+      "week_start": "2024-05-27",
+      "week_end": "2024-06-02",
+      "label": "27 May 2024 - 02 Jun 2024",
+      "created": 0,
+      "resolved": 33,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-122', 'SBZT-123', 'SBZT-125', 'SBZT-126', 'SBZT-128', 'SBZT-130', 'SBZT-131', 'SBZT-135', 'SBZT-136', 'SBZT-137', 'SBZT-140', 'SBZT-141', 'SBZT-144', 'SBZT-146', 'SBZT-150', 'SBZT-152', 'SBZT-153', 'SBZT-157', 'SBZT-158', 'SBZT-159', 'SBZT-160', 'SBZT-167', 'SBZT-168', 'SBZT-170', 'SBZT-171', 'SBZT-172', 'SBZT-173', 'SBZT-178', 'SBZT-180', 'SBZT-181', 'SBZT-186', 'SBZT-194', 'SBZT-201') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

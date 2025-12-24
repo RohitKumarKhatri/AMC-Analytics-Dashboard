@@ -1,0 +1,33 @@
+{
+  "period": "monthly",
+  "year": 2025,
+  "customer": "STL - Atria Convergence Technologies Pvt Ltd",
+  "data": [
+    {
+      "month": "2025-01",
+      "month_start": "2025-01-01",
+      "month_end": "2025-01-31",
+      "label": "Jan 2025",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1020') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "month": "2025-02",
+      "month_start": "2025-02-01",
+      "month_end": "2025-02-28",
+      "label": "Feb 2025",
+      "created": 5,
+      "resolved": 6,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1162', 'SBZT-1168', 'SBZT-1175', 'SBZT-1191', 'SBZT-1207') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1020', 'SBZT-1162', 'SBZT-1168', 'SBZT-1175', 'SBZT-1191', 'SBZT-1207') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    }
+  ]
+}

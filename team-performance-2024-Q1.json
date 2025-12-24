@@ -1,0 +1,47 @@
+{
+  "year": 2024,
+  "range": "Q1",
+  "weeks": [
+    "25 Mar 2024"
+  ],
+  "assignees": [
+    "Dennis Menezes",
+    "Shailesh Savla",
+    "Unassigned"
+  ],
+  "data": {
+    "Dennis Menezes": {
+      "25 Mar 2024": {
+        "count": 1,
+        "keys": [
+          "SBZT-7"
+        ]
+      },
+      "total": 1
+    },
+    "Shailesh Savla": {
+      "25 Mar 2024": {
+        "count": 2,
+        "keys": [
+          "SBZT-12",
+          "SBZT-8"
+        ]
+      },
+      "total": 2
+    },
+    "Unassigned": {
+      "25 Mar 2024": {
+        "count": 2,
+        "keys": [
+          "SBZT-1",
+          "SBZT-2"
+        ]
+      },
+      "total": 2
+    }
+  },
+  "week_totals": {
+    "25 Mar 2024": 5
+  },
+  "grand_total": 5
+}
