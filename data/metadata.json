@@ -10,7 +10,6 @@
     "Tatatel  -  Co",
     "Trilogy",
     "GFI - Wipro Enterprises (P) Ltd",
-    "ONE Albania",
     "STL - Tata Teleservices Limited",
     "Aml",
     "Atom",
@@ -63,16 +62,14 @@
   ],
   "one_albania_customers": [
     "STL - One Albania",
-    "ONE Albania",
     "STL - ONE ALBANIA",
     "STL - One Albania Internal"
   ],
-  "total_tickets": 1713,
+  "total_tickets": 1714,
   "customer_ticket_counts_q3_q4_2025": {
-    "STL - Airtel Fixedline": 62,
+    "STL - One Albania": 149,
+    "STL - Airtel Fixedline": 63,
     "STL - BSNL Wifi": 49,
-    "STL - One Albania": 148,
-    "ONE Albania": 1,
     "Tatatel  -  Co": 2,
     "STL - Commverge Solutions Philippines Inc.": 8,
     "Trilogy": 2,

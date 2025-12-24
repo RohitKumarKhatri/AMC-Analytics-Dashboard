@@ -151,13 +151,13 @@
       "month_start": "2025-12-01",
       "month_end": "2025-12-31",
       "label": "Dec 2025",
-      "created": 4,
-      "resolved": 14,
+      "created": 5,
+      "resolved": 16,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1776', 'SBZT-1778', 'SBZT-1779', 'SBZT-1780') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1375', 'SBZT-1377', 'SBZT-1464', 'SBZT-1549', 'SBZT-1573', 'SBZT-1598', 'SBZT-1611', 'SBZT-1644', 'SBZT-1646', 'SBZT-1681', 'SBZT-1685', 'SBZT-1688', 'SBZT-1695', 'SBZT-1776') ORDER BY key DESC"
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1775', 'SBZT-1776', 'SBZT-1778', 'SBZT-1779', 'SBZT-1780') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1375', 'SBZT-1377', 'SBZT-1464', 'SBZT-1549', 'SBZT-1573', 'SBZT-1598', 'SBZT-1611', 'SBZT-1644', 'SBZT-1646', 'SBZT-1681', 'SBZT-1685', 'SBZT-1688', 'SBZT-1695', 'SBZT-1776', 'SBZT-1778', 'SBZT-1780') ORDER BY key DESC"
       },
-      "cumulative": 4
+      "cumulative": 3
     }
   ]
 }

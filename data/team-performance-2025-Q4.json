@@ -143,10 +143,13 @@
         ]
       },
       "22 Dec 2025": {
-        "count": 0,
-        "keys": []
+        "count": 2,
+        "keys": [
+          "SBZT-1062",
+          "SBZT-1748"
+        ]
       },
-      "total": 10
+      "total": 12
     },
     "AnuragSingh Parihar": {
       "06 Oct 2025": {
@@ -270,10 +273,11 @@
         ]
       },
       "22 Dec 2025": {
-        "count": 11,
+        "count": 14,
         "keys": [
           "SBZT-1496",
           "SBZT-1573",
+          "SBZT-1581",
           "SBZT-1582",
           "SBZT-1598",
           "SBZT-1644",
@@ -282,10 +286,12 @@
           "SBZT-1685",
           "SBZT-1688",
           "SBZT-1695",
-          "SBZT-1729"
+          "SBZT-1729",
+          "SBZT-1778",
+          "SBZT-1780"
         ]
       },
-      "total": 34
+      "total": 37
     },
     "Deepesh Gidwani": {
       "06 Oct 2025": {
@@ -776,10 +782,8 @@
         "keys": []
       },
       "01 Dec 2025": {
-        "count": 1,
-        "keys": [
-          "SBZT-1540"
-        ]
+        "count": 0,
+        "keys": []
       },
       "08 Dec 2025": {
         "count": 0,
@@ -792,8 +796,10 @@
         ]
       },
       "22 Dec 2025": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-1362"
+        ]
       },
       "total": 4
     },
@@ -1026,12 +1032,18 @@
         ]
       },
       "22 Dec 2025": {
-        "count": 1,
+        "count": 7,
         "keys": [
-          "SBZT-1741"
+          "OAM-676",
+          "SBZT-1466",
+          "SBZT-1529",
+          "SBZT-1709",
+          "SBZT-1741",
+          "SBZT-1747",
+          "SBZT-1754"
         ]
       },
-      "total": 17
+      "total": 23
     },
     "Shailesh Savla": {
       "06 Oct 2025": {
@@ -1220,7 +1232,7 @@
         "count": 2,
         "keys": [
           "SBZT-1375",
-          "SBZT-1529"
+          "SBZT-1383"
         ]
       },
       "total": 17
@@ -1234,10 +1246,10 @@
     "10 Nov 2025": 28,
     "17 Nov 2025": 9,
     "24 Nov 2025": 15,
-    "01 Dec 2025": 16,
+    "01 Dec 2025": 15,
     "08 Dec 2025": 5,
     "15 Dec 2025": 23,
-    "22 Dec 2025": 36
+    "22 Dec 2025": 48
   },
-  "grand_total": 204
+  "grand_total": 215
 }

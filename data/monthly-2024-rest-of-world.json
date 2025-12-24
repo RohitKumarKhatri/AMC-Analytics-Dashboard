@@ -126,12 +126,12 @@
       "month_end": "2024-12-31",
       "label": "Dec 2024",
       "created": 50,
-      "resolved": 26,
+      "resolved": 27,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-907', 'SBZT-909', 'SBZT-913', 'SBZT-914', 'SBZT-915', 'SBZT-918', 'SBZT-925', 'SBZT-927', 'SBZT-933', 'SBZT-935', 'SBZT-936', 'SBZT-940', 'SBZT-941', 'SBZT-947', 'SBZT-948', 'SBZT-949', 'SBZT-950', 'SBZT-952', 'SBZT-953', 'SBZT-955', 'SBZT-956', 'SBZT-958', 'SBZT-960', 'SBZT-961', 'SBZT-962', 'SBZT-964', 'SBZT-965', 'SBZT-966', 'SBZT-967', 'SBZT-968', 'SBZT-971', 'SBZT-973', 'SBZT-974', 'SBZT-975', 'SBZT-976', 'SBZT-977', 'SBZT-978', 'SBZT-979', 'SBZT-980', 'SBZT-983', 'SBZT-984', 'SBZT-985', 'SBZT-986', 'SBZT-987', 'SBZT-988', 'SBZT-989', 'SBZT-990', 'SBZT-991', 'SBZT-992', 'SBZT-994') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-418', 'SBZT-497', 'SBZT-713', 'SBZT-733', 'SBZT-753', 'SBZT-845', 'SBZT-846', 'SBZT-848', 'SBZT-861', 'SBZT-886', 'SBZT-904', 'SBZT-909', 'SBZT-925', 'SBZT-935', 'SBZT-936', 'SBZT-940', 'SBZT-948', 'SBZT-952', 'SBZT-953', 'SBZT-955', 'SBZT-956', 'SBZT-958', 'SBZT-964', 'SBZT-974', 'SBZT-975', 'SBZT-979') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-41', 'SBZT-418', 'SBZT-497', 'SBZT-713', 'SBZT-733', 'SBZT-753', 'SBZT-845', 'SBZT-846', 'SBZT-848', 'SBZT-861', 'SBZT-886', 'SBZT-904', 'SBZT-909', 'SBZT-925', 'SBZT-935', 'SBZT-936', 'SBZT-940', 'SBZT-948', 'SBZT-952', 'SBZT-953', 'SBZT-955', 'SBZT-956', 'SBZT-958', 'SBZT-964', 'SBZT-974', 'SBZT-975', 'SBZT-979') ORDER BY key DESC"
       },
-      "cumulative": 71
+      "cumulative": 70
     },
     {
       "month": "2025-01",
@@ -144,7 +144,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-596', 'SBZT-619', 'SBZT-653', 'SBZT-658', 'SBZT-690', 'SBZT-698', 'SBZT-747', 'SBZT-783', 'SBZT-796', 'SBZT-816', 'SBZT-854', 'SBZT-914', 'SBZT-915', 'SBZT-918', 'SBZT-927', 'SBZT-947', 'SBZT-950', 'SBZT-961', 'SBZT-965', 'SBZT-966', 'SBZT-967', 'SBZT-968', 'SBZT-971', 'SBZT-973', 'SBZT-977', 'SBZT-983', 'SBZT-984', 'SBZT-985', 'SBZT-986', 'SBZT-987', 'SBZT-988', 'SBZT-991', 'SBZT-992', 'SBZT-994') ORDER BY key DESC"
       },
-      "cumulative": 37
+      "cumulative": 36
     },
     {
       "month": "2025-02",
@@ -157,7 +157,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-138', 'SBZT-161', 'SBZT-174', 'SBZT-188', 'SBZT-256', 'SBZT-468', 'SBZT-469', 'SBZT-517', 'SBZT-634', 'SBZT-655', 'SBZT-662', 'SBZT-672', 'SBZT-678', 'SBZT-695', 'SBZT-718', 'SBZT-720', 'SBZT-749', 'SBZT-779', 'SBZT-818', 'SBZT-841', 'SBZT-871', 'SBZT-907', 'SBZT-913', 'SBZT-933', 'SBZT-941', 'SBZT-949', 'SBZT-960', 'SBZT-962', 'SBZT-976', 'SBZT-980', 'SBZT-989', 'SBZT-990') ORDER BY key DESC"
       },
-      "cumulative": 5
+      "cumulative": 4
     },
     {
       "month": "2025-03",
@@ -170,7 +170,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-978') ORDER BY key DESC"
       },
-      "cumulative": 4
+      "cumulative": 3
     },
     {
       "month": "2025-04",
@@ -183,7 +183,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-702', 'SBZT-829') ORDER BY key DESC"
       },
-      "cumulative": 2
+      "cumulative": 1
     },
     {
       "month": "2025-12",
@@ -196,7 +196,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-649') ORDER BY key DESC"
       },
-      "cumulative": 1
+      "cumulative": 0
     }
   ]
 }

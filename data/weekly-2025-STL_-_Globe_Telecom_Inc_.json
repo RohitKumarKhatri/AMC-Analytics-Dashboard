@@ -146,6 +146,18 @@
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1527', 'SBZT-1567') ORDER BY key DESC"
       },
       "cumulative": 2
+    },
+    {
+      "week_start": "2025-12-22",
+      "week_end": "2025-12-28",
+      "label": "22 Dec 2025 - 28 Dec 2025",
+      "created": 0,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1581') ORDER BY key DESC"
+      },
+      "cumulative": 1
     }
   ]
 }

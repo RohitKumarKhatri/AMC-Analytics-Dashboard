@@ -25,6 +25,7 @@
     "Jayesh Shah",
     "JohnErnest Ramos",
     "Madhuri.Jadhav",
+    "Marlene Fernandes",
     "Natnael Legesse",
     "Nephat Muchiri",
     "Nirav Shah",
@@ -529,6 +530,63 @@
         "keys": []
       },
       "total": 2
+    },
+    "Marlene Fernandes": {
+      "07 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "14 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "21 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "28 Apr 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "05 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "12 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "19 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "26 May 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Jun 2025": {
+        "count": 1,
+        "keys": [
+          "OAM-154"
+        ]
+      },
+      "23 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "30 Jun 2025": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
     },
     "Natnael Legesse": {
       "07 Apr 2025": {
@@ -1273,9 +1331,9 @@
     "26 May 2025": 10,
     "02 Jun 2025": 4,
     "09 Jun 2025": 11,
-    "16 Jun 2025": 13,
+    "16 Jun 2025": 14,
     "23 Jun 2025": 5,
     "30 Jun 2025": 7
   },
-  "grand_total": 111
+  "grand_total": 112
 }

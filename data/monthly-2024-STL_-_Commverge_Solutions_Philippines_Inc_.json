@@ -100,12 +100,12 @@
       "month_end": "2024-12-31",
       "label": "Dec 2024",
       "created": 1,
-      "resolved": 1,
+      "resolved": 2,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-992') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-497') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-41', 'SBZT-497') ORDER BY key DESC"
       },
-      "cumulative": 5
+      "cumulative": 4
     },
     {
       "month": "2025-01",
@@ -118,7 +118,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-619', 'SBZT-992') ORDER BY key DESC"
       },
-      "cumulative": 3
+      "cumulative": 2
     },
     {
       "month": "2025-02",
@@ -131,7 +131,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-468', 'SBZT-718') ORDER BY key DESC"
       },
-      "cumulative": 1
+      "cumulative": 0
     }
   ]
 }
