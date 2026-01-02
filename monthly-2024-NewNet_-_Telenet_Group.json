@@ -2,5 +2,162 @@
   "period": "monthly",
   "year": 2024,
   "customer": "NewNet - Telenet Group",
-  "data": []
+  "data": [
+    {
+      "month": "2024-01",
+      "month_start": "2024-01-01",
+      "month_end": "2024-01-31",
+      "label": "Jan 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-02",
+      "month_start": "2024-02-01",
+      "month_end": "2024-02-29",
+      "label": "Feb 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-03",
+      "month_start": "2024-03-01",
+      "month_end": "2024-03-31",
+      "label": "Mar 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-04",
+      "month_start": "2024-04-01",
+      "month_end": "2024-04-30",
+      "label": "Apr 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-05",
+      "month_start": "2024-05-01",
+      "month_end": "2024-05-31",
+      "label": "May 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-06",
+      "month_start": "2024-06-01",
+      "month_end": "2024-06-30",
+      "label": "Jun 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-07",
+      "month_start": "2024-07-01",
+      "month_end": "2024-07-31",
+      "label": "Jul 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-08",
+      "month_start": "2024-08-01",
+      "month_end": "2024-08-31",
+      "label": "Aug 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-09",
+      "month_start": "2024-09-01",
+      "month_end": "2024-09-30",
+      "label": "Sep 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-10",
+      "month_start": "2024-10-01",
+      "month_end": "2024-10-31",
+      "label": "Oct 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-11",
+      "month_start": "2024-11-01",
+      "month_end": "2024-11-30",
+      "label": "Nov 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-12",
+      "month_start": "2024-12-01",
+      "month_end": "2024-12-31",
+      "label": "Dec 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    }
+  ]
 }

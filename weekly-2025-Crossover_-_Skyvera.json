@@ -4,6 +4,114 @@
   "customer": "Crossover - Skyvera",
   "data": [
     {
+      "week_start": "2025-01-06",
+      "week_end": "2025-01-12",
+      "label": "06 Jan 2025 - 12 Jan 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-01-13",
+      "week_end": "2025-01-19",
+      "label": "13 Jan 2025 - 19 Jan 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-01-20",
+      "week_end": "2025-01-26",
+      "label": "20 Jan 2025 - 26 Jan 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-01-27",
+      "week_end": "2025-02-02",
+      "label": "27 Jan 2025 - 02 Feb 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-02-03",
+      "week_end": "2025-02-09",
+      "label": "03 Feb 2025 - 09 Feb 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-02-10",
+      "week_end": "2025-02-16",
+      "label": "10 Feb 2025 - 16 Feb 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-02-17",
+      "week_end": "2025-02-23",
+      "label": "17 Feb 2025 - 23 Feb 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-02-24",
+      "week_end": "2025-03-02",
+      "label": "24 Feb 2025 - 02 Mar 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-03-03",
+      "week_end": "2025-03-09",
+      "label": "03 Mar 2025 - 09 Mar 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
       "week_start": "2025-03-10",
       "week_end": "2025-03-16",
       "label": "10 Mar 2025 - 16 Mar 2025",
@@ -28,6 +136,66 @@
       "cumulative": 0
     },
     {
+      "week_start": "2025-03-24",
+      "week_end": "2025-03-30",
+      "label": "24 Mar 2025 - 30 Mar 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-03-31",
+      "week_end": "2025-04-06",
+      "label": "31 Mar 2025 - 06 Apr 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-04-07",
+      "week_end": "2025-04-13",
+      "label": "07 Apr 2025 - 13 Apr 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-04-14",
+      "week_end": "2025-04-20",
+      "label": "14 Apr 2025 - 20 Apr 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-04-21",
+      "week_end": "2025-04-27",
+      "label": "21 Apr 2025 - 27 Apr 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
       "week_start": "2025-04-28",
       "week_end": "2025-05-04",
       "label": "28 Apr 2025 - 04 May 2025",
@@ -35,6 +203,402 @@
       "resolved": 0,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1383') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-05-05",
+      "week_end": "2025-05-11",
+      "label": "05 May 2025 - 11 May 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-05-12",
+      "week_end": "2025-05-18",
+      "label": "12 May 2025 - 18 May 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-05-19",
+      "week_end": "2025-05-25",
+      "label": "19 May 2025 - 25 May 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-05-26",
+      "week_end": "2025-06-01",
+      "label": "26 May 2025 - 01 Jun 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-06-02",
+      "week_end": "2025-06-08",
+      "label": "02 Jun 2025 - 08 Jun 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-06-09",
+      "week_end": "2025-06-15",
+      "label": "09 Jun 2025 - 15 Jun 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-06-16",
+      "week_end": "2025-06-22",
+      "label": "16 Jun 2025 - 22 Jun 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-06-23",
+      "week_end": "2025-06-29",
+      "label": "23 Jun 2025 - 29 Jun 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-06-30",
+      "week_end": "2025-07-06",
+      "label": "30 Jun 2025 - 06 Jul 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-07-07",
+      "week_end": "2025-07-13",
+      "label": "07 Jul 2025 - 13 Jul 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-07-14",
+      "week_end": "2025-07-20",
+      "label": "14 Jul 2025 - 20 Jul 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-07-21",
+      "week_end": "2025-07-27",
+      "label": "21 Jul 2025 - 27 Jul 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-07-28",
+      "week_end": "2025-08-03",
+      "label": "28 Jul 2025 - 03 Aug 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-08-04",
+      "week_end": "2025-08-10",
+      "label": "04 Aug 2025 - 10 Aug 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-08-11",
+      "week_end": "2025-08-17",
+      "label": "11 Aug 2025 - 17 Aug 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-08-18",
+      "week_end": "2025-08-24",
+      "label": "18 Aug 2025 - 24 Aug 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-08-25",
+      "week_end": "2025-08-31",
+      "label": "25 Aug 2025 - 31 Aug 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-09-01",
+      "week_end": "2025-09-07",
+      "label": "01 Sep 2025 - 07 Sep 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-09-08",
+      "week_end": "2025-09-14",
+      "label": "08 Sep 2025 - 14 Sep 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-09-15",
+      "week_end": "2025-09-21",
+      "label": "15 Sep 2025 - 21 Sep 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-09-22",
+      "week_end": "2025-09-28",
+      "label": "22 Sep 2025 - 28 Sep 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-09-29",
+      "week_end": "2025-10-05",
+      "label": "29 Sep 2025 - 05 Oct 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-10-06",
+      "week_end": "2025-10-12",
+      "label": "06 Oct 2025 - 12 Oct 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-10-13",
+      "week_end": "2025-10-19",
+      "label": "13 Oct 2025 - 19 Oct 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-10-20",
+      "week_end": "2025-10-26",
+      "label": "20 Oct 2025 - 26 Oct 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-10-27",
+      "week_end": "2025-11-02",
+      "label": "27 Oct 2025 - 02 Nov 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-11-03",
+      "week_end": "2025-11-09",
+      "label": "03 Nov 2025 - 09 Nov 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-11-10",
+      "week_end": "2025-11-16",
+      "label": "10 Nov 2025 - 16 Nov 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-11-17",
+      "week_end": "2025-11-23",
+      "label": "17 Nov 2025 - 23 Nov 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-11-24",
+      "week_end": "2025-11-30",
+      "label": "24 Nov 2025 - 30 Nov 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-12-01",
+      "week_end": "2025-12-07",
+      "label": "01 Dec 2025 - 07 Dec 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-12-08",
+      "week_end": "2025-12-14",
+      "label": "08 Dec 2025 - 14 Dec 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "week_start": "2025-12-15",
+      "week_end": "2025-12-21",
+      "label": "15 Dec 2025 - 21 Dec 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 1
@@ -48,6 +612,18 @@
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1383') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2025-12-29",
+      "week_end": "2026-01-04",
+      "label": "29 Dec 2025 - 04 Jan 2026",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 0
     }

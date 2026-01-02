@@ -4,6 +4,58 @@
   "customer": "STL - Tata Teleservices Limited",
   "data": [
     {
+      "month": "2025-01",
+      "month_start": "2025-01-01",
+      "month_end": "2025-01-31",
+      "label": "Jan 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2025-02",
+      "month_start": "2025-02-01",
+      "month_end": "2025-02-28",
+      "label": "Feb 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2025-03",
+      "month_start": "2025-03-01",
+      "month_end": "2025-03-31",
+      "label": "Mar 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2025-04",
+      "month_start": "2025-04-01",
+      "month_end": "2025-04-30",
+      "label": "Apr 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
       "month": "2025-05",
       "month_start": "2025-05-01",
       "month_end": "2025-05-31",
@@ -30,6 +82,19 @@
       "cumulative": 4
     },
     {
+      "month": "2025-07",
+      "month_start": "2025-07-01",
+      "month_end": "2025-07-31",
+      "label": "Jul 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 4
+    },
+    {
       "month": "2025-08",
       "month_start": "2025-08-01",
       "month_end": "2025-08-31",
@@ -39,6 +104,19 @@
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1583') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1500') ORDER BY key DESC"
+      },
+      "cumulative": 4
+    },
+    {
+      "month": "2025-09",
+      "month_start": "2025-09-01",
+      "month_end": "2025-09-30",
+      "label": "Sep 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 4
     },

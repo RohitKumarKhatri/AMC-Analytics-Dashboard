@@ -4,6 +4,45 @@
   "customer": "STL - BSNL Wifi",
   "data": [
     {
+      "month": "2024-01",
+      "month_start": "2024-01-01",
+      "month_end": "2024-01-31",
+      "label": "Jan 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-02",
+      "month_start": "2024-02-01",
+      "month_end": "2024-02-29",
+      "label": "Feb 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-03",
+      "month_start": "2024-03-01",
+      "month_end": "2024-03-31",
+      "label": "Mar 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
       "month": "2024-04",
       "month_start": "2024-04-01",
       "month_end": "2024-04-30",
@@ -119,32 +158,6 @@
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-845', 'SBZT-909', 'SBZT-936', 'SBZT-948', 'SBZT-974') ORDER BY key DESC"
       },
       "cumulative": 4
-    },
-    {
-      "month": "2025-01",
-      "month_start": "2025-01-01",
-      "month_end": "2025-01-31",
-      "label": "Jan 2025",
-      "created": 0,
-      "resolved": 1,
-      "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-986') ORDER BY key DESC"
-      },
-      "cumulative": 3
-    },
-    {
-      "month": "2025-02",
-      "month_start": "2025-02-01",
-      "month_end": "2025-02-28",
-      "label": "Feb 2025",
-      "created": 0,
-      "resolved": 3,
-      "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-818', 'SBZT-933', 'SBZT-990') ORDER BY key DESC"
-      },
-      "cumulative": 0
     }
   ]
 }

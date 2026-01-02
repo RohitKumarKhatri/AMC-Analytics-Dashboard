@@ -69,6 +69,84 @@
       "cumulative": 1
     },
     {
+      "month": "2025-06",
+      "month_start": "2025-06-01",
+      "month_end": "2025-06-30",
+      "label": "Jun 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "month": "2025-07",
+      "month_start": "2025-07-01",
+      "month_end": "2025-07-31",
+      "label": "Jul 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "month": "2025-08",
+      "month_start": "2025-08-01",
+      "month_end": "2025-08-31",
+      "label": "Aug 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "month": "2025-09",
+      "month_start": "2025-09-01",
+      "month_end": "2025-09-30",
+      "label": "Sep 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "month": "2025-10",
+      "month_start": "2025-10-01",
+      "month_end": "2025-10-31",
+      "label": "Oct 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
+      "month": "2025-11",
+      "month_start": "2025-11-01",
+      "month_end": "2025-11-30",
+      "label": "Nov 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 1
+    },
+    {
       "month": "2025-12",
       "month_start": "2025-12-01",
       "month_end": "2025-12-31",
