@@ -2,11 +2,11 @@
   "year": 2025,
   "range": "Q4",
   "distribution": {
-    "STL - Airtel Fixedline": 23,
+    "STL - Airtel Fixedline": 29,
+    "Trilogy": 2,
+    "Tatatel  -  Co": 3,
     "STL - BSNL Wifi": 20,
-    "Tatatel  -  Co": 2,
     "STL - Commverge Solutions Philippines Inc.": 4,
-    "Trilogy": 1,
-    "ONE Albania": 86
+    "ONE Albania": 88
   }
 }

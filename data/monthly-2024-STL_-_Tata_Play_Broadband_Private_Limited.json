@@ -4,6 +4,32 @@
   "customer": "STL - Tata Play Broadband Private Limited",
   "data": [
     {
+      "month": "2024-01",
+      "month_start": "2024-01-01",
+      "month_end": "2024-01-31",
+      "label": "Jan 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-02",
+      "month_start": "2024-02-01",
+      "month_end": "2024-02-29",
+      "label": "Feb 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
       "month": "2024-03",
       "month_start": "2024-03-01",
       "month_end": "2024-03-31",
@@ -104,6 +130,32 @@
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-547', 'SBZT-564', 'SBZT-597') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-11",
+      "month_start": "2024-11-01",
+      "month_end": "2024-11-30",
+      "label": "Nov 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
+    },
+    {
+      "month": "2024-12",
+      "month_start": "2024-12-01",
+      "month_end": "2024-12-31",
+      "label": "Dec 2024",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 0
     }

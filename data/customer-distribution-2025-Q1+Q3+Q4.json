@@ -2,11 +2,11 @@
   "year": 2025,
   "range": "Q1+Q3+Q4",
   "distribution": {
-    "STL - Airtel Fixedline": 107,
+    "STL - Airtel Fixedline": 113,
+    "Trilogy": 10,
+    "Tatatel  -  Co": 3,
     "STL - BSNL Wifi": 61,
-    "Tatatel  -  Co": 2,
     "STL - Commverge Solutions Philippines Inc.": 11,
-    "Trilogy": 9,
     "STL - Globe Telecom Inc.": 8,
     "STL - Synaptic Technologies": 9,
     "STL - Tata Teleservices Limited": 1,
@@ -24,6 +24,6 @@
     "STL - Hathway Cable & Datacom Ltd": 5,
     "STL - PT Aplikanusa Lintasarta": 1,
     "STL - VodaAAA User": 1,
-    "ONE Albania": 323
+    "ONE Albania": 325
   }
 }

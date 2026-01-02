@@ -121,6 +121,19 @@
       "cumulative": 3
     },
     {
+      "month": "2025-10",
+      "month_start": "2025-10-01",
+      "month_end": "2025-10-31",
+      "label": "Oct 2025",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 3
+    },
+    {
       "month": "2025-11",
       "month_start": "2025-11-01",
       "month_end": "2025-11-30",
