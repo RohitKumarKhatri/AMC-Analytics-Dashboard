@@ -2,7 +2,8 @@
   "year": 2026,
   "range": "Q1+Q2+Q4",
   "distribution": {
-    "STL - Airtel Fixedline": 3,
+    "STL - BSNL Wifi": 1,
+    "STL - Airtel Fixedline": 4,
     "Trilogy": 2,
     "Tatatel  -  Co": 1
   }

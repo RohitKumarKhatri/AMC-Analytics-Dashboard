@@ -1,13 +1,24 @@
 {
   "total_count": 104,
   "customer_distribution": {
+    "STL - BSNL Wifi": {
+      "count": 5,
+      "keys": [
+        "SBZT-1590",
+        "SBZT-1743",
+        "SBZT-1744",
+        "SBZT-1777",
+        "SBZT-1799"
+      ]
+    },
     "STL - Airtel Fixedline": {
-      "count": 4,
+      "count": 5,
       "keys": [
         "SBZT-1676",
         "SBZT-1775",
         "SBZT-1782",
-        "SBZT-1797"
+        "SBZT-1797",
+        "SBZT-1798"
       ]
     },
     "Tatatel  -  Co": {
@@ -19,7 +30,7 @@
       ]
     },
     "ONE Albania": {
-      "count": 92,
+      "count": 91,
       "keys": [
         "OAM-619",
         "OAM-632",
@@ -66,7 +77,6 @@
         "SBZT-1622",
         "SBZT-1623",
         "SBZT-1641",
-        "SBZT-1651",
         "SBZT-1661",
         "SBZT-1666",
         "SBZT-1678",
@@ -113,25 +123,15 @@
         "SBZT-1772",
         "SBZT-1773",
         "SBZT-1781"
-      ]
-    },
-    "STL - BSNL Wifi": {
-      "count": 5,
-      "keys": [
-        "SBZT-1590",
-        "SBZT-1628",
-        "SBZT-1743",
-        "SBZT-1744",
-        "SBZT-1777"
       ]
     }
   },
   "customer_summary": [
     {
       "customer": "ONE Albania",
-      "total_open_items": 92,
-      "average_age_days": 88.0,
-      "average_age_label": "88 days",
+      "total_open_items": 91,
+      "average_age_days": 87.8,
+      "average_age_label": "87 days",
       "keys": [
         "OAM-619",
         "OAM-632",
@@ -178,7 +178,6 @@
         "SBZT-1622",
         "SBZT-1623",
         "SBZT-1641",
-        "SBZT-1651",
         "SBZT-1661",
         "SBZT-1666",
         "SBZT-1678",
@@ -226,34 +225,35 @@
         "SBZT-1773",
         "SBZT-1781"
       ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-619', 'OAM-632', 'OAM-645', 'OAM-647', 'OAM-650', 'OAM-652', 'OAM-672', 'OAM-673', 'OAM-674', 'OAM-675', 'OAM-698', 'OAM-716', 'OAM-732', 'OAM-780', 'OAM-781', 'OAM-797', 'OAM-798', 'OAM-799', 'OAM-800', 'OAM-828', 'OAM-830', 'OAM-831', 'OAM-846', 'SBZT-1125', 'SBZT-1265', 'SBZT-1306', 'SBZT-1363', 'SBZT-1434', 'SBZT-1470', 'SBZT-1472', 'SBZT-1498', 'SBZT-1508', 'SBZT-1522', 'SBZT-1524', 'SBZT-1534', 'SBZT-1540', 'SBZT-1558', 'SBZT-1559', 'SBZT-1572', 'SBZT-1580', 'SBZT-1588', 'SBZT-1591', 'SBZT-1622', 'SBZT-1623', 'SBZT-1641', 'SBZT-1651', 'SBZT-1661', 'SBZT-1666', 'SBZT-1678', 'SBZT-1679', 'SBZT-1683', 'SBZT-1684', 'SBZT-1686', 'SBZT-1690', 'SBZT-1691', 'SBZT-1694', 'SBZT-1698', 'SBZT-1699', 'SBZT-1701', 'SBZT-1703', 'SBZT-1704', 'SBZT-1710', 'SBZT-1714', 'SBZT-1715', 'SBZT-1718', 'SBZT-1721', 'SBZT-1722', 'SBZT-1723', 'SBZT-1726', 'SBZT-1728', 'SBZT-1731', 'SBZT-1737', 'SBZT-1738', 'SBZT-1740', 'SBZT-1741', 'SBZT-1742', 'SBZT-1745', 'SBZT-1751', 'SBZT-1752', 'SBZT-1756', 'SBZT-1757', 'SBZT-1758', 'SBZT-1759', 'SBZT-1760', 'SBZT-1761', 'SBZT-1764', 'SBZT-1765', 'SBZT-1766', 'SBZT-1769', 'SBZT-1772', 'SBZT-1773', 'SBZT-1781') ORDER BY key DESC"
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-619', 'OAM-632', 'OAM-645', 'OAM-647', 'OAM-650', 'OAM-652', 'OAM-672', 'OAM-673', 'OAM-674', 'OAM-675', 'OAM-698', 'OAM-716', 'OAM-732', 'OAM-780', 'OAM-781', 'OAM-797', 'OAM-798', 'OAM-799', 'OAM-800', 'OAM-828', 'OAM-830', 'OAM-831', 'OAM-846', 'SBZT-1125', 'SBZT-1265', 'SBZT-1306', 'SBZT-1363', 'SBZT-1434', 'SBZT-1470', 'SBZT-1472', 'SBZT-1498', 'SBZT-1508', 'SBZT-1522', 'SBZT-1524', 'SBZT-1534', 'SBZT-1540', 'SBZT-1558', 'SBZT-1559', 'SBZT-1572', 'SBZT-1580', 'SBZT-1588', 'SBZT-1591', 'SBZT-1622', 'SBZT-1623', 'SBZT-1641', 'SBZT-1661', 'SBZT-1666', 'SBZT-1678', 'SBZT-1679', 'SBZT-1683', 'SBZT-1684', 'SBZT-1686', 'SBZT-1690', 'SBZT-1691', 'SBZT-1694', 'SBZT-1698', 'SBZT-1699', 'SBZT-1701', 'SBZT-1703', 'SBZT-1704', 'SBZT-1710', 'SBZT-1714', 'SBZT-1715', 'SBZT-1718', 'SBZT-1721', 'SBZT-1722', 'SBZT-1723', 'SBZT-1726', 'SBZT-1728', 'SBZT-1731', 'SBZT-1737', 'SBZT-1738', 'SBZT-1740', 'SBZT-1741', 'SBZT-1742', 'SBZT-1745', 'SBZT-1751', 'SBZT-1752', 'SBZT-1756', 'SBZT-1757', 'SBZT-1758', 'SBZT-1759', 'SBZT-1760', 'SBZT-1761', 'SBZT-1764', 'SBZT-1765', 'SBZT-1766', 'SBZT-1769', 'SBZT-1772', 'SBZT-1773', 'SBZT-1781') ORDER BY key DESC"
     },
     {
       "customer": "STL - BSNL Wifi",
       "total_open_items": 5,
-      "average_age_days": 73.4,
-      "average_age_label": "73 days",
+      "average_age_days": 49.6,
+      "average_age_label": "49 days",
       "keys": [
         "SBZT-1590",
-        "SBZT-1628",
         "SBZT-1743",
         "SBZT-1744",
-        "SBZT-1777"
+        "SBZT-1777",
+        "SBZT-1799"
       ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1590', 'SBZT-1628', 'SBZT-1743', 'SBZT-1744', 'SBZT-1777') ORDER BY key DESC"
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1590', 'SBZT-1743', 'SBZT-1744', 'SBZT-1777', 'SBZT-1799') ORDER BY key DESC"
     },
     {
       "customer": "STL - Airtel Fixedline",
-      "total_open_items": 4,
-      "average_age_days": 30.2,
-      "average_age_label": "30 days",
+      "total_open_items": 5,
+      "average_age_days": 24.2,
+      "average_age_label": "24 days",
       "keys": [
         "SBZT-1676",
         "SBZT-1775",
         "SBZT-1782",
-        "SBZT-1797"
+        "SBZT-1797",
+        "SBZT-1798"
       ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1676', 'SBZT-1775', 'SBZT-1782', 'SBZT-1797') ORDER BY key DESC"
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1676', 'SBZT-1775', 'SBZT-1782', 'SBZT-1797', 'SBZT-1798') ORDER BY key DESC"
     },
     {
       "customer": "Tatatel  -  Co",
@@ -443,7 +443,7 @@
       "age_days": 156,
       "age_label": "156 days",
       "customer": "ONE Albania",
-      "assignee": "Leewel Mwangi"
+      "assignee": "Rohit Kumar"
     },
     {
       "key": "SBZT-1580",
@@ -512,17 +512,6 @@
       "assignee": "Rohit Kumar"
     },
     {
-      "key": "SBZT-1628",
-      "title": "Request for API Access for BBNMS Integration",
-      "kayako_number": "60192338",
-      "created": "2025-09-08T00:00:00",
-      "created_formatted": "08 Sep 2025",
-      "age_days": 119,
-      "age_label": "119 days",
-      "customer": "STL - BSNL Wifi",
-      "assignee": "Shailesh Savla"
-    },
-    {
       "key": "OAM-619",
       "title": "Unique Constraint Violation on CDR Insertions",
       "kayako_number": "60195408",
@@ -556,17 +545,6 @@
       "assignee": "Madhuri.Jadhav"
     },
     {
-      "key": "SBZT-1651",
-      "title": "Service Name Process Queue missing at 09:30",
-      "kayako_number": "60196994",
-      "created": "2025-09-21T00:00:00",
-      "created_formatted": "21 Sep 2025",
-      "age_days": 106,
-      "age_label": "106 days",
-      "customer": "ONE Albania",
-      "assignee": "Nephat Muchiri"
-    },
-    {
       "key": "SBZT-1661",
       "title": "Postpaid addons not included in billing cycle",
       "kayako_number": "60198023",
@@ -586,7 +564,7 @@
       "age_days": 98,
       "age_label": "98 days",
       "customer": "ONE Albania",
-      "assignee": "Noman Tahir"
+      "assignee": "Rohit Kumar"
     },
     {
       "key": "SBZT-1676",
@@ -641,7 +619,7 @@
       "age_days": 87,
       "age_label": "87 days",
       "customer": "ONE Albania",
-      "assignee": "Noman Tahir"
+      "assignee": "Rohit Kumar"
     },
     {
       "key": "SBZT-1683",
@@ -1224,7 +1202,7 @@
       "age_days": 26,
       "age_label": "26 days",
       "customer": "ONE Albania",
-      "assignee": "Rohit Kumar"
+      "assignee": "Amisha Patel"
     },
     {
       "key": "SBZT-1765",
@@ -1401,6 +1379,28 @@
       "age_label": "4 days",
       "customer": "Tatatel  -  Co",
       "assignee": "Shailesh Savla"
+    },
+    {
+      "key": "SBZT-1799",
+      "title": "Quarterly PM for Bangalore and Pune RPOPs Y6Q4",
+      "kayako_number": "60275576",
+      "created": "2026-01-05T00:00:00",
+      "created_formatted": "05 Jan 2026",
+      "age_days": 0,
+      "age_label": "0 days",
+      "customer": "STL - BSNL Wifi",
+      "assignee": "Bharat Kalra"
+    },
+    {
+      "key": "SBZT-1798",
+      "title": "Performance KPIs requirement for AAA",
+      "kayako_number": "60275539",
+      "created": "2026-01-05T00:00:00",
+      "created_formatted": "05 Jan 2026",
+      "age_days": 0,
+      "age_label": "0 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bharat Kalra"
     },
     {
       "key": "SBZT-1797",

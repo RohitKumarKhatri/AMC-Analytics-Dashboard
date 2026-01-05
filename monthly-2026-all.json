@@ -8,13 +8,13 @@
       "month_start": "2026-01-01",
       "month_end": "2026-01-31",
       "label": "Jan 2026",
-      "created": 6,
+      "created": 8,
       "resolved": 4,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1790', 'SBZT-1791', 'SBZT-1794', 'SBZT-1795', 'SBZT-1796', 'SBZT-1797') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1790', 'SBZT-1791', 'SBZT-1794', 'SBZT-1795', 'SBZT-1796', 'SBZT-1797', 'SBZT-1798', 'SBZT-1799') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1790', 'SBZT-1794', 'SBZT-1795', 'SBZT-1796') ORDER BY key DESC"
       },
-      "cumulative": 2
+      "cumulative": 4
     }
   ]
 }
