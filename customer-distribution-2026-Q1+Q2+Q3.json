@@ -2,7 +2,8 @@
   "year": 2026,
   "range": "Q1+Q2+Q3",
   "distribution": {
-    "STL - Airtel Fixedline": 2,
+    "STL - Airtel Fixedline": 3,
+    "Trilogy": 2,
     "Tatatel  -  Co": 1
   }
 }

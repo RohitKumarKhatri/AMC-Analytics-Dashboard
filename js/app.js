@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
 let metadata = null;
 let currentData = null;
 let currentFilters = {
-    period: 'weekly',
+    period: 'monthly',
     year: null,
     ranges: ['Annual'],
     customer: 'one-albania'
@@ -55,7 +55,7 @@ function loadFiltersFromStorage() {
             const parsed = JSON.parse(saved);
             // Validate and merge with defaults
             return {
-                period: parsed.period || 'weekly',
+                period: parsed.period || 'monthly',
                 year: parsed.year || null,
                 ranges: Array.isArray(parsed.ranges) && parsed.ranges.length > 0 ? parsed.ranges : ['Annual'],
                 customer: parsed.customer || 'one-albania'
@@ -74,7 +74,7 @@ function getUrlParams() {
     // Check if URL has parameters (takes precedence)
     if (params.toString()) {
         return {
-            period: params.get('period') || 'weekly',
+            period: params.get('period') || 'monthly',
             year: params.get('year') ? parseInt(params.get('year')) : null,
             ranges: params.get('ranges') ? params.get('ranges').split(',') : ['Annual'],
             customer: params.get('customer') || 'one-albania'
@@ -89,7 +89,7 @@ function getUrlParams() {
     
     // Default values
     return {
-        period: 'weekly',
+        period: 'monthly',
         year: null,
         ranges: ['Annual'],
         customer: 'one-albania'
@@ -137,6 +137,15 @@ async function init() {
         }
         updateYearButtons();
         updateRangeButtons();
+        
+        // Set period button active state based on currentFilters
+        document.querySelectorAll('#period-buttons .btn-toggle').forEach(btn => {
+            if (btn.dataset.period === currentFilters.period) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
         
         // Set default customer dropdown selection
         const customerSelect = document.getElementById('customer-filter');
@@ -405,6 +414,65 @@ function filterAndRenderData() {
     
     let filtered = currentData;
     
+    // Always filter by year first (regardless of range selection)
+    // Also filter out future dates
+    const today = new Date();
+    today.setHours(0, 0, 0, 0); // Set to start of day for comparison
+    
+    if (currentFilters.year) {
+        filtered = currentData.filter(item => {
+            // Extract year from date string (YYYY-MM-DD or YYYY-MM)
+            const dateStr = item.week_start || item.month_start || item.month;
+            if (!dateStr) return false;
+            
+            const parts = dateStr.split('-');
+            const year = parseInt(parts[0]);
+            
+            // Only include if year matches selected year
+            if (year !== currentFilters.year) {
+                return false;
+            }
+            
+            // Filter out future dates
+            // For weekly: use week_start, for monthly: use month_start or month
+            let itemDate;
+            if (item.week_start) {
+                itemDate = new Date(item.week_start);
+            } else if (item.month_start) {
+                itemDate = new Date(item.month_start);
+            } else if (item.month) {
+                // Parse YYYY-MM format
+                const [y, m] = item.month.split('-').map(Number);
+                itemDate = new Date(y, m - 1, 1);
+            } else {
+                return false;
+            }
+            
+            // Only include if date is today or in the past
+            return itemDate <= today;
+        });
+    } else {
+        // Even without year filter, filter out future dates
+        filtered = currentData.filter(item => {
+            const dateStr = item.week_start || item.month_start || item.month;
+            if (!dateStr) return false;
+            
+            let itemDate;
+            if (item.week_start) {
+                itemDate = new Date(item.week_start);
+            } else if (item.month_start) {
+                itemDate = new Date(item.month_start);
+            } else if (item.month) {
+                const [y, m] = item.month.split('-').map(Number);
+                itemDate = new Date(y, m - 1, 1);
+            } else {
+                return false;
+            }
+            
+            return itemDate <= today;
+        });
+    }
+    
     // Filter by range (quarters) - only if not Annual
     if (currentFilters.ranges.length > 0 && !currentFilters.ranges.includes('Annual')) {
         const selectedQuarters = new Set();
@@ -416,20 +484,15 @@ function filterAndRenderData() {
         });
         
         if (selectedQuarters.size > 0) {
-            filtered = currentData.filter(item => {
-                // Extract month and year from date string (YYYY-MM-DD or YYYY-MM)
+            filtered = filtered.filter(item => {
+                // Extract month from date string (YYYY-MM-DD or YYYY-MM)
                 const dateStr = item.week_start || item.month_start || item.month;
                 if (!dateStr) return false;
                 
                 const parts = dateStr.split('-');
-                const year = parseInt(parts[0]);
                 const month = parseInt(parts[1]);
                 
-                // Only include if year matches selected year AND quarter matches
-                if (year !== currentFilters.year) {
-                    return false;
-                }
-                
+                // Filter by quarter
                 const quarter = Math.ceil(month / 3);
                 return selectedQuarters.has(quarter);
             });
