@@ -7,13 +7,25 @@
       "week_start": "2026-01-05",
       "week_end": "2026-01-11",
       "label": "05 Jan 2026 - 11 Jan 2026",
+      "created": 4,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1799', 'SBZT-1801', 'SBZT-1802', 'SBZT-1803') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 4
+    },
+    {
+      "week_start": "2026-01-12",
+      "week_end": "2026-01-18",
+      "label": "12 Jan 2026 - 18 Jan 2026",
       "created": 1,
       "resolved": 0,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1799') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1815') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 1
+      "cumulative": 5
     }
   ]
 }

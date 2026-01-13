@@ -851,10 +851,8 @@
         "keys": []
       },
       "15 Dec 2025": {
-        "count": 1,
-        "keys": [
-          "SBZT-1358"
-        ]
+        "count": 0,
+        "keys": []
       },
       "22 Dec 2025": {
         "count": 1,
@@ -866,7 +864,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 4
+      "total": 3
     },
     "Omkar Pataskar": {
       "06 Oct 2025": {
@@ -1104,10 +1102,11 @@
         "keys": []
       },
       "15 Dec 2025": {
-        "count": 2,
+        "count": 3,
         "keys": [
           "SBZT-1075",
-          "SBZT-1236"
+          "SBZT-1236",
+          "SBZT-1358"
         ]
       },
       "22 Dec 2025": {
@@ -1129,13 +1128,12 @@
           "SBZT-1475"
         ]
       },
-      "total": 25
+      "total": 26
     },
     "Shailesh Savla": {
       "06 Oct 2025": {
-        "count": 6,
+        "count": 5,
         "keys": [
-          "ASGT-3",
           "SBZT-1592",
           "SBZT-1593",
           "SBZT-1594",
@@ -1191,9 +1189,8 @@
         "keys": []
       },
       "22 Dec 2025": {
-        "count": 2,
+        "count": 1,
         "keys": [
-          "ASGT-4",
           "SBZT-1388"
         ]
       },
@@ -1201,7 +1198,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 15
+      "total": 13
     },
     "Vikrant Verma": {
       "06 Oct 2025": {
@@ -1264,10 +1261,8 @@
         "keys": []
       },
       "13 Oct 2025": {
-        "count": 1,
-        "keys": [
-          "ASGT-5"
-        ]
+        "count": 0,
+        "keys": []
       },
       "27 Oct 2025": {
         "count": 0,
@@ -1284,10 +1279,8 @@
         ]
       },
       "17 Nov 2025": {
-        "count": 1,
-        "keys": [
-          "ASU-3"
-        ]
+        "count": 0,
+        "keys": []
       },
       "24 Nov 2025": {
         "count": 0,
@@ -1316,7 +1309,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 5
+      "total": 3
     },
     "Unassigned": {
       "06 Oct 2025": {
@@ -1395,18 +1388,18 @@
     }
   },
   "week_totals": {
-    "06 Oct 2025": 20,
-    "13 Oct 2025": 7,
+    "06 Oct 2025": 19,
+    "13 Oct 2025": 6,
     "27 Oct 2025": 28,
     "03 Nov 2025": 17,
     "10 Nov 2025": 28,
-    "17 Nov 2025": 9,
+    "17 Nov 2025": 8,
     "24 Nov 2025": 15,
     "01 Dec 2025": 15,
     "08 Dec 2025": 5,
     "15 Dec 2025": 23,
-    "22 Dec 2025": 56,
+    "22 Dec 2025": 55,
     "29 Dec 2025": 11
   },
-  "grand_total": 234
+  "grand_total": 230
 }

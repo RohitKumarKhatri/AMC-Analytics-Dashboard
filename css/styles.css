@@ -1177,7 +1177,6 @@ header h1 {
     cursor: pointer;
 }
 
-/* Print Styles */
 /* Open Items Tab Styles */
 .open-items-container {
     padding: 30px;
@@ -1338,6 +1337,38 @@ header h1 {
     color: #dc3545;
 }
 
+.open-items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.open-items-section.chart-card,
+.open-items-section.table-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.open-items-section.full-width {
+    grid-column: 1 / -1;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.detailed-tickets-table th.sn-col,
+.detailed-tickets-table td.sn-col {
+    width: 60px;
+    text-align: center;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Print Styles */
 @media print {
     body {
         background: white;

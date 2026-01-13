@@ -112,13 +112,13 @@
       "month_start": "2025-09-01",
       "month_end": "2025-09-30",
       "label": "Sep 2025",
-      "created": 1,
+      "created": 0,
       "resolved": 3,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASU-3') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1349', 'SBZT-1372', 'SBZT-1389') ORDER BY key DESC"
       },
-      "cumulative": 3
+      "cumulative": 2
     },
     {
       "month": "2025-10",
@@ -131,7 +131,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 3
+      "cumulative": 2
     },
     {
       "month": "2025-11",
@@ -139,10 +139,10 @@
       "month_end": "2025-11-30",
       "label": "Nov 2025",
       "created": 0,
-      "resolved": 2,
+      "resolved": 1,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASU-3', 'SBZT-1490') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1490') ORDER BY key DESC"
       },
       "cumulative": 1
     },

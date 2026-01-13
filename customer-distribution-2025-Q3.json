@@ -3,13 +3,13 @@
   "range": "Q3",
   "distribution": {
     "STL - Airtel Fixedline": 40,
-    "STL - Globe Telecom Inc.": 6,
     "STL - BSNL Wifi": 29,
     "STL - Commverge Solutions Philippines Inc.": 4,
-    "STL - Synaptic Technologies": 2,
     "Trilogy": 1,
     "STL - Tata Teleservices Limited": 1,
+    "STL - Globe Telecom Inc.": 3,
     "STL - Atom Myanmar Ltd": 3,
+    "STL - Synaptic Technologies": 1,
     "GFI - Wipro Enterprises (P) Ltd": 1,
     "ONE Albania": 63
   }

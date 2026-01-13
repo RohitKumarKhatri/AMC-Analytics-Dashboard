@@ -112,13 +112,13 @@
       "month_start": "2025-09-01",
       "month_end": "2025-09-30",
       "label": "Sep 2025",
-      "created": 39,
+      "created": 35,
       "resolved": 36,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-3', 'ASGT-4', 'ASGT-5', 'ASU-3', 'SBZT-1616', 'SBZT-1617', 'SBZT-1618', 'SBZT-1619', 'SBZT-1620', 'SBZT-1621', 'SBZT-1625', 'SBZT-1627', 'SBZT-1628', 'SBZT-1629', 'SBZT-1630', 'SBZT-1631', 'SBZT-1632', 'SBZT-1633', 'SBZT-1634', 'SBZT-1635', 'SBZT-1637', 'SBZT-1638', 'SBZT-1639', 'SBZT-1640', 'SBZT-1642', 'SBZT-1643', 'SBZT-1644', 'SBZT-1645', 'SBZT-1646', 'SBZT-1648', 'SBZT-1649', 'SBZT-1650', 'SBZT-1653', 'SBZT-1655', 'SBZT-1657', 'SBZT-1659', 'SBZT-1660', 'SBZT-1663', 'SBZT-1668') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1616', 'SBZT-1617', 'SBZT-1618', 'SBZT-1619', 'SBZT-1620', 'SBZT-1621', 'SBZT-1625', 'SBZT-1627', 'SBZT-1628', 'SBZT-1629', 'SBZT-1630', 'SBZT-1631', 'SBZT-1632', 'SBZT-1633', 'SBZT-1634', 'SBZT-1635', 'SBZT-1637', 'SBZT-1638', 'SBZT-1639', 'SBZT-1640', 'SBZT-1642', 'SBZT-1643', 'SBZT-1644', 'SBZT-1645', 'SBZT-1646', 'SBZT-1648', 'SBZT-1649', 'SBZT-1650', 'SBZT-1653', 'SBZT-1655', 'SBZT-1657', 'SBZT-1659', 'SBZT-1660', 'SBZT-1663', 'SBZT-1668') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1327', 'SBZT-1349', 'SBZT-1372', 'SBZT-1389', 'SBZT-1436', 'SBZT-1493', 'SBZT-1516', 'SBZT-1543', 'SBZT-1553', 'SBZT-1554', 'SBZT-1557', 'SBZT-1577', 'SBZT-1578', 'SBZT-1584', 'SBZT-1585', 'SBZT-1605', 'SBZT-1610', 'SBZT-1616', 'SBZT-1617', 'SBZT-1621', 'SBZT-1625', 'SBZT-1629', 'SBZT-1631', 'SBZT-1632', 'SBZT-1633', 'SBZT-1634', 'SBZT-1635', 'SBZT-1637', 'SBZT-1638', 'SBZT-1639', 'SBZT-1640', 'SBZT-1642', 'SBZT-1643', 'SBZT-1649', 'SBZT-1650', 'SBZT-1655') ORDER BY key DESC"
       },
-      "cumulative": 53
+      "cumulative": 49
     },
     {
       "month": "2025-10",
@@ -126,12 +126,12 @@
       "month_end": "2025-10-31",
       "label": "Oct 2025",
       "created": 19,
-      "resolved": 22,
+      "resolved": 20,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1670', 'SBZT-1671', 'SBZT-1672', 'SBZT-1674', 'SBZT-1675', 'SBZT-1676', 'SBZT-1677', 'SBZT-1680', 'SBZT-1681', 'SBZT-1682', 'SBZT-1685', 'SBZT-1688', 'SBZT-1689', 'SBZT-1695', 'SBZT-1696', 'SBZT-1697', 'SBZT-1700', 'SBZT-1702', 'SBZT-1705') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-3', 'ASGT-5', 'SBZT-1393', 'SBZT-1548', 'SBZT-1592', 'SBZT-1593', 'SBZT-1594', 'SBZT-1596', 'SBZT-1607', 'SBZT-1618', 'SBZT-1619', 'SBZT-1627', 'SBZT-1648', 'SBZT-1659', 'SBZT-1660', 'SBZT-1668', 'SBZT-1670', 'SBZT-1671', 'SBZT-1672', 'SBZT-1674', 'SBZT-1675', 'SBZT-1677') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1393', 'SBZT-1548', 'SBZT-1592', 'SBZT-1593', 'SBZT-1594', 'SBZT-1596', 'SBZT-1607', 'SBZT-1618', 'SBZT-1619', 'SBZT-1627', 'SBZT-1648', 'SBZT-1659', 'SBZT-1660', 'SBZT-1668', 'SBZT-1670', 'SBZT-1671', 'SBZT-1672', 'SBZT-1674', 'SBZT-1675', 'SBZT-1677') ORDER BY key DESC"
       },
-      "cumulative": 50
+      "cumulative": 48
     },
     {
       "month": "2025-11",
@@ -139,12 +139,12 @@
       "month_end": "2025-11-30",
       "label": "Nov 2025",
       "created": 16,
-      "resolved": 21,
+      "resolved": 20,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1706', 'SBZT-1707', 'SBZT-1711', 'SBZT-1712', 'SBZT-1716', 'SBZT-1719', 'SBZT-1724', 'SBZT-1725', 'SBZT-1727', 'SBZT-1729', 'SBZT-1730', 'SBZT-1732', 'SBZT-1743', 'SBZT-1744', 'SBZT-1746', 'SBZT-1750') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASU-3', 'SBZT-1490', 'SBZT-1583', 'SBZT-1630', 'SBZT-1653', 'SBZT-1657', 'SBZT-1663', 'SBZT-1680', 'SBZT-1682', 'SBZT-1696', 'SBZT-1700', 'SBZT-1702', 'SBZT-1705', 'SBZT-1706', 'SBZT-1707', 'SBZT-1711', 'SBZT-1712', 'SBZT-1716', 'SBZT-1719', 'SBZT-1727', 'SBZT-1730') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1490', 'SBZT-1583', 'SBZT-1630', 'SBZT-1653', 'SBZT-1657', 'SBZT-1663', 'SBZT-1680', 'SBZT-1682', 'SBZT-1696', 'SBZT-1700', 'SBZT-1702', 'SBZT-1705', 'SBZT-1706', 'SBZT-1707', 'SBZT-1711', 'SBZT-1712', 'SBZT-1716', 'SBZT-1719', 'SBZT-1727', 'SBZT-1730') ORDER BY key DESC"
       },
-      "cumulative": 45
+      "cumulative": 44
     },
     {
       "month": "2025-12",
@@ -152,10 +152,10 @@
       "month_end": "2025-12-31",
       "label": "Dec 2025",
       "created": 23,
-      "resolved": 57,
+      "resolved": 56,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1753', 'SBZT-1755', 'SBZT-1762', 'SBZT-1763', 'SBZT-1767', 'SBZT-1768', 'SBZT-1770', 'SBZT-1771', 'SBZT-1774', 'SBZT-1775', 'SBZT-1776', 'SBZT-1777', 'SBZT-1778', 'SBZT-1779', 'SBZT-1780', 'SBZT-1782', 'SBZT-1783', 'SBZT-1784', 'SBZT-1785', 'SBZT-1786', 'SBZT-1787', 'SBZT-1788', 'SBZT-1789') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-4', 'SBZT-1283', 'SBZT-1329', 'SBZT-1375', 'SBZT-1377', 'SBZT-1381', 'SBZT-1383', 'SBZT-1388', 'SBZT-1398', 'SBZT-1445', 'SBZT-1464', 'SBZT-1477', 'SBZT-1496', 'SBZT-1527', 'SBZT-1549', 'SBZT-1567', 'SBZT-1571', 'SBZT-1573', 'SBZT-1581', 'SBZT-1582', 'SBZT-1598', 'SBZT-1602', 'SBZT-1611', 'SBZT-1620', 'SBZT-1644', 'SBZT-1645', 'SBZT-1646', 'SBZT-1681', 'SBZT-1685', 'SBZT-1688', 'SBZT-1689', 'SBZT-1695', 'SBZT-1697', 'SBZT-1724', 'SBZT-1725', 'SBZT-1729', 'SBZT-1732', 'SBZT-1746', 'SBZT-1750', 'SBZT-1753', 'SBZT-1755', 'SBZT-1762', 'SBZT-1763', 'SBZT-1767', 'SBZT-1768', 'SBZT-1771', 'SBZT-1774', 'SBZT-1776', 'SBZT-1778', 'SBZT-1779', 'SBZT-1780', 'SBZT-1783', 'SBZT-1784', 'SBZT-1786', 'SBZT-1787', 'SBZT-1788', 'SBZT-1789') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1283', 'SBZT-1329', 'SBZT-1375', 'SBZT-1377', 'SBZT-1381', 'SBZT-1383', 'SBZT-1388', 'SBZT-1398', 'SBZT-1445', 'SBZT-1464', 'SBZT-1477', 'SBZT-1496', 'SBZT-1527', 'SBZT-1549', 'SBZT-1567', 'SBZT-1571', 'SBZT-1573', 'SBZT-1581', 'SBZT-1582', 'SBZT-1598', 'SBZT-1602', 'SBZT-1611', 'SBZT-1620', 'SBZT-1644', 'SBZT-1645', 'SBZT-1646', 'SBZT-1681', 'SBZT-1685', 'SBZT-1688', 'SBZT-1689', 'SBZT-1695', 'SBZT-1697', 'SBZT-1724', 'SBZT-1725', 'SBZT-1729', 'SBZT-1732', 'SBZT-1746', 'SBZT-1750', 'SBZT-1753', 'SBZT-1755', 'SBZT-1762', 'SBZT-1763', 'SBZT-1767', 'SBZT-1768', 'SBZT-1771', 'SBZT-1774', 'SBZT-1776', 'SBZT-1778', 'SBZT-1779', 'SBZT-1780', 'SBZT-1783', 'SBZT-1784', 'SBZT-1786', 'SBZT-1787', 'SBZT-1788', 'SBZT-1789') ORDER BY key DESC"
       },
       "cumulative": 11
     }
