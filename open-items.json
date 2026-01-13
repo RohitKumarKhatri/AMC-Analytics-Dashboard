@@ -1,15 +1,16 @@
 {
-  "total_count": 99,
+  "total_count": 100,
   "customer_distribution": {
     "STL - Airtel Fixedline": {
-      "count": 6,
+      "count": 7,
       "keys": [
         "SBZT-1676",
         "SBZT-1775",
         "SBZT-1798",
         "SBZT-1806",
         "SBZT-1810",
-        "SBZT-1816"
+        "SBZT-1816",
+        "SBZT-1817"
       ]
     },
     "ONE Albania": {
@@ -234,18 +235,19 @@
     },
     {
       "customer": "STL - Airtel Fixedline",
-      "total_open_items": 6,
-      "average_age_days": 24.0,
-      "average_age_label": "24 days",
+      "total_open_items": 7,
+      "average_age_days": 20.6,
+      "average_age_label": "20 days",
       "keys": [
         "SBZT-1676",
         "SBZT-1775",
         "SBZT-1798",
         "SBZT-1806",
         "SBZT-1810",
-        "SBZT-1816"
+        "SBZT-1816",
+        "SBZT-1817"
       ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1676', 'SBZT-1775', 'SBZT-1798', 'SBZT-1806', 'SBZT-1810', 'SBZT-1816') ORDER BY key DESC"
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1676', 'SBZT-1775', 'SBZT-1798', 'SBZT-1806', 'SBZT-1810', 'SBZT-1816', 'SBZT-1817') ORDER BY key DESC"
     },
     {
       "customer": "Tatatel  -  Co",
@@ -389,7 +391,7 @@
       "age_days": 184,
       "age_label": "184 days",
       "customer": "ONE Albania",
-      "assignee": "Noman Tahir"
+      "assignee": "Rohit Kumar"
     },
     {
       "key": "SBZT-1559",
@@ -565,7 +567,7 @@
       "age_days": 98,
       "age_label": "98 days",
       "customer": "ONE Albania",
-      "assignee": "Noman Tahir"
+      "assignee": "Rohit Kumar"
     },
     {
       "key": "SBZT-1678",
@@ -620,7 +622,7 @@
       "age_days": 91,
       "age_label": "91 days",
       "customer": "ONE Albania",
-      "assignee": "Noman Tahir"
+      "assignee": "Rohit Kumar"
     },
     {
       "key": "OAM-650",
@@ -1335,6 +1337,17 @@
       "age_days": 1,
       "age_label": "1 days",
       "customer": "STL - BSNL Wifi",
+      "assignee": "Bharat Kalra"
+    },
+    {
+      "key": "SBZT-1817",
+      "title": "North ELK Servers Down: Urgent Support Needed",
+      "kayako_number": "60282229",
+      "created": "2026-01-13T00:00:00",
+      "created_formatted": "13 Jan 2026",
+      "age_days": 0,
+      "age_label": "0 days",
+      "customer": "STL - Airtel Fixedline",
       "assignee": "Bharat Kalra"
     },
     {
