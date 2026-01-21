@@ -441,12 +441,36 @@ function filterAndRenderData() {
             const dateStr = item.week_start || item.month_start || item.month;
             if (!dateStr) return false;
             
-            const parts = dateStr.split('-');
-            const year = parseInt(parts[0]);
-            
-            // Only include if year matches selected year
-            if (year !== currentFilters.year) {
-                return false;
+            // For weekly data, check if week overlaps with target year (not just week start year)
+            if (item.week_start) {
+                const weekStartParts = dateStr.split('-');
+                const weekStartYear = parseInt(weekStartParts[0]);
+                
+                // Also check week_end to see if week overlaps with target year
+                const weekEndStr = item.week_end;
+                if (weekEndStr) {
+                    const weekEndParts = weekEndStr.split('-');
+                    const weekEndYear = parseInt(weekEndParts[0]);
+                    
+                    // Include week if it overlaps with target year (starts in year OR ends in year)
+                    if (weekStartYear !== currentFilters.year && weekEndYear !== currentFilters.year) {
+                        return false;
+                    }
+                } else {
+                    // Fallback: only check week start year
+                    if (weekStartYear !== currentFilters.year) {
+                        return false;
+                    }
+                }
+            } else {
+                // For monthly data, check month start year
+                const parts = dateStr.split('-');
+                const year = parseInt(parts[0]);
+                
+                // Only include if year matches selected year
+                if (year !== currentFilters.year) {
+                    return false;
+                }
             }
             
             // Filter out future dates
