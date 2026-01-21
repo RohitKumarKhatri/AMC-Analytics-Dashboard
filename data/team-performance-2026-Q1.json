@@ -1,9 +1,58 @@
 {
   "year": 2026,
   "range": "Q1",
-  "weeks": [],
-  "assignees": [],
-  "data": {},
-  "week_totals": {},
-  "grand_total": 0
+  "weeks": [
+    "05 Jan 2026",
+    "12 Jan 2026",
+    "19 Jan 2026"
+  ],
+  "assignees": [
+    "Bharat Kalra"
+  ],
+  "data": {
+    "Bharat Kalra": {
+      "05 Jan 2026": {
+        "count": 8,
+        "keys": [
+          "SBZT-1797",
+          "SBZT-1800",
+          "SBZT-1804",
+          "SBZT-1805",
+          "SBZT-1807",
+          "SBZT-1809",
+          "SBZT-1812",
+          "SBZT-1813"
+        ]
+      },
+      "12 Jan 2026": {
+        "count": 8,
+        "keys": [
+          "SBZT-1814",
+          "SBZT-1816",
+          "SBZT-1817",
+          "SBZT-1818",
+          "SBZT-1824",
+          "SBZT-1825",
+          "SBZT-1826",
+          "SBZT-1830"
+        ]
+      },
+      "19 Jan 2026": {
+        "count": 4,
+        "keys": [
+          "SBZT-1810",
+          "SBZT-1831",
+          "SBZT-1832",
+          "SBZT-1837"
+        ]
+      },
+      "total": 20
+    }
+  },
+  "week_totals": {
+    "05 Jan 2026": 8,
+    "12 Jan 2026": 8,
+    "19 Jan 2026": 4
+  },
+  "grand_total": 20
 }
