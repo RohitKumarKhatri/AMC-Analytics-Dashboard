@@ -2,5 +2,54 @@
   "period": "weekly",
   "year": 2026,
   "customer": "STL - Airtel Fixedline",
-  "data": []
+  "data": [
+    {
+      "week_start": "2025-12-29",
+      "week_end": "2026-01-04",
+      "label": "29 Dec 2025 - 04 Jan 2026",
+      "created": 2,
+      "resolved": 2,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1790', 'SBZT-1794') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1790', 'SBZT-1794') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2026-01-05",
+      "week_end": "2026-01-11",
+      "label": "05 Jan 2026 - 11 Jan 2026",
+      "created": 9,
+      "resolved": 6,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1797', 'SBZT-1798', 'SBZT-1800', 'SBZT-1804', 'SBZT-1805', 'SBZT-1806', 'SBZT-1807', 'SBZT-1809', 'SBZT-1810') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1797', 'SBZT-1800', 'SBZT-1804', 'SBZT-1805', 'SBZT-1807', 'SBZT-1809') ORDER BY key DESC"
+      },
+      "cumulative": 3
+    },
+    {
+      "week_start": "2026-01-12",
+      "week_end": "2026-01-18",
+      "label": "12 Jan 2026 - 18 Jan 2026",
+      "created": 9,
+      "resolved": 8,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1814', 'SBZT-1816', 'SBZT-1817', 'SBZT-1818', 'SBZT-1824', 'SBZT-1825', 'SBZT-1826', 'SBZT-1830', 'SBZT-1831') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1814', 'SBZT-1816', 'SBZT-1817', 'SBZT-1818', 'SBZT-1824', 'SBZT-1825', 'SBZT-1826', 'SBZT-1830') ORDER BY key DESC"
+      },
+      "cumulative": 4
+    },
+    {
+      "week_start": "2026-01-19",
+      "week_end": "2026-01-25",
+      "label": "19 Jan 2026 - 25 Jan 2026",
+      "created": 4,
+      "resolved": 3,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1833', 'SBZT-1834', 'SBZT-1835', 'SBZT-1837') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1810', 'SBZT-1831', 'SBZT-1837') ORDER BY key DESC"
+      },
+      "cumulative": 5
+    }
+  ]
 }

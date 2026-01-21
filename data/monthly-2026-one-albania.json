@@ -8,13 +8,13 @@
       "month_start": "2026-01-01",
       "month_end": "2026-01-31",
       "label": "Jan 2026",
-      "created": 0,
+      "created": 8,
       "resolved": 0,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-868', 'OAM-869', 'OAM-870', 'OAM-871', 'OAM-872', 'OAM-894', 'SBZT-1808', 'SBZT-1811') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 0
+      "cumulative": 8
     }
   ]
 }
