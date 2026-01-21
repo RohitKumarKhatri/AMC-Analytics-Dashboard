@@ -359,18 +359,36 @@ async function loadData() {
         
         const filename = getDataFilename();
         console.log('[DEBUG] Loading file:', filename);
-        console.log('[DEBUG] Current filters:', currentFilters);
+        console.log('[DEBUG] Current filters:', JSON.stringify(currentFilters));
         const url = getCacheBustingUrl(`data/${filename}`);
         console.log('[DEBUG] Fetching URL:', url);
         const response = await fetch(url);
         
         if (!response.ok) {
+            console.error(`[DEBUG] HTTP Error: ${response.status} ${response.statusText}`);
             throw new Error(`Failed to load ${filename}: ${response.status}`);
         }
         
         const fileData = await response.json();
         console.log('[DEBUG] Loaded data:', fileData);
         console.log('[DEBUG] Data array length:', fileData.data ? fileData.data.length : 0);
+        console.log('[DEBUG] Total created in file:', fileData.data ? fileData.data.reduce((sum, item) => sum + (item.created || 0), 0) : 0);
+        
+        if (!fileData.data || fileData.data.length === 0) {
+            console.warn('[DEBUG] Warning: File loaded but contains no data items - clearing display');
+            // Clear current data and charts immediately
+            currentData = [];
+            updateStatsCards(0, 0);
+            if (createdResolvedChart) {
+                createdResolvedChart.clear();
+            }
+            if (cumulativeChart) {
+                cumulativeChart.clear();
+            }
+            hideLoading();
+            return; // Exit early - don't call filterAndRenderData
+        }
+        
         currentData = fileData.data;
         console.log('[DEBUG] currentData set, length:', currentData ? currentData.length : 0);
         
@@ -396,6 +414,8 @@ async function loadData() {
         });
     } catch (error) {
         console.error('Error loading data:', error);
+        console.error('[DEBUG] Failed to load file:', filename);
+        console.error('[DEBUG] Current filters:', currentFilters);
         showError();
     }
 }
@@ -423,8 +443,20 @@ function getDataFilename() {
 
 // Filter data by range (quarters) and render
 function filterAndRenderData() {
+    console.log('[DEBUG] filterAndRenderData called');
+    console.log('[DEBUG] currentData:', currentData);
+    console.log('[DEBUG] currentData length:', currentData ? currentData.length : 0);
+    
     if (!currentData || currentData.length === 0) {
-        console.warn('No data to render');
+        console.warn('[DEBUG] No data to render - clearing charts and stats');
+        // Clear charts and stats when no data
+        updateStatsCards(0, 0);
+        if (createdResolvedChart) {
+            createdResolvedChart.clear();
+        }
+        if (cumulativeChart) {
+            cumulativeChart.clear();
+        }
         return;
     }
     
@@ -530,9 +562,28 @@ function filterAndRenderData() {
                 if (!dateStr) return false;
                 
                 const parts = dateStr.split('-');
+                const year = parseInt(parts[0]);
                 const month = parseInt(parts[1]);
                 
-                // Filter by quarter
+                // CRITICAL: Only include if year matches selected year
+                // This prevents December 2025 from matching Q4 2026 filter
+                if (currentFilters.year && year !== currentFilters.year) {
+                    // For weekly data spanning year boundaries, check week_end
+                    if (item.week_end) {
+                        const weekEndParts = item.week_end.split('-');
+                        const weekEndYear = parseInt(weekEndParts[0]);
+                        const weekEndMonth = parseInt(weekEndParts[1]);
+                        
+                        // If week_end is in the selected year, use that month for quarter calculation
+                        if (weekEndYear === currentFilters.year) {
+                            const quarter = Math.ceil(weekEndMonth / 3);
+                            return selectedQuarters.has(quarter);
+                        }
+                    }
+                    return false;
+                }
+                
+                // Filter by quarter (only if year matches)
                 const quarter = Math.ceil(month / 3);
                 return selectedQuarters.has(quarter);
             });
