@@ -32,7 +32,7 @@ let currentFilters = {
     period: 'monthly',
     year: null,
     ranges: ['Annual'],
-    customer: 'one-albania'
+    customer: 'all'
 };
 // Removed: pendingJiraLink - no longer needed
 let customerPieChart = null;
@@ -67,7 +67,7 @@ function loadFiltersFromStorage() {
                 period: parsed.period || 'monthly',
                 year: parsed.year || null,
                 ranges: Array.isArray(parsed.ranges) && parsed.ranges.length > 0 ? parsed.ranges : ['Annual'],
-                customer: parsed.customer || 'one-albania'
+                customer: parsed.customer || 'all'
             };
         }
     } catch (e) {
@@ -86,7 +86,7 @@ function getUrlParams() {
             period: params.get('period') || 'monthly',
             year: params.get('year') ? parseInt(params.get('year')) : null,
             ranges: params.get('ranges') ? params.get('ranges').split(',') : ['Annual'],
-            customer: params.get('customer') || 'one-albania'
+            customer: params.get('customer') || 'all'
         };
     }
     
@@ -101,7 +101,7 @@ function getUrlParams() {
         period: 'monthly',
         year: null,
         ranges: ['Annual'],
-        customer: 'one-albania'
+        customer: 'all'
     };
 }
 
