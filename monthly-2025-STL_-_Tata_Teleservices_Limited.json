@@ -138,11 +138,11 @@
       "month_start": "2025-11-01",
       "month_end": "2025-11-30",
       "label": "Nov 2025",
-      "created": 0,
-      "resolved": 1,
+      "created": 1,
+      "resolved": 2,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1583') ORDER BY key DESC"
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-71') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-71', 'SBZT-1583') ORDER BY key DESC"
       },
       "cumulative": 2
     },

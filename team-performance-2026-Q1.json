@@ -3,7 +3,8 @@
   "range": "Q1",
   "weeks": [
     "05 Jan 2026",
-    "12 Jan 2026"
+    "12 Jan 2026",
+    "19 Jan 2026"
   ],
   "assignees": [
     "Bharat Kalra"
@@ -24,17 +25,34 @@
         ]
       },
       "12 Jan 2026": {
-        "count": 1,
+        "count": 8,
         "keys": [
-          "SBZT-1814"
+          "SBZT-1814",
+          "SBZT-1816",
+          "SBZT-1817",
+          "SBZT-1818",
+          "SBZT-1824",
+          "SBZT-1825",
+          "SBZT-1826",
+          "SBZT-1830"
         ]
       },
-      "total": 9
+      "19 Jan 2026": {
+        "count": 4,
+        "keys": [
+          "SBZT-1810",
+          "SBZT-1831",
+          "SBZT-1832",
+          "SBZT-1837"
+        ]
+      },
+      "total": 20
     }
   },
   "week_totals": {
     "05 Jan 2026": 8,
-    "12 Jan 2026": 1
+    "12 Jan 2026": 8,
+    "19 Jan 2026": 4
   },
-  "grand_total": 9
+  "grand_total": 20
 }

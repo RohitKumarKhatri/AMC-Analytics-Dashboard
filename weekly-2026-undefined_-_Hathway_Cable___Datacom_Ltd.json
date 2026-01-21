@@ -26,6 +26,18 @@
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 0
+    },
+    {
+      "week_start": "2026-01-19",
+      "week_end": "2026-01-25",
+      "label": "19 Jan 2026 - 25 Jan 2026",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
     }
   ]
 }

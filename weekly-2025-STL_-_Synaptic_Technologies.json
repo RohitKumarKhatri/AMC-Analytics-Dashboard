@@ -439,13 +439,13 @@
       "week_start": "2025-09-15",
       "week_end": "2025-09-21",
       "label": "15 Sep 2025 - 21 Sep 2025",
-      "created": 0,
+      "created": 1,
       "resolved": 2,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASU-3') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1349', 'SBZT-1389') ORDER BY key DESC"
       },
-      "cumulative": 1
+      "cumulative": 2
     },
     {
       "week_start": "2025-09-22",
@@ -457,31 +457,31 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 1
+      "cumulative": 2
     },
     {
       "week_start": "2025-09-29",
       "week_end": "2025-10-05",
       "label": "29 Sep 2025 - 05 Oct 2025",
-      "created": 0,
+      "created": 1,
       "resolved": 0,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-62') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 1
+      "cumulative": 3
     },
     {
       "week_start": "2025-10-06",
       "week_end": "2025-10-12",
       "label": "06 Oct 2025 - 12 Oct 2025",
-      "created": 0,
+      "created": 1,
       "resolved": 0,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-63') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 1
+      "cumulative": 4
     },
     {
       "week_start": "2025-10-13",
@@ -493,7 +493,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 1
+      "cumulative": 4
     },
     {
       "week_start": "2025-10-20",
@@ -505,7 +505,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 1
+      "cumulative": 4
     },
     {
       "week_start": "2025-10-27",
@@ -517,7 +517,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 1
+      "cumulative": 4
     },
     {
       "week_start": "2025-11-03",
@@ -529,31 +529,31 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 1
+      "cumulative": 4
     },
     {
       "week_start": "2025-11-10",
       "week_end": "2025-11-16",
       "label": "10 Nov 2025 - 16 Nov 2025",
       "created": 0,
-      "resolved": 1,
+      "resolved": 2,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1490') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-63', 'SBZT-1490') ORDER BY key DESC"
       },
-      "cumulative": 0
+      "cumulative": 2
     },
     {
       "week_start": "2025-11-17",
       "week_end": "2025-11-23",
       "label": "17 Nov 2025 - 23 Nov 2025",
       "created": 0,
-      "resolved": 0,
+      "resolved": 1,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASU-3') ORDER BY key DESC"
       },
-      "cumulative": 0
+      "cumulative": 1
     },
     {
       "week_start": "2025-11-24",
@@ -565,7 +565,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 0
+      "cumulative": 1
     },
     {
       "week_start": "2025-12-01",
@@ -577,7 +577,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 0
+      "cumulative": 1
     },
     {
       "week_start": "2025-12-08",
@@ -589,7 +589,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 0
+      "cumulative": 1
     },
     {
       "week_start": "2025-12-15",
@@ -601,7 +601,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 0
+      "cumulative": 1
     },
     {
       "week_start": "2025-12-22",
@@ -613,7 +613,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1329') ORDER BY key DESC"
       },
-      "cumulative": -1
+      "cumulative": 0
     },
     {
       "week_start": "2025-12-29",
@@ -625,7 +625,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": -1
+      "cumulative": 0
     }
   ]
 }

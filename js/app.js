@@ -1,5 +1,14 @@
 // Main application logic - loads pre-aggregated JSON files
 
+// List of all Jira projects
+const JIRA_PROJECTS = [
+    'AS', 'ASA', 'ASAB', 'ASAC', 'ASAI', 'ASAL', 'ASAM', 'ASD', 'ASGT', 'ASU', 'ASVH',
+    'ATW', 'AVMVCC', 'MSAFL', 'MSBB', 'MSBG', 'MSS', 'OAM', 'OASDAIS', 'PUWUS', 'SBZT'
+];
+
+// Generate project list for JQL query
+const JIRA_PROJECTS_JQL = JIRA_PROJECTS.join(', ');
+
 // Cache-busting helper function (5-minute cache)
 function getCacheBustingUrl(url) {
     const cacheDuration = 5 * 60 * 1000; // 5 minutes
@@ -1429,7 +1438,7 @@ function generateCustomerJQL(customerName) {
     
     // Handle ONE Albania specially
     if (customerName === 'ONE Albania' || /one\s+albania/i.test(customerName)) {
-        const oneAlbaniaJQL = `project in (SBZT, OAM) AND issuetype NOT IN (Sub-task, RAG) AND "Link to Central Zendesk[URL Field]" IS NOT EMPTY AND (text ~ "One Albania" OR text ~ "STL - One Albania")${dateFilter} order by created desc`;
+        const oneAlbaniaJQL = `project in (${JIRA_PROJECTS_JQL}) AND issuetype NOT IN (Sub-task, RAG) AND "Link to Central Zendesk[URL Field]" IS NOT EMPTY AND (text ~ "One Albania" OR text ~ "STL - One Albania")${dateFilter} order by created desc`;
         return encodeURIComponent(oneAlbaniaJQL);
     }
     
@@ -1438,8 +1447,8 @@ function generateCustomerJQL(customerName) {
         return null;
     }
     
-    // For individual customers, use PS Customer Name field
-    const customerJQL = `project = SBZT AND type not in (Sub-task, RAG) AND "PS Customer Name[Short text]" ~ "${customerName}"${dateFilter} ORDER BY key desc`;
+    // For individual customers, use PS Customer Name field - search across all projects
+    const customerJQL = `project in (${JIRA_PROJECTS_JQL}) AND type not in (Sub-task, RAG) AND "PS Customer Name[Short text]" ~ "${customerName}"${dateFilter} ORDER BY key desc`;
     return encodeURIComponent(customerJQL);
 }
 

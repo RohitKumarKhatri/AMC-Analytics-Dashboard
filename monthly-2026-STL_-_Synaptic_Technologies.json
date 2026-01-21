@@ -8,13 +8,13 @@
       "month_start": "2026-01-01",
       "month_end": "2026-01-31",
       "label": "Jan 2026",
-      "created": 0,
+      "created": 1,
       "resolved": 0,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-73') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 0
+      "cumulative": 1
     }
   ]
 }
