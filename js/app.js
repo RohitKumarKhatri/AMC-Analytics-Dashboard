@@ -358,14 +358,21 @@ async function loadData() {
         showLoading();
         
         const filename = getDataFilename();
-        const response = await fetch(getCacheBustingUrl(`data/${filename}`));
+        console.log('[DEBUG] Loading file:', filename);
+        console.log('[DEBUG] Current filters:', currentFilters);
+        const url = getCacheBustingUrl(`data/${filename}`);
+        console.log('[DEBUG] Fetching URL:', url);
+        const response = await fetch(url);
         
         if (!response.ok) {
             throw new Error(`Failed to load ${filename}: ${response.status}`);
         }
         
         const fileData = await response.json();
+        console.log('[DEBUG] Loaded data:', fileData);
+        console.log('[DEBUG] Data array length:', fileData.data ? fileData.data.length : 0);
         currentData = fileData.data;
+        console.log('[DEBUG] currentData set, length:', currentData ? currentData.length : 0);
         
         filterAndRenderData();
         hideLoading();
@@ -521,16 +528,22 @@ function filterAndRenderData() {
     let totalCreated = 0;
     let totalResolved = 0;
     
+    console.log('[DEBUG] filterAndRenderData - filtered length:', filtered.length);
+    console.log('[DEBUG] filterAndRenderData - filtered items:', filtered);
+    
     const dataWithCumulative = filtered.map(item => {
         const netChange = item.created - item.resolved;
         cumulative += netChange;
         totalCreated += item.created || 0;
         totalResolved += item.resolved || 0;
+        console.log('[DEBUG] Processing item:', item.label, 'created:', item.created, 'resolved:', item.resolved);
         return {
             ...item,
             cumulative: cumulative
         };
     });
+    
+    console.log('[DEBUG] Total calculated - created:', totalCreated, 'resolved:', totalResolved);
     
     // Update stat cards with totals
     updateStatsCards(totalCreated, totalResolved);
