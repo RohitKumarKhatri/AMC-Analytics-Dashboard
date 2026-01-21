@@ -1906,6 +1906,7 @@ async function loadTeamPerformanceData() {
     
     try {
         const filename = `team-performance-${teamFilters.year}-${teamFilters.range}.json`;
+        console.log('[DEBUG] Loading Team Performance file:', filename);
         const response = await fetch(getCacheBustingUrl(`data/${filename}`));
         
         if (!response.ok) {
@@ -1913,6 +1914,13 @@ async function loadTeamPerformanceData() {
         }
         
         const data = await response.json();
+        console.log('[DEBUG] Loaded Team Performance data:', {
+            year: data.year,
+            range: data.range,
+            assignees: data.assignees?.length || 0,
+            weeks: data.weeks?.length || 0,
+            grand_total: data.grand_total
+        });
         teamPerformanceData = data;
         
         // Render table (this happens while container is still visible but faded)
