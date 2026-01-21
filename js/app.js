@@ -1941,6 +1941,7 @@ function renderTeamPerformanceTable(data) {
     const table = document.getElementById('team-performance-table');
     
     if (!container || !table || !data) {
+        console.error('[DEBUG] Missing container, table, or data');
         return;
     }
     
@@ -1952,6 +1953,48 @@ function renderTeamPerformanceTable(data) {
     const tableData = data.data || {};
     const weekTotals = data.week_totals || {};
     const grandTotal = data.grand_total || 0;
+    
+    console.log('[DEBUG] Rendering Team Performance table:', {
+        year: data.year,
+        range: data.range,
+        weeks: weeks.length,
+        assignees: assignees.length,
+        grandTotal: grandTotal
+    });
+    
+    // Handle empty data case
+    if (assignees.length === 0 || weeks.length === 0) {
+        console.log('[DEBUG] No data to display - showing empty state');
+        // Still create header so table structure is visible
+        const thead = document.createElement('thead');
+        const headerRow = document.createElement('tr');
+        const assigneeHeader = document.createElement('th');
+        assigneeHeader.textContent = 'Assignee';
+        assigneeHeader.className = 'assignee-header';
+        headerRow.appendChild(assigneeHeader);
+        
+        const grandTotalHeader = document.createElement('th');
+        grandTotalHeader.textContent = 'Grand Total';
+        grandTotalHeader.className = 'grand-total-header';
+        headerRow.appendChild(grandTotalHeader);
+        
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
+        
+        // Add empty message row
+        const tbody = document.createElement('tbody');
+        const emptyRow = document.createElement('tr');
+        const emptyCell = document.createElement('td');
+        emptyCell.colSpan = 2;
+        emptyCell.textContent = 'No data available for this period';
+        emptyCell.style.textAlign = 'center';
+        emptyCell.style.padding = '20px';
+        emptyCell.style.color = '#666';
+        emptyRow.appendChild(emptyCell);
+        tbody.appendChild(emptyRow);
+        table.appendChild(tbody);
+        return;
+    }
     
     // Create header row
     const thead = document.createElement('thead');
