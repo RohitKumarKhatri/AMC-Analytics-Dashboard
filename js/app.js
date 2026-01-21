@@ -6,8 +6,8 @@ const JIRA_PROJECTS = [
     'ATW', 'AVMVCC', 'MSAFL', 'MSBB', 'MSBG', 'MSS', 'OAM', 'OASDAIS', 'PUWUS', 'SBZT'
 ];
 
-// Generate project list for JQL query
-const JIRA_PROJECTS_JQL = JIRA_PROJECTS.join(', ');
+// Generate project list for JQL query - quote all project names to handle reserved words like "AS"
+const JIRA_PROJECTS_JQL = JIRA_PROJECTS.map(p => `"${p}"`).join(', ');
 
 // Cache-busting helper function (5-minute cache)
 function getCacheBustingUrl(url) {
