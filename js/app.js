@@ -1364,9 +1364,15 @@ async function loadCustomerData() {
         
         // Aggregate data from all customers
         const customerData = await aggregateCustomerData();
+        console.log('[DEBUG] aggregateCustomerData returned:', customerData);
+        console.log('[DEBUG] Customer count:', Object.keys(customerData).length);
+        console.log('[DEBUG] Total tickets:', Object.values(customerData).reduce((sum, val) => sum + (typeof val === 'number' ? val : 0), 0));
         
         // Filter by range
         const filteredData = filterCustomerDataByRange(customerData);
+        console.log('[DEBUG] After filterCustomerDataByRange:', filteredData);
+        console.log('[DEBUG] Filtered customer count:', Object.keys(filteredData).length);
+        console.log('[DEBUG] Filtered total tickets:', Object.values(filteredData).reduce((sum, val) => sum + (typeof val === 'number' ? val : 0), 0));
         
         // Render pie chart with smooth animation
         renderCustomerPieChart(filteredData);
@@ -1454,14 +1460,18 @@ async function aggregateCustomerData() {
         }
         
         const data = await response.json();
-        console.log('Loaded customer distribution data:', data);
+        console.log('[DEBUG] Loaded customer distribution data:', data);
+        console.log('[DEBUG] Distribution keys:', Object.keys(data.distribution || {}));
+        console.log('[DEBUG] Total tickets:', Object.values(data.distribution || {}).reduce((sum, val) => sum + (typeof val === 'number' ? val : 0), 0));
         
         if (!data.distribution || Object.keys(data.distribution).length === 0) {
-            console.warn('Distribution data is empty for:', filename);
+            console.warn('[DEBUG] Distribution data is empty for:', filename);
             return {};
         }
         
-        return data.distribution || {};
+        const distribution = data.distribution || {};
+        console.log('[DEBUG] Returning distribution with', Object.keys(distribution).length, 'customers');
+        return distribution;
     } catch (error) {
         console.error('Error loading customer distribution:', error);
         console.error('Attempted filename:', filename);
