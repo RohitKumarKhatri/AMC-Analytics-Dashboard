@@ -44,12 +44,12 @@
       "week_end": "2026-01-25",
       "label": "19 Jan 2026 - 25 Jan 2026",
       "created": 0,
-      "resolved": 0,
+      "resolved": 1,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-74') ORDER BY key DESC"
       },
-      "cumulative": 1
+      "cumulative": 0
     }
   ]
 }

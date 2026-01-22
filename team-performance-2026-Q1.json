@@ -7,7 +7,9 @@
     "19 Jan 2026"
   ],
   "assignees": [
-    "Bharat Kalra"
+    "Bharat Kalra",
+    "Natnael Legesse",
+    "Shailesh Savla"
   ],
   "data": {
     "Bharat Kalra": {
@@ -38,21 +40,59 @@
         ]
       },
       "19 Jan 2026": {
-        "count": 4,
+        "count": 8,
         "keys": [
+          "SBZT-1798",
           "SBZT-1810",
+          "SBZT-1823",
           "SBZT-1831",
           "SBZT-1832",
-          "SBZT-1837"
+          "SBZT-1837",
+          "SBZT-1839",
+          "SBZT-1840"
         ]
       },
-      "total": 20
+      "total": 24
+    },
+    "Natnael Legesse": {
+      "05 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "12 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "19 Jan 2026": {
+        "count": 1,
+        "keys": [
+          "SBZT-1815"
+        ]
+      },
+      "total": 1
+    },
+    "Shailesh Savla": {
+      "05 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "12 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "19 Jan 2026": {
+        "count": 1,
+        "keys": [
+          "AS-74"
+        ]
+      },
+      "total": 1
     }
   },
   "week_totals": {
     "05 Jan 2026": 8,
     "12 Jan 2026": 8,
-    "19 Jan 2026": 4
+    "19 Jan 2026": 10
   },
-  "grand_total": 20
+  "grand_total": 26
 }

@@ -9,12 +9,12 @@
       "month_end": "2026-01-31",
       "label": "Jan 2026",
       "created": 1,
-      "resolved": 0,
+      "resolved": 1,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-74') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-74') ORDER BY key DESC"
       },
-      "cumulative": 1
+      "cumulative": 0
     }
   ]
 }

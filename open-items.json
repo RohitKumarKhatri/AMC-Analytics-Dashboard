@@ -1,20 +1,22 @@
 {
-  "total_count": 109,
+  "total_count": 107,
   "customer_distribution": {
-    "Trilogy": {
-      "count": 2,
+    "STL - Synaptic Technologies": {
+      "count": 3,
       "keys": [
-        "SBZT-1823",
-        "SBZT-1839"
+        "AS-73",
+        "AS-75",
+        "AS-76"
       ]
     },
     "ONE Albania": {
-      "count": 85,
+      "count": 86,
       "keys": [
         "OAM-619",
         "OAM-632",
         "OAM-645",
         "OAM-647",
+        "OAM-650",
         "OAM-652",
         "OAM-672",
         "OAM-673",
@@ -27,7 +29,6 @@
         "OAM-798",
         "OAM-799",
         "OAM-800",
-        "OAM-830",
         "OAM-831",
         "OAM-846",
         "OAM-868",
@@ -36,6 +37,8 @@
         "OAM-871",
         "OAM-872",
         "OAM-894",
+        "OAM-895",
+        "OAM-896",
         "SBZT-1125",
         "SBZT-1265",
         "SBZT-1306",
@@ -43,7 +46,6 @@
         "SBZT-1434",
         "SBZT-1470",
         "SBZT-1472",
-        "SBZT-1508",
         "SBZT-1522",
         "SBZT-1534",
         "SBZT-1540",
@@ -99,7 +101,7 @@
       ]
     },
     "STL - BSNL Wifi": {
-      "count": 11,
+      "count": 10,
       "keys": [
         "SBZT-1590",
         "SBZT-1743",
@@ -109,34 +111,19 @@
         "SBZT-1801",
         "SBZT-1802",
         "SBZT-1803",
-        "SBZT-1815",
         "SBZT-1836",
         "SBZT-1838"
       ]
     },
     "STL - Airtel Fixedline": {
-      "count": 7,
+      "count": 6,
       "keys": [
         "SBZT-1676",
         "SBZT-1775",
-        "SBZT-1798",
         "SBZT-1806",
         "SBZT-1833",
         "SBZT-1834",
         "SBZT-1835"
-      ]
-    },
-    "STL - Globe Telecom Inc.": {
-      "count": 2,
-      "keys": [
-        "AS-67",
-        "AS-74"
-      ]
-    },
-    "STL - Synaptic Technologies": {
-      "count": 1,
-      "keys": [
-        "AS-73"
       ]
     },
     "Tatatel  -  Co": {
@@ -144,19 +131,26 @@
       "keys": [
         "SBZT-1791"
       ]
+    },
+    "STL - Globe Telecom Inc.": {
+      "count": 1,
+      "keys": [
+        "AS-67"
+      ]
     }
   },
   "customer_summary": [
     {
       "customer": "ONE Albania",
-      "total_open_items": 85,
-      "average_age_days": 96.2,
-      "average_age_label": "96 days",
+      "total_open_items": 86,
+      "average_age_days": 95.3,
+      "average_age_label": "95 days",
       "keys": [
         "OAM-619",
         "OAM-632",
         "OAM-645",
         "OAM-647",
+        "OAM-650",
         "OAM-652",
         "OAM-672",
         "OAM-673",
@@ -169,7 +163,6 @@
         "OAM-798",
         "OAM-799",
         "OAM-800",
-        "OAM-830",
         "OAM-831",
         "OAM-846",
         "OAM-868",
@@ -178,6 +171,8 @@
         "OAM-871",
         "OAM-872",
         "OAM-894",
+        "OAM-895",
+        "OAM-896",
         "SBZT-1125",
         "SBZT-1265",
         "SBZT-1306",
@@ -185,7 +180,6 @@
         "SBZT-1434",
         "SBZT-1470",
         "SBZT-1472",
-        "SBZT-1508",
         "SBZT-1522",
         "SBZT-1534",
         "SBZT-1540",
@@ -239,13 +233,13 @@
         "SBZT-1808",
         "SBZT-1811"
       ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-619', 'OAM-632', 'OAM-645', 'OAM-647', 'OAM-652', 'OAM-672', 'OAM-673', 'OAM-674', 'OAM-675', 'OAM-698', 'OAM-732', 'OAM-780', 'OAM-781', 'OAM-798', 'OAM-799', 'OAM-800', 'OAM-830', 'OAM-831', 'OAM-846', 'OAM-868', 'OAM-869', 'OAM-870', 'OAM-871', 'OAM-872', 'OAM-894', 'SBZT-1125', 'SBZT-1265', 'SBZT-1306', 'SBZT-1363', 'SBZT-1434', 'SBZT-1470', 'SBZT-1472', 'SBZT-1508', 'SBZT-1522', 'SBZT-1534', 'SBZT-1540', 'SBZT-1558', 'SBZT-1559', 'SBZT-1572', 'SBZT-1588', 'SBZT-1591', 'SBZT-1622', 'SBZT-1623', 'SBZT-1641', 'SBZT-1661', 'SBZT-1666', 'SBZT-1678', 'SBZT-1679', 'SBZT-1683', 'SBZT-1684', 'SBZT-1686', 'SBZT-1690', 'SBZT-1691', 'SBZT-1694', 'SBZT-1699', 'SBZT-1703', 'SBZT-1704', 'SBZT-1714', 'SBZT-1715', 'SBZT-1718', 'SBZT-1721', 'SBZT-1723', 'SBZT-1728', 'SBZT-1731', 'SBZT-1737', 'SBZT-1738', 'SBZT-1740', 'SBZT-1741', 'SBZT-1742', 'SBZT-1745', 'SBZT-1751', 'SBZT-1752', 'SBZT-1757', 'SBZT-1758', 'SBZT-1760', 'SBZT-1761', 'SBZT-1764', 'SBZT-1765', 'SBZT-1766', 'SBZT-1769', 'SBZT-1772', 'SBZT-1773', 'SBZT-1781', 'SBZT-1808', 'SBZT-1811') ORDER BY key DESC"
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-619', 'OAM-632', 'OAM-645', 'OAM-647', 'OAM-650', 'OAM-652', 'OAM-672', 'OAM-673', 'OAM-674', 'OAM-675', 'OAM-698', 'OAM-732', 'OAM-780', 'OAM-781', 'OAM-798', 'OAM-799', 'OAM-800', 'OAM-831', 'OAM-846', 'OAM-868', 'OAM-869', 'OAM-870', 'OAM-871', 'OAM-872', 'OAM-894', 'OAM-895', 'OAM-896', 'SBZT-1125', 'SBZT-1265', 'SBZT-1306', 'SBZT-1363', 'SBZT-1434', 'SBZT-1470', 'SBZT-1472', 'SBZT-1522', 'SBZT-1534', 'SBZT-1540', 'SBZT-1558', 'SBZT-1559', 'SBZT-1572', 'SBZT-1588', 'SBZT-1591', 'SBZT-1622', 'SBZT-1623', 'SBZT-1641', 'SBZT-1661', 'SBZT-1666', 'SBZT-1678', 'SBZT-1679', 'SBZT-1683', 'SBZT-1684', 'SBZT-1686', 'SBZT-1690', 'SBZT-1691', 'SBZT-1694', 'SBZT-1699', 'SBZT-1703', 'SBZT-1704', 'SBZT-1714', 'SBZT-1715', 'SBZT-1718', 'SBZT-1721', 'SBZT-1723', 'SBZT-1728', 'SBZT-1731', 'SBZT-1737', 'SBZT-1738', 'SBZT-1740', 'SBZT-1741', 'SBZT-1742', 'SBZT-1745', 'SBZT-1751', 'SBZT-1752', 'SBZT-1757', 'SBZT-1758', 'SBZT-1760', 'SBZT-1761', 'SBZT-1764', 'SBZT-1765', 'SBZT-1766', 'SBZT-1769', 'SBZT-1772', 'SBZT-1773', 'SBZT-1781', 'SBZT-1808', 'SBZT-1811') ORDER BY key DESC"
     },
     {
       "customer": "STL - BSNL Wifi",
-      "total_open_items": 11,
-      "average_age_days": 35.0,
-      "average_age_label": "35 days",
+      "total_open_items": 10,
+      "average_age_days": 39.6,
+      "average_age_label": "39 days",
       "keys": [
         "SBZT-1590",
         "SBZT-1743",
@@ -255,69 +249,57 @@
         "SBZT-1801",
         "SBZT-1802",
         "SBZT-1803",
-        "SBZT-1815",
         "SBZT-1836",
         "SBZT-1838"
       ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1590', 'SBZT-1743', 'SBZT-1744', 'SBZT-1777', 'SBZT-1799', 'SBZT-1801', 'SBZT-1802', 'SBZT-1803', 'SBZT-1815', 'SBZT-1836', 'SBZT-1838') ORDER BY key DESC"
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1590', 'SBZT-1743', 'SBZT-1744', 'SBZT-1777', 'SBZT-1799', 'SBZT-1801', 'SBZT-1802', 'SBZT-1803', 'SBZT-1836', 'SBZT-1838') ORDER BY key DESC"
     },
     {
       "customer": "STL - Airtel Fixedline",
-      "total_open_items": 7,
-      "average_age_days": 25.4,
-      "average_age_label": "25 days",
+      "total_open_items": 6,
+      "average_age_days": 29.0,
+      "average_age_label": "29 days",
       "keys": [
         "SBZT-1676",
         "SBZT-1775",
-        "SBZT-1798",
         "SBZT-1806",
         "SBZT-1833",
         "SBZT-1834",
         "SBZT-1835"
       ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1676', 'SBZT-1775', 'SBZT-1798', 'SBZT-1806', 'SBZT-1833', 'SBZT-1834', 'SBZT-1835') ORDER BY key DESC"
-    },
-    {
-      "customer": "Trilogy",
-      "total_open_items": 2,
-      "average_age_days": 3.0,
-      "average_age_label": "3 days",
-      "keys": [
-        "SBZT-1823",
-        "SBZT-1839"
-      ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1823', 'SBZT-1839') ORDER BY key DESC"
-    },
-    {
-      "customer": "STL - Globe Telecom Inc.",
-      "total_open_items": 2,
-      "average_age_days": 46.5,
-      "average_age_label": "46 days",
-      "keys": [
-        "AS-67",
-        "AS-74"
-      ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-67', 'AS-74') ORDER BY key DESC"
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1676', 'SBZT-1775', 'SBZT-1806', 'SBZT-1833', 'SBZT-1834', 'SBZT-1835') ORDER BY key DESC"
     },
     {
       "customer": "STL - Synaptic Technologies",
-      "total_open_items": 1,
-      "average_age_days": 14.0,
-      "average_age_label": "14 days",
+      "total_open_items": 3,
+      "average_age_days": 6.3,
+      "average_age_label": "6 days",
       "keys": [
-        "AS-73"
+        "AS-73",
+        "AS-75",
+        "AS-76"
       ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-73') ORDER BY key DESC"
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-73', 'AS-75', 'AS-76') ORDER BY key DESC"
     },
     {
       "customer": "Tatatel  -  Co",
       "total_open_items": 1,
-      "average_age_days": 20.0,
-      "average_age_label": "20 days",
+      "average_age_days": 22.0,
+      "average_age_label": "22 days",
       "keys": [
         "SBZT-1791"
       ],
       "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1791') ORDER BY key DESC"
+    },
+    {
+      "customer": "STL - Globe Telecom Inc.",
+      "total_open_items": 1,
+      "average_age_days": 88.0,
+      "average_age_label": "88 days",
+      "keys": [
+        "AS-67"
+      ],
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-67') ORDER BY key DESC"
     }
   ],
   "tickets": [
@@ -327,8 +309,8 @@
       "kayako_number": "4603197",
       "created": "2025-01-24T00:00:00",
       "created_formatted": "24 Jan 2025",
-      "age_days": 362,
-      "age_label": "362 days",
+      "age_days": 364,
+      "age_label": "364 days",
       "customer": "ONE Albania",
       "assignee": "Preet Patel"
     },
@@ -338,8 +320,8 @@
       "kayako_number": "60002734",
       "created": "2025-03-14T00:00:00",
       "created_formatted": "14 Mar 2025",
-      "age_days": 313,
-      "age_label": "313 days",
+      "age_days": 315,
+      "age_label": "315 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -349,8 +331,8 @@
       "kayako_number": "60007767",
       "created": "2025-03-28T00:00:00",
       "created_formatted": "28 Mar 2025",
-      "age_days": 299,
-      "age_label": "299 days",
+      "age_days": 301,
+      "age_label": "301 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -360,8 +342,8 @@
       "kayako_number": "60029276",
       "created": "2025-04-24T00:00:00",
       "created_formatted": "24 Apr 2025",
-      "age_days": 272,
-      "age_label": "272 days",
+      "age_days": 274,
+      "age_label": "274 days",
       "customer": "ONE Albania",
       "assignee": "Noman Tahir"
     },
@@ -371,8 +353,8 @@
       "kayako_number": "60045619",
       "created": "2025-05-15T00:00:00",
       "created_formatted": "15 May 2025",
-      "age_days": 251,
-      "age_label": "251 days",
+      "age_days": 253,
+      "age_label": "253 days",
       "customer": "ONE Albania",
       "assignee": "Leewel Mwangi"
     },
@@ -382,8 +364,8 @@
       "kayako_number": "60060466",
       "created": "2025-05-31T00:00:00",
       "created_formatted": "31 May 2025",
-      "age_days": 235,
-      "age_label": "235 days",
+      "age_days": 237,
+      "age_label": "237 days",
       "customer": "ONE Albania",
       "assignee": "Amisha Patel"
     },
@@ -393,21 +375,10 @@
       "kayako_number": "60063558",
       "created": "2025-06-02T00:00:00",
       "created_formatted": "02 Jun 2025",
-      "age_days": 233,
-      "age_label": "233 days",
+      "age_days": 235,
+      "age_label": "235 days",
       "customer": "ONE Albania",
       "assignee": "Leewel Mwangi"
-    },
-    {
-      "key": "SBZT-1508",
-      "title": "Offline Batch Service INVOICEDATE column issue",
-      "kayako_number": "60074018",
-      "created": "2025-06-17T00:00:00",
-      "created_formatted": "17 Jun 2025",
-      "age_days": 218,
-      "age_label": "218 days",
-      "customer": "ONE Albania",
-      "assignee": "Amisha Patel"
     },
     {
       "key": "SBZT-1522",
@@ -415,8 +386,8 @@
       "kayako_number": "60084702",
       "created": "2025-06-27T00:00:00",
       "created_formatted": "27 Jun 2025",
-      "age_days": 208,
-      "age_label": "208 days",
+      "age_days": 210,
+      "age_label": "210 days",
       "customer": "ONE Albania",
       "assignee": "Noman Tahir"
     },
@@ -426,8 +397,8 @@
       "kayako_number": "60063567",
       "created": "2025-07-09T00:00:00",
       "created_formatted": "09 Jul 2025",
-      "age_days": 196,
-      "age_label": "196 days",
+      "age_days": 198,
+      "age_label": "198 days",
       "customer": "ONE Albania",
       "assignee": "Madhuri.Jadhav"
     },
@@ -437,8 +408,8 @@
       "kayako_number": "60099001",
       "created": "2025-07-13T00:00:00",
       "created_formatted": "13 Jul 2025",
-      "age_days": 192,
-      "age_label": "192 days",
+      "age_days": 194,
+      "age_label": "194 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -448,8 +419,8 @@
       "kayako_number": "60147241",
       "created": "2025-07-22T00:00:00",
       "created_formatted": "22 Jul 2025",
-      "age_days": 183,
-      "age_label": "183 days",
+      "age_days": 185,
+      "age_label": "185 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -459,8 +430,8 @@
       "kayako_number": "60125744",
       "created": "2025-07-22T00:00:00",
       "created_formatted": "22 Jul 2025",
-      "age_days": 183,
-      "age_label": "183 days",
+      "age_days": 185,
+      "age_label": "185 days",
       "customer": "ONE Albania",
       "assignee": "Deepesh Gidwani"
     },
@@ -470,8 +441,8 @@
       "kayako_number": "60157740",
       "created": "2025-08-02T00:00:00",
       "created_formatted": "02 Aug 2025",
-      "age_days": 172,
-      "age_label": "172 days",
+      "age_days": 174,
+      "age_label": "174 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -481,8 +452,8 @@
       "kayako_number": "60151875",
       "created": "2025-08-11T00:00:00",
       "created_formatted": "11 Aug 2025",
-      "age_days": 163,
-      "age_label": "163 days",
+      "age_days": 165,
+      "age_label": "165 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -492,8 +463,8 @@
       "kayako_number": "60157985",
       "created": "2025-08-12T00:00:00",
       "created_formatted": "12 Aug 2025",
-      "age_days": 162,
-      "age_label": "162 days",
+      "age_days": 164,
+      "age_label": "164 days",
       "customer": "ONE Albania",
       "assignee": "Amisha Patel"
     },
@@ -503,8 +474,8 @@
       "kayako_number": "60166596",
       "created": "2025-08-12T00:00:00",
       "created_formatted": "12 Aug 2025",
-      "age_days": 162,
-      "age_label": "162 days",
+      "age_days": 164,
+      "age_label": "164 days",
       "customer": "STL - BSNL Wifi",
       "assignee": "Shailesh Savla"
     },
@@ -514,8 +485,8 @@
       "kayako_number": "60178229",
       "created": "2025-09-01T00:00:00",
       "created_formatted": "01 Sep 2025",
-      "age_days": 142,
-      "age_label": "142 days",
+      "age_days": 144,
+      "age_label": "144 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -525,8 +496,8 @@
       "kayako_number": "60174192",
       "created": "2025-09-03T00:00:00",
       "created_formatted": "03 Sep 2025",
-      "age_days": 140,
-      "age_label": "140 days",
+      "age_days": 142,
+      "age_label": "142 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -536,8 +507,8 @@
       "kayako_number": "60195408",
       "created": "2025-09-11T00:00:00",
       "created_formatted": "11 Sep 2025",
-      "age_days": 132,
-      "age_label": "132 days",
+      "age_days": 134,
+      "age_label": "134 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -547,8 +518,8 @@
       "kayako_number": "60197932",
       "created": "2025-09-15T00:00:00",
       "created_formatted": "15 Sep 2025",
-      "age_days": 128,
-      "age_label": "128 days",
+      "age_days": 130,
+      "age_label": "130 days",
       "customer": "ONE Albania",
       "assignee": "Unassigned"
     },
@@ -558,8 +529,8 @@
       "kayako_number": "60199862",
       "created": "2025-09-21T00:00:00",
       "created_formatted": "21 Sep 2025",
-      "age_days": 122,
-      "age_label": "122 days",
+      "age_days": 124,
+      "age_label": "124 days",
       "customer": "ONE Albania",
       "assignee": "Madhuri.Jadhav"
     },
@@ -569,8 +540,8 @@
       "kayako_number": "60198023",
       "created": "2025-09-26T00:00:00",
       "created_formatted": "26 Sep 2025",
-      "age_days": 117,
-      "age_label": "117 days",
+      "age_days": 119,
+      "age_label": "119 days",
       "customer": "ONE Albania",
       "assignee": "Amisha Patel"
     },
@@ -580,8 +551,8 @@
       "kayako_number": "60194716",
       "created": "2025-09-29T00:00:00",
       "created_formatted": "29 Sep 2025",
-      "age_days": 114,
-      "age_label": "114 days",
+      "age_days": 116,
+      "age_label": "116 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -591,8 +562,8 @@
       "kayako_number": "60214372",
       "created": "2025-10-06T00:00:00",
       "created_formatted": "06 Oct 2025",
-      "age_days": 107,
-      "age_label": "107 days",
+      "age_days": 109,
+      "age_label": "109 days",
       "customer": "STL - Airtel Fixedline",
       "assignee": "Bharat Kalra"
     },
@@ -602,8 +573,8 @@
       "kayako_number": "60210195",
       "created": "2025-10-07T00:00:00",
       "created_formatted": "07 Oct 2025",
-      "age_days": 106,
-      "age_label": "106 days",
+      "age_days": 108,
+      "age_label": "108 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -613,8 +584,8 @@
       "kayako_number": "60215433",
       "created": "2025-10-07T00:00:00",
       "created_formatted": "07 Oct 2025",
-      "age_days": 106,
-      "age_label": "106 days",
+      "age_days": 108,
+      "age_label": "108 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -624,8 +595,8 @@
       "kayako_number": "60212390",
       "created": "2025-10-07T00:00:00",
       "created_formatted": "07 Oct 2025",
-      "age_days": 106,
-      "age_label": "106 days",
+      "age_days": 108,
+      "age_label": "108 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -635,8 +606,8 @@
       "kayako_number": "60218397",
       "created": "2025-10-10T00:00:00",
       "created_formatted": "10 Oct 2025",
-      "age_days": 103,
-      "age_label": "103 days",
+      "age_days": 105,
+      "age_label": "105 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -646,8 +617,8 @@
       "kayako_number": "60204496",
       "created": "2025-10-10T00:00:00",
       "created_formatted": "10 Oct 2025",
-      "age_days": 103,
-      "age_label": "103 days",
+      "age_days": 105,
+      "age_label": "105 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -657,8 +628,8 @@
       "kayako_number": "60219881",
       "created": "2025-10-13T00:00:00",
       "created_formatted": "13 Oct 2025",
-      "age_days": 100,
-      "age_label": "100 days",
+      "age_days": 102,
+      "age_label": "102 days",
       "customer": "ONE Albania",
       "assignee": "Preet Patel"
     },
@@ -668,10 +639,21 @@
       "kayako_number": "60218551",
       "created": "2025-10-14T00:00:00",
       "created_formatted": "14 Oct 2025",
-      "age_days": 99,
-      "age_label": "99 days",
+      "age_days": 101,
+      "age_label": "101 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
+    },
+    {
+      "key": "OAM-650",
+      "title": "Contract Status Not Updating After Takeover CA",
+      "kayako_number": "60221606",
+      "created": "2025-10-15T00:00:00",
+      "created_formatted": "15 Oct 2025",
+      "age_days": 100,
+      "age_label": "100 days",
+      "customer": "ONE Albania",
+      "assignee": "Purushuttam.Biswas"
     },
     {
       "key": "OAM-652",
@@ -679,8 +661,8 @@
       "kayako_number": "60211277",
       "created": "2025-10-17T00:00:00",
       "created_formatted": "17 Oct 2025",
-      "age_days": 96,
-      "age_label": "96 days",
+      "age_days": 98,
+      "age_label": "98 days",
       "customer": "ONE Albania",
       "assignee": "Deepesh Gidwani"
     },
@@ -690,8 +672,8 @@
       "kayako_number": "60224618",
       "created": "2025-10-21T00:00:00",
       "created_formatted": "21 Oct 2025",
-      "age_days": 92,
-      "age_label": "92 days",
+      "age_days": 94,
+      "age_label": "94 days",
       "customer": "ONE Albania",
       "assignee": "Leewel Mwangi"
     },
@@ -701,8 +683,8 @@
       "kayako_number": "60224731",
       "created": "2025-10-21T00:00:00",
       "created_formatted": "21 Oct 2025",
-      "age_days": 92,
-      "age_label": "92 days",
+      "age_days": 94,
+      "age_label": "94 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -712,8 +694,8 @@
       "kayako_number": "60228428",
       "created": "2025-10-24T00:00:00",
       "created_formatted": "24 Oct 2025",
-      "age_days": 89,
-      "age_label": "89 days",
+      "age_days": 91,
+      "age_label": "91 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -723,8 +705,8 @@
       "kayako_number": "60226578",
       "created": "2025-10-27T00:00:00",
       "created_formatted": "27 Oct 2025",
-      "age_days": 86,
-      "age_label": "86 days",
+      "age_days": 88,
+      "age_label": "88 days",
       "customer": "STL - Globe Telecom Inc.",
       "assignee": "Shailesh Savla"
     },
@@ -734,8 +716,8 @@
       "kayako_number": "60230514",
       "created": "2025-10-28T00:00:00",
       "created_formatted": "28 Oct 2025",
-      "age_days": 85,
-      "age_label": "85 days",
+      "age_days": 87,
+      "age_label": "87 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -745,8 +727,8 @@
       "kayako_number": "60228428",
       "created": "2025-10-28T00:00:00",
       "created_formatted": "28 Oct 2025",
-      "age_days": 85,
-      "age_label": "85 days",
+      "age_days": 87,
+      "age_label": "87 days",
       "customer": "ONE Albania",
       "assignee": "Marlene Fernandes"
     },
@@ -756,8 +738,8 @@
       "kayako_number": "60178229",
       "created": "2025-10-28T00:00:00",
       "created_formatted": "28 Oct 2025",
-      "age_days": 85,
-      "age_label": "85 days",
+      "age_days": 87,
+      "age_label": "87 days",
       "customer": "ONE Albania",
       "assignee": "Purushuttam.Biswas"
     },
@@ -767,8 +749,8 @@
       "kayako_number": "60074018",
       "created": "2025-10-30T00:00:00",
       "created_formatted": "30 Oct 2025",
-      "age_days": 83,
-      "age_label": "83 days",
+      "age_days": 85,
+      "age_label": "85 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -778,8 +760,8 @@
       "kayako_number": "60039409",
       "created": "2025-10-30T00:00:00",
       "created_formatted": "30 Oct 2025",
-      "age_days": 83,
-      "age_label": "83 days",
+      "age_days": 85,
+      "age_label": "85 days",
       "customer": "ONE Albania",
       "assignee": "Marlene Fernandes"
     },
@@ -789,8 +771,8 @@
       "kayako_number": "60199862",
       "created": "2025-10-30T00:00:00",
       "created_formatted": "30 Oct 2025",
-      "age_days": 83,
-      "age_label": "83 days",
+      "age_days": 85,
+      "age_label": "85 days",
       "customer": "ONE Albania",
       "assignee": "Madhuri.Jadhav"
     },
@@ -800,8 +782,8 @@
       "kayako_number": "60229762",
       "created": "2025-10-31T00:00:00",
       "created_formatted": "31 Oct 2025",
-      "age_days": 82,
-      "age_label": "82 days",
+      "age_days": 84,
+      "age_label": "84 days",
       "customer": "ONE Albania",
       "assignee": "Deepesh Gidwani"
     },
@@ -811,8 +793,8 @@
       "kayako_number": "60235589",
       "created": "2025-11-04T00:00:00",
       "created_formatted": "04 Nov 2025",
-      "age_days": 78,
-      "age_label": "78 days",
+      "age_days": 80,
+      "age_label": "80 days",
       "customer": "ONE Albania",
       "assignee": "Marlene Fernandes"
     },
@@ -822,8 +804,8 @@
       "kayako_number": "60236373",
       "created": "2025-11-06T00:00:00",
       "created_formatted": "06 Nov 2025",
-      "age_days": 76,
-      "age_label": "76 days",
+      "age_days": 78,
+      "age_label": "78 days",
       "customer": "ONE Albania",
       "assignee": "Leewel Mwangi"
     },
@@ -833,8 +815,8 @@
       "kayako_number": "60229607",
       "created": "2025-11-06T00:00:00",
       "created_formatted": "06 Nov 2025",
-      "age_days": 76,
-      "age_label": "76 days",
+      "age_days": 78,
+      "age_label": "78 days",
       "customer": "ONE Albania",
       "assignee": "Leewel Mwangi"
     },
@@ -844,8 +826,8 @@
       "kayako_number": "60239838",
       "created": "2025-11-11T00:00:00",
       "created_formatted": "11 Nov 2025",
-      "age_days": 71,
-      "age_label": "71 days",
+      "age_days": 73,
+      "age_label": "73 days",
       "customer": "ONE Albania",
       "assignee": "Preet Patel"
     },
@@ -855,8 +837,8 @@
       "kayako_number": "60240305",
       "created": "2025-11-11T00:00:00",
       "created_formatted": "11 Nov 2025",
-      "age_days": 71,
-      "age_label": "71 days",
+      "age_days": 73,
+      "age_label": "73 days",
       "customer": "ONE Albania",
       "assignee": "Purushuttam.Biswas"
     },
@@ -866,8 +848,8 @@
       "kayako_number": "60239631",
       "created": "2025-11-12T00:00:00",
       "created_formatted": "12 Nov 2025",
-      "age_days": 70,
-      "age_label": "70 days",
+      "age_days": 72,
+      "age_label": "72 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -877,8 +859,8 @@
       "kayako_number": "60239787",
       "created": "2025-11-13T00:00:00",
       "created_formatted": "13 Nov 2025",
-      "age_days": 69,
-      "age_label": "69 days",
+      "age_days": 71,
+      "age_label": "71 days",
       "customer": "ONE Albania",
       "assignee": "Amisha Patel"
     },
@@ -888,8 +870,8 @@
       "kayako_number": "60243090",
       "created": "2025-11-14T00:00:00",
       "created_formatted": "14 Nov 2025",
-      "age_days": 68,
-      "age_label": "68 days",
+      "age_days": 70,
+      "age_label": "70 days",
       "customer": "ONE Albania",
       "assignee": "Leewel Mwangi"
     },
@@ -899,8 +881,8 @@
       "kayako_number": "60243243",
       "created": "2025-11-17T00:00:00",
       "created_formatted": "17 Nov 2025",
-      "age_days": 65,
-      "age_label": "65 days",
+      "age_days": 67,
+      "age_label": "67 days",
       "customer": "ONE Albania",
       "assignee": "Marlene Fernandes"
     },
@@ -910,8 +892,8 @@
       "kayako_number": "60240631",
       "created": "2025-11-18T00:00:00",
       "created_formatted": "18 Nov 2025",
-      "age_days": 64,
-      "age_label": "64 days",
+      "age_days": 66,
+      "age_label": "66 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -921,8 +903,8 @@
       "kayako_number": "60243247",
       "created": "2025-11-18T00:00:00",
       "created_formatted": "18 Nov 2025",
-      "age_days": 64,
-      "age_label": "64 days",
+      "age_days": 66,
+      "age_label": "66 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -932,8 +914,8 @@
       "kayako_number": "60246382",
       "created": "2025-11-19T00:00:00",
       "created_formatted": "19 Nov 2025",
-      "age_days": 63,
-      "age_label": "63 days",
+      "age_days": 65,
+      "age_label": "65 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -943,8 +925,8 @@
       "kayako_number": "60246530",
       "created": "2025-11-19T00:00:00",
       "created_formatted": "19 Nov 2025",
-      "age_days": 63,
-      "age_label": "63 days",
+      "age_days": 65,
+      "age_label": "65 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -954,8 +936,8 @@
       "kayako_number": "60246350",
       "created": "2025-11-19T00:00:00",
       "created_formatted": "19 Nov 2025",
-      "age_days": 63,
-      "age_label": "63 days",
+      "age_days": 65,
+      "age_label": "65 days",
       "customer": "ONE Albania",
       "assignee": "Amisha Patel"
     },
@@ -965,8 +947,8 @@
       "kayako_number": "60248070",
       "created": "2025-11-21T00:00:00",
       "created_formatted": "21 Nov 2025",
-      "age_days": 61,
-      "age_label": "61 days",
+      "age_days": 63,
+      "age_label": "63 days",
       "customer": "STL - BSNL Wifi",
       "assignee": "Shailesh Savla"
     },
@@ -976,8 +958,8 @@
       "kayako_number": "60234456",
       "created": "2025-11-24T00:00:00",
       "created_formatted": "24 Nov 2025",
-      "age_days": 58,
-      "age_label": "58 days",
+      "age_days": 60,
+      "age_label": "60 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -987,8 +969,8 @@
       "kayako_number": "60249484",
       "created": "2025-11-24T00:00:00",
       "created_formatted": "24 Nov 2025",
-      "age_days": 58,
-      "age_label": "58 days",
+      "age_days": 60,
+      "age_label": "60 days",
       "customer": "STL - BSNL Wifi",
       "assignee": "Bharat Kalra"
     },
@@ -998,8 +980,8 @@
       "kayako_number": "60250853",
       "created": "2025-11-27T00:00:00",
       "created_formatted": "27 Nov 2025",
-      "age_days": 55,
-      "age_label": "55 days",
+      "age_days": 57,
+      "age_label": "57 days",
       "customer": "ONE Albania",
       "assignee": "Deepesh Gidwani"
     },
@@ -1009,8 +991,8 @@
       "kayako_number": "60251763",
       "created": "2025-11-27T00:00:00",
       "created_formatted": "27 Nov 2025",
-      "age_days": 55,
-      "age_label": "55 days",
+      "age_days": 57,
+      "age_label": "57 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -1020,8 +1002,8 @@
       "kayako_number": "60211277",
       "created": "2025-12-01T00:00:00",
       "created_formatted": "01 Dec 2025",
-      "age_days": 51,
-      "age_label": "51 days",
+      "age_days": 53,
+      "age_label": "53 days",
       "customer": "ONE Albania",
       "assignee": "Deepesh Gidwani"
     },
@@ -1031,8 +1013,8 @@
       "kayako_number": "60240305",
       "created": "2025-12-03T00:00:00",
       "created_formatted": "03 Dec 2025",
-      "age_days": 49,
-      "age_label": "49 days",
+      "age_days": 51,
+      "age_label": "51 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -1042,8 +1024,8 @@
       "kayako_number": "60147241",
       "created": "2025-12-04T00:00:00",
       "created_formatted": "04 Dec 2025",
-      "age_days": 48,
-      "age_label": "48 days",
+      "age_days": 50,
+      "age_label": "50 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -1053,8 +1035,8 @@
       "kayako_number": "60060414",
       "created": "2025-12-04T00:00:00",
       "created_formatted": "04 Dec 2025",
-      "age_days": 48,
-      "age_label": "48 days",
+      "age_days": 50,
+      "age_label": "50 days",
       "customer": "ONE Albania",
       "assignee": "Amisha Patel"
     },
@@ -1064,8 +1046,8 @@
       "kayako_number": "60043170",
       "created": "2025-12-04T00:00:00",
       "created_formatted": "04 Dec 2025",
-      "age_days": 48,
-      "age_label": "48 days",
+      "age_days": 50,
+      "age_label": "50 days",
       "customer": "ONE Albania",
       "assignee": "Leewel Mwangi"
     },
@@ -1075,8 +1057,8 @@
       "kayako_number": "60196994",
       "created": "2025-12-05T00:00:00",
       "created_formatted": "05 Dec 2025",
-      "age_days": 47,
-      "age_label": "47 days",
+      "age_days": 49,
+      "age_label": "49 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -1086,8 +1068,8 @@
       "kayako_number": "60256620",
       "created": "2025-12-09T00:00:00",
       "created_formatted": "09 Dec 2025",
-      "age_days": 43,
-      "age_label": "43 days",
+      "age_days": 45,
+      "age_label": "45 days",
       "customer": "ONE Albania",
       "assignee": "Nephat Muchiri"
     },
@@ -1097,8 +1079,8 @@
       "kayako_number": "60251727",
       "created": "2025-12-10T00:00:00",
       "created_formatted": "10 Dec 2025",
-      "age_days": 42,
-      "age_label": "42 days",
+      "age_days": 44,
+      "age_label": "44 days",
       "customer": "ONE Albania",
       "assignee": "Leewel Mwangi"
     },
@@ -1108,8 +1090,8 @@
       "kayako_number": "60251079",
       "created": "2025-12-10T00:00:00",
       "created_formatted": "10 Dec 2025",
-      "age_days": 42,
-      "age_label": "42 days",
+      "age_days": 44,
+      "age_label": "44 days",
       "customer": "ONE Albania",
       "assignee": "Madhuri.Jadhav"
     },
@@ -1119,8 +1101,8 @@
       "kayako_number": "60255536",
       "created": "2025-12-10T00:00:00",
       "created_formatted": "10 Dec 2025",
-      "age_days": 42,
-      "age_label": "42 days",
+      "age_days": 44,
+      "age_label": "44 days",
       "customer": "ONE Albania",
       "assignee": "Amisha Patel"
     },
@@ -1130,8 +1112,8 @@
       "kayako_number": "60259418",
       "created": "2025-12-10T00:00:00",
       "created_formatted": "10 Dec 2025",
-      "age_days": 42,
-      "age_label": "42 days",
+      "age_days": 44,
+      "age_label": "44 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -1141,8 +1123,8 @@
       "kayako_number": "60256214",
       "created": "2025-12-11T00:00:00",
       "created_formatted": "11 Dec 2025",
-      "age_days": 41,
-      "age_label": "41 days",
+      "age_days": 43,
+      "age_label": "43 days",
       "customer": "ONE Albania",
       "assignee": "Purushuttam.Biswas"
     },
@@ -1152,8 +1134,8 @@
       "kayako_number": "60262195",
       "created": "2025-12-14T00:00:00",
       "created_formatted": "14 Dec 2025",
-      "age_days": 38,
-      "age_label": "38 days",
+      "age_days": 40,
+      "age_label": "40 days",
       "customer": "ONE Albania",
       "assignee": "Marlene Fernandes"
     },
@@ -1163,8 +1145,8 @@
       "kayako_number": "60259440",
       "created": "2025-12-15T00:00:00",
       "created_formatted": "15 Dec 2025",
-      "age_days": 37,
-      "age_label": "37 days",
+      "age_days": 39,
+      "age_label": "39 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -1174,8 +1156,8 @@
       "kayako_number": "60256225",
       "created": "2025-12-16T00:00:00",
       "created_formatted": "16 Dec 2025",
-      "age_days": 36,
-      "age_label": "36 days",
+      "age_days": 38,
+      "age_label": "38 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -1185,21 +1167,10 @@
       "kayako_number": "60265208",
       "created": "2025-12-17T00:00:00",
       "created_formatted": "17 Dec 2025",
-      "age_days": 35,
-      "age_label": "35 days",
+      "age_days": 37,
+      "age_label": "37 days",
       "customer": "STL - Airtel Fixedline",
       "assignee": "Bharat Kalra"
-    },
-    {
-      "key": "OAM-830",
-      "title": "Archive and Purging Strategy for DBRM DB",
-      "kayako_number": "60266172",
-      "created": "2025-12-18T00:00:00",
-      "created_formatted": "18 Dec 2025",
-      "age_days": 34,
-      "age_label": "34 days",
-      "customer": "ONE Albania",
-      "assignee": "Natnael Legesse"
     },
     {
       "key": "OAM-831",
@@ -1207,8 +1178,8 @@
       "kayako_number": "60256225",
       "created": "2025-12-19T00:00:00",
       "created_formatted": "19 Dec 2025",
-      "age_days": 33,
-      "age_label": "33 days",
+      "age_days": 35,
+      "age_label": "35 days",
       "customer": "ONE Albania",
       "assignee": "Leewel Mwangi"
     },
@@ -1218,8 +1189,8 @@
       "kayako_number": "60268023",
       "created": "2025-12-21T00:00:00",
       "created_formatted": "21 Dec 2025",
-      "age_days": 31,
-      "age_label": "31 days",
+      "age_days": 33,
+      "age_label": "33 days",
       "customer": "STL - BSNL Wifi",
       "assignee": "Natnael Legesse"
     },
@@ -1229,8 +1200,8 @@
       "kayako_number": "60269989",
       "created": "2025-12-24T00:00:00",
       "created_formatted": "24 Dec 2025",
-      "age_days": 28,
-      "age_label": "28 days",
+      "age_days": 30,
+      "age_label": "30 days",
       "customer": "ONE Albania",
       "assignee": "Deepesh Gidwani"
     },
@@ -1240,8 +1211,8 @@
       "kayako_number": "60272426",
       "created": "2025-12-30T00:00:00",
       "created_formatted": "30 Dec 2025",
-      "age_days": 22,
-      "age_label": "22 days",
+      "age_days": 24,
+      "age_label": "24 days",
       "customer": "ONE Albania",
       "assignee": "Deepesh Gidwani"
     },
@@ -1251,8 +1222,8 @@
       "kayako_number": "60273661",
       "created": "2026-01-01T00:00:00",
       "created_formatted": "01 Jan 2026",
-      "age_days": 20,
-      "age_label": "20 days",
+      "age_days": 22,
+      "age_label": "22 days",
       "customer": "Tatatel  -  Co",
       "assignee": "Shailesh Savla"
     },
@@ -1262,21 +1233,10 @@
       "kayako_number": "60275576",
       "created": "2026-01-05T00:00:00",
       "created_formatted": "05 Jan 2026",
-      "age_days": 16,
-      "age_label": "16 days",
+      "age_days": 18,
+      "age_label": "18 days",
       "customer": "STL - BSNL Wifi",
       "assignee": "Shailesh Savla"
-    },
-    {
-      "key": "SBZT-1798",
-      "title": "Performance KPIs requirement for AAA",
-      "kayako_number": "60275539",
-      "created": "2026-01-05T00:00:00",
-      "created_formatted": "05 Jan 2026",
-      "age_days": 16,
-      "age_label": "16 days",
-      "customer": "STL - Airtel Fixedline",
-      "assignee": "Bharat Kalra"
     },
     {
       "key": "SBZT-1803",
@@ -1284,8 +1244,8 @@
       "kayako_number": "60276646",
       "created": "2026-01-06T00:00:00",
       "created_formatted": "06 Jan 2026",
-      "age_days": 15,
-      "age_label": "15 days",
+      "age_days": 17,
+      "age_label": "17 days",
       "customer": "STL - BSNL Wifi",
       "assignee": "Bharat Kalra"
     },
@@ -1295,8 +1255,8 @@
       "kayako_number": "60276644",
       "created": "2026-01-06T00:00:00",
       "created_formatted": "06 Jan 2026",
-      "age_days": 15,
-      "age_label": "15 days",
+      "age_days": 17,
+      "age_label": "17 days",
       "customer": "STL - BSNL Wifi",
       "assignee": "Bharat Kalra"
     },
@@ -1306,8 +1266,8 @@
       "kayako_number": "60276604",
       "created": "2026-01-06T00:00:00",
       "created_formatted": "06 Jan 2026",
-      "age_days": 15,
-      "age_label": "15 days",
+      "age_days": 17,
+      "age_label": "17 days",
       "customer": "STL - BSNL Wifi",
       "assignee": "Shailesh Savla"
     },
@@ -1317,8 +1277,8 @@
       "kayako_number": "60278071",
       "created": "2026-01-07T00:00:00",
       "created_formatted": "07 Jan 2026",
-      "age_days": 14,
-      "age_label": "14 days",
+      "age_days": 16,
+      "age_label": "16 days",
       "customer": "STL - Airtel Fixedline",
       "assignee": "Bharat Kalra"
     },
@@ -1328,8 +1288,8 @@
       "kayako_number": "60276694",
       "created": "2026-01-07T00:00:00",
       "created_formatted": "07 Jan 2026",
-      "age_days": 14,
-      "age_label": "14 days",
+      "age_days": 16,
+      "age_label": "16 days",
       "customer": "STL - Synaptic Technologies",
       "assignee": "VN Singh"
     },
@@ -1339,8 +1299,8 @@
       "kayako_number": "60279104",
       "created": "2026-01-08T00:00:00",
       "created_formatted": "08 Jan 2026",
-      "age_days": 13,
-      "age_label": "13 days",
+      "age_days": 15,
+      "age_label": "15 days",
       "customer": "ONE Albania",
       "assignee": "Bharat Kalra"
     },
@@ -1350,8 +1310,8 @@
       "kayako_number": "60279090",
       "created": "2026-01-09T00:00:00",
       "created_formatted": "09 Jan 2026",
-      "age_days": 12,
-      "age_label": "12 days",
+      "age_days": 14,
+      "age_label": "14 days",
       "customer": "ONE Albania",
       "assignee": "Bharat Kalra"
     },
@@ -1361,32 +1321,10 @@
       "kayako_number": "60281343",
       "created": "2026-01-12T00:00:00",
       "created_formatted": "12 Jan 2026",
-      "age_days": 9,
-      "age_label": "9 days",
+      "age_days": 11,
+      "age_label": "11 days",
       "customer": "ONE Albania",
       "assignee": "Unassigned"
-    },
-    {
-      "key": "SBZT-1815",
-      "title": "RMAN DB Backups Not Generated on PUNRSPR1 Server",
-      "kayako_number": "60281443",
-      "created": "2026-01-12T00:00:00",
-      "created_formatted": "12 Jan 2026",
-      "age_days": 9,
-      "age_label": "9 days",
-      "customer": "STL - BSNL Wifi",
-      "assignee": "Natnael Legesse"
-    },
-    {
-      "key": "AS-74",
-      "title": "Re-open ticket 4514565: High CPU Utilization on Valero DB",
-      "kayako_number": "60282270",
-      "created": "2026-01-14T00:00:00",
-      "created_formatted": "14 Jan 2026",
-      "age_days": 7,
-      "age_label": "7 days",
-      "customer": "STL - Globe Telecom Inc.",
-      "assignee": "Shailesh Savla"
     },
     {
       "key": "OAM-871",
@@ -1394,8 +1332,8 @@
       "kayako_number": "60283101",
       "created": "2026-01-14T00:00:00",
       "created_formatted": "14 Jan 2026",
-      "age_days": 7,
-      "age_label": "7 days",
+      "age_days": 9,
+      "age_label": "9 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -1405,8 +1343,8 @@
       "kayako_number": "60283139",
       "created": "2026-01-14T00:00:00",
       "created_formatted": "14 Jan 2026",
-      "age_days": 7,
-      "age_label": "7 days",
+      "age_days": 9,
+      "age_label": "9 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -1416,8 +1354,8 @@
       "kayako_number": "60283038",
       "created": "2026-01-14T00:00:00",
       "created_formatted": "14 Jan 2026",
-      "age_days": 7,
-      "age_label": "7 days",
+      "age_days": 9,
+      "age_label": "9 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
     },
@@ -1427,21 +1365,10 @@
       "kayako_number": "60284358",
       "created": "2026-01-15T00:00:00",
       "created_formatted": "15 Jan 2026",
-      "age_days": 6,
-      "age_label": "6 days",
+      "age_days": 8,
+      "age_label": "8 days",
       "customer": "ONE Albania",
       "assignee": "Unassigned"
-    },
-    {
-      "key": "SBZT-1823",
-      "title": "STL Fixed Airline health check",
-      "kayako_number": "60283847",
-      "created": "2026-01-15T00:00:00",
-      "created_formatted": "15 Jan 2026",
-      "age_days": 6,
-      "age_label": "6 days",
-      "customer": "Trilogy",
-      "assignee": "Bharat Kalra"
     },
     {
       "key": "SBZT-1836",
@@ -1449,8 +1376,8 @@
       "kayako_number": "60286277",
       "created": "2026-01-19T00:00:00",
       "created_formatted": "19 Jan 2026",
-      "age_days": 2,
-      "age_label": "2 days",
+      "age_days": 4,
+      "age_label": "4 days",
       "customer": "STL - BSNL Wifi",
       "assignee": "Natnael Legesse"
     },
@@ -1460,8 +1387,8 @@
       "kayako_number": "60286263",
       "created": "2026-01-19T00:00:00",
       "created_formatted": "19 Jan 2026",
-      "age_days": 2,
-      "age_label": "2 days",
+      "age_days": 4,
+      "age_label": "4 days",
       "customer": "STL - Airtel Fixedline",
       "assignee": "Bharat Kalra"
     },
@@ -1471,8 +1398,8 @@
       "kayako_number": "60286247",
       "created": "2026-01-19T00:00:00",
       "created_formatted": "19 Jan 2026",
-      "age_days": 2,
-      "age_label": "2 days",
+      "age_days": 4,
+      "age_label": "4 days",
       "customer": "STL - Airtel Fixedline",
       "assignee": "Bharat Kalra"
     },
@@ -1482,8 +1409,8 @@
       "kayako_number": "60286259",
       "created": "2026-01-19T00:00:00",
       "created_formatted": "19 Jan 2026",
-      "age_days": 2,
-      "age_label": "2 days",
+      "age_days": 4,
+      "age_label": "4 days",
       "customer": "STL - Airtel Fixedline",
       "assignee": "Bharat Kalra"
     },
@@ -1493,8 +1420,8 @@
       "kayako_number": "60287243",
       "created": "2026-01-20T00:00:00",
       "created_formatted": "20 Jan 2026",
-      "age_days": 1,
-      "age_label": "1 days",
+      "age_days": 3,
+      "age_label": "3 days",
       "customer": "ONE Albania",
       "assignee": "Unassigned"
     },
@@ -1504,21 +1431,54 @@
       "kayako_number": "60287007",
       "created": "2026-01-20T00:00:00",
       "created_formatted": "20 Jan 2026",
-      "age_days": 1,
-      "age_label": "1 days",
+      "age_days": 3,
+      "age_label": "3 days",
       "customer": "STL - BSNL Wifi",
       "assignee": "Natnael Legesse"
     },
     {
-      "key": "SBZT-1839",
-      "title": "STL Fixed Airline health check",
-      "kayako_number": "60287955",
+      "key": "OAM-896",
+      "title": "Records found in CPM transaction history , which have missing reason ,event name, IP address in the report",
+      "kayako_number": "60283310",
       "created": "2026-01-21T00:00:00",
       "created_formatted": "21 Jan 2026",
-      "age_days": 0,
-      "age_label": "0 days",
-      "customer": "Trilogy",
-      "assignee": "Bharat Kalra"
+      "age_days": 2,
+      "age_label": "2 days",
+      "customer": "ONE Albania",
+      "assignee": "Unassigned"
+    },
+    {
+      "key": "AS-75",
+      "title": "SMP Analytics Portal Login Issue",
+      "kayako_number": "60282425",
+      "created": "2026-01-21T00:00:00",
+      "created_formatted": "21 Jan 2026",
+      "age_days": 2,
+      "age_label": "2 days",
+      "customer": "STL - Synaptic Technologies",
+      "assignee": "Shailesh Savla"
+    },
+    {
+      "key": "OAM-895",
+      "title": "WOM Cleanse Activity Check in UAT Environment",
+      "kayako_number": "60284350",
+      "created": "2026-01-21T00:00:00",
+      "created_formatted": "21 Jan 2026",
+      "age_days": 2,
+      "age_label": "2 days",
+      "customer": "ONE Albania",
+      "assignee": "Unassigned"
+    },
+    {
+      "key": "AS-76",
+      "title": "PCRF Random Expiry Date Set Causing Mass Disconnections",
+      "kayako_number": "60289007",
+      "created": "2026-01-22T00:00:00",
+      "created_formatted": "22 Jan 2026",
+      "age_days": 1,
+      "age_label": "1 days",
+      "customer": "STL - Synaptic Technologies",
+      "assignee": "Shailesh Savla"
     }
   ]
 }

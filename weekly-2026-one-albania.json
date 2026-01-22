@@ -43,13 +43,13 @@
       "week_start": "2026-01-19",
       "week_end": "2026-01-25",
       "label": "19 Jan 2026 - 25 Jan 2026",
-      "created": 1,
+      "created": 3,
       "resolved": 0,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-894') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-894', 'OAM-895', 'OAM-896') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 8
+      "cumulative": 10
     }
   ]
 }
