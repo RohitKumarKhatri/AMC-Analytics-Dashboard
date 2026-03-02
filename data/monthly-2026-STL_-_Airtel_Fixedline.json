@@ -8,13 +8,39 @@
       "month_start": "2026-01-01",
       "month_end": "2026-01-31",
       "label": "Jan 2026",
-      "created": 24,
-      "resolved": 19,
+      "created": 25,
+      "resolved": 20,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1790', 'SBZT-1794', 'SBZT-1797', 'SBZT-1798', 'SBZT-1800', 'SBZT-1804', 'SBZT-1805', 'SBZT-1806', 'SBZT-1807', 'SBZT-1809', 'SBZT-1810', 'SBZT-1814', 'SBZT-1816', 'SBZT-1817', 'SBZT-1818', 'SBZT-1824', 'SBZT-1825', 'SBZT-1826', 'SBZT-1830', 'SBZT-1831', 'SBZT-1833', 'SBZT-1834', 'SBZT-1835', 'SBZT-1837') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1790', 'SBZT-1794', 'SBZT-1797', 'SBZT-1800', 'SBZT-1804', 'SBZT-1805', 'SBZT-1807', 'SBZT-1809', 'SBZT-1810', 'SBZT-1814', 'SBZT-1816', 'SBZT-1817', 'SBZT-1818', 'SBZT-1824', 'SBZT-1825', 'SBZT-1826', 'SBZT-1830', 'SBZT-1831', 'SBZT-1837') ORDER BY key DESC"
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1790', 'SBZT-1794', 'SBZT-1797', 'SBZT-1798', 'SBZT-1800', 'SBZT-1804', 'SBZT-1805', 'SBZT-1806', 'SBZT-1807', 'SBZT-1809', 'SBZT-1810', 'SBZT-1814', 'SBZT-1816', 'SBZT-1817', 'SBZT-1818', 'SBZT-1824', 'SBZT-1825', 'SBZT-1826', 'SBZT-1830', 'SBZT-1831', 'SBZT-1833', 'SBZT-1834', 'SBZT-1835', 'SBZT-1837', 'SBZT-1851') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1790', 'SBZT-1794', 'SBZT-1797', 'SBZT-1798', 'SBZT-1800', 'SBZT-1804', 'SBZT-1805', 'SBZT-1807', 'SBZT-1809', 'SBZT-1810', 'SBZT-1814', 'SBZT-1816', 'SBZT-1817', 'SBZT-1818', 'SBZT-1824', 'SBZT-1825', 'SBZT-1826', 'SBZT-1830', 'SBZT-1831', 'SBZT-1837') ORDER BY key DESC"
       },
       "cumulative": 5
+    },
+    {
+      "month": "2026-02",
+      "month_start": "2026-02-01",
+      "month_end": "2026-02-28",
+      "label": "Feb 2026",
+      "created": 15,
+      "resolved": 13,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-10', 'ASA-5', 'ASA-6', 'ASA-7', 'ASA-8', 'ASA-9', 'SBZT-1868', 'SBZT-1869', 'SBZT-1871', 'SBZT-1929', 'SBZT-1930', 'SBZT-1931', 'SBZT-1932', 'SBZT-1933', 'SBZT-1937') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-10', 'ASA-5', 'ASA-6', 'ASA-9', 'SBZT-1835', 'SBZT-1851', 'SBZT-1868', 'SBZT-1869', 'SBZT-1871', 'SBZT-1930', 'SBZT-1931', 'SBZT-1933', 'SBZT-1937') ORDER BY key DESC"
+      },
+      "cumulative": 7
+    },
+    {
+      "month": "2026-03",
+      "month_start": "2026-03-01",
+      "month_end": "2026-03-31",
+      "label": "Mar 2026",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 7
     }
   ]
 }

@@ -44,12 +44,84 @@
       "week_end": "2026-01-25",
       "label": "19 Jan 2026 - 25 Jan 2026",
       "created": 4,
-      "resolved": 3,
+      "resolved": 4,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1833', 'SBZT-1834', 'SBZT-1835', 'SBZT-1837') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1810', 'SBZT-1831', 'SBZT-1837') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1798', 'SBZT-1810', 'SBZT-1831', 'SBZT-1837') ORDER BY key DESC"
+      },
+      "cumulative": 4
+    },
+    {
+      "week_start": "2026-01-26",
+      "week_end": "2026-02-01",
+      "label": "26 Jan 2026 - 01 Feb 2026",
+      "created": 1,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1851') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 5
+    },
+    {
+      "week_start": "2026-02-02",
+      "week_end": "2026-02-08",
+      "label": "02 Feb 2026 - 08 Feb 2026",
+      "created": 5,
+      "resolved": 2,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1868', 'SBZT-1869', 'SBZT-1871', 'SBZT-1929', 'SBZT-1930') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1869', 'SBZT-1930') ORDER BY key DESC"
+      },
+      "cumulative": 8
+    },
+    {
+      "week_start": "2026-02-09",
+      "week_end": "2026-02-15",
+      "label": "09 Feb 2026 - 15 Feb 2026",
+      "created": 4,
+      "resolved": 4,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1931', 'SBZT-1932', 'SBZT-1933', 'SBZT-1937') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1835', 'SBZT-1851', 'SBZT-1931', 'SBZT-1937') ORDER BY key DESC"
+      },
+      "cumulative": 8
+    },
+    {
+      "week_start": "2026-02-16",
+      "week_end": "2026-02-22",
+      "label": "16 Feb 2026 - 22 Feb 2026",
+      "created": 4,
+      "resolved": 4,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-5', 'ASA-6', 'ASA-7', 'ASA-8') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-5', 'ASA-6', 'SBZT-1868', 'SBZT-1871') ORDER BY key DESC"
+      },
+      "cumulative": 8
+    },
+    {
+      "week_start": "2026-02-23",
+      "week_end": "2026-03-01",
+      "label": "23 Feb 2026 - 01 Mar 2026",
+      "created": 2,
+      "resolved": 3,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-10', 'ASA-9') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-10', 'ASA-9', 'SBZT-1933') ORDER BY key DESC"
+      },
+      "cumulative": 7
+    },
+    {
+      "week_start": "2026-03-02",
+      "week_end": "2026-03-08",
+      "label": "02 Mar 2026 - 08 Mar 2026",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 7
     }
   ]
 }

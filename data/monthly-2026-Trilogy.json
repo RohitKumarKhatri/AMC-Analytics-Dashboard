@@ -8,13 +8,39 @@
       "month_start": "2026-01-01",
       "month_end": "2026-01-31",
       "label": "Jan 2026",
-      "created": 7,
-      "resolved": 5,
+      "created": 17,
+      "resolved": 16,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1795', 'SBZT-1796', 'SBZT-1812', 'SBZT-1813', 'SBZT-1823', 'SBZT-1832', 'SBZT-1839') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1795', 'SBZT-1796', 'SBZT-1812', 'SBZT-1813', 'SBZT-1832') ORDER BY key DESC"
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1795', 'SBZT-1796', 'SBZT-1812', 'SBZT-1813', 'SBZT-1823', 'SBZT-1832', 'SBZT-1839', 'SBZT-1840', 'SBZT-1841', 'SBZT-1842', 'SBZT-1843', 'SBZT-1845', 'SBZT-1846', 'SBZT-1847', 'SBZT-1849', 'SBZT-1852', 'SBZT-1857') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1795', 'SBZT-1796', 'SBZT-1812', 'SBZT-1813', 'SBZT-1823', 'SBZT-1832', 'SBZT-1839', 'SBZT-1840', 'SBZT-1841', 'SBZT-1842', 'SBZT-1843', 'SBZT-1845', 'SBZT-1847', 'SBZT-1849', 'SBZT-1852', 'SBZT-1857') ORDER BY key DESC"
       },
-      "cumulative": 2
+      "cumulative": 1
+    },
+    {
+      "month": "2026-02",
+      "month_start": "2026-02-01",
+      "month_end": "2026-02-28",
+      "label": "Feb 2026",
+      "created": 33,
+      "resolved": 29,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1858', 'SBZT-1859', 'SBZT-1870', 'SBZT-1872', 'SBZT-1925', 'SBZT-1926', 'SBZT-1928', 'SBZT-1934', 'SBZT-1936', 'SBZT-1945', 'SBZT-1946', 'SBZT-1947', 'SBZT-1948', 'SBZT-1949', 'SBZT-1959', 'SBZT-1961', 'SBZT-1962', 'SBZT-1964', 'SBZT-1965', 'SBZT-1966', 'SBZT-1967', 'SBZT-1970', 'SBZT-1971', 'SBZT-1972', 'SBZT-1973', 'SBZT-1974', 'SBZT-1976', 'SBZT-1977', 'SBZT-1978', 'SBZT-1979', 'SBZT-1980', 'SBZT-1982', 'SBZT-1983') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1858', 'SBZT-1859', 'SBZT-1870', 'SBZT-1872', 'SBZT-1925', 'SBZT-1926', 'SBZT-1928', 'SBZT-1934', 'SBZT-1936', 'SBZT-1945', 'SBZT-1946', 'SBZT-1947', 'SBZT-1948', 'SBZT-1949', 'SBZT-1959', 'SBZT-1961', 'SBZT-1964', 'SBZT-1965', 'SBZT-1966', 'SBZT-1972', 'SBZT-1973', 'SBZT-1974', 'SBZT-1976', 'SBZT-1977', 'SBZT-1978', 'SBZT-1979', 'SBZT-1980', 'SBZT-1982', 'SBZT-1983') ORDER BY key DESC"
+      },
+      "cumulative": 5
+    },
+    {
+      "month": "2026-03",
+      "month_start": "2026-03-01",
+      "month_end": "2026-03-31",
+      "label": "Mar 2026",
+      "created": 4,
+      "resolved": 1,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1984', 'SBZT-1985', 'SBZT-1986', 'SBZT-1987') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1984') ORDER BY key DESC"
+      },
+      "cumulative": 8
     }
   ]
 }
