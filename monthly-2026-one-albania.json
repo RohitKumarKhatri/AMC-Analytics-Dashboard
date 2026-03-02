@@ -8,13 +8,39 @@
       "month_start": "2026-01-01",
       "month_end": "2026-01-31",
       "label": "Jan 2026",
-      "created": 10,
-      "resolved": 0,
+      "created": 15,
+      "resolved": 5,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-868', 'OAM-869', 'OAM-870', 'OAM-871', 'OAM-872', 'OAM-894', 'OAM-895', 'OAM-896', 'SBZT-1808', 'SBZT-1811') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-868', 'OAM-869', 'OAM-870', 'OAM-871', 'OAM-872', 'OAM-894', 'OAM-895', 'OAM-896', 'OAM-897', 'OAM-898', 'OAM-904', 'OAM-905', 'OAM-906', 'SBZT-1808', 'SBZT-1811') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-868', 'OAM-869', 'OAM-897', 'OAM-898', 'SBZT-1811') ORDER BY key DESC"
       },
       "cumulative": 10
+    },
+    {
+      "month": "2026-02",
+      "month_start": "2026-02-01",
+      "month_end": "2026-02-28",
+      "label": "Feb 2026",
+      "created": 15,
+      "resolved": 4,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-912', 'OAM-914', 'OAM-915', 'OAM-916', 'OAM-917', 'OAM-918', 'OAM-919', 'OAM-921', 'OAM-931', 'OAM-932', 'OAM-933', 'OAM-934', 'OAM-956', 'OAM-960', 'OAM-962') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-914', 'OAM-931', 'OAM-934', 'SBZT-1808') ORDER BY key DESC"
+      },
+      "cumulative": 21
+    },
+    {
+      "month": "2026-03",
+      "month_start": "2026-03-01",
+      "month_end": "2026-03-31",
+      "label": "Mar 2026",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 21
     }
   ]
 }
