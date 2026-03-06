@@ -620,12 +620,12 @@
       "week_end": "2025-12-28",
       "label": "22 Dec 2025 - 28 Dec 2025",
       "created": 2,
-      "resolved": 19,
+      "resolved": 18,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-839', 'SBZT-1781') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-151', 'OAM-152', 'OAM-153', 'OAM-646', 'OAM-658', 'OAM-676', 'OAM-699', 'OAM-717', 'SBZT-1062', 'SBZT-1354', 'SBZT-1362', 'SBZT-1410', 'SBZT-1442', 'SBZT-1466', 'SBZT-1529', 'SBZT-1709', 'SBZT-1747', 'SBZT-1748', 'SBZT-1754') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-151', 'OAM-152', 'OAM-153', 'OAM-646', 'OAM-676', 'OAM-699', 'OAM-717', 'SBZT-1062', 'SBZT-1354', 'SBZT-1362', 'SBZT-1410', 'SBZT-1442', 'SBZT-1466', 'SBZT-1529', 'SBZT-1709', 'SBZT-1747', 'SBZT-1748', 'SBZT-1754') ORDER BY key DESC"
       },
-      "cumulative": 94
+      "cumulative": 95
     },
     {
       "week_start": "2025-12-29",
@@ -637,7 +637,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-846') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-839', 'SBZT-1531', 'SBZT-1556') ORDER BY key DESC"
       },
-      "cumulative": 92
+      "cumulative": 93
     }
   ]
 }

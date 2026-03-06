@@ -28,6 +28,9 @@ window.addEventListener('scroll', () => {
 
 let metadata = null;
 let currentData = null;
+let loadRequestId = 0;
+let currentAbortController = null;
+let animationTimers = [];
 let currentFilters = {
     period: 'monthly',
     year: null,
@@ -354,70 +357,70 @@ function updateRangeButtons() {
 
 // Load data file based on current filters
 async function loadData() {
+    const thisRequestId = ++loadRequestId;
+
+    if (currentAbortController) {
+        currentAbortController.abort();
+    }
+    currentAbortController = new AbortController();
+
+    clearAnimationTimers();
+
     try {
         showLoading();
         
         const filename = getDataFilename();
-        console.log('[DEBUG] Loading file:', filename);
-        console.log('[DEBUG] Current filters:', JSON.stringify(currentFilters));
+        console.log('[DEBUG] Loading file:', filename, 'requestId:', thisRequestId);
         const url = getCacheBustingUrl(`data/${filename}`);
-        console.log('[DEBUG] Fetching URL:', url);
-        const response = await fetch(url);
+        const response = await fetch(url, { signal: currentAbortController.signal });
+        
+        if (thisRequestId !== loadRequestId) return;
         
         if (!response.ok) {
-            console.error(`[DEBUG] HTTP Error: ${response.status} ${response.statusText}`);
             throw new Error(`Failed to load ${filename}: ${response.status}`);
         }
         
         const fileData = await response.json();
-        console.log('[DEBUG] Loaded data:', fileData);
-        console.log('[DEBUG] Data array length:', fileData.data ? fileData.data.length : 0);
-        console.log('[DEBUG] Total created in file:', fileData.data ? fileData.data.reduce((sum, item) => sum + (item.created || 0), 0) : 0);
+
+        if (thisRequestId !== loadRequestId) return;
         
         if (!fileData.data || fileData.data.length === 0) {
-            console.warn('[DEBUG] Warning: File loaded but contains no data items - clearing display');
-            // Clear current data and charts immediately
             currentData = [];
             updateStatsCards(0, 0);
-            if (createdResolvedChart) {
-                createdResolvedChart.clear();
-            }
-            if (cumulativeChart) {
-                cumulativeChart.clear();
-            }
+            if (createdResolvedChart) createdResolvedChart.clear();
+            if (cumulativeChart) cumulativeChart.clear();
             hideLoading();
-            return; // Exit early - don't call filterAndRenderData
+            return;
         }
         
         currentData = fileData.data;
-        console.log('[DEBUG] currentData set, length:', currentData ? currentData.length : 0);
         
         filterAndRenderData();
         hideLoading();
         
-        // Force resize charts after data loads and container is visible
-        // Use multiple resize calls to ensure charts render at full width
-        requestAnimationFrame(() => {
-            setTimeout(() => {
-                if (createdResolvedChart) {
-                    createdResolvedChart.resize();
-                }
-                if (cumulativeChart) {
-                    cumulativeChart.resize();
-                }
-                // Additional resize after a longer delay to catch any layout shifts
-                setTimeout(() => {
-                    if (createdResolvedChart) createdResolvedChart.resize();
-                    if (cumulativeChart) cumulativeChart.resize();
-                }, 200);
-            }, 100);
-        });
+        scheduleResize();
     } catch (error) {
+        if (error.name === 'AbortError') return;
         console.error('Error loading data:', error);
-        console.error('[DEBUG] Failed to load file:', filename);
-        console.error('[DEBUG] Current filters:', currentFilters);
-        showError();
+        if (thisRequestId === loadRequestId) showError();
     }
+}
+
+function clearAnimationTimers() {
+    animationTimers.forEach(id => clearTimeout(id));
+    animationTimers = [];
+}
+
+function scheduleResize() {
+    const t1 = setTimeout(() => {
+        if (createdResolvedChart) createdResolvedChart.resize();
+        if (cumulativeChart) cumulativeChart.resize();
+    }, 100);
+    const t2 = setTimeout(() => {
+        if (createdResolvedChart) createdResolvedChart.resize();
+        if (cumulativeChart) cumulativeChart.resize();
+    }, 300);
+    animationTimers.push(t1, t2);
 }
 
 // Get filename based on current filters
@@ -623,25 +626,8 @@ function filterAndRenderData() {
     // Update stat cards with totals
     updateStatsCards(totalCreated, totalResolved);
     
-    // Smooth transition: fade out, update, fade in
-    if (createdResolvedChart && cumulativeChart) {
-        // Fade out charts
-        const chartsContainer = document.getElementById('charts-container');
-        chartsContainer.style.opacity = '0';
-        chartsContainer.style.transition = 'opacity 0.2s ease-out';
-        
-        setTimeout(() => {
-            renderCharts(dataWithCumulative);
-            
-            // Fade in charts
-            setTimeout(() => {
-                chartsContainer.style.opacity = '1';
-                chartsContainer.style.transition = 'opacity 0.3s ease-in';
-            }, 50);
-        }, 200);
-    } else {
-        renderCharts(dataWithCumulative);
-    }
+    clearAnimationTimers();
+    renderCharts(dataWithCumulative);
 }
 
 // Initialize charts
@@ -879,16 +865,6 @@ function renderCharts(data) {
     
     if (createdResolvedChart) {
         createdResolvedChart.setOption(createdResolvedOption);
-        // Force resize to ensure full width - use requestAnimationFrame for proper timing
-        requestAnimationFrame(() => {
-            setTimeout(() => {
-                createdResolvedChart.resize();
-                // Additional resize after a short delay
-                setTimeout(() => {
-                    createdResolvedChart.resize();
-                }, 200);
-            }, 50);
-        });
     }
     
     // Cumulative Chart
@@ -1001,21 +977,10 @@ function renderCharts(data) {
     
     if (cumulativeChart) {
         cumulativeChart.setOption(cumulativeOption);
-        
-        // Remove any existing click handlers (cumulative chart is not clickable)
         cumulativeChart.off('click');
-        
-        // Force resize to ensure full width - use requestAnimationFrame for proper timing
-        requestAnimationFrame(() => {
-            setTimeout(() => {
-                cumulativeChart.resize();
-                // Additional resize after a short delay
-                setTimeout(() => {
-                    cumulativeChart.resize();
-                }, 200);
-            }, 50);
-        });
     }
+
+    scheduleResize();
 }
 
 // Show/hide loading and error states

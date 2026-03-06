@@ -454,16 +454,14 @@
         ]
       },
       "22 Dec 2025": {
-        "count": 1,
-        "keys": [
-          "OAM-658"
-        ]
+        "count": 0,
+        "keys": []
       },
       "29 Dec 2025": {
         "count": 0,
         "keys": []
       },
-      "total": 4
+      "total": 3
     },
     "Madhuri.Jadhav": {
       "06 Oct 2025": {
@@ -1495,8 +1493,8 @@
     "01 Dec 2025": 16,
     "08 Dec 2025": 5,
     "15 Dec 2025": 23,
-    "22 Dec 2025": 56,
+    "22 Dec 2025": 55,
     "29 Dec 2025": 11
   },
-  "grand_total": 241
+  "grand_total": 240
 }

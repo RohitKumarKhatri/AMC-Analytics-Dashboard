@@ -34,13 +34,13 @@
       "month_start": "2026-03-01",
       "month_end": "2026-03-31",
       "label": "Mar 2026",
-      "created": 4,
-      "resolved": 1,
+      "created": 17,
+      "resolved": 9,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1984', 'SBZT-1985', 'SBZT-1986', 'SBZT-1987') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1984') ORDER BY key DESC"
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-11', 'ASA-12', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'ASA-18', 'ASA-19', 'ASA-20', 'OAM-1005', 'OAM-1006', 'OAM-1007', 'SBZT-1984', 'SBZT-1985', 'SBZT-1986', 'SBZT-1987', 'SBZT-1990') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-11', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'OAM-904', 'SBZT-1984', 'SBZT-1986', 'SBZT-1990') ORDER BY key DESC"
       },
-      "cumulative": 43
+      "cumulative": 48
     }
   ]
 }

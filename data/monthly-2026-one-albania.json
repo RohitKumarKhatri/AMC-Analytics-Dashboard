@@ -34,13 +34,13 @@
       "month_start": "2026-03-01",
       "month_end": "2026-03-31",
       "label": "Mar 2026",
-      "created": 0,
-      "resolved": 0,
+      "created": 3,
+      "resolved": 1,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1005', 'OAM-1006', 'OAM-1007') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-904') ORDER BY key DESC"
       },
-      "cumulative": 21
+      "cumulative": 23
     }
   ]
 }
