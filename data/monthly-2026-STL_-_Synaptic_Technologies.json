@@ -11,7 +11,7 @@
       "created": 4,
       "resolved": 0,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-73', 'AS-75', 'AS-76', 'AS-78') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-73', 'AS-76', 'ASU-6', 'ASU-7') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 4
@@ -25,7 +25,7 @@
       "resolved": 2,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-75', 'AS-76') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-76', 'ASU-7') ORDER BY key DESC"
       },
       "cumulative": 2
     },

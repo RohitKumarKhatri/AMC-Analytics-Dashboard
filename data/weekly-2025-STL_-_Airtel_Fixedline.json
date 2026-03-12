@@ -490,7 +490,7 @@
       "created": 3,
       "resolved": 6,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1676', 'SBZT-1677', 'SBZT-1681') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('MSAFL-288', 'SBZT-1677', 'SBZT-1681') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1648', 'SBZT-1660', 'SBZT-1670', 'SBZT-1674', 'SBZT-1675', 'SBZT-1677') ORDER BY key DESC"
       },
       "cumulative": 12

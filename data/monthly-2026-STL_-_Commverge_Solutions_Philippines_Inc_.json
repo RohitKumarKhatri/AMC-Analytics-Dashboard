@@ -24,8 +24,8 @@
       "created": 4,
       "resolved": 4,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-7', 'SBZT-1867', 'SBZT-1927', 'SBZT-1935') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1848', 'SBZT-1867', 'SBZT-1927', 'SBZT-1935') ORDER BY key DESC"
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-7', 'ASGT-8', 'SBZT-1867', 'SBZT-1935') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-8', 'SBZT-1848', 'SBZT-1867', 'SBZT-1935') ORDER BY key DESC"
       },
       "cumulative": 1
     },

@@ -490,8 +490,8 @@
       "03 Nov 2025": {
         "count": 2,
         "keys": [
-          "SBZT-1438",
-          "SBZT-1453"
+          "OAM-1038",
+          "SBZT-1438"
         ]
       },
       "10 Nov 2025": {
@@ -750,8 +750,9 @@
         "keys": []
       },
       "24 Nov 2025": {
-        "count": 8,
+        "count": 9,
         "keys": [
+          "OAM-1010",
           "SBZT-1406",
           "SBZT-1468",
           "SBZT-1513",
@@ -787,7 +788,7 @@
         "count": 0,
         "keys": []
       },
-      "total": 19
+      "total": 20
     },
     "Nirav Shah": {
       "06 Oct 2025": {
@@ -1137,11 +1138,11 @@
       "10 Nov 2025": {
         "count": 8,
         "keys": [
+          "OAM-1008",
           "SBZT-1021",
           "SBZT-1074",
           "SBZT-1263",
           "SBZT-1428",
-          "SBZT-1526",
           "SBZT-1536",
           "SBZT-1608",
           "SBZT-1692"
@@ -1446,10 +1447,8 @@
         "keys": []
       },
       "24 Nov 2025": {
-        "count": 1,
-        "keys": [
-          "SBZT-1403"
-        ]
+        "count": 0,
+        "keys": []
       },
       "01 Dec 2025": {
         "count": 1,
@@ -1478,7 +1477,7 @@
           "OAM-839"
         ]
       },
-      "total": 19
+      "total": 18
     }
   },
   "week_totals": {
