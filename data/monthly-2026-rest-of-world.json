@@ -34,13 +34,13 @@
       "month_start": "2026-03-01",
       "month_end": "2026-03-31",
       "label": "Mar 2026",
-      "created": 30,
-      "resolved": 25,
+      "created": 39,
+      "resolved": 32,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-11', 'ASA-12', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'ASA-18', 'ASA-19', 'ASA-20', 'ASA-21', 'ASA-22', 'ASA-23', 'ASA-24', 'ASA-25', 'ASA-26', 'ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-31', 'ASA-32', 'ASA-33', 'ASA-34', 'MSBB-70', 'MSBB-71', 'SBZT-1984', 'SBZT-1985', 'SBZT-1986', 'SBZT-1987', 'SBZT-1990') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-11', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'ASA-18', 'ASA-19', 'ASA-23', 'ASA-24', 'ASA-25', 'ASA-26', 'ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-32', 'ASA-33', 'ASA-34', 'MSBB-69', 'SBZT-1799', 'SBZT-1802', 'SBZT-1833', 'SBZT-1984', 'SBZT-1986', 'SBZT-1990') ORDER BY key DESC"
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-11', 'ASA-12', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'ASA-18', 'ASA-19', 'ASA-20', 'ASA-21', 'ASA-22', 'ASA-23', 'ASA-24', 'ASA-25', 'ASA-26', 'ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-31', 'ASA-32', 'ASA-33', 'ASA-34', 'ASA-35', 'ASA-36', 'ASA-37', 'ASA-38', 'ASA-39', 'ASA-40', 'ASA-41', 'ASA-42', 'MSBB-70', 'MSBB-71', 'MSBB-72', 'SBZT-1984', 'SBZT-1985', 'SBZT-1986', 'SBZT-1987', 'SBZT-1990') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-11', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'ASA-18', 'ASA-19', 'ASA-23', 'ASA-24', 'ASA-25', 'ASA-26', 'ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-32', 'ASA-33', 'ASA-34', 'ASA-35', 'ASA-36', 'ASA-37', 'ASA-38', 'ASA-40', 'ASA-42', 'ASGT-7', 'MSBB-69', 'SBZT-1799', 'SBZT-1802', 'SBZT-1833', 'SBZT-1984', 'SBZT-1986', 'SBZT-1990') ORDER BY key DESC"
       },
-      "cumulative": 24
+      "cumulative": 26
     }
   ]
 }

@@ -34,13 +34,13 @@
       "month_start": "2026-03-01",
       "month_end": "2026-03-31",
       "label": "Mar 2026",
-      "created": 9,
-      "resolved": 4,
+      "created": 12,
+      "resolved": 9,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1005', 'OAM-1006', 'OAM-1007', 'OAM-1016', 'OAM-1043', 'OAM-1047', 'OAM-1049', 'OAM-1050', 'OAM-1053') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1005', 'OAM-904', 'OAM-917', 'OAM-932') ORDER BY key DESC"
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1005', 'OAM-1006', 'OAM-1007', 'OAM-1016', 'OAM-1043', 'OAM-1047', 'OAM-1049', 'OAM-1050', 'OAM-1053', 'OAM-1056', 'OAM-1061', 'OAM-1062') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1005', 'OAM-1007', 'OAM-871', 'OAM-904', 'OAM-915', 'OAM-917', 'OAM-918', 'OAM-921', 'OAM-932') ORDER BY key DESC"
       },
-      "cumulative": 26
+      "cumulative": 24
     }
   ]
 }

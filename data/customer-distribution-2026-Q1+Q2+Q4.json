@@ -2,8 +2,8 @@
   "year": 2026,
   "range": "Q1+Q2+Q4",
   "distribution": {
-    "STL - Airtel Fixedline": 63,
-    "STL - BNG MS team": 3,
+    "STL - BNG MS team": 4,
+    "STL - Airtel Fixedline": 71,
     "Trilogy": 55,
     "STL - Commverge Solutions Philippines Inc.": 5,
     "STL - Asianet Satellite Communications Ltd": 1,
@@ -13,6 +13,6 @@
     "BSNL Wifi": 1,
     "STL - Globe Telecom Inc.": 2,
     "STL - BSNL Wifi": 7,
-    "ONE Albania": 39
+    "ONE Albania": 42
   }
 }

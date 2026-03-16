@@ -128,12 +128,12 @@
       "week_end": "2026-03-15",
       "label": "09 Mar 2026 - 15 Mar 2026",
       "created": 0,
-      "resolved": 0,
+      "resolved": 1,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-7') ORDER BY key DESC"
       },
-      "cumulative": 1
+      "cumulative": 0
     },
     {
       "week_start": "2026-03-16",
@@ -145,7 +145,7 @@
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
-      "cumulative": 1
+      "cumulative": 0
     }
   ]
 }

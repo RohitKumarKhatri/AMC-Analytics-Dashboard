@@ -127,22 +127,22 @@
       "week_start": "2026-03-09",
       "week_end": "2026-03-15",
       "label": "09 Mar 2026 - 15 Mar 2026",
-      "created": 15,
-      "resolved": 12,
+      "created": 26,
+      "resolved": 24,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-31', 'ASA-32', 'ASA-33', 'ASA-34', 'MSBB-70', 'MSBB-71', 'OAM-1043', 'OAM-1047', 'OAM-1049', 'OAM-1050', 'OAM-1053') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-32', 'ASA-33', 'ASA-34', 'MSBB-69', 'OAM-1005', 'SBZT-1799', 'SBZT-1802', 'SBZT-1833') ORDER BY key DESC"
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-31', 'ASA-32', 'ASA-33', 'ASA-34', 'ASA-35', 'ASA-36', 'ASA-37', 'ASA-38', 'ASA-39', 'ASA-40', 'ASA-41', 'ASA-42', 'MSBB-70', 'MSBB-71', 'OAM-1043', 'OAM-1047', 'OAM-1049', 'OAM-1050', 'OAM-1053', 'OAM-1056', 'OAM-1061', 'OAM-1062') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-32', 'ASA-33', 'ASA-34', 'ASA-35', 'ASA-36', 'ASA-37', 'ASA-38', 'ASA-40', 'ASA-42', 'ASGT-7', 'MSBB-69', 'OAM-1005', 'OAM-1007', 'OAM-871', 'OAM-915', 'OAM-918', 'OAM-921', 'SBZT-1799', 'SBZT-1802', 'SBZT-1833') ORDER BY key DESC"
       },
-      "cumulative": 50
+      "cumulative": 49
     },
     {
       "week_start": "2026-03-16",
       "week_end": "2026-03-22",
       "label": "16 Mar 2026 - 22 Mar 2026",
-      "created": 0,
+      "created": 1,
       "resolved": 0,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('MSBB-72') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 50

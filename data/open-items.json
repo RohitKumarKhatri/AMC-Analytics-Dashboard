@@ -1,11 +1,38 @@
 {
-  "total_count": 116,
+  "total_count": 107,
   "customer_distribution": {
+    "STL - BNG MS team": {
+      "count": 3,
+      "keys": [
+        "MSBB-70",
+        "MSBB-71",
+        "MSBB-72"
+      ]
+    },
+    "STL - Airtel Fixedline": {
+      "count": 15,
+      "keys": [
+        "ASA-12",
+        "ASA-20",
+        "ASA-21",
+        "ASA-22",
+        "ASA-31",
+        "ASA-39",
+        "ASA-41",
+        "ASA-7",
+        "ASA-8",
+        "MSAFL-288",
+        "SBZT-1775",
+        "SBZT-1806",
+        "SBZT-1834",
+        "SBZT-1929",
+        "SBZT-1932"
+      ]
+    },
     "ONE Albania": {
-      "count": 89,
+      "count": 78,
       "keys": [
         "OAM-1006",
-        "OAM-1007",
         "OAM-1009",
         "OAM-1011",
         "OAM-1012",
@@ -24,6 +51,18 @@
         "OAM-1049",
         "OAM-1050",
         "OAM-1053",
+        "OAM-1056",
+        "OAM-1059",
+        "OAM-1060",
+        "OAM-1061",
+        "OAM-1062",
+        "OAM-1064",
+        "OAM-1065",
+        "OAM-1072",
+        "OAM-1073",
+        "OAM-1074",
+        "OAM-1075",
+        "OAM-1076",
         "OAM-619",
         "OAM-632",
         "OAM-645",
@@ -35,14 +74,11 @@
         "OAM-673",
         "OAM-675",
         "OAM-698",
-        "OAM-732",
         "OAM-780",
-        "OAM-781",
         "OAM-799",
         "OAM-831",
         "OAM-846",
         "OAM-870",
-        "OAM-871",
         "OAM-872",
         "OAM-894",
         "OAM-895",
@@ -50,11 +86,8 @@
         "OAM-905",
         "OAM-906",
         "OAM-912",
-        "OAM-915",
         "OAM-916",
-        "OAM-918",
         "OAM-919",
-        "OAM-921",
         "OAM-933",
         "OAM-956",
         "OAM-960",
@@ -62,62 +95,21 @@
         "SBZT-1265",
         "SBZT-1306",
         "SBZT-1363",
-        "SBZT-1434",
-        "SBZT-1534",
-        "SBZT-1540",
         "SBZT-1558",
         "SBZT-1559",
         "SBZT-1572",
-        "SBZT-1622",
-        "SBZT-1623",
-        "SBZT-1641",
-        "SBZT-1666",
-        "SBZT-1678",
-        "SBZT-1683",
         "SBZT-1690",
         "SBZT-1694",
         "SBZT-1699",
         "SBZT-1704",
-        "SBZT-1714",
-        "SBZT-1718",
         "SBZT-1721",
-        "SBZT-1731",
         "SBZT-1740",
-        "SBZT-1741",
         "SBZT-1745",
-        "SBZT-1751",
-        "SBZT-1757",
         "SBZT-1758",
-        "SBZT-1765",
         "SBZT-1769",
         "SBZT-1772",
         "SBZT-1773",
         "SBZT-1781"
-      ]
-    },
-    "STL - Airtel Fixedline": {
-      "count": 13,
-      "keys": [
-        "ASA-12",
-        "ASA-20",
-        "ASA-21",
-        "ASA-22",
-        "ASA-31",
-        "ASA-7",
-        "ASA-8",
-        "MSAFL-288",
-        "SBZT-1775",
-        "SBZT-1806",
-        "SBZT-1834",
-        "SBZT-1929",
-        "SBZT-1932"
-      ]
-    },
-    "STL - BNG MS team": {
-      "count": 2,
-      "keys": [
-        "MSBB-70",
-        "MSBB-71"
       ]
     },
     "Trilogy": {
@@ -130,12 +122,6 @@
         "SBZT-1971",
         "SBZT-1985",
         "SBZT-1987"
-      ]
-    },
-    "STL - Commverge Solutions Philippines Inc.": {
-      "count": 1,
-      "keys": [
-        "ASGT-7"
       ]
     },
     "STL - Synaptic Technologies": {
@@ -161,12 +147,11 @@
   "customer_summary": [
     {
       "customer": "ONE Albania",
-      "total_open_items": 89,
-      "average_age_days": 117.3,
-      "average_age_label": "117 days",
+      "total_open_items": 78,
+      "average_age_days": 114.2,
+      "average_age_label": "114 days",
       "keys": [
         "OAM-1006",
-        "OAM-1007",
         "OAM-1009",
         "OAM-1011",
         "OAM-1012",
@@ -185,6 +170,18 @@
         "OAM-1049",
         "OAM-1050",
         "OAM-1053",
+        "OAM-1056",
+        "OAM-1059",
+        "OAM-1060",
+        "OAM-1061",
+        "OAM-1062",
+        "OAM-1064",
+        "OAM-1065",
+        "OAM-1072",
+        "OAM-1073",
+        "OAM-1074",
+        "OAM-1075",
+        "OAM-1076",
         "OAM-619",
         "OAM-632",
         "OAM-645",
@@ -196,14 +193,11 @@
         "OAM-673",
         "OAM-675",
         "OAM-698",
-        "OAM-732",
         "OAM-780",
-        "OAM-781",
         "OAM-799",
         "OAM-831",
         "OAM-846",
         "OAM-870",
-        "OAM-871",
         "OAM-872",
         "OAM-894",
         "OAM-895",
@@ -211,11 +205,8 @@
         "OAM-905",
         "OAM-906",
         "OAM-912",
-        "OAM-915",
         "OAM-916",
-        "OAM-918",
         "OAM-919",
-        "OAM-921",
         "OAM-933",
         "OAM-956",
         "OAM-960",
@@ -223,51 +214,37 @@
         "SBZT-1265",
         "SBZT-1306",
         "SBZT-1363",
-        "SBZT-1434",
-        "SBZT-1534",
-        "SBZT-1540",
         "SBZT-1558",
         "SBZT-1559",
         "SBZT-1572",
-        "SBZT-1622",
-        "SBZT-1623",
-        "SBZT-1641",
-        "SBZT-1666",
-        "SBZT-1678",
-        "SBZT-1683",
         "SBZT-1690",
         "SBZT-1694",
         "SBZT-1699",
         "SBZT-1704",
-        "SBZT-1714",
-        "SBZT-1718",
         "SBZT-1721",
-        "SBZT-1731",
         "SBZT-1740",
-        "SBZT-1741",
         "SBZT-1745",
-        "SBZT-1751",
-        "SBZT-1757",
         "SBZT-1758",
-        "SBZT-1765",
         "SBZT-1769",
         "SBZT-1772",
         "SBZT-1773",
         "SBZT-1781"
       ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1006', 'OAM-1007', 'OAM-1009', 'OAM-1011', 'OAM-1012', 'OAM-1013', 'OAM-1014', 'OAM-1015', 'OAM-1016', 'OAM-1017', 'OAM-1019', 'OAM-1020', 'OAM-1021', 'OAM-1022', 'OAM-1043', 'OAM-1047', 'OAM-1048', 'OAM-1049', 'OAM-1050', 'OAM-1053', 'OAM-619', 'OAM-632', 'OAM-645', 'OAM-647', 'OAM-650', 'OAM-652', 'OAM-658', 'OAM-672', 'OAM-673', 'OAM-675', 'OAM-698', 'OAM-732', 'OAM-780', 'OAM-781', 'OAM-799', 'OAM-831', 'OAM-846', 'OAM-870', 'OAM-871', 'OAM-872', 'OAM-894', 'OAM-895', 'OAM-896', 'OAM-905', 'OAM-906', 'OAM-912', 'OAM-915', 'OAM-916', 'OAM-918', 'OAM-919', 'OAM-921', 'OAM-933', 'OAM-956', 'OAM-960', 'OAM-962', 'SBZT-1265', 'SBZT-1306', 'SBZT-1363', 'SBZT-1434', 'SBZT-1534', 'SBZT-1540', 'SBZT-1558', 'SBZT-1559', 'SBZT-1572', 'SBZT-1622', 'SBZT-1623', 'SBZT-1641', 'SBZT-1666', 'SBZT-1678', 'SBZT-1683', 'SBZT-1690', 'SBZT-1694', 'SBZT-1699', 'SBZT-1704', 'SBZT-1714', 'SBZT-1718', 'SBZT-1721', 'SBZT-1731', 'SBZT-1740', 'SBZT-1741', 'SBZT-1745', 'SBZT-1751', 'SBZT-1757', 'SBZT-1758', 'SBZT-1765', 'SBZT-1769', 'SBZT-1772', 'SBZT-1773', 'SBZT-1781') ORDER BY key DESC"
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1006', 'OAM-1009', 'OAM-1011', 'OAM-1012', 'OAM-1013', 'OAM-1014', 'OAM-1015', 'OAM-1016', 'OAM-1017', 'OAM-1019', 'OAM-1020', 'OAM-1021', 'OAM-1022', 'OAM-1043', 'OAM-1047', 'OAM-1048', 'OAM-1049', 'OAM-1050', 'OAM-1053', 'OAM-1056', 'OAM-1059', 'OAM-1060', 'OAM-1061', 'OAM-1062', 'OAM-1064', 'OAM-1065', 'OAM-1072', 'OAM-1073', 'OAM-1074', 'OAM-1075', 'OAM-1076', 'OAM-619', 'OAM-632', 'OAM-645', 'OAM-647', 'OAM-650', 'OAM-652', 'OAM-658', 'OAM-672', 'OAM-673', 'OAM-675', 'OAM-698', 'OAM-780', 'OAM-799', 'OAM-831', 'OAM-846', 'OAM-870', 'OAM-872', 'OAM-894', 'OAM-895', 'OAM-896', 'OAM-905', 'OAM-906', 'OAM-912', 'OAM-916', 'OAM-919', 'OAM-933', 'OAM-956', 'OAM-960', 'OAM-962', 'SBZT-1265', 'SBZT-1306', 'SBZT-1363', 'SBZT-1558', 'SBZT-1559', 'SBZT-1572', 'SBZT-1690', 'SBZT-1694', 'SBZT-1699', 'SBZT-1704', 'SBZT-1721', 'SBZT-1740', 'SBZT-1745', 'SBZT-1758', 'SBZT-1769', 'SBZT-1772', 'SBZT-1773', 'SBZT-1781') ORDER BY key DESC"
     },
     {
       "customer": "STL - Airtel Fixedline",
-      "total_open_items": 13,
-      "average_age_days": 41.3,
-      "average_age_label": "41 days",
+      "total_open_items": 15,
+      "average_age_days": 35.9,
+      "average_age_label": "35 days",
       "keys": [
         "ASA-12",
         "ASA-20",
         "ASA-21",
         "ASA-22",
         "ASA-31",
+        "ASA-39",
+        "ASA-41",
         "ASA-7",
         "ASA-8",
         "MSAFL-288",
@@ -277,7 +254,7 @@
         "SBZT-1929",
         "SBZT-1932"
       ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-12', 'ASA-20', 'ASA-21', 'ASA-22', 'ASA-31', 'ASA-7', 'ASA-8', 'MSAFL-288', 'SBZT-1775', 'SBZT-1806', 'SBZT-1834', 'SBZT-1929', 'SBZT-1932') ORDER BY key DESC"
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-12', 'ASA-20', 'ASA-21', 'ASA-22', 'ASA-31', 'ASA-39', 'ASA-41', 'ASA-7', 'ASA-8', 'MSAFL-288', 'SBZT-1775', 'SBZT-1806', 'SBZT-1834', 'SBZT-1929', 'SBZT-1932') ORDER BY key DESC"
     },
     {
       "customer": "Trilogy",
@@ -297,14 +274,15 @@
     },
     {
       "customer": "STL - BNG MS team",
-      "total_open_items": 2,
-      "average_age_days": 6.0,
-      "average_age_label": "6 days",
+      "total_open_items": 3,
+      "average_age_days": 4.0,
+      "average_age_label": "4 days",
       "keys": [
         "MSBB-70",
-        "MSBB-71"
+        "MSBB-71",
+        "MSBB-72"
       ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('MSBB-70', 'MSBB-71') ORDER BY key DESC"
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('MSBB-70', 'MSBB-71', 'MSBB-72') ORDER BY key DESC"
     },
     {
       "customer": "STL - Synaptic Technologies",
@@ -316,16 +294,6 @@
         "ASU-6"
       ],
       "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-73', 'ASU-6') ORDER BY key DESC"
-    },
-    {
-      "customer": "STL - Commverge Solutions Philippines Inc.",
-      "total_open_items": 1,
-      "average_age_days": 21.0,
-      "average_age_label": "21 days",
-      "keys": [
-        "ASGT-7"
-      ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-7') ORDER BY key DESC"
     },
     {
       "customer": "Tatatel  -  Co",
@@ -383,7 +351,7 @@
       "assignee": "Rohit Kumar"
     },
     {
-      "key": "SBZT-1434",
+      "key": "OAM-1060",
       "title": "Port out error for prepaid customer SIA issue",
       "kayako_number": "60045619",
       "created": "2025-05-15T00:00:00",
@@ -394,18 +362,7 @@
       "assignee": "Leewel Mwangi"
     },
     {
-      "key": "SBZT-1534",
-      "title": "Invalid Inventory Status Change In-Use to In-Transit",
-      "kayako_number": "60063567",
-      "created": "2025-07-09T00:00:00",
-      "created_formatted": "09 Jul 2025",
-      "age_days": 250,
-      "age_label": "250 days",
-      "customer": "ONE Albania",
-      "assignee": "Madhuri.Jadhav"
-    },
-    {
-      "key": "SBZT-1540",
+      "key": "OAM-1065",
       "title": "Offline Charging Service not working on dPCC SIT",
       "kayako_number": "60099001",
       "created": "2025-07-13T00:00:00",
@@ -435,7 +392,7 @@
       "age_days": 237,
       "age_label": "237 days",
       "customer": "ONE Albania",
-      "assignee": "Deepesh Gidwani"
+      "assignee": "Madhuri.Jadhav"
     },
     {
       "key": "SBZT-1572",
@@ -457,21 +414,10 @@
       "age_days": 216,
       "age_label": "216 days",
       "customer": "ONE Albania",
-      "assignee": "Amisha Patel"
+      "assignee": "Madhuri.Jadhav"
     },
     {
-      "key": "SBZT-1622",
-      "title": "CAL Update API Incorrect Parameter InvOrdNum",
-      "kayako_number": "60178229",
-      "created": "2025-09-01T00:00:00",
-      "created_formatted": "01 Sep 2025",
-      "age_days": 196,
-      "age_label": "196 days",
-      "customer": "ONE Albania",
-      "assignee": "Nephat Muchiri"
-    },
-    {
-      "key": "SBZT-1623",
+      "key": "OAM-1072",
       "title": "dPCC - No response from server draro1.stl.tech Issue",
       "kayako_number": "60174192",
       "created": "2025-09-03T00:00:00",
@@ -491,17 +437,6 @@
       "age_label": "186 days",
       "customer": "ONE Albania",
       "assignee": "Rohit Kumar"
-    },
-    {
-      "key": "SBZT-1641",
-      "title": "Automate CDRs Insertion in Invoice Process",
-      "kayako_number": "60197932",
-      "created": "2025-09-15T00:00:00",
-      "created_formatted": "15 Sep 2025",
-      "age_days": 182,
-      "age_label": "182 days",
-      "customer": "ONE Albania",
-      "assignee": "Nephat Muchiri"
     },
     {
       "key": "OAM-632",
@@ -526,7 +461,7 @@
       "assignee": "Amisha Patel"
     },
     {
-      "key": "SBZT-1666",
+      "key": "OAM-1073",
       "title": "Missing dPCC Non-Monetary Usage CDRs",
       "kayako_number": "60194716",
       "created": "2025-09-29T00:00:00",
@@ -559,18 +494,7 @@
       "assignee": "Amisha Patel"
     },
     {
-      "key": "SBZT-1678",
-      "title": "Bill Dispatch Service sending wrong notifications",
-      "kayako_number": "60212390",
-      "created": "2025-10-07T00:00:00",
-      "created_formatted": "07 Oct 2025",
-      "age_days": 160,
-      "age_label": "160 days",
-      "customer": "ONE Albania",
-      "assignee": "Nephat Muchiri"
-    },
-    {
-      "key": "SBZT-1683",
+      "key": "OAM-1059",
       "title": "Incorrect Monetary Usage CDRs Generated by dPCC ",
       "kayako_number": "60204496",
       "created": "2025-10-10T00:00:00",
@@ -578,7 +502,7 @@
       "age_days": 157,
       "age_label": "157 days",
       "customer": "ONE Albania",
-      "assignee": "Ali Raza"
+      "assignee": "Rohit Kumar"
     },
     {
       "key": "OAM-647",
@@ -655,7 +579,7 @@
       "age_days": 143,
       "age_label": "143 days",
       "customer": "ONE Albania",
-      "assignee": "Rohit Kumar"
+      "assignee": "Leewel Mwangi"
     },
     {
       "key": "SBZT-1699",
@@ -677,7 +601,7 @@
       "age_days": 139,
       "age_label": "139 days",
       "customer": "ONE Albania",
-      "assignee": "Marlene Fernandes"
+      "assignee": "Leewel Mwangi"
     },
     {
       "key": "OAM-672",
@@ -732,10 +656,10 @@
       "age_days": 132,
       "age_label": "132 days",
       "customer": "ONE Albania",
-      "assignee": "Marlene Fernandes"
+      "assignee": "Natnael Legesse"
     },
     {
-      "key": "SBZT-1714",
+      "key": "OAM-1074",
       "title": "MSISDN Missing in Change Plan Orders",
       "kayako_number": "60229607",
       "created": "2025-11-06T00:00:00",
@@ -755,17 +679,6 @@
       "age_label": "125 days",
       "customer": "ONE Albania",
       "assignee": "Preet Patel"
-    },
-    {
-      "key": "SBZT-1718",
-      "title": "Approval for DELETE CASCADE on constraints",
-      "kayako_number": "60240305",
-      "created": "2025-11-11T00:00:00",
-      "created_formatted": "11 Nov 2025",
-      "age_days": 125,
-      "age_label": "125 days",
-      "customer": "ONE Albania",
-      "assignee": "Purushuttam.Biswas"
     },
     {
       "key": "OAM-1014",
@@ -790,7 +703,7 @@
       "assignee": "Amisha Patel"
     },
     {
-      "key": "SBZT-1731",
+      "key": "OAM-1075",
       "title": "Duplicate MSISDNs in crestelmobileno table",
       "kayako_number": "60243090",
       "created": "2025-11-14T00:00:00",
@@ -799,17 +712,6 @@
       "age_label": "122 days",
       "customer": "ONE Albania",
       "assignee": "Leewel Mwangi"
-    },
-    {
-      "key": "OAM-732",
-      "title": "Alter Stored Procedures to Replace Temp Tables",
-      "kayako_number": "60243243",
-      "created": "2025-11-17T00:00:00",
-      "created_formatted": "17 Nov 2025",
-      "age_days": 119,
-      "age_label": "119 days",
-      "customer": "ONE Albania",
-      "assignee": "Marlene Fernandes"
     },
     {
       "key": "OAM-1022",
@@ -834,17 +736,6 @@
       "assignee": "Nephat Muchiri"
     },
     {
-      "key": "SBZT-1741",
-      "title": "Data update issue during Takeover CA in CRM",
-      "kayako_number": "60246530",
-      "created": "2025-11-19T00:00:00",
-      "created_formatted": "19 Nov 2025",
-      "age_days": 117,
-      "age_label": "117 days",
-      "customer": "ONE Albania",
-      "assignee": "Rohit Kumar"
-    },
-    {
       "key": "SBZT-1740",
       "title": "MRCTOTAL0 on CAL table after plan change",
       "kayako_number": "60246350",
@@ -853,7 +744,7 @@
       "age_days": 117,
       "age_label": "117 days",
       "customer": "ONE Albania",
-      "assignee": "Amisha Patel"
+      "assignee": "Madhuri.Jadhav"
     },
     {
       "key": "SBZT-1745",
@@ -867,7 +758,7 @@
       "assignee": "Nephat Muchiri"
     },
     {
-      "key": "SBZT-1751",
+      "key": "OAM-1076",
       "title": "Unknown Error in MNP Portout",
       "kayako_number": "60251763",
       "created": "2025-11-27T00:00:00",
@@ -887,17 +778,6 @@
       "age_label": "105 days",
       "customer": "ONE Albania",
       "assignee": "Deepesh Gidwani"
-    },
-    {
-      "key": "SBZT-1757",
-      "title": "Approval for DELETE CASCADE on constraints",
-      "kayako_number": "60240305",
-      "created": "2025-12-03T00:00:00",
-      "created_formatted": "03 Dec 2025",
-      "age_days": 103,
-      "age_label": "103 days",
-      "customer": "ONE Albania",
-      "assignee": "Rohit Kumar"
     },
     {
       "key": "OAM-1009",
@@ -920,17 +800,6 @@
       "age_label": "102 days",
       "customer": "ONE Albania",
       "assignee": "Amisha Patel"
-    },
-    {
-      "key": "OAM-781",
-      "title": "Double Payments for Invoice INV8D0FD0401744986489",
-      "kayako_number": "60043170",
-      "created": "2025-12-04T00:00:00",
-      "created_formatted": "04 Dec 2025",
-      "age_days": 102,
-      "age_label": "102 days",
-      "customer": "ONE Albania",
-      "assignee": "Leewel Mwangi"
     },
     {
       "key": "OAM-1011",
@@ -977,7 +846,7 @@
       "assignee": "Amisha Patel"
     },
     {
-      "key": "SBZT-1765",
+      "key": "OAM-1064",
       "title": "Follow-up on #4616907 - Recurring Pod Restart: stlwifi-eliteaaa-ro-stateful-1 (Container: eliteaaa)",
       "kayako_number": "60259418",
       "created": "2025-12-10T00:00:00",
@@ -996,7 +865,7 @@
       "age_days": 95,
       "age_label": "95 days",
       "customer": "ONE Albania",
-      "assignee": "Purushuttam.Biswas"
+      "assignee": "Madhuri.Jadhav"
     },
     {
       "key": "SBZT-1772",
@@ -1007,7 +876,7 @@
       "age_days": 91,
       "age_label": "91 days",
       "customer": "ONE Albania",
-      "assignee": "Rohit Kumar"
+      "assignee": "Madhuri.Jadhav"
     },
     {
       "key": "SBZT-1773",
@@ -1018,7 +887,7 @@
       "age_days": 90,
       "age_label": "90 days",
       "customer": "ONE Albania",
-      "assignee": "Rohit Kumar"
+      "assignee": "Leewel Mwangi"
     },
     {
       "key": "SBZT-1775",
@@ -1109,17 +978,6 @@
       "assignee": "VN Singh"
     },
     {
-      "key": "OAM-871",
-      "title": "Orders In-Progress and WOM Message Queue Overload ",
-      "kayako_number": "60283101",
-      "created": "2026-01-14T00:00:00",
-      "created_formatted": "14 Jan 2026",
-      "age_days": 61,
-      "age_label": "61 days",
-      "customer": "ONE Albania",
-      "assignee": "Rohit Kumar"
-    },
-    {
       "key": "OAM-870",
       "title": "DBRM NullPointerException Payment Services Error",
       "kayako_number": "60283139",
@@ -1139,7 +997,7 @@
       "age_days": 60,
       "age_label": "60 days",
       "customer": "ONE Albania",
-      "assignee": "Unassigned"
+      "assignee": "Natnael Legesse"
     },
     {
       "key": "SBZT-1834",
@@ -1172,7 +1030,7 @@
       "age_days": 54,
       "age_label": "54 days",
       "customer": "ONE Albania",
-      "assignee": "Rohit Kumar"
+      "assignee": "Madhuri.Jadhav"
     },
     {
       "key": "OAM-895",
@@ -1183,7 +1041,7 @@
       "age_days": 54,
       "age_label": "54 days",
       "customer": "ONE Albania",
-      "assignee": "Unassigned"
+      "assignee": "Natnael Legesse"
     },
     {
       "key": "OAM-905",
@@ -1194,7 +1052,7 @@
       "age_days": 48,
       "age_label": "48 days",
       "customer": "ONE Albania",
-      "assignee": "Nephat Muchiri"
+      "assignee": "Amisha Patel"
     },
     {
       "key": "SBZT-1846",
@@ -1216,7 +1074,7 @@
       "age_days": 46,
       "age_label": "46 days",
       "customer": "ONE Albania",
-      "assignee": "Purushuttam.Biswas"
+      "assignee": "Madhuri.Jadhav"
     },
     {
       "key": "ASU-6",
@@ -1238,29 +1096,7 @@
       "age_days": 43,
       "age_label": "43 days",
       "customer": "ONE Albania",
-      "assignee": "Unassigned"
-    },
-    {
-      "key": "OAM-915",
-      "title": "VoLTE calls CS.SGSNMCCMNC\"\":\"\"\\\"\"2760",
-      "kayako_number": "60294844",
-      "created": "2026-02-03T00:00:00",
-      "created_formatted": "03 Feb 2026",
-      "age_days": 41,
-      "age_label": "41 days",
-      "customer": "ONE Albania",
-      "assignee": "Unassigned"
-    },
-    {
-      "key": "OAM-918",
-      "title": "Diameter peer down with new SCP Pre Prod peers issue",
-      "kayako_number": "60297761",
-      "created": "2026-02-04T00:00:00",
-      "created_formatted": "04 Feb 2026",
-      "age_days": 40,
-      "age_label": "40 days",
-      "customer": "ONE Albania",
-      "assignee": "Rohit Kumar"
+      "assignee": "Natnael Legesse"
     },
     {
       "key": "OAM-916",
@@ -1271,7 +1107,7 @@
       "age_days": 40,
       "age_label": "40 days",
       "customer": "ONE Albania",
-      "assignee": "Madhuri.Jadhav"
+      "assignee": "Purushuttam.Biswas"
     },
     {
       "key": "OAM-919",
@@ -1282,18 +1118,7 @@
       "age_days": 39,
       "age_label": "39 days",
       "customer": "ONE Albania",
-      "assignee": "Unassigned"
-    },
-    {
-      "key": "OAM-921",
-      "title": "Cleanup of Empty Partitions for CDR Tables",
-      "kayako_number": "60299994",
-      "created": "2026-02-06T00:00:00",
-      "created_formatted": "06 Feb 2026",
-      "age_days": 38,
-      "age_label": "38 days",
-      "customer": "ONE Albania",
-      "assignee": "Unassigned"
+      "assignee": "Natnael Legesse"
     },
     {
       "key": "SBZT-1929",
@@ -1337,7 +1162,7 @@
       "age_days": 27,
       "age_label": "27 days",
       "customer": "ONE Albania",
-      "assignee": "Leewel Mwangi"
+      "assignee": "Rohit Kumar"
     },
     {
       "key": "SBZT-1962",
@@ -1425,18 +1250,7 @@
       "age_days": 21,
       "age_label": "21 days",
       "customer": "ONE Albania",
-      "assignee": "Nephat Muchiri"
-    },
-    {
-      "key": "ASGT-7",
-      "title": "Valero DB SGA usage at 87 Percent",
-      "kayako_number": "60311033",
-      "created": "2026-02-23T00:00:00",
-      "created_formatted": "23 Feb 2026",
-      "age_days": 21,
-      "age_label": "21 days",
-      "customer": "STL - Commverge Solutions Philippines Inc.",
-      "assignee": "Natnael Legesse"
+      "assignee": "Amisha Patel"
     },
     {
       "key": "SBZT-1985",
@@ -1480,7 +1294,7 @@
       "age_days": 12,
       "age_label": "12 days",
       "customer": "ONE Albania",
-      "assignee": "Unassigned"
+      "assignee": "Omkar Pataskar"
     },
     {
       "key": "ASA-22",
@@ -1527,17 +1341,6 @@
       "assignee": "Bhavin.Jani"
     },
     {
-      "key": "OAM-1007",
-      "title": "Order Configuration Matrix Validation applied at BA CA instead of MSISDN SIA",
-      "kayako_number": "60320427",
-      "created": "2026-03-06T00:00:00",
-      "created_formatted": "06 Mar 2026",
-      "age_days": 10,
-      "age_label": "10 days",
-      "customer": "ONE Albania",
-      "assignee": "Omkar Pataskar"
-    },
-    {
       "key": "OAM-1043",
       "title": "DebitDocument Missing XML GENERATE_XML_FOR_DEBIT_DOC for regular Invoice on PROD",
       "kayako_number": "60320919",
@@ -1546,7 +1349,7 @@
       "age_days": 7,
       "age_label": "7 days",
       "customer": "ONE Albania",
-      "assignee": "Unassigned"
+      "assignee": "Amisha Patel"
     },
     {
       "key": "MSBB-71",
@@ -1601,7 +1404,7 @@
       "age_days": 5,
       "age_label": "5 days",
       "customer": "ONE Albania",
-      "assignee": "Unassigned"
+      "assignee": "Rohit Kumar"
     },
     {
       "key": "ASA-31",
@@ -1623,7 +1426,73 @@
       "age_days": 4,
       "age_label": "4 days",
       "customer": "ONE Albania",
-      "assignee": "Unassigned"
+      "assignee": "Deepesh Gidwani"
+    },
+    {
+      "key": "OAM-1062",
+      "title": "[Follow-up to #60266172] Archive and Purging Strategy for DBRM DB",
+      "kayako_number": "60325346",
+      "created": "2026-03-13T00:00:00",
+      "created_formatted": "13 Mar 2026",
+      "age_days": 3,
+      "age_label": "3 days",
+      "customer": "ONE Albania",
+      "assignee": "Natnael Legesse"
+    },
+    {
+      "key": "OAM-1061",
+      "title": "CRM Light Prod: Incorrect suborder sequence for Order INV566AC1441773214349",
+      "kayako_number": "60325272",
+      "created": "2026-03-13T00:00:00",
+      "created_formatted": "13 Mar 2026",
+      "age_days": 3,
+      "age_label": "3 days",
+      "customer": "ONE Albania",
+      "assignee": "Omkar Pataskar"
+    },
+    {
+      "key": "OAM-1056",
+      "title": "WOM CRM outage in Prod 2 Hazelcast pods down Member Passive status",
+      "kayako_number": "60324717",
+      "created": "2026-03-13T00:00:00",
+      "created_formatted": "13 Mar 2026",
+      "age_days": 3,
+      "age_label": "3 days",
+      "customer": "ONE Albania",
+      "assignee": "Rohit Kumar"
+    },
+    {
+      "key": "ASA-41",
+      "title": "Airtel Fixedline Backup Check 2026-03-15",
+      "kayako_number": "60325969",
+      "created": "2026-03-15T00:00:00",
+      "created_formatted": "15 Mar 2026",
+      "age_days": 1,
+      "age_label": "1 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "ASA-39",
+      "title": "Airtel Fixedline Health Check 2026-03-15",
+      "kayako_number": "60325968",
+      "created": "2026-03-15T00:00:00",
+      "created_formatted": "15 Mar 2026",
+      "age_days": 1,
+      "age_label": "1 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "MSBB-72",
+      "title": "BSNL BNG PUNCSPR-DR DB Server Cluster Abnormal Termination Error",
+      "kayako_number": "60326295",
+      "created": "2026-03-16T00:00:00",
+      "created_formatted": "16 Mar 2026",
+      "age_days": 0,
+      "age_label": "0 days",
+      "customer": "STL - BNG MS team",
+      "assignee": "Natnael Legesse"
     }
   ]
 }
