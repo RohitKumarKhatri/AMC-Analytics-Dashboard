@@ -14,23 +14,129 @@
     "09 Mar 2026"
   ],
   "assignees": [
+    "Amisha Patel",
+    "Ankit.Goel",
     "Bharat Kalra",
     "Bhavin.Jani",
     "Deepesh Gidwani",
     "Leewel Mwangi",
+    "Madhuri.Jadhav",
     "Marlene Fernandes",
     "Natnael Legesse",
+    "Nephat Muchiri",
     "Omkar Pataskar",
+    "Parameswaran",
+    "Preet Patel",
+    "Purushuttam.Biswas",
     "Rohit Kumar",
     "Shailesh Savla",
     "VN Singh",
     "Unassigned"
   ],
   "data": {
+    "Amisha Patel": {
+      "05 Jan 2026": {
+        "count": 3,
+        "keys": [
+          "SBZT-1580",
+          "SBZT-1710",
+          "SBZT-1756"
+        ]
+      },
+      "12 Jan 2026": {
+        "count": 1,
+        "keys": [
+          "SBZT-1759"
+        ]
+      },
+      "19 Jan 2026": {
+        "count": 1,
+        "keys": [
+          "SBZT-1508"
+        ]
+      },
+      "26 Jan 2026": {
+        "count": 1,
+        "keys": [
+          "SBZT-1470"
+        ]
+      },
+      "02 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Mar 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Mar 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 6
+    },
+    "Ankit.Goel": {
+      "05 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "12 Jan 2026": {
+        "count": 1,
+        "keys": [
+          "AS-62"
+        ]
+      },
+      "19 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "26 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Mar 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Mar 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
     "Bharat Kalra": {
       "05 Jan 2026": {
-        "count": 8,
+        "count": 9,
         "keys": [
+          "SBZT-1782",
           "SBZT-1797",
           "SBZT-1800",
           "SBZT-1804",
@@ -157,7 +263,7 @@
           "SBZT-1833"
         ]
       },
-      "total": 79
+      "total": 80
     },
     "Bhavin.Jani": {
       "05 Jan 2026": {
@@ -264,16 +370,68 @@
         "keys": []
       },
       "02 Mar 2026": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-1752"
+        ]
       },
       "09 Mar 2026": {
         "count": 0,
         "keys": []
       },
-      "total": 1
+      "total": 2
     },
     "Leewel Mwangi": {
+      "05 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "12 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "19 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "26 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Feb 2026": {
+        "count": 1,
+        "keys": [
+          "OAM-798"
+        ]
+      },
+      "09 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Feb 2026": {
+        "count": 1,
+        "keys": [
+          "SBZT-1472"
+        ]
+      },
+      "23 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Mar 2026": {
+        "count": 2,
+        "keys": [
+          "OAM-917",
+          "SBZT-1691"
+        ]
+      },
+      "09 Mar 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 4
+    },
+    "Madhuri.Jadhav": {
       "05 Jan 2026": {
         "count": 0,
         "keys": []
@@ -309,7 +467,7 @@
       "02 Mar 2026": {
         "count": 1,
         "keys": [
-          "OAM-917"
+          "OAM-674"
         ]
       },
       "09 Mar 2026": {
@@ -320,20 +478,26 @@
     },
     "Marlene Fernandes": {
       "05 Jan 2026": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "OAM-797"
+        ]
       },
       "12 Jan 2026": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "OAM-716"
+        ]
       },
       "19 Jan 2026": {
         "count": 0,
         "keys": []
       },
       "26 Jan 2026": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "OAM-800"
+        ]
       },
       "02 Feb 2026": {
         "count": 0,
@@ -361,20 +525,23 @@
         "count": 0,
         "keys": []
       },
-      "total": 1
+      "total": 4
     },
     "Natnael Legesse": {
       "05 Jan 2026": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-1785"
+        ]
       },
       "12 Jan 2026": {
         "count": 0,
         "keys": []
       },
       "19 Jan 2026": {
-        "count": 1,
+        "count": 2,
         "keys": [
+          "OAM-830",
           "SBZT-1815"
         ]
       },
@@ -417,16 +584,22 @@
         "count": 0,
         "keys": []
       },
-      "total": 8
+      "total": 10
     },
-    "Omkar Pataskar": {
+    "Nephat Muchiri": {
       "05 Jan 2026": {
-        "count": 0,
-        "keys": []
+        "count": 3,
+        "keys": [
+          "SBZT-1524",
+          "SBZT-1651",
+          "SBZT-1701"
+        ]
       },
       "12 Jan 2026": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "SBZT-1698"
+        ]
       },
       "19 Jan 2026": {
         "count": 0,
@@ -443,6 +616,53 @@
       "09 Feb 2026": {
         "count": 0,
         "keys": []
+      },
+      "16 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Mar 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Mar 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 4
+    },
+    "Omkar Pataskar": {
+      "05 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "12 Jan 2026": {
+        "count": 1,
+        "keys": [
+          "SBZT-1726"
+        ]
+      },
+      "19 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "26 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Feb 2026": {
+        "count": 1,
+        "keys": [
+          "SBZT-1737"
+        ]
       },
       "16 Feb 2026": {
         "count": 1,
@@ -464,9 +684,54 @@
         "count": 0,
         "keys": []
       },
-      "total": 2
+      "total": 4
     },
-    "Rohit Kumar": {
+    "Parameswaran": {
+      "05 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "12 Jan 2026": {
+        "count": 1,
+        "keys": [
+          "SBZT-1722"
+        ]
+      },
+      "19 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "26 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Mar 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Mar 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
+    "Preet Patel": {
       "05 Jan 2026": {
         "count": 0,
         "keys": []
@@ -480,10 +745,9 @@
         "keys": []
       },
       "26 Jan 2026": {
-        "count": 2,
+        "count": 1,
         "keys": [
-          "OAM-869",
-          "OAM-898"
+          "SBZT-1125"
         ]
       },
       "02 Feb 2026": {
@@ -503,18 +767,16 @@
         "keys": []
       },
       "02 Mar 2026": {
-        "count": 1,
-        "keys": [
-          "OAM-932"
-        ]
+        "count": 0,
+        "keys": []
       },
       "09 Mar 2026": {
         "count": 0,
         "keys": []
       },
-      "total": 3
+      "total": 1
     },
-    "Shailesh Savla": {
+    "Purushuttam.Biswas": {
       "05 Jan 2026": {
         "count": 0,
         "keys": []
@@ -526,6 +788,114 @@
       "19 Jan 2026": {
         "count": 1,
         "keys": [
+          "SBZT-1498"
+        ]
+      },
+      "26 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "16 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Mar 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "09 Mar 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "total": 1
+    },
+    "Rohit Kumar": {
+      "05 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "12 Jan 2026": {
+        "count": 1,
+        "keys": [
+          "OAM-828"
+        ]
+      },
+      "19 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "26 Jan 2026": {
+        "count": 2,
+        "keys": [
+          "OAM-869",
+          "OAM-898"
+        ]
+      },
+      "02 Feb 2026": {
+        "count": 1,
+        "keys": [
+          "SBZT-1715"
+        ]
+      },
+      "09 Feb 2026": {
+        "count": 2,
+        "keys": [
+          "SBZT-1522",
+          "SBZT-1684"
+        ]
+      },
+      "16 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "23 Feb 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "02 Mar 2026": {
+        "count": 2,
+        "keys": [
+          "OAM-932",
+          "SBZT-1679"
+        ]
+      },
+      "09 Mar 2026": {
+        "count": 1,
+        "keys": [
+          "SBZT-1588"
+        ]
+      },
+      "total": 9
+    },
+    "Shailesh Savla": {
+      "05 Jan 2026": {
+        "count": 3,
+        "keys": [
+          "AS-70",
+          "SBZT-1628",
+          "SBZT-1770"
+        ]
+      },
+      "12 Jan 2026": {
+        "count": 0,
+        "keys": []
+      },
+      "19 Jan 2026": {
+        "count": 2,
+        "keys": [
+          "AS-67",
           "AS-74"
         ]
       },
@@ -563,12 +933,15 @@
         "keys": []
       },
       "09 Mar 2026": {
-        "count": 1,
+        "count": 4,
         "keys": [
+          "SBZT-1590",
+          "SBZT-1743",
+          "SBZT-1744",
           "SBZT-1799"
         ]
       },
-      "total": 7
+      "total": 14
     },
     "VN Singh": {
       "05 Jan 2026": {
@@ -667,16 +1040,16 @@
     }
   },
   "week_totals": {
-    "05 Jan 2026": 8,
-    "12 Jan 2026": 8,
-    "19 Jan 2026": 13,
-    "26 Jan 2026": 14,
-    "02 Feb 2026": 10,
-    "09 Feb 2026": 14,
-    "16 Feb 2026": 17,
+    "05 Jan 2026": 20,
+    "12 Jan 2026": 15,
+    "19 Jan 2026": 17,
+    "26 Jan 2026": 17,
+    "02 Feb 2026": 12,
+    "09 Feb 2026": 17,
+    "16 Feb 2026": 18,
     "23 Feb 2026": 17,
-    "02 Mar 2026": 16,
-    "09 Mar 2026": 12
+    "02 Mar 2026": 20,
+    "09 Mar 2026": 16
   },
-  "grand_total": 129
+  "grand_total": 169
 }

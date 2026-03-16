@@ -134,6 +134,18 @@
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 7
+    },
+    {
+      "week_start": "2026-03-16",
+      "week_end": "2026-03-22",
+      "label": "16 Mar 2026 - 22 Mar 2026",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 7
     }
   ]
 }
