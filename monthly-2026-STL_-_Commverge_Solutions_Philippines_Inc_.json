@@ -24,8 +24,8 @@
       "created": 4,
       "resolved": 4,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-7', 'SBZT-1867', 'SBZT-1927', 'SBZT-1935') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1848', 'SBZT-1867', 'SBZT-1927', 'SBZT-1935') ORDER BY key DESC"
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-7', 'ASGT-8', 'SBZT-1867', 'SBZT-1935') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-8', 'SBZT-1848', 'SBZT-1867', 'SBZT-1935') ORDER BY key DESC"
       },
       "cumulative": 1
     },
@@ -35,12 +35,12 @@
       "month_end": "2026-03-31",
       "label": "Mar 2026",
       "created": 0,
-      "resolved": 0,
+      "resolved": 1,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-7') ORDER BY key DESC"
       },
-      "cumulative": 1
+      "cumulative": 0
     }
   ]
 }

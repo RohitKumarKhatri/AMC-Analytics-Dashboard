@@ -22,7 +22,7 @@
       "created": 4,
       "resolved": 0,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1799', 'SBZT-1801', 'SBZT-1802', 'SBZT-1803') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('MSBB-69', 'SBZT-1799', 'SBZT-1801', 'SBZT-1802') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 4
@@ -122,6 +122,30 @@
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 3
+    },
+    {
+      "week_start": "2026-03-09",
+      "week_end": "2026-03-15",
+      "label": "09 Mar 2026 - 15 Mar 2026",
+      "created": 0,
+      "resolved": 3,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('MSBB-69', 'SBZT-1799', 'SBZT-1802') ORDER BY key DESC"
+      },
+      "cumulative": 0
+    },
+    {
+      "week_start": "2026-03-16",
+      "week_end": "2026-03-22",
+      "label": "16 Mar 2026 - 22 Mar 2026",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
     }
   ]
 }
