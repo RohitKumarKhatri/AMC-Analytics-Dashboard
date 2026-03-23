@@ -34,13 +34,13 @@
       "month_start": "2026-03-01",
       "month_end": "2026-03-31",
       "label": "Mar 2026",
-      "created": 38,
-      "resolved": 29,
+      "created": 58,
+      "resolved": 37,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-11', 'ASA-12', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'ASA-18', 'ASA-19', 'ASA-20', 'ASA-21', 'ASA-22', 'ASA-23', 'ASA-24', 'ASA-25', 'ASA-26', 'ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-31', 'ASA-32', 'ASA-33', 'ASA-34', 'ASA-35', 'ASA-36', 'ASA-37', 'ASA-38', 'ASA-39', 'ASA-40', 'ASA-41', 'ASA-42', 'ASA-43', 'ASA-44', 'ASA-45', 'ASA-46', 'ASA-47', 'ASA-48', 'ASA-49') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-11', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'ASA-18', 'ASA-19', 'ASA-23', 'ASA-24', 'ASA-25', 'ASA-26', 'ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-32', 'ASA-33', 'ASA-34', 'ASA-35', 'ASA-36', 'ASA-37', 'ASA-38', 'ASA-40', 'ASA-42', 'ASA-44', 'ASA-45', 'ASA-46', 'ASA-47', 'SBZT-1833') ORDER BY key DESC"
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-11', 'ASA-12', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'ASA-18', 'ASA-19', 'ASA-20', 'ASA-21', 'ASA-22', 'ASA-23', 'ASA-24', 'ASA-25', 'ASA-26', 'ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-31', 'ASA-32', 'ASA-33', 'ASA-34', 'ASA-35', 'ASA-36', 'ASA-37', 'ASA-38', 'ASA-39', 'ASA-40', 'ASA-41', 'ASA-42', 'ASA-43', 'ASA-44', 'ASA-45', 'ASA-46', 'ASA-47', 'ASA-48', 'ASA-49', 'ASA-50', 'ASA-51', 'ASA-52', 'ASA-53', 'ASA-54', 'ASA-55', 'ASA-56', 'ASA-57', 'ASA-58', 'ASA-59', 'ASA-60', 'ASA-61', 'ASA-62', 'ASA-63', 'ASA-64', 'ASA-65', 'ASA-66', 'ASA-67', 'ASA-68', 'ASA-69') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-11', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'ASA-18', 'ASA-19', 'ASA-22', 'ASA-23', 'ASA-24', 'ASA-25', 'ASA-26', 'ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-32', 'ASA-33', 'ASA-34', 'ASA-35', 'ASA-36', 'ASA-37', 'ASA-38', 'ASA-40', 'ASA-42', 'ASA-44', 'ASA-45', 'ASA-46', 'ASA-47', 'ASA-48', 'ASA-49', 'ASA-50', 'ASA-51', 'ASA-52', 'ASA-54', 'ASA-55', 'SBZT-1833') ORDER BY key DESC"
       },
-      "cumulative": 16
+      "cumulative": 28
     }
   ]
 }

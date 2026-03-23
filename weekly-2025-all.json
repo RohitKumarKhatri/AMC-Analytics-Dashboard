@@ -130,7 +130,7 @@
       "created": 23,
       "resolved": 15,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1239', 'SBZT-1241', 'SBZT-1242', 'SBZT-1243', 'SBZT-1244', 'SBZT-1245', 'SBZT-1246', 'SBZT-1247', 'SBZT-1249', 'SBZT-1250', 'SBZT-1251', 'SBZT-1252', 'SBZT-1255', 'SBZT-1256', 'SBZT-1257', 'SBZT-1258', 'SBZT-1259', 'SBZT-1261', 'SBZT-1262', 'SBZT-1263', 'SBZT-1264', 'SBZT-1265', 'SBZT-1266') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1083', 'SBZT-1239', 'SBZT-1241', 'SBZT-1242', 'SBZT-1243', 'SBZT-1244', 'SBZT-1245', 'SBZT-1246', 'SBZT-1247', 'SBZT-1249', 'SBZT-1250', 'SBZT-1251', 'SBZT-1252', 'SBZT-1255', 'SBZT-1256', 'SBZT-1257', 'SBZT-1258', 'SBZT-1259', 'SBZT-1261', 'SBZT-1262', 'SBZT-1263', 'SBZT-1264', 'SBZT-1266') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1214', 'SBZT-1217', 'SBZT-1218', 'SBZT-1221', 'SBZT-1222', 'SBZT-1232', 'SBZT-1233', 'SBZT-1241', 'SBZT-1242', 'SBZT-1243', 'SBZT-1245', 'SBZT-1251', 'SBZT-1255', 'SBZT-1256', 'SBZT-1262') ORDER BY key DESC"
       },
       "cumulative": 51
