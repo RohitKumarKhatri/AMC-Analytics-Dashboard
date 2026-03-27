@@ -370,7 +370,7 @@
       "created": 9,
       "resolved": 5,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1565', 'SBZT-1566', 'SBZT-1567', 'SBZT-1568', 'SBZT-1569', 'SBZT-1570', 'SBZT-1571', 'SBZT-1572', 'SBZT-1573') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1100', 'SBZT-1565', 'SBZT-1566', 'SBZT-1567', 'SBZT-1568', 'SBZT-1569', 'SBZT-1570', 'SBZT-1571', 'SBZT-1573') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1249', 'SBZT-1411', 'SBZT-1544', 'SBZT-1552', 'SBZT-1562') ORDER BY key DESC"
       },
       "cumulative": 162

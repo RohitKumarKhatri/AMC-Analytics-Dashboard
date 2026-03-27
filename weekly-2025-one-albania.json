@@ -370,7 +370,7 @@
       "created": 3,
       "resolved": 1,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1566', 'SBZT-1568', 'SBZT-1572') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1100', 'SBZT-1566', 'SBZT-1568') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1552') ORDER BY key DESC"
       },
       "cumulative": 116

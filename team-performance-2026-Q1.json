@@ -262,10 +262,24 @@
         ]
       },
       "23 Mar 2026": {
-        "count": 0,
-        "keys": []
+        "count": 13,
+        "keys": [
+          "ASA-101",
+          "ASA-102",
+          "ASA-103",
+          "ASA-105",
+          "ASA-106",
+          "ASA-56",
+          "ASA-57",
+          "ASA-69",
+          "ASA-70",
+          "ASA-71",
+          "ASA-81",
+          "ASA-98",
+          "ASA-99"
+        ]
       },
-      "total": 39
+      "total": 52
     },
     "Deepesh Gidwani": {
       "05 Jan 2026": {
@@ -317,10 +331,12 @@
         ]
       },
       "23 Mar 2026": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "OAM-1050"
+        ]
       },
-      "total": 2
+      "total": 3
     },
     "Leewel Mwangi": {
       "05 Jan 2026": {
@@ -426,12 +442,13 @@
         ]
       },
       "23 Mar 2026": {
-        "count": 1,
+        "count": 2,
         "keys": [
-          "OAM-1081"
+          "OAM-1081",
+          "OAM-894"
         ]
       },
-      "total": 2
+      "total": 3
     },
     "Marlene Fernandes": {
       "05 Jan 2026": {
@@ -551,12 +568,13 @@
         ]
       },
       "23 Mar 2026": {
-        "count": 1,
+        "count": 2,
         "keys": [
+          "MSBB-72",
           "OAM-919"
         ]
       },
-      "total": 13
+      "total": 14
     },
     "Nephat Muchiri": {
       "05 Jan 2026": {
@@ -736,10 +754,12 @@
         ]
       },
       "23 Mar 2026": {
-        "count": 0,
-        "keys": []
+        "count": 1,
+        "keys": [
+          "OAM-1049"
+        ]
       },
-      "total": 12
+      "total": 13
     },
     "Sandeep.Kumar": {
       "05 Jan 2026": {
@@ -977,7 +997,7 @@
     "02 Mar 2026": 16,
     "09 Mar 2026": 24,
     "16 Mar 2026": 23,
-    "23 Mar 2026": 4
+    "23 Mar 2026": 21
   },
-  "grand_total": 168
+  "grand_total": 185
 }

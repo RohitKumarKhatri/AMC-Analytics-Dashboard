@@ -34,13 +34,13 @@
       "month_start": "2026-03-01",
       "month_end": "2026-03-31",
       "label": "Mar 2026",
-      "created": 3,
-      "resolved": 0,
+      "created": 6,
+      "resolved": 1,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('MSBB-70', 'MSBB-71', 'MSBB-72') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('MSBB-70', 'MSBB-71', 'MSBB-72', 'MSBB-73', 'MSBB-74', 'MSBB-75') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('MSBB-72') ORDER BY key DESC"
       },
-      "cumulative": 3
+      "cumulative": 5
     }
   ]
 }
