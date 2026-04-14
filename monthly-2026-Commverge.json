@@ -41,6 +41,19 @@
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 0
+    },
+    {
+      "month": "2026-04",
+      "month_start": "2026-04-01",
+      "month_end": "2026-04-30",
+      "label": "Apr 2026",
+      "created": 0,
+      "resolved": 0,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+      },
+      "cumulative": 0
     }
   ]
 }
