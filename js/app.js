@@ -9,13 +9,11 @@ const JIRA_PROJECTS = [
 // Generate project list for JQL query - quote all project names to handle reserved words like "AS"
 const JIRA_PROJECTS_JQL = JIRA_PROJECTS.map(p => `"${p}"`).join(', ');
 
-// Cache-busting helper function (5-minute cache)
+// Cache-busting helper function — uses unique timestamp per request
+// so the service worker never serves stale JSON data
 function getCacheBustingUrl(url) {
-    const cacheDuration = 5 * 60 * 1000; // 5 minutes
-    const now = Date.now();
-    const cacheKey = Math.floor(now / cacheDuration);
     const separator = url.includes('?') ? '&' : '?';
-    return `${url}${separator}_cb=${cacheKey}`;
+    return `${url}${separator}_cb=${Date.now()}`;
 }
 
 // Store scroll position to prevent jumping
