@@ -1,83 +1,25 @@
 {
-  "total_count": 126,
+  "total_count": 133,
   "customer_distribution": {
-    "ONE Albania": {
-      "count": 55,
-      "keys": [
-        "OAM-1005",
-        "OAM-1009",
-        "OAM-1011",
-        "OAM-1012",
-        "OAM-1013",
-        "OAM-1014",
-        "OAM-1015",
-        "OAM-1017",
-        "OAM-1019",
-        "OAM-1020",
-        "OAM-1021",
-        "OAM-1022",
-        "OAM-1043",
-        "OAM-1053",
-        "OAM-1060",
-        "OAM-1062",
-        "OAM-1064",
-        "OAM-1072",
-        "OAM-1073",
-        "OAM-1075",
-        "OAM-1076",
-        "OAM-1083",
-        "OAM-1100",
-        "OAM-1102",
-        "OAM-1173",
-        "OAM-1174",
-        "OAM-1175",
-        "OAM-1176",
-        "OAM-619",
-        "OAM-645",
-        "OAM-650",
-        "OAM-652",
-        "OAM-672",
-        "OAM-673",
-        "OAM-780",
-        "OAM-799",
-        "OAM-831",
-        "OAM-870",
-        "OAM-872",
-        "OAM-895",
-        "OAM-896",
-        "OAM-905",
-        "OAM-906",
-        "OAM-916",
-        "OAM-933",
-        "OAM-962",
-        "SBZT-1306",
-        "SBZT-1363",
-        "SBZT-1559",
-        "SBZT-1690",
-        "SBZT-1699",
-        "SBZT-1721",
-        "SBZT-1745",
-        "SBZT-1758",
-        "SBZT-1772"
-      ]
-    },
-    "STL - BNG MS team": {
-      "count": 5,
-      "keys": [
-        "MSBB-70",
-        "MSBB-71",
-        "MSBB-73",
-        "MSBB-74",
-        "MSBB-75"
-      ]
-    },
     "STL - Airtel Fixedline": {
-      "count": 55,
+      "count": 63,
       "keys": [
         "ASA-100",
         "ASA-104",
-        "ASA-107",
+        "ASA-111",
+        "ASA-119",
         "ASA-12",
+        "ASA-131",
+        "ASA-134",
+        "ASA-138",
+        "ASA-139",
+        "ASA-140",
+        "ASA-141",
+        "ASA-142",
+        "ASA-143",
+        "ASA-148",
+        "ASA-151",
+        "ASA-152",
         "ASA-20",
         "ASA-21",
         "ASA-31",
@@ -93,7 +35,6 @@
         "ASA-63",
         "ASA-64",
         "ASA-65",
-        "ASA-66",
         "ASA-67",
         "ASA-68",
         "ASA-7",
@@ -107,9 +48,6 @@
         "ASA-79",
         "ASA-8",
         "ASA-80",
-        "ASA-82",
-        "ASA-83",
-        "ASA-84",
         "ASA-85",
         "ASA-86",
         "ASA-87",
@@ -131,10 +69,74 @@
         "SBZT-1932"
       ]
     },
-    "STL - Commverge Solutions Philippines Inc.": {
-      "count": 1,
+    "ONE Albania": {
+      "count": 55,
       "keys": [
-        "ASGT-10"
+        "OAM-1005",
+        "OAM-1009",
+        "OAM-1011",
+        "OAM-1012",
+        "OAM-1013",
+        "OAM-1017",
+        "OAM-1019",
+        "OAM-1020",
+        "OAM-1021",
+        "OAM-1022",
+        "OAM-1043",
+        "OAM-1053",
+        "OAM-1059",
+        "OAM-1060",
+        "OAM-1062",
+        "OAM-1064",
+        "OAM-1072",
+        "OAM-1073",
+        "OAM-1075",
+        "OAM-1076",
+        "OAM-1083",
+        "OAM-1100",
+        "OAM-1102",
+        "OAM-1173",
+        "OAM-1174",
+        "OAM-1177",
+        "OAM-1178",
+        "OAM-1179",
+        "OAM-1203",
+        "OAM-1205",
+        "OAM-1206",
+        "OAM-1215",
+        "OAM-1216",
+        "OAM-1219",
+        "OAM-1221",
+        "OAM-1222",
+        "OAM-1223",
+        "OAM-619",
+        "OAM-645",
+        "OAM-650",
+        "OAM-672",
+        "OAM-673",
+        "OAM-780",
+        "OAM-799",
+        "OAM-831",
+        "OAM-870",
+        "OAM-872",
+        "OAM-896",
+        "OAM-905",
+        "OAM-906",
+        "OAM-916",
+        "OAM-962",
+        "SBZT-1306",
+        "SBZT-1363",
+        "SBZT-1699"
+      ]
+    },
+    "STL - BNG MS team": {
+      "count": 5,
+      "keys": [
+        "MSBB-70",
+        "MSBB-71",
+        "MSBB-73",
+        "MSBB-74",
+        "MSBB-75"
       ]
     },
     "Trilogy": {
@@ -152,8 +154,8 @@
     "STL - Synaptic Technologies": {
       "count": 2,
       "keys": [
-        "AS-73",
-        "ASU-6"
+        "ASU-6",
+        "ASU-8"
       ]
     },
     "Tatatel  -  Co": {
@@ -165,79 +167,27 @@
   },
   "customer_summary": [
     {
-      "customer": "ONE Albania",
-      "total_open_items": 55,
-      "average_age_days": 142.3,
-      "average_age_label": "142 days",
-      "keys": [
-        "OAM-1005",
-        "OAM-1009",
-        "OAM-1011",
-        "OAM-1012",
-        "OAM-1013",
-        "OAM-1014",
-        "OAM-1015",
-        "OAM-1017",
-        "OAM-1019",
-        "OAM-1020",
-        "OAM-1021",
-        "OAM-1022",
-        "OAM-1043",
-        "OAM-1053",
-        "OAM-1060",
-        "OAM-1062",
-        "OAM-1064",
-        "OAM-1072",
-        "OAM-1073",
-        "OAM-1075",
-        "OAM-1076",
-        "OAM-1083",
-        "OAM-1100",
-        "OAM-1102",
-        "OAM-1173",
-        "OAM-1174",
-        "OAM-1175",
-        "OAM-1176",
-        "OAM-619",
-        "OAM-645",
-        "OAM-650",
-        "OAM-652",
-        "OAM-672",
-        "OAM-673",
-        "OAM-780",
-        "OAM-799",
-        "OAM-831",
-        "OAM-870",
-        "OAM-872",
-        "OAM-895",
-        "OAM-896",
-        "OAM-905",
-        "OAM-906",
-        "OAM-916",
-        "OAM-933",
-        "OAM-962",
-        "SBZT-1306",
-        "SBZT-1363",
-        "SBZT-1559",
-        "SBZT-1690",
-        "SBZT-1699",
-        "SBZT-1721",
-        "SBZT-1745",
-        "SBZT-1758",
-        "SBZT-1772"
-      ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1005', 'OAM-1009', 'OAM-1011', 'OAM-1012', 'OAM-1013', 'OAM-1014', 'OAM-1015', 'OAM-1017', 'OAM-1019', 'OAM-1020', 'OAM-1021', 'OAM-1022', 'OAM-1043', 'OAM-1053', 'OAM-1060', 'OAM-1062', 'OAM-1064', 'OAM-1072', 'OAM-1073', 'OAM-1075', 'OAM-1076', 'OAM-1083', 'OAM-1100', 'OAM-1102', 'OAM-1173', 'OAM-1174', 'OAM-1175', 'OAM-1176', 'OAM-619', 'OAM-645', 'OAM-650', 'OAM-652', 'OAM-672', 'OAM-673', 'OAM-780', 'OAM-799', 'OAM-831', 'OAM-870', 'OAM-872', 'OAM-895', 'OAM-896', 'OAM-905', 'OAM-906', 'OAM-916', 'OAM-933', 'OAM-962', 'SBZT-1306', 'SBZT-1363', 'SBZT-1559', 'SBZT-1690', 'SBZT-1699', 'SBZT-1721', 'SBZT-1745', 'SBZT-1758', 'SBZT-1772') ORDER BY key DESC"
-    },
-    {
       "customer": "STL - Airtel Fixedline",
-      "total_open_items": 55,
-      "average_age_days": 33.4,
-      "average_age_label": "33 days",
+      "total_open_items": 63,
+      "average_age_days": 28.5,
+      "average_age_label": "28 days",
       "keys": [
         "ASA-100",
         "ASA-104",
-        "ASA-107",
+        "ASA-111",
+        "ASA-119",
         "ASA-12",
+        "ASA-131",
+        "ASA-134",
+        "ASA-138",
+        "ASA-139",
+        "ASA-140",
+        "ASA-141",
+        "ASA-142",
+        "ASA-143",
+        "ASA-148",
+        "ASA-151",
+        "ASA-152",
         "ASA-20",
         "ASA-21",
         "ASA-31",
@@ -253,7 +203,6 @@
         "ASA-63",
         "ASA-64",
         "ASA-65",
-        "ASA-66",
         "ASA-67",
         "ASA-68",
         "ASA-7",
@@ -267,9 +216,6 @@
         "ASA-79",
         "ASA-8",
         "ASA-80",
-        "ASA-82",
-        "ASA-83",
-        "ASA-84",
         "ASA-85",
         "ASA-86",
         "ASA-87",
@@ -290,7 +236,71 @@
         "SBZT-1929",
         "SBZT-1932"
       ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-100', 'ASA-104', 'ASA-107', 'ASA-12', 'ASA-20', 'ASA-21', 'ASA-31', 'ASA-39', 'ASA-41', 'ASA-43', 'ASA-53', 'ASA-58', 'ASA-59', 'ASA-60', 'ASA-61', 'ASA-62', 'ASA-63', 'ASA-64', 'ASA-65', 'ASA-66', 'ASA-67', 'ASA-68', 'ASA-7', 'ASA-72', 'ASA-73', 'ASA-74', 'ASA-75', 'ASA-76', 'ASA-77', 'ASA-78', 'ASA-79', 'ASA-8', 'ASA-80', 'ASA-82', 'ASA-83', 'ASA-84', 'ASA-85', 'ASA-86', 'ASA-87', 'ASA-88', 'ASA-89', 'ASA-90', 'ASA-91', 'ASA-92', 'ASA-93', 'ASA-94', 'ASA-95', 'ASA-96', 'ASA-97', 'MSAFL-288', 'SBZT-1775', 'SBZT-1806', 'SBZT-1834', 'SBZT-1929', 'SBZT-1932') ORDER BY key DESC"
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-100', 'ASA-104', 'ASA-111', 'ASA-119', 'ASA-12', 'ASA-131', 'ASA-134', 'ASA-138', 'ASA-139', 'ASA-140', 'ASA-141', 'ASA-142', 'ASA-143', 'ASA-148', 'ASA-151', 'ASA-152', 'ASA-20', 'ASA-21', 'ASA-31', 'ASA-39', 'ASA-41', 'ASA-43', 'ASA-53', 'ASA-58', 'ASA-59', 'ASA-60', 'ASA-61', 'ASA-62', 'ASA-63', 'ASA-64', 'ASA-65', 'ASA-67', 'ASA-68', 'ASA-7', 'ASA-72', 'ASA-73', 'ASA-74', 'ASA-75', 'ASA-76', 'ASA-77', 'ASA-78', 'ASA-79', 'ASA-8', 'ASA-80', 'ASA-85', 'ASA-86', 'ASA-87', 'ASA-88', 'ASA-89', 'ASA-90', 'ASA-91', 'ASA-92', 'ASA-93', 'ASA-94', 'ASA-95', 'ASA-96', 'ASA-97', 'MSAFL-288', 'SBZT-1775', 'SBZT-1806', 'SBZT-1834', 'SBZT-1929', 'SBZT-1932') ORDER BY key DESC"
+    },
+    {
+      "customer": "ONE Albania",
+      "total_open_items": 55,
+      "average_age_days": 126.8,
+      "average_age_label": "126 days",
+      "keys": [
+        "OAM-1005",
+        "OAM-1009",
+        "OAM-1011",
+        "OAM-1012",
+        "OAM-1013",
+        "OAM-1017",
+        "OAM-1019",
+        "OAM-1020",
+        "OAM-1021",
+        "OAM-1022",
+        "OAM-1043",
+        "OAM-1053",
+        "OAM-1059",
+        "OAM-1060",
+        "OAM-1062",
+        "OAM-1064",
+        "OAM-1072",
+        "OAM-1073",
+        "OAM-1075",
+        "OAM-1076",
+        "OAM-1083",
+        "OAM-1100",
+        "OAM-1102",
+        "OAM-1173",
+        "OAM-1174",
+        "OAM-1177",
+        "OAM-1178",
+        "OAM-1179",
+        "OAM-1203",
+        "OAM-1205",
+        "OAM-1206",
+        "OAM-1215",
+        "OAM-1216",
+        "OAM-1219",
+        "OAM-1221",
+        "OAM-1222",
+        "OAM-1223",
+        "OAM-619",
+        "OAM-645",
+        "OAM-650",
+        "OAM-672",
+        "OAM-673",
+        "OAM-780",
+        "OAM-799",
+        "OAM-831",
+        "OAM-870",
+        "OAM-872",
+        "OAM-896",
+        "OAM-905",
+        "OAM-906",
+        "OAM-916",
+        "OAM-962",
+        "SBZT-1306",
+        "SBZT-1363",
+        "SBZT-1699"
+      ],
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1005', 'OAM-1009', 'OAM-1011', 'OAM-1012', 'OAM-1013', 'OAM-1017', 'OAM-1019', 'OAM-1020', 'OAM-1021', 'OAM-1022', 'OAM-1043', 'OAM-1053', 'OAM-1059', 'OAM-1060', 'OAM-1062', 'OAM-1064', 'OAM-1072', 'OAM-1073', 'OAM-1075', 'OAM-1076', 'OAM-1083', 'OAM-1100', 'OAM-1102', 'OAM-1173', 'OAM-1174', 'OAM-1177', 'OAM-1178', 'OAM-1179', 'OAM-1203', 'OAM-1205', 'OAM-1206', 'OAM-1215', 'OAM-1216', 'OAM-1219', 'OAM-1221', 'OAM-1222', 'OAM-1223', 'OAM-619', 'OAM-645', 'OAM-650', 'OAM-672', 'OAM-673', 'OAM-780', 'OAM-799', 'OAM-831', 'OAM-870', 'OAM-872', 'OAM-896', 'OAM-905', 'OAM-906', 'OAM-916', 'OAM-962', 'SBZT-1306', 'SBZT-1363', 'SBZT-1699') ORDER BY key DESC"
     },
     {
       "customer": "Trilogy",
@@ -328,20 +338,10 @@
       "average_age_days": 86.0,
       "average_age_label": "86 days",
       "keys": [
-        "AS-73",
-        "ASU-6"
+        "ASU-6",
+        "ASU-8"
       ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-73', 'ASU-6') ORDER BY key DESC"
-    },
-    {
-      "customer": "STL - Commverge Solutions Philippines Inc.",
-      "total_open_items": 1,
-      "average_age_days": 22.0,
-      "average_age_label": "22 days",
-      "keys": [
-        "ASGT-10"
-      ],
-      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-10') ORDER BY key DESC"
+      "jira_link": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASU-6', 'ASU-8') ORDER BY key DESC"
     },
     {
       "customer": "Tatatel  -  Co",
@@ -398,17 +398,6 @@
       "age_label": "334 days",
       "customer": "ONE Albania",
       "assignee": "Leewel Mwangi"
-    },
-    {
-      "key": "SBZT-1559",
-      "title": "Dunning process errors: unique constraint violation",
-      "kayako_number": "60147241",
-      "created": "2025-07-22T00:00:00",
-      "created_formatted": "22 Jul 2025",
-      "age_days": 266,
-      "age_label": "266 days",
-      "customer": "ONE Albania",
-      "assignee": "Nephat Muchiri"
     },
     {
       "key": "OAM-1100",
@@ -499,6 +488,17 @@
       "assignee": "Amisha Patel"
     },
     {
+      "key": "OAM-1059",
+      "title": "Incorrect Monetary Usage CDRs Generated by dPCC ",
+      "kayako_number": "60204496",
+      "created": "2025-10-10T00:00:00",
+      "created_formatted": "10 Oct 2025",
+      "age_days": 186,
+      "age_label": "186 days",
+      "customer": "ONE Albania",
+      "assignee": "Rohit Kumar"
+    },
+    {
       "key": "OAM-650",
       "title": "Contract Status Not Updating After Takeover CA",
       "kayako_number": "60221606",
@@ -510,18 +510,7 @@
       "assignee": "Purushuttam.Biswas"
     },
     {
-      "key": "OAM-652",
-      "title": "CaMS In-Progress Instances Ticket Request",
-      "kayako_number": "60211277",
-      "created": "2025-10-17T00:00:00",
-      "created_formatted": "17 Oct 2025",
-      "age_days": 179,
-      "age_label": "179 days",
-      "customer": "ONE Albania",
-      "assignee": "Deepesh Gidwani"
-    },
-    {
-      "key": "SBZT-1690",
+      "key": "OAM-1203",
       "title": "Missing Invoices and Regular Size Issue Follow Up",
       "kayako_number": "60224731",
       "created": "2025-10-21T00:00:00",
@@ -529,7 +518,7 @@
       "age_days": 175,
       "age_label": "175 days",
       "customer": "ONE Albania",
-      "assignee": "Nephat Muchiri"
+      "assignee": "Amisha Patel"
     },
     {
       "key": "SBZT-1699",
@@ -565,39 +554,6 @@
       "assignee": "Omkar Pataskar"
     },
     {
-      "key": "OAM-1015",
-      "title": "Offline Batch Service INVOICEDATE column issue",
-      "kayako_number": "60074018",
-      "created": "2025-10-30T00:00:00",
-      "created_formatted": "30 Oct 2025",
-      "age_days": 166,
-      "age_label": "166 days",
-      "customer": "ONE Albania",
-      "assignee": "Nephat Muchiri"
-    },
-    {
-      "key": "SBZT-1721",
-      "title": "CAL Liveness Check Failure on prd-k8s-master-2",
-      "kayako_number": "60239838",
-      "created": "2025-11-11T00:00:00",
-      "created_formatted": "11 Nov 2025",
-      "age_days": 154,
-      "age_label": "154 days",
-      "customer": "ONE Albania",
-      "assignee": "Preet Patel"
-    },
-    {
-      "key": "OAM-1014",
-      "title": "Enable Disable Notification Issue in DBRM Menu",
-      "kayako_number": "60239631",
-      "created": "2025-11-12T00:00:00",
-      "created_formatted": "12 Nov 2025",
-      "age_days": 153,
-      "age_label": "153 days",
-      "customer": "ONE Albania",
-      "assignee": "Nephat Muchiri"
-    },
-    {
       "key": "OAM-1019",
       "title": "Penalty addon not passed to BRM for order INV70CCDE1B1759303241",
       "kayako_number": "60239787",
@@ -617,7 +573,7 @@
       "age_days": 151,
       "age_label": "151 days",
       "customer": "ONE Albania",
-      "assignee": "Leewel Mwangi"
+      "assignee": "Omkar Pataskar"
     },
     {
       "key": "OAM-1022",
@@ -639,10 +595,10 @@
       "age_days": 146,
       "age_label": "146 days",
       "customer": "ONE Albania",
-      "assignee": "Nephat Muchiri"
+      "assignee": "Amisha Patel"
     },
     {
-      "key": "SBZT-1745",
+      "key": "OAM-1205",
       "title": "Dunning Unit In Process After Payment Issue",
       "kayako_number": "60234456",
       "created": "2025-11-24T00:00:00",
@@ -686,7 +642,7 @@
       "assignee": "Nephat Muchiri"
     },
     {
-      "key": "SBZT-1758",
+      "key": "OAM-1177",
       "title": "Reopen Notification Issue EMAIL SMS SIA Level",
       "kayako_number": "60060414",
       "created": "2025-12-04T00:00:00",
@@ -752,7 +708,7 @@
       "assignee": "Purushuttam.Biswas"
     },
     {
-      "key": "SBZT-1772",
+      "key": "OAM-1178",
       "title": "Order device with installment affecting CPM balance",
       "kayako_number": "60259440",
       "created": "2025-12-15T00:00:00",
@@ -807,7 +763,7 @@
       "assignee": "Bharat Kalra"
     },
     {
-      "key": "AS-73",
+      "key": "ASU-8",
       "title": "PCRF Server Containers Down - Urgent Support Needed",
       "kayako_number": "60276694",
       "created": "2026-01-07T00:00:00",
@@ -860,17 +816,6 @@
       "age_label": "83 days",
       "customer": "ONE Albania",
       "assignee": "Madhuri.Jadhav"
-    },
-    {
-      "key": "OAM-895",
-      "title": "WOM Cleanse Activity Check in UAT Environment",
-      "kayako_number": "60284350",
-      "created": "2026-01-21T00:00:00",
-      "created_formatted": "21 Jan 2026",
-      "age_days": 83,
-      "age_label": "83 days",
-      "customer": "ONE Albania",
-      "assignee": "Natnael Legesse"
     },
     {
       "key": "OAM-905",
@@ -948,17 +893,6 @@
       "age_label": "64 days",
       "customer": "STL - Airtel Fixedline",
       "assignee": "Bharat Kalra"
-    },
-    {
-      "key": "OAM-933",
-      "title": "dSP_PROD ArtemisMQ issue with consumer",
-      "kayako_number": "60298498",
-      "created": "2026-02-11T00:00:00",
-      "created_formatted": "11 Feb 2026",
-      "age_days": 62,
-      "age_label": "62 days",
-      "customer": "ONE Albania",
-      "assignee": "Preet Patel"
     },
     {
       "key": "SBZT-1962",
@@ -1214,17 +1148,6 @@
       "assignee": "Bhavin.Jani"
     },
     {
-      "key": "ASGT-10",
-      "title": "[Follow-up to #60296506] Explanation diagram and AAA impact analysis for accounting pool size",
-      "kayako_number": "60315692",
-      "created": "2026-03-23T00:00:00",
-      "created_formatted": "23 Mar 2026",
-      "age_days": 22,
-      "age_label": "22 days",
-      "customer": "STL - Commverge Solutions Philippines Inc.",
-      "assignee": "Marlene Fernandes"
-    },
-    {
       "key": "ASA-97",
       "title": "South - AAA Dead & Queue alert configuration in Production",
       "kayako_number": "60331366",
@@ -1368,39 +1291,6 @@
       "assignee": "Bhavin.Jani"
     },
     {
-      "key": "ASA-84",
-      "title": "North - Updating bill cycle - 26-03-26",
-      "kayako_number": "60331329",
-      "created": "2026-03-23T00:00:00",
-      "created_formatted": "23 Mar 2026",
-      "age_days": 22,
-      "age_label": "22 days",
-      "customer": "STL - Airtel Fixedline",
-      "assignee": "Bhavin.Jani"
-    },
-    {
-      "key": "ASA-83",
-      "title": "North - Updating bill cycle - 25-03-26",
-      "kayako_number": "60331327",
-      "created": "2026-03-23T00:00:00",
-      "created_formatted": "23 Mar 2026",
-      "age_days": 22,
-      "age_label": "22 days",
-      "customer": "STL - Airtel Fixedline",
-      "assignee": "Bhavin.Jani"
-    },
-    {
-      "key": "ASA-82",
-      "title": "North - Updating bill cycle - 24-03-26",
-      "kayako_number": "60331326",
-      "created": "2026-03-23T00:00:00",
-      "created_formatted": "23 Mar 2026",
-      "age_days": 22,
-      "age_label": "22 days",
-      "customer": "STL - Airtel Fixedline",
-      "assignee": "Bhavin.Jani"
-    },
-    {
       "key": "ASA-80",
       "title": "North - Reconsiled/Mispatch profile required to be LogOut/LogIn",
       "kayako_number": "60331321",
@@ -1514,17 +1404,6 @@
       "key": "ASA-67",
       "title": "West - Delete Extra Rows – (VoltDB)- TBLT_SUBSCRIPTION- TBLM_DATAABALANCE in Volt DB",
       "kayako_number": "60331263",
-      "created": "2026-03-23T00:00:00",
-      "created_formatted": "23 Mar 2026",
-      "age_days": 22,
-      "age_label": "22 days",
-      "customer": "STL - Airtel Fixedline",
-      "assignee": "Bhavin.Jani"
-    },
-    {
-      "key": "ASA-66",
-      "title": "West - History Table Purging – (VoltDB)- TBLM_DATA_BALANCE_HISTORY- TBLT_SUBSCRIPTION_HISTORY- TBLM_SUBSCRIBER_HISTORY",
-      "kayako_number": "60331246",
       "created": "2026-03-23T00:00:00",
       "created_formatted": "23 Mar 2026",
       "age_days": 22,
@@ -1665,26 +1544,15 @@
       "assignee": "Bhavin.Jani"
     },
     {
-      "key": "OAM-1175",
-      "title": "PROD: Application DB Schema password change",
-      "kayako_number": "60334258",
-      "created": "2026-03-26T00:00:00",
-      "created_formatted": "26 Mar 2026",
-      "age_days": 19,
-      "age_label": "19 days",
-      "customer": "ONE Albania",
-      "assignee": "Rohit Kumar"
-    },
-    {
-      "key": "OAM-1176",
-      "title": "DBRM Changes Status Flow Review in Production",
-      "kayako_number": "60317678",
+      "key": "OAM-1179",
+      "title": "[Follow-up to #60317656 -- APP sourced orders missing documentNumber in WOM Make Payment causing UNPAID invoices",
+      "kayako_number": "60335130",
       "created": "2026-03-27T00:00:00",
       "created_formatted": "27 Mar 2026",
       "age_days": 18,
       "age_label": "18 days",
       "customer": "ONE Albania",
-      "assignee": "Unassigned"
+      "assignee": "Rohit Kumar"
     },
     {
       "key": "MSBB-75",
@@ -1709,17 +1577,6 @@
       "assignee": "Shailesh Savla"
     },
     {
-      "key": "ASA-107",
-      "title": "VoltDB partition high usage in Manesar u01 on IPs 10.2.53.36 10.2.53.39 10.2.53.42",
-      "kayako_number": "60334158",
-      "created": "2026-03-27T00:00:00",
-      "created_formatted": "27 Mar 2026",
-      "age_days": 18,
-      "age_label": "18 days",
-      "customer": "STL - Airtel Fixedline",
-      "assignee": "Bhavin.Jani"
-    },
-    {
       "key": "MSBB-73",
       "title": "Quarterly Preventive Maintenance for 60 BNG Sites Y7Q1",
       "kayako_number": "60335048",
@@ -1738,6 +1595,226 @@
       "created_formatted": "27 Mar 2026",
       "age_days": 18,
       "age_label": "18 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "ASA-111",
+      "title": "Airtel Fixedline Backup Check 2026-03-29",
+      "kayako_number": "60336116",
+      "created": "2026-03-29T00:00:00",
+      "created_formatted": "29 Mar 2026",
+      "age_days": 16,
+      "age_label": "16 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "OAM-1206",
+      "title": "INTERNAL_SERVER_ERROR",
+      "kayako_number": "60337575",
+      "created": "2026-03-31T00:00:00",
+      "created_formatted": "31 Mar 2026",
+      "age_days": 14,
+      "age_label": "14 days",
+      "customer": "ONE Albania",
+      "assignee": "Unassigned"
+    },
+    {
+      "key": "ASA-119",
+      "title": "Verify 90% and 100% quota notification alerts for specific subscribers",
+      "kayako_number": "60338331",
+      "created": "2026-04-01T00:00:00",
+      "created_formatted": "01 Apr 2026",
+      "age_days": 13,
+      "age_label": "13 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "ASA-131",
+      "title": "Nokia BNG not applying IP filter rules from AAA",
+      "kayako_number": "60342486",
+      "created": "2026-04-06T00:00:00",
+      "created_formatted": "06 Apr 2026",
+      "age_days": 8,
+      "age_label": "8 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "OAM-1215",
+      "title": "CRM outage Fatal error Call to getBody on null when viewing CA or SIA details",
+      "kayako_number": "60343647",
+      "created": "2026-04-07T00:00:00",
+      "created_formatted": "07 Apr 2026",
+      "age_days": 7,
+      "age_label": "7 days",
+      "customer": "ONE Albania",
+      "assignee": "Unassigned"
+    },
+    {
+      "key": "ASA-134",
+      "title": "PCRF License KPI Monitoring Failure in West and South Hub",
+      "kayako_number": "60343400",
+      "created": "2026-04-07T00:00:00",
+      "created_formatted": "07 Apr 2026",
+      "age_days": 7,
+      "age_label": "7 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "OAM-1216",
+      "title": "CRM UAT outage: Fatal error Call to member function getBody on null in BSSHelperBase",
+      "kayako_number": "60344388",
+      "created": "2026-04-08T00:00:00",
+      "created_formatted": "08 Apr 2026",
+      "age_days": 6,
+      "age_label": "6 days",
+      "customer": "ONE Albania",
+      "assignee": "Unassigned"
+    },
+    {
+      "key": "ASA-143",
+      "title": "North - Purging of Deleted Subscribers through JMeter (VoltDB)",
+      "kayako_number": "60331313",
+      "created": "2026-04-10T00:00:00",
+      "created_formatted": "10 Apr 2026",
+      "age_days": 4,
+      "age_label": "4 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "ASA-142",
+      "title": "West - Delete Extra Rows – (VoltDB)- TBLT_SUBSCRIPTION- TBLM_DATAABALANCE in Volt DB",
+      "kayako_number": "60331263",
+      "created": "2026-04-10T00:00:00",
+      "created_formatted": "10 Apr 2026",
+      "age_days": 4,
+      "age_label": "4 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "ASA-141",
+      "title": "West - JVM Tuning - Change default GC to G1GC",
+      "kayako_number": "60331204",
+      "created": "2026-04-10T00:00:00",
+      "created_formatted": "10 Apr 2026",
+      "age_days": 4,
+      "age_label": "4 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "ASA-140",
+      "title": "South - Delete Extra Rows – (VoltDB)- TBLT_SUBSCRIPTION- TBLM_DATAABALANCE in Volt DB",
+      "kayako_number": "60331363",
+      "created": "2026-04-10T00:00:00",
+      "created_formatted": "10 Apr 2026",
+      "age_days": 4,
+      "age_label": "4 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "ASA-139",
+      "title": "South - JVM Tuning - Change default GC to G1GC",
+      "kayako_number": "60331342",
+      "created": "2026-04-10T00:00:00",
+      "created_formatted": "10 Apr 2026",
+      "age_days": 4,
+      "age_label": "4 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "ASA-138",
+      "title": "North - AAA & PCC VM Go Live",
+      "kayako_number": "60331302",
+      "created": "2026-04-10T00:00:00",
+      "created_formatted": "10 Apr 2026",
+      "age_days": 4,
+      "age_label": "4 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "OAM-1223",
+      "title": "-94002218 : Billing Engine : Your Requested Operation cannot be performed as your bill for previous billing period has not been generated.",
+      "kayako_number": "60304947",
+      "created": "2026-04-10T00:00:00",
+      "created_formatted": "10 Apr 2026",
+      "age_days": 4,
+      "age_label": "4 days",
+      "customer": "ONE Albania",
+      "assignee": "Unassigned"
+    },
+    {
+      "key": "OAM-1222",
+      "title": " Keycloak Upgrade Strategy Request (Current Version 16 on Kubernetes)",
+      "kayako_number": "60345311",
+      "created": "2026-04-10T00:00:00",
+      "created_formatted": "10 Apr 2026",
+      "age_days": 4,
+      "age_label": "4 days",
+      "customer": "ONE Albania",
+      "assignee": "Unassigned"
+    },
+    {
+      "key": "OAM-1221",
+      "title": "NP_Request(Port-Out)_failed_wo_npresponse",
+      "kayako_number": "60338605",
+      "created": "2026-04-10T00:00:00",
+      "created_formatted": "10 Apr 2026",
+      "age_days": 4,
+      "age_label": "4 days",
+      "customer": "ONE Albania",
+      "assignee": "Unassigned"
+    },
+    {
+      "key": "OAM-1219",
+      "title": "dPCC UAT DB Connection Failure After Database Password Change",
+      "kayako_number": "60345319",
+      "created": "2026-04-10T00:00:00",
+      "created_formatted": "10 Apr 2026",
+      "age_days": 4,
+      "age_label": "4 days",
+      "customer": "ONE Albania",
+      "assignee": "Unassigned"
+    },
+    {
+      "key": "ASA-148",
+      "title": "CDR Files from PCRF and AAA Not Transferred to Mediation Server North Hub After 02:00 AM\"\"",
+      "kayako_number": "60347296",
+      "created": "2026-04-13T00:00:00",
+      "created_formatted": "13 Apr 2026",
+      "age_days": 1,
+      "age_label": "1 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "ASA-152",
+      "title": "Airtel Fixedline Backup Check 2026-04-14",
+      "kayako_number": "60348320",
+      "created": "2026-04-14T00:00:00",
+      "created_formatted": "14 Apr 2026",
+      "age_days": 0,
+      "age_label": "0 days",
+      "customer": "STL - Airtel Fixedline",
+      "assignee": "Bhavin.Jani"
+    },
+    {
+      "key": "ASA-151",
+      "title": "Airtel Fixedline Health Check 2026-04-14",
+      "kayako_number": "60348319",
+      "created": "2026-04-14T00:00:00",
+      "created_formatted": "14 Apr 2026",
+      "age_days": 0,
+      "age_label": "0 days",
       "customer": "STL - Airtel Fixedline",
       "assignee": "Bhavin.Jani"
     }

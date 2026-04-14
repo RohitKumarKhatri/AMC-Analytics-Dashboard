@@ -11,7 +11,7 @@
       "created": 59,
       "resolved": 41,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-73', 'AS-74', 'AS-76', 'AS-77', 'AS-79', 'ASU-6', 'ASU-7', 'MSBB-69', 'SBZT-1790', 'SBZT-1791', 'SBZT-1794', 'SBZT-1795', 'SBZT-1796', 'SBZT-1797', 'SBZT-1798', 'SBZT-1799', 'SBZT-1800', 'SBZT-1801', 'SBZT-1802', 'SBZT-1804', 'SBZT-1805', 'SBZT-1806', 'SBZT-1807', 'SBZT-1809', 'SBZT-1810', 'SBZT-1812', 'SBZT-1813', 'SBZT-1814', 'SBZT-1815', 'SBZT-1816', 'SBZT-1817', 'SBZT-1818', 'SBZT-1823', 'SBZT-1824', 'SBZT-1825', 'SBZT-1826', 'SBZT-1830', 'SBZT-1831', 'SBZT-1832', 'SBZT-1833', 'SBZT-1834', 'SBZT-1835', 'SBZT-1836', 'SBZT-1837', 'SBZT-1838', 'SBZT-1839', 'SBZT-1840', 'SBZT-1841', 'SBZT-1842', 'SBZT-1843', 'SBZT-1844', 'SBZT-1845', 'SBZT-1846', 'SBZT-1847', 'SBZT-1848', 'SBZT-1849', 'SBZT-1851', 'SBZT-1852', 'SBZT-1857') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-74', 'AS-76', 'AS-77', 'AS-79', 'ASU-6', 'ASU-7', 'ASU-8', 'MSBB-69', 'SBZT-1790', 'SBZT-1791', 'SBZT-1794', 'SBZT-1795', 'SBZT-1796', 'SBZT-1797', 'SBZT-1798', 'SBZT-1799', 'SBZT-1800', 'SBZT-1801', 'SBZT-1802', 'SBZT-1804', 'SBZT-1805', 'SBZT-1806', 'SBZT-1807', 'SBZT-1809', 'SBZT-1810', 'SBZT-1812', 'SBZT-1813', 'SBZT-1814', 'SBZT-1815', 'SBZT-1816', 'SBZT-1817', 'SBZT-1818', 'SBZT-1823', 'SBZT-1824', 'SBZT-1825', 'SBZT-1826', 'SBZT-1830', 'SBZT-1831', 'SBZT-1832', 'SBZT-1833', 'SBZT-1834', 'SBZT-1835', 'SBZT-1836', 'SBZT-1837', 'SBZT-1838', 'SBZT-1839', 'SBZT-1840', 'SBZT-1841', 'SBZT-1842', 'SBZT-1843', 'SBZT-1844', 'SBZT-1845', 'SBZT-1846', 'SBZT-1847', 'SBZT-1848', 'SBZT-1849', 'SBZT-1851', 'SBZT-1852', 'SBZT-1857') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-74', 'AS-77', 'SBZT-1790', 'SBZT-1794', 'SBZT-1795', 'SBZT-1796', 'SBZT-1797', 'SBZT-1798', 'SBZT-1800', 'SBZT-1804', 'SBZT-1805', 'SBZT-1807', 'SBZT-1809', 'SBZT-1810', 'SBZT-1812', 'SBZT-1813', 'SBZT-1814', 'SBZT-1815', 'SBZT-1816', 'SBZT-1817', 'SBZT-1818', 'SBZT-1823', 'SBZT-1824', 'SBZT-1825', 'SBZT-1826', 'SBZT-1830', 'SBZT-1831', 'SBZT-1832', 'SBZT-1836', 'SBZT-1837', 'SBZT-1838', 'SBZT-1839', 'SBZT-1840', 'SBZT-1841', 'SBZT-1842', 'SBZT-1843', 'SBZT-1845', 'SBZT-1847', 'SBZT-1849', 'SBZT-1852', 'SBZT-1857') ORDER BY key DESC"
       },
       "cumulative": 18
@@ -22,23 +22,23 @@
       "month_end": "2026-02-28",
       "label": "Feb 2026",
       "created": 55,
-      "resolved": 54,
+      "resolved": 53,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-82', 'ASA-10', 'ASA-5', 'ASA-6', 'ASA-7', 'ASA-8', 'ASA-9', 'ASGT-7', 'ASGT-8', 'MSBB-68', 'SBZT-1858', 'SBZT-1859', 'SBZT-1860', 'SBZT-1867', 'SBZT-1868', 'SBZT-1869', 'SBZT-1870', 'SBZT-1871', 'SBZT-1872', 'SBZT-1925', 'SBZT-1926', 'SBZT-1928', 'SBZT-1929', 'SBZT-1930', 'SBZT-1931', 'SBZT-1932', 'SBZT-1933', 'SBZT-1934', 'SBZT-1935', 'SBZT-1936', 'SBZT-1937', 'SBZT-1945', 'SBZT-1946', 'SBZT-1947', 'SBZT-1948', 'SBZT-1949', 'SBZT-1959', 'SBZT-1961', 'SBZT-1962', 'SBZT-1964', 'SBZT-1965', 'SBZT-1966', 'SBZT-1967', 'SBZT-1970', 'SBZT-1971', 'SBZT-1972', 'SBZT-1973', 'SBZT-1974', 'SBZT-1976', 'SBZT-1977', 'SBZT-1978', 'SBZT-1979', 'SBZT-1980', 'SBZT-1982', 'SBZT-1983') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-76', 'AS-79', 'AS-82', 'ASA-10', 'ASA-5', 'ASA-6', 'ASA-9', 'ASGT-8', 'ASU-7', 'MSBB-68', 'SBZT-1801', 'SBZT-1835', 'SBZT-1844', 'SBZT-1848', 'SBZT-1851', 'SBZT-1858', 'SBZT-1859', 'SBZT-1860', 'SBZT-1867', 'SBZT-1868', 'SBZT-1869', 'SBZT-1870', 'SBZT-1871', 'SBZT-1872', 'SBZT-1925', 'SBZT-1926', 'SBZT-1928', 'SBZT-1930', 'SBZT-1931', 'SBZT-1933', 'SBZT-1934', 'SBZT-1935', 'SBZT-1936', 'SBZT-1937', 'SBZT-1945', 'SBZT-1946', 'SBZT-1947', 'SBZT-1948', 'SBZT-1949', 'SBZT-1959', 'SBZT-1961', 'SBZT-1964', 'SBZT-1965', 'SBZT-1966', 'SBZT-1972', 'SBZT-1973', 'SBZT-1974', 'SBZT-1976', 'SBZT-1977', 'SBZT-1978', 'SBZT-1979', 'SBZT-1980', 'SBZT-1982', 'SBZT-1983') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-76', 'AS-79', 'AS-82', 'ASA-10', 'ASA-5', 'ASA-6', 'ASA-9', 'ASGT-8', 'MSBB-68', 'SBZT-1801', 'SBZT-1835', 'SBZT-1844', 'SBZT-1848', 'SBZT-1851', 'SBZT-1858', 'SBZT-1859', 'SBZT-1860', 'SBZT-1867', 'SBZT-1868', 'SBZT-1869', 'SBZT-1870', 'SBZT-1871', 'SBZT-1872', 'SBZT-1925', 'SBZT-1926', 'SBZT-1928', 'SBZT-1930', 'SBZT-1931', 'SBZT-1933', 'SBZT-1934', 'SBZT-1935', 'SBZT-1936', 'SBZT-1937', 'SBZT-1945', 'SBZT-1946', 'SBZT-1947', 'SBZT-1948', 'SBZT-1949', 'SBZT-1959', 'SBZT-1961', 'SBZT-1964', 'SBZT-1965', 'SBZT-1966', 'SBZT-1972', 'SBZT-1973', 'SBZT-1974', 'SBZT-1976', 'SBZT-1977', 'SBZT-1978', 'SBZT-1979', 'SBZT-1980', 'SBZT-1982', 'SBZT-1983') ORDER BY key DESC"
       },
-      "cumulative": 19
+      "cumulative": 20
     },
     {
       "month": "2026-03",
       "month_start": "2026-03-01",
       "month_end": "2026-03-31",
       "label": "Mar 2026",
-      "created": 108,
-      "resolved": 58,
+      "created": 119,
+      "resolved": 70,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-100', 'ASA-101', 'ASA-102', 'ASA-103', 'ASA-104', 'ASA-105', 'ASA-106', 'ASA-107', 'ASA-11', 'ASA-12', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'ASA-18', 'ASA-19', 'ASA-20', 'ASA-21', 'ASA-22', 'ASA-23', 'ASA-24', 'ASA-25', 'ASA-26', 'ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-31', 'ASA-32', 'ASA-33', 'ASA-34', 'ASA-35', 'ASA-36', 'ASA-37', 'ASA-38', 'ASA-39', 'ASA-40', 'ASA-41', 'ASA-42', 'ASA-43', 'ASA-44', 'ASA-45', 'ASA-46', 'ASA-47', 'ASA-48', 'ASA-49', 'ASA-50', 'ASA-51', 'ASA-52', 'ASA-53', 'ASA-54', 'ASA-55', 'ASA-56', 'ASA-57', 'ASA-58', 'ASA-59', 'ASA-60', 'ASA-61', 'ASA-62', 'ASA-63', 'ASA-64', 'ASA-65', 'ASA-66', 'ASA-67', 'ASA-68', 'ASA-69', 'ASA-70', 'ASA-71', 'ASA-72', 'ASA-73', 'ASA-74', 'ASA-75', 'ASA-76', 'ASA-77', 'ASA-78', 'ASA-79', 'ASA-80', 'ASA-81', 'ASA-82', 'ASA-83', 'ASA-84', 'ASA-85', 'ASA-86', 'ASA-87', 'ASA-88', 'ASA-89', 'ASA-90', 'ASA-91', 'ASA-92', 'ASA-93', 'ASA-94', 'ASA-95', 'ASA-96', 'ASA-97', 'ASA-98', 'ASA-99', 'ASGT-10', 'MSBB-70', 'MSBB-71', 'MSBB-72', 'MSBB-73', 'MSBB-74', 'MSBB-75', 'SBZT-1984', 'SBZT-1985', 'SBZT-1986', 'SBZT-1987', 'SBZT-1990') ORDER BY key DESC",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-101', 'ASA-102', 'ASA-103', 'ASA-105', 'ASA-106', 'ASA-11', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'ASA-18', 'ASA-19', 'ASA-22', 'ASA-23', 'ASA-24', 'ASA-25', 'ASA-26', 'ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-32', 'ASA-33', 'ASA-34', 'ASA-35', 'ASA-36', 'ASA-37', 'ASA-38', 'ASA-40', 'ASA-42', 'ASA-44', 'ASA-45', 'ASA-46', 'ASA-47', 'ASA-48', 'ASA-49', 'ASA-50', 'ASA-51', 'ASA-52', 'ASA-54', 'ASA-55', 'ASA-56', 'ASA-57', 'ASA-69', 'ASA-70', 'ASA-71', 'ASA-81', 'ASA-98', 'ASA-99', 'ASGT-7', 'MSBB-69', 'MSBB-72', 'SBZT-1799', 'SBZT-1802', 'SBZT-1833', 'SBZT-1984', 'SBZT-1986', 'SBZT-1990') ORDER BY key DESC"
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-100', 'ASA-101', 'ASA-102', 'ASA-103', 'ASA-104', 'ASA-105', 'ASA-106', 'ASA-107', 'ASA-108', 'ASA-109', 'ASA-11', 'ASA-110', 'ASA-111', 'ASA-112', 'ASA-113', 'ASA-114', 'ASA-115', 'ASA-116', 'ASA-12', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'ASA-18', 'ASA-19', 'ASA-20', 'ASA-21', 'ASA-22', 'ASA-23', 'ASA-24', 'ASA-25', 'ASA-26', 'ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-31', 'ASA-32', 'ASA-33', 'ASA-34', 'ASA-35', 'ASA-36', 'ASA-37', 'ASA-38', 'ASA-39', 'ASA-40', 'ASA-41', 'ASA-42', 'ASA-43', 'ASA-44', 'ASA-45', 'ASA-46', 'ASA-47', 'ASA-48', 'ASA-49', 'ASA-50', 'ASA-51', 'ASA-52', 'ASA-53', 'ASA-54', 'ASA-55', 'ASA-56', 'ASA-57', 'ASA-58', 'ASA-59', 'ASA-60', 'ASA-61', 'ASA-62', 'ASA-63', 'ASA-64', 'ASA-65', 'ASA-66', 'ASA-67', 'ASA-68', 'ASA-69', 'ASA-70', 'ASA-71', 'ASA-72', 'ASA-73', 'ASA-74', 'ASA-75', 'ASA-76', 'ASA-77', 'ASA-78', 'ASA-79', 'ASA-80', 'ASA-81', 'ASA-82', 'ASA-83', 'ASA-84', 'ASA-85', 'ASA-86', 'ASA-87', 'ASA-88', 'ASA-89', 'ASA-90', 'ASA-91', 'ASA-92', 'ASA-93', 'ASA-94', 'ASA-95', 'ASA-96', 'ASA-97', 'ASA-98', 'ASA-99', 'ASGT-10', 'ASGT-11', 'ASGT-12', 'MSBB-70', 'MSBB-71', 'MSBB-72', 'MSBB-73', 'MSBB-74', 'MSBB-75', 'SBZT-1984', 'SBZT-1985', 'SBZT-1986', 'SBZT-1987', 'SBZT-1990') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-101', 'ASA-102', 'ASA-103', 'ASA-105', 'ASA-106', 'ASA-108', 'ASA-109', 'ASA-11', 'ASA-110', 'ASA-112', 'ASA-113', 'ASA-114', 'ASA-115', 'ASA-116', 'ASA-13', 'ASA-14', 'ASA-15', 'ASA-16', 'ASA-18', 'ASA-19', 'ASA-22', 'ASA-23', 'ASA-24', 'ASA-25', 'ASA-26', 'ASA-27', 'ASA-28', 'ASA-29', 'ASA-30', 'ASA-32', 'ASA-33', 'ASA-34', 'ASA-35', 'ASA-36', 'ASA-37', 'ASA-38', 'ASA-40', 'ASA-42', 'ASA-44', 'ASA-45', 'ASA-46', 'ASA-47', 'ASA-48', 'ASA-49', 'ASA-50', 'ASA-51', 'ASA-52', 'ASA-54', 'ASA-55', 'ASA-56', 'ASA-57', 'ASA-66', 'ASA-69', 'ASA-70', 'ASA-71', 'ASA-81', 'ASA-82', 'ASA-83', 'ASA-84', 'ASA-98', 'ASA-99', 'ASGT-7', 'ASU-7', 'MSBB-69', 'SBZT-1799', 'SBZT-1802', 'SBZT-1833', 'SBZT-1984', 'SBZT-1986', 'SBZT-1990') ORDER BY key DESC"
       },
       "cumulative": 69
     },
@@ -47,13 +47,13 @@
       "month_start": "2026-04-01",
       "month_end": "2026-04-30",
       "label": "Apr 2026",
-      "created": 0,
-      "resolved": 0,
+      "created": 36,
+      "resolved": 29,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-117', 'ASA-118', 'ASA-119', 'ASA-120', 'ASA-121', 'ASA-122', 'ASA-123', 'ASA-124', 'ASA-125', 'ASA-126', 'ASA-127', 'ASA-128', 'ASA-129', 'ASA-130', 'ASA-131', 'ASA-132', 'ASA-133', 'ASA-134', 'ASA-135', 'ASA-136', 'ASA-137', 'ASA-138', 'ASA-139', 'ASA-140', 'ASA-141', 'ASA-142', 'ASA-143', 'ASA-144', 'ASA-145', 'ASA-146', 'ASA-147', 'ASA-148', 'ASA-149', 'ASA-150', 'ASA-151', 'ASA-152') ORDER BY key DESC",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASA-107', 'ASA-117', 'ASA-118', 'ASA-120', 'ASA-121', 'ASA-122', 'ASA-123', 'ASA-124', 'ASA-125', 'ASA-126', 'ASA-127', 'ASA-128', 'ASA-129', 'ASA-130', 'ASA-132', 'ASA-133', 'ASA-135', 'ASA-136', 'ASA-137', 'ASA-144', 'ASA-145', 'ASA-146', 'ASA-147', 'ASA-149', 'ASA-150', 'ASGT-10', 'ASGT-11', 'ASGT-12', 'MSBB-72') ORDER BY key DESC"
       },
-      "cumulative": 69
+      "cumulative": 76
     }
   ]
 }

@@ -1,5 +1,8 @@
 {
   "year": 2026,
   "range": "Q2+Q4",
-  "distribution": {}
+  "distribution": {
+    "STL - Airtel Fixedline": 36,
+    "ONE Albania": 6
+  }
 }

@@ -11,7 +11,7 @@
       "created": 4,
       "resolved": 0,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-73', 'AS-76', 'ASU-6', 'ASU-7') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-76', 'ASU-6', 'ASU-7', 'ASU-8') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 4
@@ -22,12 +22,12 @@
       "month_end": "2026-02-28",
       "label": "Feb 2026",
       "created": 0,
-      "resolved": 2,
+      "resolved": 1,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-76', 'ASU-7') ORDER BY key DESC"
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('AS-76') ORDER BY key DESC"
       },
-      "cumulative": 2
+      "cumulative": 3
     },
     {
       "month": "2026-03",
@@ -35,10 +35,10 @@
       "month_end": "2026-03-31",
       "label": "Mar 2026",
       "created": 0,
-      "resolved": 0,
+      "resolved": 1,
       "jira_links": {
         "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
-        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASU-7') ORDER BY key DESC"
       },
       "cumulative": 2
     },
