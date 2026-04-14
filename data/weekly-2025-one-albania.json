@@ -130,7 +130,7 @@
       "created": 11,
       "resolved": 1,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1239', 'SBZT-1244', 'SBZT-1246', 'SBZT-1252', 'SBZT-1257', 'SBZT-1258', 'SBZT-1259', 'SBZT-1263', 'SBZT-1264', 'SBZT-1265', 'SBZT-1266') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1083', 'SBZT-1239', 'SBZT-1244', 'SBZT-1246', 'SBZT-1252', 'SBZT-1257', 'SBZT-1258', 'SBZT-1259', 'SBZT-1263', 'SBZT-1264', 'SBZT-1266') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1221') ORDER BY key DESC"
       },
       "cumulative": 44
@@ -370,7 +370,7 @@
       "created": 3,
       "resolved": 1,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1566', 'SBZT-1568', 'SBZT-1572') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1100', 'SBZT-1566', 'SBZT-1568') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('SBZT-1552') ORDER BY key DESC"
       },
       "cumulative": 116
@@ -514,7 +514,7 @@
       "created": 6,
       "resolved": 0,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-658', 'SBZT-1690', 'SBZT-1691', 'SBZT-1692', 'SBZT-1693', 'SBZT-1694') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1203', 'OAM-658', 'SBZT-1691', 'SBZT-1692', 'SBZT-1693', 'SBZT-1694') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\""
       },
       "cumulative": 148
@@ -574,7 +574,7 @@
       "created": 6,
       "resolved": 12,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1076', 'SBZT-1745', 'SBZT-1747', 'SBZT-1748', 'SBZT-1749', 'SBZT-1752') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1076', 'OAM-1205', 'SBZT-1747', 'SBZT-1748', 'SBZT-1749', 'SBZT-1752') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1010', 'SBZT-1234', 'SBZT-1406', 'SBZT-1468', 'SBZT-1513', 'SBZT-1561', 'SBZT-1612', 'SBZT-1613', 'SBZT-1615', 'SBZT-1665', 'SBZT-1687', 'SBZT-1739') ORDER BY key DESC"
       },
       "cumulative": 119
@@ -586,7 +586,7 @@
       "created": 9,
       "resolved": 10,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1009', 'OAM-1011', 'OAM-780', 'OAM-781', 'SBZT-1754', 'SBZT-1756', 'SBZT-1757', 'SBZT-1758', 'SBZT-1759') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1009', 'OAM-1011', 'OAM-1177', 'OAM-780', 'OAM-781', 'SBZT-1754', 'SBZT-1756', 'SBZT-1757', 'SBZT-1759') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-639', 'OAM-651', 'SBZT-1056', 'SBZT-1271', 'SBZT-1331', 'SBZT-1366', 'SBZT-1450', 'SBZT-1537', 'SBZT-1656', 'SBZT-1662') ORDER BY key DESC"
       },
       "cumulative": 118
@@ -610,7 +610,7 @@
       "created": 5,
       "resolved": 19,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-828', 'OAM-830', 'OAM-831', 'SBZT-1772', 'SBZT-1773') ORDER BY key DESC",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-1178', 'OAM-828', 'OAM-830', 'OAM-831', 'SBZT-1773') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('OAM-618', 'SBZT-1002', 'SBZT-1075', 'SBZT-1123', 'SBZT-1124', 'SBZT-1170', 'SBZT-1236', 'SBZT-1257', 'SBZT-1323', 'SBZT-1358', 'SBZT-1395', 'SBZT-1530', 'SBZT-1566', 'SBZT-1568', 'SBZT-1652', 'SBZT-1708', 'SBZT-1713', 'SBZT-1717', 'SBZT-1749') ORDER BY key DESC"
       },
       "cumulative": 111

@@ -34,11 +34,24 @@
       "month_start": "2026-03-01",
       "month_end": "2026-03-31",
       "label": "Mar 2026",
-      "created": 0,
+      "created": 3,
       "resolved": 1,
       "jira_links": {
-        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-10', 'ASGT-11', 'ASGT-12') ORDER BY key DESC",
         "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-7') ORDER BY key DESC"
+      },
+      "cumulative": 3
+    },
+    {
+      "month": "2026-04",
+      "month_start": "2026-04-01",
+      "month_end": "2026-04-30",
+      "label": "Apr 2026",
+      "created": 0,
+      "resolved": 3,
+      "jira_links": {
+        "created": "https://psskyvera.atlassian.net/issues/?jql=key = \"NONE\"",
+        "resolved": "https://psskyvera.atlassian.net/issues/?jql=key in ('ASGT-10', 'ASGT-11', 'ASGT-12') ORDER BY key DESC"
       },
       "cumulative": 0
     }
